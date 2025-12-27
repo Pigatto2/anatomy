@@ -360,7 +360,7 @@
       font-size:.82rem;
     }
 
-    .options-stack{display:flex; flex-direction:column; gap:12px; padding-bottom:24px;}
+    .options-stack{display:flex; flex-direction:column; gap:12px; padding-bottom:120px;}
     .opt-btn{
       width:100%;
       padding:20px 24px;
@@ -836,11 +836,6 @@
         </div>
 
         <div class="options-stack" id="options-container"></div>
-
-        <div class="quiz-footer" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
-          <button class="btn-secondary" id="btn-skip" style="flex:1; min-width:160px;" onclick="skipQuestion()">Salta</button>
-          <button class="btn-primary blue" id="btn-next" style="flex:1; min-width:180px;" onclick="nextQuestion()" disabled>Prossima →</button>
-        </div>
       </section>
 
       <!-- RESULTS -->
@@ -867,6 +862,10 @@
       <button class="float-btn secondary" onclick="navTo('dashboard')">Chiudi</button>
     </div>
 
+    <!-- Floating: next in quiz -->
+    <div class="glass-panel float-bar" id="quiz-actions" style="width:min(92%, 260px);">
+      <button class="float-btn" id="btn-next" onclick="nextQuestion()">Salta →</button>
+    </div>
   </div>
 
   <!-- Quiz settings modal -->
@@ -956,7 +955,7 @@
         title: "Neuroanatomia",
         desc: "Tronco encefalico, midollo, vie e concetti base.",
         icon: "🧠",
-        modules: window.NEURO_MODULES || {}
+        modules: window.NEURO_MODULES
       },
 
       semeiotica: {
@@ -1041,9 +1040,8 @@
       for (const cId of Object.keys(QUIZ_PACKS)){
         QMAP[cId] = {};
         const pack = QUIZ_PACKS[cId];
-        const mods = pack.modules || {};
-        for (const mod of Object.keys(mods)){
-          mods[mod].forEach((qq) => {
+        for (const mod of Object.keys(pack.modules)){
+          pack.modules[mod].forEach((qq) => {
             const qid = makeQid(cId, mod, qq.q);
             QMAP[cId][qid] = { module: mod, cat: qq.cat || mod, q: qq.q, a: qq.a, correct: (typeof qq.correct === "number" ? qq.correct : null) };
           });
@@ -1095,7 +1093,6 @@
     const btnStart = document.getElementById("btn-start");
     const quizActions = document.getElementById("quiz-actions");
     const btnNext = document.getElementById("btn-next");
-    const btnSkip = document.getElementById("btn-skip");
 
     // quiz
     const qChip = document.getElementById("q-chip");
@@ -1182,8 +1179,8 @@
       }
 
       // floating bars
-      try{ courseActions && courseActions.classList.remove("visible"); }catch(e){}
-      try{ quizActions && quizActions.classList.remove("visible"); }catch(e){}
+      courseActions.classList.remove("visible");
+      syncNextButton();
 
       if (viewId === "course"){
         courseActions.classList.add("visible");
@@ -1212,7 +1209,7 @@
     function renderCourses(){
       coursesGrid.innerHTML = "";
       Object.values(QUIZ_PACKS).forEach(c => {
-        const qCount = Object.values(c.modules || {}).reduce((acc, a)=> acc + a.length, 0);
+        const qCount = Object.values(c.modules).reduce((acc, a)=> acc + a.length, 0);
         const mCount = Object.keys(c.modules).length;
 
         const card = document.createElement("div");
@@ -1265,7 +1262,7 @@
     function renderModulesSelection(){
       modulesList.innerHTML = "";
       const course = QUIZ_PACKS[state.currentCourseId];
-      const mods = Object.keys(course.modules || {});
+      const mods = Object.keys(course.modules);
 
       mods.forEach(m => {
         const item = document.createElement("div");
@@ -1292,7 +1289,7 @@
 
     function selectAllModules(){
       const course = QUIZ_PACKS[state.currentCourseId];
-      state.selectedModules = new Set(Object.keys(course.modules || {}));
+      state.selectedModules = new Set(Object.keys(course.modules));
       renderModulesSelection();
       // mark all selected
       document.querySelectorAll(".module-item").forEach(el => el.classList.add("selected"));
@@ -1315,7 +1312,7 @@
       if (!state.currentCourseId) return 0;
       const course = QUIZ_PACKS[state.currentCourseId];
       let count = 0;
-      state.selectedModules.forEach(m => count += ((course.modules || {})[m]?.length || 0));
+      state.selectedModules.forEach(m => count += (course.modules[m]?.length || 0));
       return count;
     }
 
@@ -1613,7 +1610,7 @@
       }
 
       if (mode === "course_exam"){
-        const mods = Object.keys(course.modules || {});
+        const mods = Object.keys(course.modules);
         modulesLabel = mods;
         qs = mods.flatMap(m => course.modules[m].map(qq => QMAP[state.currentCourseId][makeQid(state.currentCourseId, m, qq.q)]));
       }
@@ -1701,7 +1698,27 @@
     /***********************************************************************
      * Quiz engine (with limit)
      **********************************************************************/
-    function startQuiz(qs, modulesLabel, limit){
+    function syncNextButton(){
+      // Barra "Prossima": deve essere SEMPRE gestita dal client
+      // (non dipendere da Supabase/await, così non sparisce mai)
+      try{
+        if (vQuiz && vQuiz.classList.contains("active")) quizActions.classList.add("visible");
+        else quizActions.classList.remove("visible");
+      }catch(e){}
+
+      if (!btnNext) return;
+      const isLast = state.quizIndex >= (state.quizQuestions.length - 1);
+      if (state.quizAnswered){
+        btnNext.disabled = false;
+        btnNext.textContent = isLast ? "Risultati →" : "Prossima →";
+      } else {
+        // consenti lo skip (con confirm dentro nextQuestion)
+        btnNext.disabled = false;
+        btnNext.textContent = "Salta →";
+      }
+    }
+
+function startQuiz(qs, modulesLabel, limit){
       // dedup
       const seen = new Set();
       let qList = qs
@@ -1749,6 +1766,8 @@
       // UI
       crumbEl.textContent = `Corsi • ${QUIZ_PACKS[state.currentCourseId].title} • Quiz`;
       navTo("quiz");
+      // safety: mostra subito la barra (anche prima della risposta)
+      try{ syncNextButton(); }catch(e){}
       renderQuestion();
     }
 
@@ -1776,104 +1795,49 @@
         optionsContainer.appendChild(btn);
       });
 
-      if (btnNext){
-        btnNext.disabled = true;
-        btnNext.textContent = (state.quizIndex === state.quizQuestions.length - 1) ? "Termina →" : "Prossima →";
-      }
+      syncNextButton();
     }
 
-    function handleAnswer(idx, btn){
+    async function handleAnswer(idx, btn){
       if (state.quizAnswered) return;
+      state.quizAnswered = true;
 
-      try{
-        state.quizAnswered = true;
+      const q = state.quizQuestions[state.quizIndex];
+      const buttons = Array.from(document.querySelectorAll(".opt-btn"));
+      buttons.forEach(b => b.disabled = true);
 
-        const q = state.quizQuestions[state.quizIndex];
-        const buttons = Array.from(document.querySelectorAll(".opt-btn"));
-        buttons.forEach(b => b.disabled = true);
+      const safeCorrectIndex = (Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex < buttons.length) ? q.correctIndex : 0;
 
-        const safeCorrectIndex =
-          (Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex < buttons.length)
-            ? q.correctIndex
-            : 0;
-
-        const isCorrect = idx === safeCorrectIndex;
-        if (isCorrect){
-          btn.classList.add("correct");
-          state.quizCorrect++;
-        } else {
-          btn.classList.add("wrong");
-          if (buttons[safeCorrectIndex]) buttons[safeCorrectIndex].classList.add("correct");
-        }
-
-        // abilita subito "Prossima" (NON aspettare Supabase: evita blocchi/lag)
-        if (btnNext) btnNext.disabled = false;
-
-        // salva progress per domanda in background (solo se logged)
-        if (state.isLogged && supa){
-          Promise.resolve(
-            supa.rpc("record_question_attempt", {
-              p_course_id: q.course_id,
-              p_qid: q.qid,
-              p_module: q.module,
-              p_cat: q.cat,
-              p_is_correct: isCorrect
-            })
-          ).catch(e => console.warn("record_question_attempt error", e));
-        }
-      }catch(e){
-        console.error("handleAnswer fatal", e);
-        // fail-safe: non bloccare MAI il quiz
-        state.quizAnswered = true;
-        if (btnNext) btnNext.disabled = false;
-      }
-    } else {
+      const isCorrect = idx === safeCorrectIndex;
+      if (isCorrect){
+        btn.classList.add("correct");
+        state.quizCorrect++;
+      } else {
         btn.classList.add("wrong");
         if (buttons[safeCorrectIndex]) buttons[safeCorrectIndex].classList.add("correct");
       }
 
-      // save progress per question (only if logged)
-      if (state.isLogged && supa){
-        try{
-          await supa.rpc("record_question_attempt", {
-            p_course_id: q.course_id,
-            p_qid: q.qid,
-            p_module: q.module,
-            p_cat: q.cat,
-            p_is_correct: isCorrect
-          });
-        }catch(e){
-          console.warn("record_question_attempt error", e);
-        }
-      }
+      // UI FIRST: la barra non deve mai dipendere da chiamate async
+      syncNextButton();
 
-      // (legacy)
+      // save progress per question (only if logged) — NON bloccare la UI
+      if (state.isLogged && supa){
+        supa.rpc("record_question_attempt", {
+          p_course_id: q.course_id,
+          p_qid: q.qid,
+          p_module: q.module,
+          p_cat: q.cat,
+          p_is_correct: isCorrect
+        }).catch((e)=>{
+          console.warn("record_question_attempt error", e);
+        });
+      }
     }
 
     function nextQuestion(){
-      if (!vQuiz.classList.contains("active")) return;
-
-      // anti double-click / glitch
-      if (state._nextLock) return;
-      state._nextLock = true;
-      setTimeout(()=>{ state._nextLock = false; }, 200);
-
-      // di norma "Prossima" è disabilitato finché non rispondi.
-      // Questo fallback evita blocchi se qualcuno forza il click.
       if (!state.quizAnswered){
-        if(!confirm("Vuoi saltare questa domanda?")){ state._nextLock = false; return; }
+        if(!confirm("Vuoi saltare questa domanda?")) return;
       }
-
-      state.quizIndex++;
-      renderQuestion();
-    }
-
-    function skipQuestion(){
-      if (!vQuiz.classList.contains("active")) return;
-      if(!confirm("Vuoi saltare questa domanda?")) return;
-      state.quizIndex++;
-      renderQuestion();
-    }
       state.quizIndex++;
       renderQuestion();
     }
