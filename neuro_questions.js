@@ -1,1509 +1,13217 @@
-// Auto-generated question bank for MED Test UNPID (Neuroanatomia)
-// Put this file next to index.html on GitHub Pages (same folder).
-// It will be loaded BEFORE the main app script.
+/* MedTest — Neuro question bank (v2 hard) */
 window.NEURO_MODULES = {
-        "INTRODUZIONE": [
-        { q: "Qual è la funzione principale del tessuto nervoso?", a: ["Ricevere, condurre e trasmettere stimoli sotto forma di attività elettrica", "Sostenere meccanicamente gli organi interni", "Produrre ormoni per il metabolismo", "Filtrare il sangue per produrre urina"] },
-        { q: "Quali sono i due compartimenti in cui si organizza il tessuto nervoso?", a: ["Sistema Nervoso Centrale e Sistema Nervoso Periferico", "Sistema Nervoso Somatico e Autonomo", "Encefalo e Midollo Spinale", "Neuroni e Cellule Gliali"] },
-        { q: "Qual è un sinonimo di Sistema Nervoso Centrale?", a: ["Nevrasse", "Neurocranio", "Ganglio", "Plesso"] },
-        { q: "Dove è localizzato l'encefalo?", a: ["All'interno del neurocranio", "Nel canale vertebrale", "Esternamente agli involucri ossei", "Nella cavità toracica"] },
-        { q: "Dove è contenuto il midollo spinale?", a: ["Nel canale vertebrale", "Nel neurocranio", "Nello spazio subaracnoideo cerebrale", "Nella sella turcica"] },
-        { q: "Come si organizza strutturalmente il Sistema Nervoso Periferico?", a: ["In strutture dette nervi", "In fasci di proiezione", "In nuclei e corteccia", "In vescicole encefaliche"] },
-        { q: "Quali strutture emette il midollo spinale?", a: ["I nervi spinali", "I nervi cranici", "Il corpo calloso", "I peduncoli cerebrali"] },
-        { q: "Qual è la funzione dei fasci di proiezione ascendenti del midollo spinale?", a: ["Trasmettere informazioni sensitive all'encefalo", "Trasmettere comandi motori ai muscoli", "Connettere gli emisferi cerebrali", "Produrre liquor"] },
-        { q: "Da quali parti è costituito il tronco encefalico?", a: ["Bulbo, ponte e mesencefalo", "Talamo, ipotalamo e epitalamo", "Cervelletto e ponte", "Midollo spinale e bulbo"] },
-        { q: "Quali nuclei dei nervi cranici sono contenuti nel tronco encefalico?", a: ["Dal III al XII", "Dal I al XII", "Solo il X e XI", "Dal I al IV"] },
-        { q: "Da cosa è formato il diencefalo?", a: ["Talamo e ipotalamo", "Ponte e bulbo", "Emisferi cerebrali", "Cervelletto e mesencefalo"] },
-        { q: "Quale struttura contiene il chiasma ottico e il peduncolo ipofisario?", a: ["Il diencefalo", "Il mesencefalo", "Il telencefalo", "Il midollo spinale"] },
-        { q: "Cosa connette i due emisferi cerebrali?", a: ["Il corpo calloso", "Il verme cerebellare", "L'acquedotto di Silvio", "La capsula interna"] },
-        { q: "Quale struttura si trova dorsalmente al tronco encefalico?", a: ["Il cervelletto", "Il diencefalo", "Il talamo", "L'ipofisi"] },
-        { q: "Da quale foglietto embrionale ha origine il sistema nervoso centrale?", a: ["Dalla placca neurale (ectoderma)", "Dal mesoderma parassiale", "Dall'endoderma", "Dalla notocorda"] },
-        { q: "Dove si posiziona la placca neurale rispetto alla notocorda?", a: ["Dorsalmente", "Ventralmente", "Lateralmente", "Caudalmente"] },
-        { q: "Da cosa origina la componente sensitiva del sistema nervoso periferico?", a: ["Dalle creste neurali", "Dalla placca neurale", "Dal mesoderma", "Dal tubo neurale ventrale"] },
-        { q: "Cosa sono le pieghe neurali?", a: ["I margini della doccia neurale che si sollevano", "Le invaginazioni del mesoderma", "Le future meningi", "I residui della notocorda"] },
-        { q: "Quali sono le due caratteristiche specifiche delle cellule delle creste neurali?", a: ["Capacità migratoria e multipotenza", "Capacità di contrarsi e secernere", "Immobilità e unipotenza", "Capacità di formare osso e cartilagine"] },
-        { q: "Cosa daranno origine i placodi?", a: ["Alle coppie di organi di senso", "Ai nervi spinali", "Alle vertebre", "Al cuore"] },
-        { q: "Quali aperture si chiudono alle estremità del tubo neurale?", a: ["Neuroporo caudale e neuroporo rostrale", "Forame di Monro e Magendie", "Canale vertebrale e neurocranio", "Labbro romboidale superiore e inferiore"] },
-        { q: "Quale parte del tubo neurale si accresce maggiormente per costituire l'encefalo?", a: ["La parte più rostrale", "La parte caudale", "La parte intermedia", "La parte ventrale"] },
-        { q: "Nello stadio trivescicolare, quali sono le tre vescicole?", a: ["Prosencefalo, Mesencefalo, Romboencefalo", "Telencefalo, Diencefalo, Mesencefalo", "Mielencefalo, Metencefalo, Mesencefalo", "Bulbo, Ponte, Cervelletto"] },
-        { q: "In cosa si divide la vescicola romboencefalica nello stadio pentavescicolare?", a: ["Mielencefalo e Metencefalo", "Telencefalo e Diencefalo", "Mesencefalo e Ponte", "Talamo e Ipotalamo"] },
-        { q: "Quale vescicola dà origine al bulbo?", a: ["Vescicola mielencefalica", "Vescicola metencefalica", "Vescicola mesencefalica", "Vescicola telencefalica"] },
-        { q: "Da quale vescicola originano talamo e ipotalamo?", a: ["Vescicola diencefalica", "Vescicola telencefalica", "Vescicola mesencefalica", "Vescicola mielencefalica"] },
-        { q: "Cosa origina dalla parte dorsale della vescicola metencefalica?", a: ["Il cervelletto", "Il ponte", "Il bulbo", "Il mesencefalo"] },
-        { q: "Da quale vescicola hanno origine gli emisferi cerebrali?", a: ["Vescicola telencefalica (pari)", "Vescicola diencefalica", "Vescicola mesencefalica", "Vescicola metencefalica"] },
-        { q: "Quale flessura è concava dorsalmente?", a: ["Flessura pontina", "Flessura cervicale", "Flessura mesencefalica", "Nessuna, sono tutte concave ventralmente"] },
-        { q: "Cos'è l'istmo nel tubo neurale?", a: ["Un restringimento tra romboencefalo e mesencefalo", "La connessione tra i due emisferi", "La parte terminale del midollo", "Un solco della corteccia"] },
-        { q: "Quali cellule derivano dai glioblasti?", a: ["Astrociti e oligodendrociti", "Neuroni e microglia", "Cellule ependimali e neuroni", "Cellule di Schwann e macrofagi"] },
-        { q: "Quale strato del tubo neurale è occupato esclusivamente dai prolungamenti assonali?", a: ["Zona marginale", "Zona ependimale", "Zona mantellare", "Zona ventricolare"] },
-        { q: "Cosa separa il solco limitante?", a: ["La lamina basale (motoria) dalla lamina alare (sensitiva)", "Il mesencefalo dal prosencefalo", "La sostanza bianca dalla grigia", "Il corno anteriore da quello laterale"] },
-        { q: "Da cosa origineranno i neuroni motori?", a: ["Dalla lamina basale (ventrale)", "Dalla lamina alare (dorsale)", "Dalle creste neurali", "Dallo strato marginale"] },
-        { q: "Quale malformazione è causata dalla mancata chiusura del neuroporo rostrale?", a: ["Anencefalia", "Spina bifida", "Rachischisi", "Meningocele"] },
-        { q: "Cosa comporta la spina bifida?", a: ["Erniazione del midollo spinale (mancata chiusura neuroporo caudale)", "Assenza degli emisferi cerebrali", "Mancata divisione del prosencefalo", "Assenza dell'arco vertebrale senza erniazione"] },
-        { q: "Cos'è l'oloprosencefalia?", a: ["La mancata divisione della vescicola prosencefalica in due", "La mancata chiusura del neuroporo caudale", "L'assenza del cervelletto", "Un difetto delle creste neurali"] },
-        { q: "Cosa comprende il sistema liquorale?", a: ["Sistema ventricolare e spazio subaracnoideo", "Solo i ventricoli laterali", "Lo spazio epidurale e subdurale", "I seni venosi della dura madre"] },
-        { q: "Come comunicano i ventricoli laterali con il terzo ventricolo?", a: ["Tramite i forami interventricolari di Monro", "Tramite l'acquedotto di Silvio", "Tramite i forami di Luschka", "Tramite il forame di Magendie"] },
-        { q: "Qual è il punto di confluenza tra cella media, corno frontale e temporale?", a: ["Crocicchio ventricolare", "Trigono collaterale", "Recesso ottico", "Forame di Monro"] },
-        { q: "Quale struttura separa i due corni frontali dei ventricoli laterali?", a: ["Il setto pellucido", "Il fornice", "Il corpo calloso", "Il talamo"] },
-        { q: "Dove termina il corno temporale del ventricolo laterale?", a: ["A livello dell'uncus (polo temporale)", "Nel lobo occipitale", "Nel lobo frontale", "A livello del talamo"] },
-        { q: "Cosa collega l'acquedotto di Silvio?", a: ["Terzo e quarto ventricolo", "Ventricoli laterali e terzo ventricolo", "Quarto ventricolo e spazio subaracnoideo", "Ventricoli laterali e quarto ventricolo"] },
-        { q: "Quali aperture permettono al liquor di uscire dal quarto ventricolo nello spazio subaracnoideo?", a: ["Forame mediano di Magendie e due forami laterali di Luschka", "Forami di Monro e acquedotto di Silvio", "Canale centrale e forame spinoso", "Seni venosi e granulazioni aracnoidali"] },
-        { q: "Cosa forma il pavimento del quarto ventricolo?", a: ["La fossa romboidale", "Il fastigium", "Il corpo calloso", "Il velo midollare superiore"] },
-        { q: "Dove viene prodotto il liquor?", a: ["Nei plessi corioidei", "Nelle granulazioni aracnoidali", "Nel seno sagittale superiore", "Nella pia madre"] },
-        { q: "Qual è la produzione quotidiana approssimativa di liquor?", a: ["500 ml", "140 ml", "2000 ml", "50 ml"] },
-        { q: "Dove avviene il riassorbimento del liquor?", a: ["A livello delle granulazioni aracnoidali (di Pacchioni)", "Nei plessi corioidei", "Nel canale centrale del midollo", "Nel terzo ventricolo"] },
-        { q: "Cosa causa un'occlusione dell'acquedotto di Silvio?", a: ["Idrocefalo triventricolare", "Idrocefalo monoventricolare", "Idrocefalo tetraventricolare", "Idrocefalo esterno"] },
-        { q: "Cos'è l'idrocefalo esterno?", a: ["Dilatazione dello spazio subaracnoideo", "Dilatazione dei ventricoli laterali", "Accumulo di sangue nello spazio epidurale", "Infiammazione delle meningi"] },
-        { q: "Qual è l'ordine delle meningi dall'esterno all'interno?", a: ["Dura madre, Aracnoide, Pia madre", "Pia madre, Aracnoide, Dura madre", "Aracnoide, Dura madre, Pia madre", "Dura madre, Pia madre, Aracnoide"] },
-        { q: "Quale meninge aderisce saldamente al periostio della volta cranica?", a: ["Lo strato periostale della dura madre", "L'aracnoide", "La pia madre", "Lo strato meningeo della dura madre"] },
-        { q: "Cosa decorre nella zona di scollamento di Marchant?", a: ["Rami dell'arteria meningea media", "Il seno sagittale superiore", "La vena di Galeno", "L'arteria basilare"] },
-        { q: "Quale sepimento separa i due emisferi cerebrali?", a: ["La falce cerebrale", "Il tentorio del cervelletto", "La falce cerebellare", "Il diaframma della sella"] },
-        { q: "Cosa separa il tentorio del cervelletto?", a: ["Gli emisferi cerebrali dagli emisferi cerebellari", "I due emisferi cerebellari", "Il ponte dal bulbo", "L'ipofisi dall'ipotalamo"] },
-        { q: "Cosa sono le granulazioni aracnoidali di Pacchioni?", a: ["Evaginazioni dell'aracnoide per il riassorbimento del liquor", "Strutture per la produzione di liquor", "Aree di adesione della dura madre", "Recettori dolorifici delle meningi"] },
-        { q: "Dove si trova lo spazio epidurale nel cranio?", a: ["È uno spazio virtuale/potenziale tra dura madre e osso", "Tra aracnoide e pia madre", "Tra dura madre e aracnoide", "All'interno dei ventricoli"] },
-        { q: "Cosa contiene lo spazio subaracnoideo?", a: ["Liquor (liquido cefalorachidiano)", "Sangue venoso", "Tessuto adiposo", "Solo vasi linfatici"] },
-        { q: "Quale tipo di emorragia è tipicamente causata dalla rottura dell'arteria meningea media?", a: ["Emorragia epidurale", "Emorragia subdurale", "Emorragia subaracnoidea", "Emorragia intraventricolare"] },
-        { q: "Qual è la causa tipica di un'emorragia subdurale nell'anziano?", a: ["Rottura delle vene a ponte", "Rottura di un aneurisma del poligono di Willis", "Trauma dell'arteria meningea media", "Ipertensione arteriosa"] },
-        { q: "Dove si verifica tipicamente l'emorragia subaracnoidea?", a: ["Per rottura di aneurismi del poligono di Willis", "Per frattura della rocca petrosa", "Per rottura delle vene a ponte", "Nello spazio tra dura e aracnoide"] },
-        { q: "Quale cisterna ospita la vena di Galeno?", a: ["Cisterna della grande vena cerebrale (cisterna ambiens)", "Cisterna magna", "Cisterna interpeduncolare", "Cisterna pontina"] },
-        { q: "Qual è la cisterna più estesa?", a: ["Cisterna cerebellomidollare posteriore (cisterna magna)", "Cisterna silviana", "Cisterna chiasmatica", "Cisterna quadrigeminale"] },
-        { q: "Attraverso quale struttura si effettua la puntura lombare (rachicentesi)?", a: ["Cisterna spinale o lombare", "Cisterna magna", "Quarto ventricolo", "Spazio epidurale toracico"] },
-        { q: "Quale arteria decorre nella cisterna silviana?", a: ["Arteria cerebrale media", "Arteria basilare", "Arteria carotide interna", "Arteria vertebrale"] },
-        { q: "Qual è la causa più frequente di meningite?", a: ["Infettiva (batteri e virus)", "Neoplastica", "Autoimmune", "Traumatica"] },
-        { q: "Cosa succede alla barriera ematoencefalica durante la meningite?", a: ["Aumenta la sua permeabilità causando edema", "Diventa impermeabile", "Si calcifica", "Non subisce alterazioni"] },
-        { q: "Qual è la funzione dei dendriti?", a: ["Ricevere stimoli (conduzione cellulipeta)", "Condurre il potenziale d'azione (cellulifuga)", "Produrre mielina", "Proteggere il soma"] },
-        { q: "Cos'è il cono d'emergenza?", a: ["La protrusione del soma da cui origina l'assone", "La terminazione dell'assone", "Il punto di contatto sinaptico", "Un tipo di cellula gliale"] },
-        { q: "Quali neuroni portano informazioni dai recettori al nevrasse?", a: ["Neuroni sensitivi (afferenti)", "Motoneuroni", "Interneuroni", "Neuroni di Golgi II"] },
-        { q: "Cosa caratterizza i neuroni pseudounipolari?", a: ["Un prolungamento che si ramifica a T", "Un solo dendrite e un solo assone ai poli opposti", "Molti dendriti e un assone", "Nessun assone"] },
-        { q: "Dove si trovano tipicamente i neuroni bipolari?", a: ["Nella retina e nei gangli vestibolare/cocleare", "Nei gangli spinali", "Nella corteccia motoria", "Nel corno anteriore del midollo"] },
-        { q: "Cosa sono i neuroni di Golgi di tipo I?", a: ["Neuroni di proiezione ad assone lungo", "Interneuroni locali ad assone breve", "Neuroni senza assone", "Cellule gliali"] },
-        { q: "Qual è la differenza principale tra sostanza bianca e grigia?", a: ["La bianca è formata da assoni mielinizzati, la grigia da corpi cellulari", "La bianca contiene i nuclei, la grigia i tratti", "La bianca ha più vasi sanguigni della grigia", "La grigia è composta solo da glia"] },
-        { q: "Quali astrociti si trovano nella sostanza bianca?", a: ["Astrociti fibrosi", "Astrociti protoplasmatici", "Oligodendrociti", "Microglia"] },
-        { q: "Qual è la funzione degli oligodendrociti?", a: ["Produrre mielina nel SNC", "Fagocitare detriti", "Formare la barriera ematoencefalica", "Rivestire i ventricoli"] },
-        { q: "Qual è la differenza di mielinizzazione tra SNC e SNP?", a: ["Nel SNC un oligodendrocita avvolge più assoni; nel SNP una cellula di Schwann avvolge un solo assone", "Nel SNC non c'è mielina", "Nel SNP la mielina è prodotta dagli astrociti", "Non c'è differenza"] },
-        { q: "Da dove deriva la microglia?", a: ["Da cellule del sangue di origine mesenchimale (macrofagi/monociti)", "Dal neuroectoderma", "Dalle creste neurali", "Dagli spongioblasti"] },
-        { q: "Cosa sono le cellule ependimali?", a: ["Cellule che rivestono i ventricoli e il canale centrale", "Neuroni della corteccia", "Cellule che producono la dura madre", "Macroagi del cervello"] },
-        { q: "Quale arteria passa nella cisterna pontina?", a: ["Arteria basilare", "Arteria cerebrale media", "Arteria cerebrale anteriore", "Arteria comunicante posteriore"] },
-        { q: "Quale struttura separa il nucleo caudato dal talamo?", a: ["Il solco opto-striato", "La capsula interna", "Il setto pellucido", "Il fornice"] },
-        { q: "Cosa contiene il corno occipitale del ventricolo laterale?", a: ["Il calcar avis", "L'ippocampo", "La testa del caudato", "L'amigdala"] },
-        { q: "Quale recesso si trova nel pavimento del terzo ventricolo?", a: ["Recesso infundibolare", "Recesso epifisario", "Recesso laterale", "Recesso suprapineale"] },
-        { q: "Quale patologia è legata a difetti delle creste neurali?", a: ["Neurocristopatie", "Rachischisi", "Anencefalia", "Idrocefalo"] },
-        { q: "Cosa si trova nel canale vertebrale a livello di L2?", a: ["Cauda equina e filum terminale", "Midollo spinale cervicale", "Bulbo", "Ventricolo terminale"] },
-        { q: "Quale struttura del diencefalo contiene la neuroipofisi?", a: ["Ipotalamo (linea mediana)", "Talamo", "Epitalamo", "Metatalamo"] },
-        { q: "Quale struttura forma il tetto del corno temporale?", a: ["Coda del nucleo caudato", "Ippocampo", "Corpo calloso", "Setto pellucido"] },
-        { q: "Cos'è il neuropilo?", a: ["Un intreccio di dendriti, assoni e processi gliali tra i corpi cellulari", "Un tumore delle cellule nervose", "Il rivestimento del midollo spinale", "Il liquido all'interno dei neuroni"] },
-        { q: "Chi produce la guaina mielinica nel Sistema Nervoso Periferico?", a: ["Cellule di Schwann", "Oligodendrociti", "Astrociti", "Cellule satelliti"] },
-        { q: "Qual è il flusso ematico medio nella sostanza grigia?", a: ["100 mL/min/100g", "25 mL/min/100g", "500 mL/min", "10 mL/min/100g"] },
-        { q: "Cosa forma il labbro romboidale superiore?", a: ["Il cervelletto", "Il bulbo", "Il ponte", "Il midollo spinale"] },
-        { q: "Quali sono i principali placodi citati nel testo?", a: ["Olfattivo, otico, del cristallino, adenoipofisario", "Ottico e cardiaco", "Spinale e mesodermico", "Della cresta neurale"] },
-        { q: "Quale struttura separa i ventricoli laterali dai nuclei mediali del talamo?", a: ["Il fornice inferiore", "Il corpo calloso", "La stria terminale", "Il setto pellucido"] },
-        { q: "Qual è la funzione degli astrociti protoplasmatici?", a: ["Modulare l'attività sinaptica e la barriera ematoencefalica nella sostanza grigia", "Produrre mielina", "Rivestire i ventricoli", "Condurre impulsi motori"] }
-        ],
-        "ANATOMIA MACRO": [
-           { cat: "Midollo Spinale", q: "Qual è la forma del midollo spinale?", a: ["Cilindro appiattito ventro-dorsalmente", "Cilindro perfetto", "Cono rovesciato", "Sfera allungata"] },
-    { cat: "Midollo Spinale", q: "Quali rigonfiamenti presenta il midollo spinale?", a: ["Cervicale e lombare", "Toracico e sacrale", "Cervicale e toracico", "Lombare e coccigeo"] },
-    { cat: "Midollo Spinale", q: "Come termina inferiormente il midollo spinale?", a: ["Con il cono midollare", "Con la cauda equina", "Con il filum terminale", "Con il sacco durale"] },
-    { cat: "Midollo Spinale", q: "A cosa aderisce il filum terminale?", a: ["Al coccige", "All'osso sacro", "Alla vertebra L5", "Alla dura madre spinale"] },
-    { cat: "Midollo Spinale", q: "Qual è il peso approssimativo del midollo spinale (senza meningi)?", a: ["Circa 28 g (2% del nevrasse)", "Circa 150 g", "Circa 10 g", "Circa 500 g"] },
-    { cat: "Midollo Spinale", q: "Qual è la lunghezza media del midollo spinale?", a: ["44 cm", "75 cm", "25 cm", "60 cm"] },
-    { cat: "Midollo Spinale", q: "Perché il midollo spinale è più corto della colonna vertebrale?", a: ["Per la maggiore crescita in lunghezza della colonna durante lo sviluppo", "Perché il midollo si ritira verso l'alto", "Perché le vertebre si fondono", "Perché il midollo degenera caudalmente"] },
-    { cat: "Midollo Spinale", q: "Qual è il diametro trasverso massimo del midollo (ai rigonfiamenti)?", a: ["12-13 mm", "1 cm", "20 mm", "5 mm"] },
-    { cat: "Midollo Spinale", q: "Qual è il limite superiore del midollo spinale?", a: ["Superficie inferiore del grande foro occipitale (piano articolazione atlantoccipitale)", "Margine superiore di C1", "Decussazione delle piramidi", "Ponte di Varolio"] },
-    { cat: "Midollo Spinale", q: "Qual è il limite inferiore del midollo spinale nell'adulto?", a: ["Margine inferiore di L1 / corpo di L2", "Margine inferiore di L5", "Margine superiore di S1", "Vertebra T12"] },
-    { cat: "Midollo Spinale", q: "Cosa sono i legamenti denticolati?", a: ["Lamine di connettivo che fissano il midollo alla dura madre", "Legamenti tra le vertebre", "Fibre nervose sensitive", "Parte della cauda equina"] },
-    { cat: "Midollo Spinale", q: "Da dove si staccano i legamenti denticolati?", a: ["Dai cordoni laterali di sostanza bianca", "Dalle radici anteriori", "Dalla commessura grigia", "Dal filum terminale"] },
-
-    // --- 4. MIDOLLO SPINALE: Configurazione Esterna e Segmentazione ---
-    { cat: "Midollo Spinale", q: "Quanti sono i mielomeri totali?", a: ["33", "31", "30", "28"] },
-    { cat: "Midollo Spinale", q: "Quanti sono i nervi spinali totali?", a: ["31 paia", "33 paia", "12 paia", "24 paia"] },
-    { cat: "Midollo Spinale", q: "Quanti sono i mielomeri cervicali?", a: ["8 (C1-C8)", "7 (C1-C7)", "12", "5"] },
-    { cat: "Midollo Spinale", q: "Perché ci sono 8 nervi cervicali e solo 7 vertebre cervicali?", a: ["Il primo nervo esce sopra C1, l'ottavo sotto C7", "C'è un errore nella numerazione", "Il primo nervo è il nervo accessorio", "C'è una vertebra in più non ossificata"] },
-    { cat: "Midollo Spinale", q: "Quanti sono i mielomeri toracici?", a: ["12", "8", "5", "10"] },
-    { cat: "Midollo Spinale", q: "Quanti sono i mielomeri lombari?", a: ["5", "4", "6", "12"] },
-    { cat: "Midollo Spinale", q: "Quale plesso si forma dal rigonfiamento cervicale?", a: ["Plesso brachiale", "Plesso lombare", "Plesso sacrale", "Plesso cervicale"] },
-    { cat: "Midollo Spinale", q: "La sindrome del cono midollare causa disfunzione di quali organi?", a: ["Visceri pelvici", "Arti superiori", "Muscoli respiratori", "Muscoli del collo"] },
-    { cat: "Midollo Spinale", q: "Cos'è la cauda equina?", a: ["Insieme delle radici nervose lombari, sacrali e coccigee nel canale vertebrale", "La parte terminale del midollo", "Un legamento fibroso", "Il plesso brachiale"] },
-    { cat: "Midollo Spinale", q: "Dove finisce il sacco durale?", a: ["A livello di S3", "A livello di L2", "Al coccige", "A livello di T12"] },
-    { cat: "Midollo Spinale", q: "Quanto è lunga la parte intradurale del filum terminale?", a: ["15 cm", "5 cm", "20 cm", "2 cm"] },
-
-    // --- 4. MIDOLLO SPINALE: Organizzazione Morfo-Funzionale ---
-    { cat: "Midollo Spinale", q: "Cosa si intende per organizzazione 'elementare' del midollo?", a: ["Mielomeri indipendenti e riflessi segmentali", "Connessioni con la corteccia", "Vie piramidali", "Sistema endocrino"] },
-    { cat: "Midollo Spinale", q: "Cosa si intende per organizzazione 'integrata' del midollo?", a: ["Sistemi di collegamento a distanza (vie ascendenti/discendenti)", "Riflessi semplici", "Arco riflesso", "Connessioni tra mielomeri adiacenti"] },
-    { cat: "Midollo Spinale", q: "Da quale lamina del tubo neurale derivano le vie sensitive ascendenti?", a: ["Lamina alare", "Lamina basale", "Creste neurali", "Notocorda"] },
-    { cat: "Midollo Spinale", q: "Da quale lamina derivano le vie motrici discendenti?", a: ["Lamina basale", "Lamina alare", "Mesoderma", "Endoderma"] },
-
-    // --- 4. MIDOLLO SPINALE: Configurazione Interna e Nervi ---
-    { cat: "Midollo Spinale", q: "Cosa formano le radicole che emergono dal midollo?", a: ["Le radici anteriori e posteriori", "I nervi cranici", "I rami comunicanti", "Il ganglio spinale"] },
-    { cat: "Midollo Spinale", q: "Quali radici sono motorie?", a: ["Radici anteriori", "Radici posteriori", "Entrambe", "Nessuna"] },
-    { cat: "Midollo Spinale", q: "Dove si trova il ganglio spinale?", a: ["Sulla radice posteriore, presso il forame intervertebrale", "Sulla radice anteriore", "Nel corno anteriore", "Nella sostanza bianca"] },
-    { cat: "Midollo Spinale", q: "Che tipo di neuroni si trovano nel ganglio spinale?", a: ["Pseudounipolari", "Multipolari", "Bipolari", "Piramidali"] },
-    { cat: "Midollo Spinale", q: "Dove si uniscono le radici anteriore e posteriore?", a: ["A livello del forame intervertebrale", "Dentro il midollo", "Fuori dalla colonna vertebrale", "Nel ganglio"] },
-    { cat: "Midollo Spinale", q: "Il ramo ventrale del nervo spinale è:", a: ["Misto (motorio e sensitivo)", "Solo motorio", "Solo sensitivo", "Autonomico"] },
-    { cat: "Midollo Spinale", q: "Cosa connette il ramo comunicante bianco?", a: ["Nervo spinale e catena gangliare del simpatico", "Due nervi spinali", "Midollo e ganglio spinale", "Corno anteriore e posteriore"] },
-    { cat: "Midollo Spinale", q: "Dove si trova la sostanza bianca nel midollo?", a: ["In periferia", "Al centro (ad H)", "Solo nel corno laterale", "Attorno al canale centrale"] },
-    { cat: "Midollo Spinale", q: "Cos'è l'antimero?", a: ["Ogni metà laterale del mielomero", "Il segmento toracico", "La commessura grigia", "Il canale centrale"] },
-    
-    // --- 4. MIDOLLO SPINALE: Sostanza Bianca e Grigia ---
-    { cat: "Midollo Spinale", q: "Quale fessura è più profonda nel midollo?", a: ["Fessura mediana anteriore", "Solco mediano posteriore", "Solco laterale", "Solco intermedio"] },
-    { cat: "Midollo Spinale", q: "Cosa separa il solco mediano posteriore?", a: ["I due cordoni posteriori", "I due cordoni anteriori", "Il corno anteriore dal posteriore", "Il fascicolo gracile dal cuneato"] },
-    { cat: "Midollo Spinale", q: "Dove penetrano le radicole posteriori?", a: ["Solco posterolaterale", "Solco anterolaterale", "Fessura mediana", "Solco intermedio"] },
-    { cat: "Midollo Spinale", q: "Quale solco divide il fascicolo gracile dal cuneato?", a: ["Solco intermedio posteriore", "Solco mediano posteriore", "Solco laterale", "Fessura anteriore"] },
-    { cat: "Midollo Spinale", q: "In quali cordoni si divide la sostanza bianca?", a: ["Anteriore, Laterale, Posteriore", "Superiore, Inferiore", "Mediale, Laterale", "Dorsale, Ventrale"] },
-    { cat: "Midollo Spinale", q: "Le fibre dell'apparato elementare (orizzontali) servono a:", a: ["Integrazione spino-spinale tra mielomeri vicini", "Trasmettere al cervello", "Ricevere dalla corteccia", "Connettere i gangli"] },
-    { cat: "Midollo Spinale", q: "Le fibre dell'apparato di integrazione (corticale) sono:", a: ["Assoni mielinizzati che proiettano ai/dai centri superiori", "Fibre amieliniche locali", "Fibre dei legamenti denticolati", "Fibre del simpatico"] },
-    { cat: "Midollo Spinale", q: "Quale corno della sostanza grigia contiene neuroni motori?", a: ["Corno anteriore", "Corno posteriore", "Corno laterale", "Commessura grigia"] },
-    { cat: "Midollo Spinale", q: "Il corno laterale è presente solo:", a: ["Da T1 a L2", "In tutti i segmenti", "Solo nei segmenti cervicali", "Solo nel cono midollare"] },
-    { cat: "Midollo Spinale", q: "Chi propose l'organizzazione a lamine (I-X) del midollo?", a: ["Bror Rexed", "Camillo Golgi", "Santiago Ramon y Cajal", "Brodmann"] },
-    
-    // --- 4. MIDOLLO SPINALE: Lamine di Rexed ---
-    { cat: "Midollo Spinale", q: "Quali lamine comprende il corno posteriore?", a: ["I - VI", "VII - IX", "I - X", "Solo lamina I"] },
-    { cat: "Midollo Spinale", q: "Cosa contiene la lamina II?", a: ["Sostanza gelatinosa (nocicezione)", "Nucleo motore", "Colonna di Clark", "Canale centrale"] },
-    { cat: "Midollo Spinale", q: "Dove si trova il nucleo dorsale o colonna di Clark?", a: ["Lamina VI (sensibilità viscerale/propriocettiva)", "Lamina IX", "Lamina I", "Lamina II"] },
-    { cat: "Midollo Spinale", q: "Quali lamine comprende il corno anteriore?", a: ["VII, VIII, IX", "I, II, III", "IV, V, VI", "X"] },
-    { cat: "Midollo Spinale", q: "Cosa contiene la lamina IX?", a: ["Area motoria principale (motoneuroni)", "Interneuroni", "Fibre sensitive", "Nuclei vegetativi"] },
-    { cat: "Midollo Spinale", q: "Dove si trovano i nuclei intermedio-laterali (simpatico)?", a: ["Porzione laterale della lamina VII (corno laterale)", "Lamina I", "Lamina IX", "Lamina X"] },
-    
-    // --- 5. ENCEFALO ---
-    { cat: "Encefalo", q: "Qual è il peso variabile dell'encefalo?", a: ["1250-1600 g", "500-800 g", "2000-2500 g", "100 g"] },
-    { cat: "Encefalo", q: "Cosa separa i due emisferi cerebrali sulla convessità?", a: ["Fessura interemisferica", "Scissura di Rolando", "Scissura di Silvio", "Corpo calloso"] },
-    { cat: "Encefalo", q: "A cosa servono le circonvoluzioni cerebrali?", a: ["Aumentare la superficie encefalica in un volume limitato", "Proteggere i neuroni", "Produrre liquor", "Raffreddare il cervello"] },
-    { cat: "Encefalo", q: "Quali sono le tre parti fondamentali osservabili dalla base encefalica?", a: ["Tronco encefalico, Cervelletto, Cervello (emisferi)", "Midollo, Ponte, Bulbo", "Talamo, Ipotalamo, Epifisi", "Lobo frontale, parietale, occipitale"] },
-
-    // --- 6. TRONCO ENCEFALICO: Generale ---
-    { cat: "Tronco Encefalico", q: "Qual è l'ordine caudo-craniale del tronco encefalico?", a: ["Bulbo, Ponte, Mesencefalo", "Ponte, Bulbo, Mesencefalo", "Mesencefalo, Ponte, Bulbo", "Bulbo, Mesencefalo, Ponte"] },
-    { cat: "Tronco Encefalico", q: "Da quale vescicola origina il bulbo?", a: ["Vescicola mielencefalica", "Vescicola metencefalica", "Vescicola mesencefalica", "Vescicola diencefalica"] },
-    { cat: "Tronco Encefalico", q: "Da quale vescicola origina il ponte?", a: ["Vescicola metencefalica", "Vescicola mielencefalica", "Vescicola mesencefalica", "Vescicola telencefalica"] },
-    { cat: "Tronco Encefalico", q: "Quali regioni si distinguono in sezione trasversale del tronco?", a: ["Base (ventrale) e Tegmento (dorsale)", "Corteccia e midollare", "Sostanza bianca e grigia", "Corno anteriore e posteriore"] },
-    { cat: "Tronco Encefalico", q: "Cosa contiene il tegmento (calotta)?", a: ["Gruppi di neuroni (nuclei) e vie ascendenti", "Solo fibre discendenti", "I peduncoli cerebrali", "Il corpo calloso"] },
-    { cat: "Tronco Encefalico", q: "Quali vie percorrono la base del tronco?", a: ["Via piramidale (cortico-spinale) e via eso-piramidale", "Via spino-talamica", "Lemnisco mediale", "Fascicolo gracile"] },
-
-    // --- 6. TRONCO ENCEFALICO: Bulbo ---
-    { cat: "Tronco Encefalico", q: "Quale struttura delimita inferiormente il bulbo?", a: ["Decussazione delle piramidi", "Ponte", "Solco bulbo-pontino", "Obex"] },
-    { cat: "Tronco Encefalico", q: "Cosa sono le piramidi bulbari?", a: ["Rilievi ventrali formati dalle fibre cortico-spinali", "Nuclei sensitivi", "Parte del cervelletto", "Gangli della base"] },
-    { cat: "Tronco Encefalico", q: "Cosa sono le olive bulbari?", a: ["Sporgenze ovoidali laterali contenenti il nucleo olivare inferiore", "Nuclei motori", "Parte del sistema visivo", "Residui embrionali"] },
-    { cat: "Tronco Encefalico", q: "Dove avviene la decussazione delle piramidi?", a: ["Nella parte inferiore della fessura mediana anteriore del bulbo", "Nel mesencefalo", "Nel ponte", "Nel midollo spinale"] },
-    { cat: "Tronco Encefalico", q: "Quanta parte della via piramidale decussa?", a: ["Circa l'80%", "Il 100%", "Il 20%", "Il 50%"] },
-    { cat: "Tronco Encefalico", q: "Cos'è il forame cieco del bulbo?", a: ["Depressione al termine superiore della fessura mediana anteriore", "Un buco nell'osso occipitale", "L'apertura del IV ventricolo", "Un canale vascolare"] },
-    { cat: "Tronco Encefalico", q: "Quale nervo emerge dal solco antero-laterale del bulbo (tra piramide e oliva)?", a: ["Nervo ipoglosso (XII)", "Nervo vago (X)", "Nervo accessorio (XI)", "Nervo faciale (VII)"] },
-    { cat: "Tronco Encefalico", q: "Quali nervi emergono dal solco postero-laterale del bulbo?", a: ["IX (Glossofaringeo), X (Vago), XI (Accessorio)", "VII, VIII", "V, VI", "III, IV"] },
-    { cat: "Tronco Encefalico", q: "Dove emerge il nervo abducente (VI)?", a: ["Dal solco bulbo-pontino, sopra le piramidi", "Dalla fossetta retrolivare", "Dal mesencefalo", "Dal ponte laterale"] },
-    { cat: "Tronco Encefalico", q: "Dove emergono i nervi VII e VIII?", a: ["Fossetta sopra-olivare e retro-olivare (solco bulbo-pontino laterale)", "Solco basilare", "Fossa interpeduncolare", "Decussazione delle piramidi"] },
-
-    // --- 6. TRONCO ENCEFALICO: Ponte ---
-    { cat: "Tronco Encefalico", q: "Cosa percorre il solco basilare del ponte?", a: ["L'arteria basilare", "L'acquedotto di Silvio", "Il nervo trigemino", "La via piramidale"] },
-    { cat: "Tronco Encefalico", q: "Quali strutture collegano il ponte al cervelletto?", a: ["Peduncoli cerebellari medi", "Peduncoli superiori", "Peduncoli inferiori", "Corpo calloso"] },
-    { cat: "Tronco Encefalico", q: "Dove emerge il nervo trigemino (V)?", a: ["A lato delle prominenze piramidali del ponte", "Dal solco bulbo-pontino", "Dal mesencefalo", "Dal bulbo"] },
-    { cat: "Tronco Encefalico", q: "Il nervo trigemino ha:", a: ["Una radice sensitiva grande e una motoria piccola", "Solo radice motoria", "Solo radice sensitiva", "Tre radici uguali"] },
-    
-    // --- 6. TRONCO ENCEFALICO: Mesencefalo ---
-    { cat: "Tronco Encefalico", q: "Da cosa è attraversato il mesencefalo?", a: ["Dall'acquedotto di Silvio", "Dal IV ventricolo", "Dal III ventricolo", "Dal canale centrale"] },
-    { cat: "Tronco Encefalico", q: "Quali sono le due parti del mesencefalo separate dall'acquedotto?", a: ["Peduncoli cerebrali (ventrale) e Lamina quadrigemina (dorsale)", "Ponte e Bulbo", "Talamo e Ipotalamo", "Verme ed emisferi"] },
-    { cat: "Tronco Encefalico", q: "Cosa si trova nella fossa interpeduncolare?", a: ["Sostanza perforata posteriore", "Sostanza nera", "Nucleo rosso", "Epifisi"] },
-    { cat: "Tronco Encefalico", q: "Quale nervo emerge dalla fossa interpeduncolare (solco mediale del peduncolo)?", a: ["Nervo oculomotore (III)", "Nervo trocleare (IV)", "Nervo ottico (II)", "Nervo trigemino (V)"] },
-    { cat: "Tronco Encefalico", q: "Qual è l'unico nervo che emerge dorsalmente dal tronco encefalico?", a: ["Nervo trocleare (IV)", "Nervo oculomotore (III)", "Nervo abducente (VI)", "Nervo vago (X)"] },
-    { cat: "Tronco Encefalico", q: "Cosa separa il piede del peduncolo dalla calotta nel mesencefalo?", a: ["Sostanza nera di Sömmering", "Nucleo rosso", "Acquedotto di Silvio", "Lemnisco mediale"] },
-    { cat: "Tronco Encefalico", q: "Cosa provoca la degenerazione della sostanza nera?", a: ["Morbo di Parkinson", "Alzheimer", "Sclerosi multipla", "Epilessia"] },
-    { cat: "Tronco Encefalico", q: "Il nucleo rosso è un centro importante del sistema:", a: ["Extrapiramidale", "Piramidale", "Sensitivo", "Visivo"] },
-
-    // --- 6. NERVI CRANICI: Dettagli ---
-    { cat: "Nervi Cranici", q: "Quali nervi cranici sono esclusivamente sensitivi?", a: ["I (Olfattivo), II (Ottico), VIII (Vestibolo-cocleare)", "V, VII, IX", "III, IV, VI", "X, XI, XII"] },
-    { cat: "Nervi Cranici", q: "Quali nervi cranici sono esclusivamente motori?", a: ["III, IV, VI, XI, XII", "I, II, VIII", "V, VII, X", "IX, X"] },
-    { cat: "Nervi Cranici", q: "Quali nervi cranici sono misti?", a: ["V, VII, IX, X", "I, II, III", "XI, XII", "IV, VI"] },
-    { cat: "Nervi Cranici", q: "Qual è la funzione principale del nervo ipoglosso (XII)?", a: ["Motoria per la lingua", "Sensitiva per la lingua", "Motoria per la faringe", "Parasimpatico"] },
-    { cat: "Nervi Cranici", q: "Il nervo accessorio (XI) ha due componenti:", a: ["Bulbare e Spinale", "Pontina e Mesencefalica", "Sensitiva e Motoria", "Cranica e Sacrale"] },
-    { cat: "Nervi Cranici", q: "Cosa innerva la componente spinale del nervo accessorio?", a: ["Muscoli trapezio e sternocleidomastoideo", "Muscoli della laringe", "Muscoli della lingua", "Muscoli dell'occhio"] },
-    { cat: "Nervi Cranici", q: "Il nervo vago (X) è il principale nervo di quale sistema?", a: ["Parasimpatico", "Simpatico", "Somatico", "Sensoriale"] },
-    { cat: "Nervi Cranici", q: "Cosa innerva il nervo glossofaringeo (IX)?", a: ["Lingua e faringe (misto)", "Solo lingua", "Muscoli dell'occhio", "Cuore"] },
-    { cat: "Nervi Cranici", q: "Il nervo faciale (VII) innerva:", a: ["Muscoli mimici della faccia (volontari)", "Muscoli masticatori", "Muscoli oculari", "Lingua"] },
-    { cat: "Nervi Cranici", q: "Da dove originano le fibre del nervo trigemino (V) sensitivo?", a: ["Dal ganglio di Gasser (semilunare)", "Dal nucleo rosso", "Dal ganglio spinale", "Dalla corteccia"] },
-    { cat: "Nervi Cranici", q: "Quali sono le tre branche del trigemino?", a: ["Oftalmico, Mascellare, Mandibolare", "Oculare, Nasale, Temporale", "Frontale, Parietale, Occipitale", "Superiore, Medio, Inferiore"] },
-    { cat: "Nervi Cranici", q: "Cosa innerva la radice motoria del trigemino?", a: ["Muscoli masticatori", "Muscoli mimici", "Muscoli della lingua", "Muscoli del collo"] },
-
-    // --- 6. TRONCO ENCEFALICO: Tegmento e IV Ventricolo ---
-    { cat: "Tronco Encefalico", q: "Cosa forma il pavimento del quarto ventricolo?", a: ["La faccia posteriore di bulbo e ponte (Fossa romboidale)", "Il cervelletto", "Il mesencefalo", "Il diencefalo"] },
-    { cat: "Tronco Encefalico", q: "Cosa sono i tubercoli gracile e cuneato?", a: ["Rigonfiamenti dorsali del bulbo (nuclei dei fascicoli posteriori)", "Parte del cervelletto", "Nuclei motori", "Collicoli quadrigemini"] },
-    { cat: "Tronco Encefalico", q: "Cosa divide la fossa romboidale in due triangoli?", a: ["Le strie midollari (di Piccolomini)", "Il solco mediano", "Il solco limitante", "L'obex"] },
-    { cat: "Tronco Encefalico", q: "Quali aree si trovano nel triangolo bulbare (dall'interno all'esterno)?", a: ["Trigono dell'ipoglosso, Trigono del vago (ala cinerea), Area vestibolare", "Area acustica, Collicolo facciale", "Stria terminale, Lamina affixa", "Tubercolo cuneato"] },
-    { cat: "Tronco Encefalico", q: "Cosa è l'area postrema?", a: ["Organo circumventricolare privo di barriera ematoencefalica (zona emetogena)", "Nucleo motore", "Parte del cervelletto", "Plesso corioideo"] },
-    { cat: "Tronco Encefalico", q: "Cosa forma il collicolo facciale nel triangolo pontino?", a: ["Le fibre del faciale che girano attorno al nucleo dell'abducente", "Il nucleo del faciale stesso", "Il nucleo vestibolare", "Il nucleo trigemino"] },
-    { cat: "Tronco Encefalico", q: "Cos'è il Locus Coeruleus?", a: ["Gruppo di neuroni ricchi di noradrenalina/rame (colore azzurro)", "Nucleo della dopamina", "Centro del respiro", "Nucleo sensitivo"] },
-    { cat: "Tronco Encefalico", q: "Cosa costituisce la lamina quadrigemina (tetto del mesencefalo)?", a: ["Collicoli superiori (ottici) e inferiori (acustici)", "Peduncoli cerebrali", "Sostanza nera", "Nucleo rosso"] },
-    { cat: "Tronco Encefalico", q: "Cosa collega il braccio quadrigemino inferiore?", a: ["Collicolo inferiore e corpo genicolato mediale", "Collicolo superiore e corpo genicolato laterale", "Cervelletto e ponte", "Midollo e talamo"] },
-    { cat: "Tronco Encefalico", q: "Dove si trova l'epifisi (ghiandola pineale)?", a: ["Nella parte superiore del solco intercollicolare (epitalamo)", "Nella fossa interpeduncolare", "Nel IV ventricolo", "Sopra il chiasma ottico"] },
-
-    // --- 7. CERVELLETTO ---
-    { cat: "Cervelletto", q: "Dove si trova il cervelletto?", a: ["Fossa cranica posteriore, dorsalmente al tronco encefalico", "Sopra il corpo calloso", "Nel canale vertebrale", "Anteriormente al ponte"] },
-    { cat: "Cervelletto", q: "Cosa separa il cervelletto dai lobi occipitali?", a: ["Tentorio del cervelletto (dura madre)", "Falce cerebrale", "Corpo calloso", "Velo midollare"] },
-    { cat: "Cervelletto", q: "Come si chiama la parte mediana del cervelletto?", a: ["Verme", "Emisfero", "Lobo", "Tonsilla"] },
-    { cat: "Cervelletto", q: "Qual è la funzione generale del cervelletto?", a: ["Modulatore delle attività motorie, coordinazione, equilibrio", "Inizio del movimento volontario", "Percezione sensitiva cosciente", "Regolazione ormonale"] },
-    { cat: "Cervelletto", q: "Quali sono i tre lobi filogenetici del cervelletto?", a: ["Archicerebello, Paleocerebello, Neocerebello", "Lobo frontale, parietale, temporale", "Verme, Emisfero destro, sinistro", "Lobo anteriore, medio, posteriore"] },
-    { cat: "Cervelletto", q: "A quale lobo anatomico corrisponde l'Archicerebello?", a: ["Lobo flocculo-nodulare", "Lobo anteriore", "Lobo posteriore", "Tonsille"] },
-    { cat: "Cervelletto", q: "Qual è la funzione dell'Archicerebello (Vestibolocerebello)?", a: ["Controllo dell'equilibrio", "Tono muscolare", "Pianificazione motoria", "Linguaggio"] },
-    { cat: "Cervelletto", q: "Qual è la funzione del Paleocerebello (Spinocerebello)?", a: ["Controllo del tono muscolare e postura (statica)", "Equilibrio vestibolare", "Movimenti fini", "Memoria"] },
-    { cat: "Cervelletto", q: "Qual è la funzione del Neocerebello (Pontocerebello)?", a: ["Coordinazione dei movimenti volontari fini e precisione", "Equilibrio", "Tono posturale", "Riflessi spinali"] },
-    { cat: "Cervelletto", q: "Cos'è l'ilo del cervelletto?", a: ["Incisura anteriore da cui emergono i peduncoli cerebellari", "Incisura posteriore", "Il verme", "Un nucleo profondo"] },
-    { cat: "Cervelletto", q: "Cosa connettono i peduncoli cerebellari superiori?", a: ["Cervelletto e Mesencefalo (efferenti)", "Cervelletto e Ponte", "Cervelletto e Bulbo", "Cervelletto e Midollo"] },
-    { cat: "Cervelletto", q: "Cosa connettono i peduncoli cerebellari medi (brachia pontis)?", a: ["Ponte e Cervelletto (afferenti)", "Bulbo e Cervelletto", "Mesencefalo e Cervelletto", "Midollo e Cervelletto"] },
-    { cat: "Cervelletto", q: "Cosa connettono i peduncoli cerebellari inferiori (corpi restiformi)?", a: ["Bulbo/Midollo e Cervelletto (afferenti)", "Ponte e Cervelletto", "Mesencefalo e Cervelletto", "Talamo e Cervelletto"] },
-    { cat: "Cervelletto", q: "Cosa sono le tonsille cerebellari?", a: ["Dipendenze degli emisferi nella faccia inferiore, vicine al forame magno", "Nuclei profondi", "Parte del verme", "Organi linfatici"] },
-    { cat: "Cervelletto", q: "Cosa rischiano le tonsille cerebellari in caso di ipertensione endocranica?", a: ["Erniazione nel forame magno (compressione bulbare)", "Atrofia", "Ipertrofia", "Distacco"] },
-    { cat: "Cervelletto", q: "Quali sono i nuclei profondi del cervelletto (dal mediale al laterale)?", a: ["Fastigio (tetto), Globoso, Emboliforme, Dentato", "Dentato, Rosso, Nero, Olivare", "Caudato, Putamen, Pallido", "Gracile, Cuneato"] },
-    { cat: "Cervelletto", q: "Il nucleo dentato appartiene funzionalmente al:", a: ["Neocerebello", "Archicerebello", "Paleocerebello", "Midollo"] },
-    { cat: "Cervelletto", q: "Com'è chiamata la sostanza bianca del cervelletto in sezione sagittale?", a: ["Arbor vitae (Albero della vita)", "Corpo calloso", "Corona radiata", "Capsula interna"] },
-    { cat: "Cervelletto", q: "Quali sono i tre strati della corteccia cerebellare?", a: ["Molecolare, Gangliare (Purkinje), Granulare", "Dura, Aracnoide, Pia", "Basale, Spinoso, Granuloso", "Esterno, Medio, Interno"] },
-
-    // --- 8. DIENCEFALO ---
-    { cat: "Diencefalo", q: "Dove si trova il diencefalo?", a: ["Tra il tronco encefalico e gli emisferi (mediano)", "Sotto il bulbo", "Nel cervelletto", "Nel midollo"] },
-    { cat: "Diencefalo", q: "Quale ventricolo è contenuto nel diencefalo?", a: ["Terzo ventricolo", "Quarto ventricolo", "Ventricoli laterali", "Acquedotto"] },
-    { cat: "Diencefalo", q: "Quali sono le 5 parti del diencefalo?", a: ["Talamo, Ipotalamo, Subtalamo, Epitalamo, Metatalamo", "Bulbo, Ponte, Mesencefalo, Cervelletto, Midollo", "Lobi frontale, parietale, temporale, occipitale, insula", "Caudato, Putamen, Pallido, Claustro, Amigdala"] },
-    { cat: "Diencefalo", q: "Il talamo deriva dalla lamina:", a: ["Alare (sensitiva)", "Basale (motoria)", "Marginale", "Ependimale"] },
-    { cat: "Diencefalo", q: "L'ipotalamo deriva dalla lamina:", a: ["Basale (motoria/viscerale)", "Alare", "Del tetto", "Pavimento"] },
-    { cat: "Diencefalo", q: "Quale solco separa talamo e ipotalamo?", a: ["Solco ipotalamico di Monro", "Solco limitante del midollo", "Solco laterale", "Scissura calcarina"] },
-    { cat: "Diencefalo", q: "Cos'è il chiasma ottico?", a: ["Decussazione delle fibre dei nervi ottici nella faccia inferiore del diencefalo", "Nucleo del talamo", "Parte dell'epifisi", "Commessura posteriore"] },
-    { cat: "Diencefalo", q: "Cosa si trova posteriormente al chiasma ottico?", a: ["Tuber cinereum e infundibolo", "Corpi mammillari", "Ponte", "Bulbo"] },
-    { cat: "Diencefalo", q: "Cosa collega l'ipotalamo all'ipofisi?", a: ["Peduncolo ipofisario (infundibolo)", "Stria terminale", "Fornice", "Corpo calloso"] },
-    { cat: "Diencefalo", q: "Quali sono le funzioni principali dell'ipotalamo?", a: ["Omeostasi, controllo autonomo, endocrino, ritmi circadiani, fame, sete", "Solo motoria", "Solo visiva", "Coordinazione fine"] },
-    { cat: "Diencefalo", q: "Il talamo è:", a: ["Stazione di ritrasmissione sensitiva alla corteccia", "Centro motorio primario", "Ghiandola endocrina", "Parte del tronco"] },
-    { cat: "Diencefalo", q: "Cos'è il metatalamo?", a: ["Corpi genicolati mediale e laterale", "Epifisi", "Ipotalamo", "Subtalamo"] },
-    { cat: "Diencefalo", q: "Il corpo genicolato laterale fa parte della via:", a: ["Visiva", "Uditiva", "Olfattiva", "Gustativa"] },
-    { cat: "Diencefalo", q: "Il corpo genicolato mediale fa parte della via:", a: ["Uditiva", "Visiva", "Tattile", "Motorie"] },
-    { cat: "Diencefalo", q: "Cosa comprende l'epitalamo?", a: ["Epifisi (ghiandola pineale), trigoni abenulari, strie midollari", "Ipofisi", "Corpi mammillari", "Talamo"] },
-    { cat: "Diencefalo", q: "Cos'è il pulvinar?", a: ["L'estremità posteriore del talamo", "La parte anteriore del talamo", "Un nucleo ipotalamico", "Parte del fornice"] },
-    { cat: "Diencefalo", q: "Cosa separa il talamo dal nucleo caudato?", a: ["Solco opto-striato", "Capsula interna", "Stria midollare", "Solco ipotalamico"] },
-    { cat: "Diencefalo", q: "Cos'è la massa intermedia (adesione intertalamica)?", a: ["Ponte di sostanza grigia che unisce i due talami nel III ventricolo", "Commessura bianca", "Parte del corpo calloso", "Chiasma ottico"] },
-
-    // --- 9. TELENCEFALO: Configurazione Esterna ---
-    { cat: "Telencefalo", q: "Cosa divide i due emisferi cerebrali?", a: ["Fessura longitudinale (sagittale)", "Scissura di Silvio", "Scissura di Rolando", "Fessura di Bichat"] },
-    { cat: "Telencefalo", q: "Cosa separa il telencefalo dal tronco encefalico/cervelletto?", a: ["Fessura cerebrale trasversa (di Bichat)", "Fessura longitudinale", "Scissura laterale", "Scissura centrale"] },
-    { cat: "Telencefalo", q: "Qual è la principale commessura interemisferica?", a: ["Corpo calloso", "Fornice", "Commessura anteriore", "Commessura posteriore"] },
-    { cat: "Telencefalo", q: "Quali sono le parti del corpo calloso?", a: ["Rostro, Ginocchio, Tronco, Splenio", "Testa, Corpo, Coda", "Verme, Emisferi", "Piede, Calotta"] },
-    { cat: "Telencefalo", q: "Cos'è il fornice?", a: ["Sistema di fibre a arco (commessurale/proiezione) sotto il corpo calloso", "Parte del cervelletto", "Nucleo della base", "Scissura"] },
-    { cat: "Telencefalo", q: "Cosa separa i corni anteriori dei ventricoli laterali?", a: ["Setto pellucido", "Fornice", "Corpo calloso", "Talamo"] },
-    { cat: "Telencefalo", q: "Quale scissura separa il lobo frontale dal parietale?", a: ["Scissura centrale (di Rolando)", "Scissura laterale (di Silvio)", "Scissura calcarina", "Scissura parieto-occipitale"] },
-    { cat: "Telencefalo", q: "Quale scissura separa il lobo temporale dai lobi frontale e parietale?", a: ["Scissura laterale (di Silvio)", "Scissura centrale", "Scissura limbica", "Scissura longitudinale"] },
-    { cat: "Telencefalo", q: "Dove si trova il lobo dell'insula?", a: ["Nella profondità della scissura laterale (fossa silviana)", "Sulla superficie mediale", "Nel polo occipitale", "Sotto il corpo calloso"] },
-    { cat: "Telencefalo", q: "Quale arteria decorre nella fossa silviana?", a: ["Arteria cerebrale media (Silviana)", "Arteria cerebrale anteriore", "Arteria basilare", "Arteria comunicante"] },
-    { cat: "Telencefalo", q: "Qual è l'area motoria primaria?", a: ["Circonvoluzione precentrale (Lobo frontale)", "Circonvoluzione postcentrale", "Lobo occipitale", "Lobo temporale"] },
-    { cat: "Telencefalo", q: "Qual è l'area sensitiva primaria?", a: ["Circonvoluzione postcentrale (Lobo parietale)", "Circonvoluzione precentrale", "Insula", "Uncus"] },
-    { cat: "Telencefalo", q: "Cos'è l'Homunculus?", a: ["Rappresentazione somatotopica del corpo sulla corteccia (motoria/sensitiva)", "Un piccolo uomo", "Un nucleo del tronco", "Una malformazione"] },
-    { cat: "Telencefalo", q: "Dove si trova la corteccia visiva primaria?", a: ["Lobo occipitale (Scissura calcarina, area 17)", "Lobo temporale", "Lobo frontale", "Lobo parietale"] },
-    { cat: "Telencefalo", q: "Cosa delimita il lobo limbico?", a: ["Scissura del cingolo (limbica)", "Scissura laterale", "Scissura centrale", "Scissura calcarina"] },
-    { cat: "Telencefalo", q: "Quali giri formano il lobo limbico?", a: ["Giro del cingolo e giro paraippocampale", "Giro precentrale e postcentrale", "Giro retto", "Giro temporale superiore"] },
-    { cat: "Telencefalo", q: "Dov'è l'Uncus?", a: ["Estremità anteriore del giro paraippocampale (Lobo temporale)", "Nel lobo frontale", "Nel lobo occipitale", "Nel cervelletto"] },
-
-    // --- 9. TELENCEFALO: Configurazione Interna (Nuclei della base) ---
-    { cat: "Telencefalo", q: "Quali sono i nuclei della base principali?", a: ["Caudato, Putamen, Globo Pallido, Claustro, Amigdala", "Talamo, Ipotalamo", "Rossi, Neri, Vestibolari", "Dentato, Fastigio"] },
-    { cat: "Telencefalo", q: "Qual è la forma del nucleo caudato?", a: ["A forma di C (Testa, Corpo, Coda)", "Sferica", "Piramidale", "Lente biconvessa"] },
-    { cat: "Telencefalo", q: "Cosa forma il nucleo lenticolare?", a: ["Putamen + Globo Pallido", "Caudato + Putamen", "Caudato + Pallido", "Claustro + Amigdala"] },
-    { cat: "Telencefalo", q: "Cosa forma il corpo striato (neostriato)?", a: ["Caudato + Putamen", "Putamen + Pallido", "Pallido + Claustro", "Amigdala + Caudato"] },
-    { cat: "Telencefalo", q: "Dove si trova il claustro (antemuro)?", a: ["Tra putamen e corteccia dell'insula (capsula esterna/estrema)", "Nel diencefalo", "Nel mesencefalo", "Sotto il talamo"] },
-    { cat: "Telencefalo", q: "Dove si trova l'amigdala?", a: ["Nel lobo temporale, davanti alla coda del caudato", "Nel lobo frontale", "Nel cervelletto", "Nel bulbo"] },
-    
-    // --- 9. TELENCEFALO: Capsule ---
-    { cat: "Telencefalo", q: "Cos'è la capsula interna?", a: ["Lamina di sostanza bianca tra talamo/caudato e nucleo lenticolare", "Tra putamen e claustro", "Tra claustro e insula", "Intorno al corpo calloso"] },
-    { cat: "Telencefalo", q: "La capsula esterna si trova tra:", a: ["Putamen e Claustro", "Caudato e Talamo", "Claustro e Insula", "Talamo e Terzo ventricolo"] },
-    { cat: "Telencefalo", q: "La capsula estrema si trova tra:", a: ["Claustro e Corteccia dell'Insula", "Putamen e Pallido", "Caudato e Capsula interna", "Corpo calloso e Fornice"] },
-
-    // --- DETTAGLI EXTRA PER ARRIVARE A 300+ (Granularità) ---
-    // Midollo
-    { cat: "Midollo Spinale", q: "A che livello vertebrale termina il sacco durale?", a: ["S3", "L2", "L5", "Co1"] },
-    { cat: "Midollo Spinale", q: "Quali fasci formano il cordone posteriore?", a: ["Fascicolo Gracile (mediale) e Cuneato (laterale)", "Spino-talamico", "Cortico-spinale", "Rubro-spinale"] },
-    { cat: "Midollo Spinale", q: "Il fascicolo Gracile trasporta informazioni da:", a: ["Arti inferiori e tronco inferiore", "Arti superiori", "Testa", "Visceri"] },
-    { cat: "Midollo Spinale", q: "Il fascicolo Cuneato trasporta informazioni da:", a: ["Arti superiori e tronco superiore", "Arti inferiori", "Gambe", "Bacino"] },
-    { cat: "Midollo Spinale", q: "La sostanza gelatinosa di Rolando si trova nella lamina:", a: ["II", "I", "V", "IX"] },
-    // Tronco
-    { cat: "Tronco Encefalico", q: "Il nervo Oculomotore (III) innerva:", a: ["Retti (sup, med, inf), Obliquo inf, Elevatore palpebra", "Retto laterale", "Obliquo superiore", "Muscoli intrinseci dell'orecchio"] },
-    { cat: "Tronco Encefalico", q: "Il nervo Trocleare (IV) innerva:", a: ["Muscolo Obliquo Superiore", "Retto Laterale", "Retto Mediale", "Obliquo Inferiore"] },
-    { cat: "Tronco Encefalico", q: "Il nervo Abducente (VI) innerva:", a: ["Muscolo Retto Laterale", "Obliquo Superiore", "Retto Mediale", "Elevatore palpebra"] },
-    { cat: "Tronco Encefalico", q: "Quale struttura produce dopamina nel mesencefalo?", a: ["Substantia Nigra", "Nucleo Rosso", "Locus Coeruleus", "Grigio Periacqueduttale"] },
-    { cat: "Tronco Encefalico", q: "Le strie acustiche dorsali si trovano:", a: ["Sul pavimento del IV ventricolo (limite bulbo-ponte)", "Nel mesencefalo", "Sulla corteccia temporale", "Nel midollo"] },
-    // Diencefalo
-    { cat: "Diencefalo", q: "La neuroipofisi origina da:", a: ["Evaginazione del pavimento del diencefalo", "Tasca di Rathke", "Creste neurali", "Mesoderma"] },
-    { cat: "Diencefalo", q: "L'adenoipofisi origina da:", a: ["Tasca di Rathke (ectoderma orale)", "Neuroectoderma", "Pavimento del ventricolo", "Endoderma"] },
-    { cat: "Diencefalo", q: "I nuclei anteriori del talamo si trovano nel:", a: ["Tubercolo anteriore", "Pulvinar", "Corpo genicolato", "Abenula"] },
-    { cat: "Diencefalo", q: "La stria terminale decorre nel:", a: ["Solco opto-striato", "Solco laterale", "Solco calcarino", "Solco centrale"] },
-    // Telencefalo
-    { cat: "Telencefalo", q: "Il giro temporale trasverso di Heschl è sede:", a: ["Della corteccia uditiva primaria", "Della corteccia visiva", "Della corteccia motoria", "Della corteccia olfattiva"] },
-    { cat: "Telencefalo", q: "Il giro angolare si trova:", a: ["Nel lobo parietale (fine scissura laterale)", "Nel lobo frontale", "Nel lobo temporale", "Nel lobo occipitale"] },
-    { cat: "Telencefalo", q: "Il cuneo si trova nel lobo:", a: ["Occipitale", "Parietale", "Frontale", "Temporale"] },
-    { cat: "Telencefalo", q: "Quale ventricolo si forma se i foglietti del setto pellucido non si fondono?", a: ["Quinto ventricolo (ventricolo del setto)", "Terzo ventricolo", "Quarto ventricolo", "Acquedotto"] },
-    { cat: "Telencefalo", q: "Lo psalterium (Lira di David) connette:", a: ["I due pilastri posteriori del fornice", "I due talami", "I due nuclei caudati", "Le due amigdale"] },
-    { cat: "Telencefalo", q: "Quale parte del corpo calloso è più posteriore?", a: ["Splenio", "Ginocchio", "Rostro", "Tronco"] },
-    { cat: "Telencefalo", q: "Quale parte del corpo calloso è più anteriore?", a: ["Ginocchio", "Splenio", "Istmo", "Tapetum"] },
-    // Extra generici per volume
-    { cat: "Generale", q: "Il plesso lombare origina dai segmenti:", a: ["L1-L4", "C5-T1", "S1-S4", "T12-L1"] },
-    { cat: "Generale", q: "Il plesso sacrale origina dai segmenti:", a: ["L4-S4", "L1-L4", "C1-C4", "T1-T12"] },
-    { cat: "Generale", q: "La superficie totale della corteccia è aumentata grazie a:", a: ["Solchi e giri", "Ventricoli", "Meningi", "Nervi"] },
-    { cat: "Generale", q: "Il sistema nervoso centrale è avvolto da:", a: ["Meningi", "Peritoneo", "Pleura", "Pericardio"] },
-    { cat: "Midollo Spinale", q: "La sostanza grigia del midollo ha forma di:", a: ["Farfalla o H", "Cerchio", "Quadrato", "Stella"] },
-    { cat: "Midollo Spinale", q: "Il canale centrale del midollo contiene:", a: ["Liquor", "Sangue", "Linfa", "Grasso"] },
-    { cat: "Midollo Spinale", q: "Il canale centrale è rivestito da:", a: ["Ependima", "Endotelio", "Mesotelio", "Epidermide"] },
-    { cat: "Telencefalo", q: "L'area di Broca (linguaggio) si trova generalmente nel lobo:", a: ["Frontale (sinistro)", "Temporale", "Parietale", "Occipitale"] },
-    { cat: "Telencefalo", q: "L'area di Wernicke (comprensione) si trova nel lobo:", a: ["Temporale (sinistro)", "Frontale", "Occipitale", "Insula"] },
-    { cat: "Tronco Encefalico", q: "Il nucleo ambiguo contribuisce ai nervi:", a: ["IX, X, XI", "III, IV, VI", "V, VII", "XII"] },
-    { cat: "Tronco Encefalico", q: "Il nucleo del tratto solitario riceve afferenze:", a: ["Viscerali e Gustative (VII, IX, X)", "Motorie somatiche", "Uditive", "Visive"] }
-        ],
-        "ANATOMIA FUNZIONALE": [
-            { cat: "Midollo Spinale", q: "Qual è la forma del midollo spinale?", a: ["Cilindro appiattito ventro-dorsalmente", "Cilindro perfetto", "Cono rovesciato", "Sfera allungata"] },
-    { cat: "Midollo Spinale", q: "Quali rigonfiamenti presenta il midollo spinale?", a: ["Cervicale e lombare", "Toracico e sacrale", "Cervicale e toracico", "Lombare e coccigeo"] },
-    { cat: "Midollo Spinale", q: "Come termina inferiormente il midollo spinale?", a: ["Con il cono midollare", "Con la cauda equina", "Con il filum terminale", "Con il sacco durale"] },
-    { cat: "Midollo Spinale", q: "A cosa aderisce il filum terminale?", a: ["Al coccige", "All'osso sacro", "Alla vertebra L5", "Alla dura madre spinale"] },
-    { cat: "Midollo Spinale", q: "Qual è il peso approssimativo del midollo spinale (senza meningi)?", a: ["Circa 28 g (2% del nevrasse)", "Circa 150 g", "Circa 10 g", "Circa 500 g"] },
-    { cat: "Midollo Spinale", q: "Qual è la lunghezza media del midollo spinale?", a: ["44 cm", "75 cm", "25 cm", "60 cm"] },
-    { cat: "Midollo Spinale", q: "Perché il midollo spinale è più corto della colonna vertebrale?", a: ["Per la maggiore crescita in lunghezza della colonna durante lo sviluppo", "Perché il midollo si ritira verso l'alto", "Perché le vertebre si fondono", "Perché il midollo degenera caudalmente"] },
-    { cat: "Midollo Spinale", q: "Qual è il diametro trasverso massimo del midollo (ai rigonfiamenti)?", a: ["12-13 mm", "1 cm", "20 mm", "5 mm"] },
-    { cat: "Midollo Spinale", q: "Qual è il limite superiore del midollo spinale?", a: ["Superficie inferiore del grande foro occipitale (piano articolazione atlantoccipitale)", "Margine superiore di C1", "Decussazione delle piramidi", "Ponte di Varolio"] },
-    { cat: "Midollo Spinale", q: "Qual è il limite inferiore del midollo spinale nell'adulto?", a: ["Margine inferiore di L1 / corpo di L2", "Margine inferiore di L5", "Margine superiore di S1", "Vertebra T12"] },
-    { cat: "Midollo Spinale", q: "Cosa sono i legamenti denticolati?", a: ["Lamine di connettivo che fissano il midollo alla dura madre", "Legamenti tra le vertebre", "Fibre nervose sensitive", "Parte della cauda equina"] },
-    { cat: "Midollo Spinale", q: "Da dove si staccano i legamenti denticolati?", a: ["Dai cordoni laterali di sostanza bianca", "Dalle radici anteriori", "Dalla commessura grigia", "Dal filum terminale"] },
-
-    // --- 4. MIDOLLO SPINALE: Configurazione Esterna e Segmentazione ---
-    { cat: "Midollo Spinale", q: "Quanti sono i mielomeri totali?", a: ["33", "31", "30", "28"] },
-    { cat: "Midollo Spinale", q: "Quanti sono i nervi spinali totali?", a: ["31 paia", "33 paia", "12 paia", "24 paia"] },
-    { cat: "Midollo Spinale", q: "Quanti sono i mielomeri cervicali?", a: ["8 (C1-C8)", "7 (C1-C7)", "12", "5"] },
-    { cat: "Midollo Spinale", q: "Perché ci sono 8 nervi cervicali e solo 7 vertebre cervicali?", a: ["Il primo nervo esce sopra C1, l'ottavo sotto C7", "C'è un errore nella numerazione", "Il primo nervo è il nervo accessorio", "C'è una vertebra in più non ossificata"] },
-    { cat: "Midollo Spinale", q: "Quanti sono i mielomeri toracici?", a: ["12", "8", "5", "10"] },
-    { cat: "Midollo Spinale", q: "Quanti sono i mielomeri lombari?", a: ["5", "4", "6", "12"] },
-    { cat: "Midollo Spinale", q: "Quale plesso si forma dal rigonfiamento cervicale?", a: ["Plesso brachiale", "Plesso lombare", "Plesso sacrale", "Plesso cervicale"] },
-    { cat: "Midollo Spinale", q: "La sindrome del cono midollare causa disfunzione di quali organi?", a: ["Visceri pelvici", "Arti superiori", "Muscoli respiratori", "Muscoli del collo"] },
-    { cat: "Midollo Spinale", q: "Cos'è la cauda equina?", a: ["Insieme delle radici nervose lombari, sacrali e coccigee nel canale vertebrale", "La parte terminale del midollo", "Un legamento fibroso", "Il plesso brachiale"] },
-    { cat: "Midollo Spinale", q: "Dove finisce il sacco durale?", a: ["A livello di S3", "A livello di L2", "Al coccige", "A livello di T12"] },
-    { cat: "Midollo Spinale", q: "Quanto è lunga la parte intradurale del filum terminale?", a: ["15 cm", "5 cm", "20 cm", "2 cm"] },
-
-    // --- 4. MIDOLLO SPINALE: Organizzazione Morfo-Funzionale ---
-    { cat: "Midollo Spinale", q: "Cosa si intende per organizzazione 'elementare' del midollo?", a: ["Mielomeri indipendenti e riflessi segmentali", "Connessioni con la corteccia", "Vie piramidali", "Sistema endocrino"] },
-    { cat: "Midollo Spinale", q: "Cosa si intende per organizzazione 'integrata' del midollo?", a: ["Sistemi di collegamento a distanza (vie ascendenti/discendenti)", "Riflessi semplici", "Arco riflesso", "Connessioni tra mielomeri adiacenti"] },
-    { cat: "Midollo Spinale", q: "Da quale lamina del tubo neurale derivano le vie sensitive ascendenti?", a: ["Lamina alare", "Lamina basale", "Creste neurali", "Notocorda"] },
-    { cat: "Midollo Spinale", q: "Da quale lamina derivano le vie motrici discendenti?", a: ["Lamina basale", "Lamina alare", "Mesoderma", "Endoderma"] },
-
-    // --- 4. MIDOLLO SPINALE: Configurazione Interna e Nervi ---
-    { cat: "Midollo Spinale", q: "Cosa formano le radicole che emergono dal midollo?", a: ["Le radici anteriori e posteriori", "I nervi cranici", "I rami comunicanti", "Il ganglio spinale"] },
-    { cat: "Midollo Spinale", q: "Quali radici sono motorie?", a: ["Radici anteriori", "Radici posteriori", "Entrambe", "Nessuna"] },
-    { cat: "Midollo Spinale", q: "Dove si trova il ganglio spinale?", a: ["Sulla radice posteriore, presso il forame intervertebrale", "Sulla radice anteriore", "Nel corno anteriore", "Nella sostanza bianca"] },
-    { cat: "Midollo Spinale", q: "Che tipo di neuroni si trovano nel ganglio spinale?", a: ["Pseudounipolari", "Multipolari", "Bipolari", "Piramidali"] },
-    { cat: "Midollo Spinale", q: "Dove si uniscono le radici anteriore e posteriore?", a: ["A livello del forame intervertebrale", "Dentro il midollo", "Fuori dalla colonna vertebrale", "Nel ganglio"] },
-    { cat: "Midollo Spinale", q: "Il ramo ventrale del nervo spinale è:", a: ["Misto (motorio e sensitivo)", "Solo motorio", "Solo sensitivo", "Autonomico"] },
-    { cat: "Midollo Spinale", q: "Cosa connette il ramo comunicante bianco?", a: ["Nervo spinale e catena gangliare del simpatico", "Due nervi spinali", "Midollo e ganglio spinale", "Corno anteriore e posteriore"] },
-    { cat: "Midollo Spinale", q: "Dove si trova la sostanza bianca nel midollo?", a: ["In periferia", "Al centro (ad H)", "Solo nel corno laterale", "Attorno al canale centrale"] },
-    { cat: "Midollo Spinale", q: "Cos'è l'antimero?", a: ["Ogni metà laterale del mielomero", "Il segmento toracico", "La commessura grigia", "Il canale centrale"] },
-    
-    // --- 4. MIDOLLO SPINALE: Sostanza Bianca e Grigia ---
-    { cat: "Midollo Spinale", q: "Quale fessura è più profonda nel midollo?", a: ["Fessura mediana anteriore", "Solco mediano posteriore", "Solco laterale", "Solco intermedio"] },
-    { cat: "Midollo Spinale", q: "Cosa separa il solco mediano posteriore?", a: ["I due cordoni posteriori", "I due cordoni anteriori", "Il corno anteriore dal posteriore", "Il fascicolo gracile dal cuneato"] },
-    { cat: "Midollo Spinale", q: "Dove penetrano le radicole posteriori?", a: ["Solco posterolaterale", "Solco anterolaterale", "Fessura mediana", "Solco intermedio"] },
-    { cat: "Midollo Spinale", q: "Quale solco divide il fascicolo gracile dal cuneato?", a: ["Solco intermedio posteriore", "Solco mediano posteriore", "Solco laterale", "Fessura anteriore"] },
-    { cat: "Midollo Spinale", q: "In quali cordoni si divide la sostanza bianca?", a: ["Anteriore, Laterale, Posteriore", "Superiore, Inferiore", "Mediale, Laterale", "Dorsale, Ventrale"] },
-    { cat: "Midollo Spinale", q: "Le fibre dell'apparato elementare (orizzontali) servono a:", a: ["Integrazione spino-spinale tra mielomeri vicini", "Trasmettere al cervello", "Ricevere dalla corteccia", "Connettere i gangli"] },
-    { cat: "Midollo Spinale", q: "Le fibre dell'apparato di integrazione (corticale) sono:", a: ["Assoni mielinizzati che proiettano ai/dai centri superiori", "Fibre amieliniche locali", "Fibre dei legamenti denticolati", "Fibre del simpatico"] },
-    { cat: "Midollo Spinale", q: "Quale corno della sostanza grigia contiene neuroni motori?", a: ["Corno anteriore", "Corno posteriore", "Corno laterale", "Commessura grigia"] },
-    { cat: "Midollo Spinale", q: "Il corno laterale è presente solo:", a: ["Da T1 a L2", "In tutti i segmenti", "Solo nei segmenti cervicali", "Solo nel cono midollare"] },
-    { cat: "Midollo Spinale", q: "Chi propose l'organizzazione a lamine (I-X) del midollo?", a: ["Bror Rexed", "Camillo Golgi", "Santiago Ramon y Cajal", "Brodmann"] },
-    
-    // --- 4. MIDOLLO SPINALE: Lamine di Rexed ---
-    { cat: "Midollo Spinale", q: "Quali lamine comprende il corno posteriore?", a: ["I - VI", "VII - IX", "I - X", "Solo lamina I"] },
-    { cat: "Midollo Spinale", q: "Cosa contiene la lamina II?", a: ["Sostanza gelatinosa (nocicezione)", "Nucleo motore", "Colonna di Clark", "Canale centrale"] },
-    { cat: "Midollo Spinale", q: "Dove si trova il nucleo dorsale o colonna di Clark?", a: ["Lamina VI (sensibilità viscerale/propriocettiva)", "Lamina IX", "Lamina I", "Lamina II"] },
-    { cat: "Midollo Spinale", q: "Quali lamine comprende il corno anteriore?", a: ["VII, VIII, IX", "I, II, III", "IV, V, VI", "X"] },
-    { cat: "Midollo Spinale", q: "Cosa contiene la lamina IX?", a: ["Area motoria principale (motoneuroni)", "Interneuroni", "Fibre sensitive", "Nuclei vegetativi"] },
-    { cat: "Midollo Spinale", q: "Dove si trovano i nuclei intermedio-laterali (simpatico)?", a: ["Porzione laterale della lamina VII (corno laterale)", "Lamina I", "Lamina IX", "Lamina X"] },
-    
-    // --- 5. ENCEFALO ---
-    { cat: "Encefalo", q: "Qual è il peso variabile dell'encefalo?", a: ["1250-1600 g", "500-800 g", "2000-2500 g", "100 g"] },
-    { cat: "Encefalo", q: "Cosa separa i due emisferi cerebrali sulla convessità?", a: ["Fessura interemisferica", "Scissura di Rolando", "Scissura di Silvio", "Corpo calloso"] },
-    { cat: "Encefalo", q: "A cosa servono le circonvoluzioni cerebrali?", a: ["Aumentare la superficie encefalica in un volume limitato", "Proteggere i neuroni", "Produrre liquor", "Raffreddare il cervello"] },
-    { cat: "Encefalo", q: "Quali sono le tre parti fondamentali osservabili dalla base encefalica?", a: ["Tronco encefalico, Cervelletto, Cervello (emisferi)", "Midollo, Ponte, Bulbo", "Talamo, Ipotalamo, Epifisi", "Lobo frontale, parietale, occipitale"] },
-
-    // --- 6. TRONCO ENCEFALICO: Generale ---
-    { cat: "Tronco Encefalico", q: "Qual è l'ordine caudo-craniale del tronco encefalico?", a: ["Bulbo, Ponte, Mesencefalo", "Ponte, Bulbo, Mesencefalo", "Mesencefalo, Ponte, Bulbo", "Bulbo, Mesencefalo, Ponte"] },
-    { cat: "Tronco Encefalico", q: "Da quale vescicola origina il bulbo?", a: ["Vescicola mielencefalica", "Vescicola metencefalica", "Vescicola mesencefalica", "Vescicola diencefalica"] },
-    { cat: "Tronco Encefalico", q: "Da quale vescicola origina il ponte?", a: ["Vescicola metencefalica", "Vescicola mielencefalica", "Vescicola mesencefalica", "Vescicola telencefalica"] },
-    { cat: "Tronco Encefalico", q: "Quali regioni si distinguono in sezione trasversale del tronco?", a: ["Base (ventrale) e Tegmento (dorsale)", "Corteccia e midollare", "Sostanza bianca e grigia", "Corno anteriore e posteriore"] },
-    { cat: "Tronco Encefalico", q: "Cosa contiene il tegmento (calotta)?", a: ["Gruppi di neuroni (nuclei) e vie ascendenti", "Solo fibre discendenti", "I peduncoli cerebrali", "Il corpo calloso"] },
-    { cat: "Tronco Encefalico", q: "Quali vie percorrono la base del tronco?", a: ["Via piramidale (cortico-spinale) e via eso-piramidale", "Via spino-talamica", "Lemnisco mediale", "Fascicolo gracile"] },
-
-    // --- 6. TRONCO ENCEFALICO: Bulbo ---
-    { cat: "Tronco Encefalico", q: "Quale struttura delimita inferiormente il bulbo?", a: ["Decussazione delle piramidi", "Ponte", "Solco bulbo-pontino", "Obex"] },
-    { cat: "Tronco Encefalico", q: "Cosa sono le piramidi bulbari?", a: ["Rilievi ventrali formati dalle fibre cortico-spinali", "Nuclei sensitivi", "Parte del cervelletto", "Gangli della base"] },
-    { cat: "Tronco Encefalico", q: "Cosa sono le olive bulbari?", a: ["Sporgenze ovoidali laterali contenenti il nucleo olivare inferiore", "Nuclei motori", "Parte del sistema visivo", "Residui embrionali"] },
-    { cat: "Tronco Encefalico", q: "Dove avviene la decussazione delle piramidi?", a: ["Nella parte inferiore della fessura mediana anteriore del bulbo", "Nel mesencefalo", "Nel ponte", "Nel midollo spinale"] },
-    { cat: "Tronco Encefalico", q: "Quanta parte della via piramidale decussa?", a: ["Circa l'80%", "Il 100%", "Il 20%", "Il 50%"] },
-    { cat: "Tronco Encefalico", q: "Cos'è il forame cieco del bulbo?", a: ["Depressione al termine superiore della fessura mediana anteriore", "Un buco nell'osso occipitale", "L'apertura del IV ventricolo", "Un canale vascolare"] },
-    { cat: "Tronco Encefalico", q: "Quale nervo emerge dal solco antero-laterale del bulbo (tra piramide e oliva)?", a: ["Nervo ipoglosso (XII)", "Nervo vago (X)", "Nervo accessorio (XI)", "Nervo faciale (VII)"] },
-    { cat: "Tronco Encefalico", q: "Quali nervi emergono dal solco postero-laterale del bulbo?", a: ["IX (Glossofaringeo), X (Vago), XI (Accessorio)", "VII, VIII", "V, VI", "III, IV"] },
-    { cat: "Tronco Encefalico", q: "Dove emerge il nervo abducente (VI)?", a: ["Dal solco bulbo-pontino, sopra le piramidi", "Dalla fossetta retrolivare", "Dal mesencefalo", "Dal ponte laterale"] },
-    { cat: "Tronco Encefalico", q: "Dove emergono i nervi VII e VIII?", a: ["Fossetta sopra-olivare e retro-olivare (solco bulbo-pontino laterale)", "Solco basilare", "Fossa interpeduncolare", "Decussazione delle piramidi"] },
-
-    // --- 6. TRONCO ENCEFALICO: Ponte ---
-    { cat: "Tronco Encefalico", q: "Cosa percorre il solco basilare del ponte?", a: ["L'arteria basilare", "L'acquedotto di Silvio", "Il nervo trigemino", "La via piramidale"] },
-    { cat: "Tronco Encefalico", q: "Quali strutture collegano il ponte al cervelletto?", a: ["Peduncoli cerebellari medi", "Peduncoli superiori", "Peduncoli inferiori", "Corpo calloso"] },
-    { cat: "Tronco Encefalico", q: "Dove emerge il nervo trigemino (V)?", a: ["A lato delle prominenze piramidali del ponte", "Dal solco bulbo-pontino", "Dal mesencefalo", "Dal bulbo"] },
-    { cat: "Tronco Encefalico", q: "Il nervo trigemino ha:", a: ["Una radice sensitiva grande e una motoria piccola", "Solo radice motoria", "Solo radice sensitiva", "Tre radici uguali"] },
-    
-    // --- 6. TRONCO ENCEFALICO: Mesencefalo ---
-    { cat: "Tronco Encefalico", q: "Da cosa è attraversato il mesencefalo?", a: ["Dall'acquedotto di Silvio", "Dal IV ventricolo", "Dal III ventricolo", "Dal canale centrale"] },
-    { cat: "Tronco Encefalico", q: "Quali sono le due parti del mesencefalo separate dall'acquedotto?", a: ["Peduncoli cerebrali (ventrale) e Lamina quadrigemina (dorsale)", "Ponte e Bulbo", "Talamo e Ipotalamo", "Verme ed emisferi"] },
-    { cat: "Tronco Encefalico", q: "Cosa si trova nella fossa interpeduncolare?", a: ["Sostanza perforata posteriore", "Sostanza nera", "Nucleo rosso", "Epifisi"] },
-    { cat: "Tronco Encefalico", q: "Quale nervo emerge dalla fossa interpeduncolare (solco mediale del peduncolo)?", a: ["Nervo oculomotore (III)", "Nervo trocleare (IV)", "Nervo ottico (II)", "Nervo trigemino (V)"] },
-    { cat: "Tronco Encefalico", q: "Qual è l'unico nervo che emerge dorsalmente dal tronco encefalico?", a: ["Nervo trocleare (IV)", "Nervo oculomotore (III)", "Nervo abducente (VI)", "Nervo vago (X)"] },
-    { cat: "Tronco Encefalico", q: "Cosa separa il piede del peduncolo dalla calotta nel mesencefalo?", a: ["Sostanza nera di Sömmering", "Nucleo rosso", "Acquedotto di Silvio", "Lemnisco mediale"] },
-    { cat: "Tronco Encefalico", q: "Cosa provoca la degenerazione della sostanza nera?", a: ["Morbo di Parkinson", "Alzheimer", "Sclerosi multipla", "Epilessia"] },
-    { cat: "Tronco Encefalico", q: "Il nucleo rosso è un centro importante del sistema:", a: ["Extrapiramidale", "Piramidale", "Sensitivo", "Visivo"] },
-
-    // --- 6. NERVI CRANICI: Dettagli ---
-    { cat: "Nervi Cranici", q: "Quali nervi cranici sono esclusivamente sensitivi?", a: ["I (Olfattivo), II (Ottico), VIII (Vestibolo-cocleare)", "V, VII, IX", "III, IV, VI", "X, XI, XII"] },
-    { cat: "Nervi Cranici", q: "Quali nervi cranici sono esclusivamente motori?", a: ["III, IV, VI, XI, XII", "I, II, VIII", "V, VII, X", "IX, X"] },
-    { cat: "Nervi Cranici", q: "Quali nervi cranici sono misti?", a: ["V, VII, IX, X", "I, II, III", "XI, XII", "IV, VI"] },
-    { cat: "Nervi Cranici", q: "Qual è la funzione principale del nervo ipoglosso (XII)?", a: ["Motoria per la lingua", "Sensitiva per la lingua", "Motoria per la faringe", "Parasimpatico"] },
-    { cat: "Nervi Cranici", q: "Il nervo accessorio (XI) ha due componenti:", a: ["Bulbare e Spinale", "Pontina e Mesencefalica", "Sensitiva e Motoria", "Cranica e Sacrale"] },
-    { cat: "Nervi Cranici", q: "Cosa innerva la componente spinale del nervo accessorio?", a: ["Muscoli trapezio e sternocleidomastoideo", "Muscoli della laringe", "Muscoli della lingua", "Muscoli dell'occhio"] },
-    { cat: "Nervi Cranici", q: "Il nervo vago (X) è il principale nervo di quale sistema?", a: ["Parasimpatico", "Simpatico", "Somatico", "Sensoriale"] },
-    { cat: "Nervi Cranici", q: "Cosa innerva il nervo glossofaringeo (IX)?", a: ["Lingua e faringe (misto)", "Solo lingua", "Muscoli dell'occhio", "Cuore"] },
-    { cat: "Nervi Cranici", q: "Il nervo faciale (VII) innerva:", a: ["Muscoli mimici della faccia (volontari)", "Muscoli masticatori", "Muscoli oculari", "Lingua"] },
-    { cat: "Nervi Cranici", q: "Da dove originano le fibre del nervo trigemino (V) sensitivo?", a: ["Dal ganglio di Gasser (semilunare)", "Dal nucleo rosso", "Dal ganglio spinale", "Dalla corteccia"] },
-    { cat: "Nervi Cranici", q: "Quali sono le tre branche del trigemino?", a: ["Oftalmico, Mascellare, Mandibolare", "Oculare, Nasale, Temporale", "Frontale, Parietale, Occipitale", "Superiore, Medio, Inferiore"] },
-    { cat: "Nervi Cranici", q: "Cosa innerva la radice motoria del trigemino?", a: ["Muscoli masticatori", "Muscoli mimici", "Muscoli della lingua", "Muscoli del collo"] },
-
-    // --- 6. TRONCO ENCEFALICO: Tegmento e IV Ventricolo ---
-    { cat: "Tronco Encefalico", q: "Cosa forma il pavimento del quarto ventricolo?", a: ["La faccia posteriore di bulbo e ponte (Fossa romboidale)", "Il cervelletto", "Il mesencefalo", "Il diencefalo"] },
-    { cat: "Tronco Encefalico", q: "Cosa sono i tubercoli gracile e cuneato?", a: ["Rigonfiamenti dorsali del bulbo (nuclei dei fascicoli posteriori)", "Parte del cervelletto", "Nuclei motori", "Collicoli quadrigemini"] },
-    { cat: "Tronco Encefalico", q: "Cosa divide la fossa romboidale in due triangoli?", a: ["Le strie midollari (di Piccolomini)", "Il solco mediano", "Il solco limitante", "L'obex"] },
-    { cat: "Tronco Encefalico", q: "Quali aree si trovano nel triangolo bulbare (dall'interno all'esterno)?", a: ["Trigono dell'ipoglosso, Trigono del vago (ala cinerea), Area vestibolare", "Area acustica, Collicolo facciale", "Stria terminale, Lamina affixa", "Tubercolo cuneato"] },
-    { cat: "Tronco Encefalico", q: "Cosa è l'area postrema?", a: ["Organo circumventricolare privo di barriera ematoencefalica (zona emetogena)", "Nucleo motore", "Parte del cervelletto", "Plesso corioideo"] },
-    { cat: "Tronco Encefalico", q: "Cosa forma il collicolo facciale nel triangolo pontino?", a: ["Le fibre del faciale che girano attorno al nucleo dell'abducente", "Il nucleo del faciale stesso", "Il nucleo vestibolare", "Il nucleo trigemino"] },
-    { cat: "Tronco Encefalico", q: "Cos'è il Locus Coeruleus?", a: ["Gruppo di neuroni ricchi di noradrenalina/rame (colore azzurro)", "Nucleo della dopamina", "Centro del respiro", "Nucleo sensitivo"] },
-    { cat: "Tronco Encefalico", q: "Cosa costituisce la lamina quadrigemina (tetto del mesencefalo)?", a: ["Collicoli superiori (ottici) e inferiori (acustici)", "Peduncoli cerebrali", "Sostanza nera", "Nucleo rosso"] },
-    { cat: "Tronco Encefalico", q: "Cosa collega il braccio quadrigemino inferiore?", a: ["Collicolo inferiore e corpo genicolato mediale", "Collicolo superiore e corpo genicolato laterale", "Cervelletto e ponte", "Midollo e talamo"] },
-    { cat: "Tronco Encefalico", q: "Dove si trova l'epifisi (ghiandola pineale)?", a: ["Nella parte superiore del solco intercollicolare (epitalamo)", "Nella fossa interpeduncolare", "Nel IV ventricolo", "Sopra il chiasma ottico"] },
-
-    // --- 7. CERVELLETTO ---
-    { cat: "Cervelletto", q: "Dove si trova il cervelletto?", a: ["Fossa cranica posteriore, dorsalmente al tronco encefalico", "Sopra il corpo calloso", "Nel canale vertebrale", "Anteriormente al ponte"] },
-    { cat: "Cervelletto", q: "Cosa separa il cervelletto dai lobi occipitali?", a: ["Tentorio del cervelletto (dura madre)", "Falce cerebrale", "Corpo calloso", "Velo midollare"] },
-    { cat: "Cervelletto", q: "Come si chiama la parte mediana del cervelletto?", a: ["Verme", "Emisfero", "Lobo", "Tonsilla"] },
-    { cat: "Cervelletto", q: "Qual è la funzione generale del cervelletto?", a: ["Modulatore delle attività motorie, coordinazione, equilibrio", "Inizio del movimento volontario", "Percezione sensitiva cosciente", "Regolazione ormonale"] },
-    { cat: "Cervelletto", q: "Quali sono i tre lobi filogenetici del cervelletto?", a: ["Archicerebello, Paleocerebello, Neocerebello", "Lobo frontale, parietale, temporale", "Verme, Emisfero destro, sinistro", "Lobo anteriore, medio, posteriore"] },
-    { cat: "Cervelletto", q: "A quale lobo anatomico corrisponde l'Archicerebello?", a: ["Lobo flocculo-nodulare", "Lobo anteriore", "Lobo posteriore", "Tonsille"] },
-    { cat: "Cervelletto", q: "Qual è la funzione dell'Archicerebello (Vestibolocerebello)?", a: ["Controllo dell'equilibrio", "Tono muscolare", "Pianificazione motoria", "Linguaggio"] },
-    { cat: "Cervelletto", q: "Qual è la funzione del Paleocerebello (Spinocerebello)?", a: ["Controllo del tono muscolare e postura (statica)", "Equilibrio vestibolare", "Movimenti fini", "Memoria"] },
-    { cat: "Cervelletto", q: "Qual è la funzione del Neocerebello (Pontocerebello)?", a: ["Coordinazione dei movimenti volontari fini e precisione", "Equilibrio", "Tono posturale", "Riflessi spinali"] },
-    { cat: "Cervelletto", q: "Cos'è l'ilo del cervelletto?", a: ["Incisura anteriore da cui emergono i peduncoli cerebellari", "Incisura posteriore", "Il verme", "Un nucleo profondo"] },
-    { cat: "Cervelletto", q: "Cosa connettono i peduncoli cerebellari superiori?", a: ["Cervelletto e Mesencefalo (efferenti)", "Cervelletto e Ponte", "Cervelletto e Bulbo", "Cervelletto e Midollo"] },
-    { cat: "Cervelletto", q: "Cosa connettono i peduncoli cerebellari medi (brachia pontis)?", a: ["Ponte e Cervelletto (afferenti)", "Bulbo e Cervelletto", "Mesencefalo e Cervelletto", "Midollo e Cervelletto"] },
-    { cat: "Cervelletto", q: "Cosa connettono i peduncoli cerebellari inferiori (corpi restiformi)?", a: ["Bulbo/Midollo e Cervelletto (afferenti)", "Ponte e Cervelletto", "Mesencefalo e Cervelletto", "Talamo e Cervelletto"] },
-    { cat: "Cervelletto", q: "Cosa sono le tonsille cerebellari?", a: ["Dipendenze degli emisferi nella faccia inferiore, vicine al forame magno", "Nuclei profondi", "Parte del verme", "Organi linfatici"] },
-    { cat: "Cervelletto", q: "Cosa rischiano le tonsille cerebellari in caso di ipertensione endocranica?", a: ["Erniazione nel forame magno (compressione bulbare)", "Atrofia", "Ipertrofia", "Distacco"] },
-    { cat: "Cervelletto", q: "Quali sono i nuclei profondi del cervelletto (dal mediale al laterale)?", a: ["Fastigio (tetto), Globoso, Emboliforme, Dentato", "Dentato, Rosso, Nero, Olivare", "Caudato, Putamen, Pallido", "Gracile, Cuneato"] },
-    { cat: "Cervelletto", q: "Il nucleo dentato appartiene funzionalmente al:", a: ["Neocerebello", "Archicerebello", "Paleocerebello", "Midollo"] },
-    { cat: "Cervelletto", q: "Com'è chiamata la sostanza bianca del cervelletto in sezione sagittale?", a: ["Arbor vitae (Albero della vita)", "Corpo calloso", "Corona radiata", "Capsula interna"] },
-    { cat: "Cervelletto", q: "Quali sono i tre strati della corteccia cerebellare?", a: ["Molecolare, Gangliare (Purkinje), Granulare", "Dura, Aracnoide, Pia", "Basale, Spinoso, Granuloso", "Esterno, Medio, Interno"] },
-
-    // --- 8. DIENCEFALO ---
-    { cat: "Diencefalo", q: "Dove si trova il diencefalo?", a: ["Tra il tronco encefalico e gli emisferi (mediano)", "Sotto il bulbo", "Nel cervelletto", "Nel midollo"] },
-    { cat: "Diencefalo", q: "Quale ventricolo è contenuto nel diencefalo?", a: ["Terzo ventricolo", "Quarto ventricolo", "Ventricoli laterali", "Acquedotto"] },
-    { cat: "Diencefalo", q: "Quali sono le 5 parti del diencefalo?", a: ["Talamo, Ipotalamo, Subtalamo, Epitalamo, Metatalamo", "Bulbo, Ponte, Mesencefalo, Cervelletto, Midollo", "Lobi frontale, parietale, temporale, occipitale, insula", "Caudato, Putamen, Pallido, Claustro, Amigdala"] },
-    { cat: "Diencefalo", q: "Il talamo deriva dalla lamina:", a: ["Alare (sensitiva)", "Basale (motoria)", "Marginale", "Ependimale"] },
-    { cat: "Diencefalo", q: "L'ipotalamo deriva dalla lamina:", a: ["Basale (motoria/viscerale)", "Alare", "Del tetto", "Pavimento"] },
-    { cat: "Diencefalo", q: "Quale solco separa talamo e ipotalamo?", a: ["Solco ipotalamico di Monro", "Solco limitante del midollo", "Solco laterale", "Scissura calcarina"] },
-    { cat: "Diencefalo", q: "Cos'è il chiasma ottico?", a: ["Decussazione delle fibre dei nervi ottici nella faccia inferiore del diencefalo", "Nucleo del talamo", "Parte dell'epifisi", "Commessura posteriore"] },
-    { cat: "Diencefalo", q: "Cosa si trova posteriormente al chiasma ottico?", a: ["Tuber cinereum e infundibolo", "Corpi mammillari", "Ponte", "Bulbo"] },
-    { cat: "Diencefalo", q: "Cosa collega l'ipotalamo all'ipofisi?", a: ["Peduncolo ipofisario (infundibolo)", "Stria terminale", "Fornice", "Corpo calloso"] },
-    { cat: "Diencefalo", q: "Quali sono le funzioni principali dell'ipotalamo?", a: ["Omeostasi, controllo autonomo, endocrino, ritmi circadiani, fame, sete", "Solo motoria", "Solo visiva", "Coordinazione fine"] },
-    { cat: "Diencefalo", q: "Il talamo è:", a: ["Stazione di ritrasmissione sensitiva alla corteccia", "Centro motorio primario", "Ghiandola endocrina", "Parte del tronco"] },
-    { cat: "Diencefalo", q: "Cos'è il metatalamo?", a: ["Corpi genicolati mediale e laterale", "Epifisi", "Ipotalamo", "Subtalamo"] },
-    { cat: "Diencefalo", q: "Il corpo genicolato laterale fa parte della via:", a: ["Visiva", "Uditiva", "Olfattiva", "Gustativa"] },
-    { cat: "Diencefalo", q: "Il corpo genicolato mediale fa parte della via:", a: ["Uditiva", "Visiva", "Tattile", "Motorie"] },
-    { cat: "Diencefalo", q: "Cosa comprende l'epitalamo?", a: ["Epifisi (ghiandola pineale), trigoni abenulari, strie midollari", "Ipofisi", "Corpi mammillari", "Talamo"] },
-    { cat: "Diencefalo", q: "Cos'è il pulvinar?", a: ["L'estremità posteriore del talamo", "La parte anteriore del talamo", "Un nucleo ipotalamico", "Parte del fornice"] },
-    { cat: "Diencefalo", q: "Cosa separa il talamo dal nucleo caudato?", a: ["Solco opto-striato", "Capsula interna", "Stria midollare", "Solco ipotalamico"] },
-    { cat: "Diencefalo", q: "Cos'è la massa intermedia (adesione intertalamica)?", a: ["Ponte di sostanza grigia che unisce i due talami nel III ventricolo", "Commessura bianca", "Parte del corpo calloso", "Chiasma ottico"] },
-
-    // --- 9. TELENCEFALO: Configurazione Esterna ---
-    { cat: "Telencefalo", q: "Cosa divide i due emisferi cerebrali?", a: ["Fessura longitudinale (sagittale)", "Scissura di Silvio", "Scissura di Rolando", "Fessura di Bichat"] },
-    { cat: "Telencefalo", q: "Cosa separa il telencefalo dal tronco encefalico/cervelletto?", a: ["Fessura cerebrale trasversa (di Bichat)", "Fessura longitudinale", "Scissura laterale", "Scissura centrale"] },
-    { cat: "Telencefalo", q: "Qual è la principale commessura interemisferica?", a: ["Corpo calloso", "Fornice", "Commessura anteriore", "Commessura posteriore"] },
-    { cat: "Telencefalo", q: "Quali sono le parti del corpo calloso?", a: ["Rostro, Ginocchio, Tronco, Splenio", "Testa, Corpo, Coda", "Verme, Emisferi", "Piede, Calotta"] },
-    { cat: "Telencefalo", q: "Cos'è il fornice?", a: ["Sistema di fibre a arco (commessurale/proiezione) sotto il corpo calloso", "Parte del cervelletto", "Nucleo della base", "Scissura"] },
-    { cat: "Telencefalo", q: "Cosa separa i corni anteriori dei ventricoli laterali?", a: ["Setto pellucido", "Fornice", "Corpo calloso", "Talamo"] },
-    { cat: "Telencefalo", q: "Quale scissura separa il lobo frontale dal parietale?", a: ["Scissura centrale (di Rolando)", "Scissura laterale (di Silvio)", "Scissura calcarina", "Scissura parieto-occipitale"] },
-    { cat: "Telencefalo", q: "Quale scissura separa il lobo temporale dai lobi frontale e parietale?", a: ["Scissura laterale (di Silvio)", "Scissura centrale", "Scissura limbica", "Scissura longitudinale"] },
-    { cat: "Telencefalo", q: "Dove si trova il lobo dell'insula?", a: ["Nella profondità della scissura laterale (fossa silviana)", "Sulla superficie mediale", "Nel polo occipitale", "Sotto il corpo calloso"] },
-    { cat: "Telencefalo", q: "Quale arteria decorre nella fossa silviana?", a: ["Arteria cerebrale media (Silviana)", "Arteria cerebrale anteriore", "Arteria basilare", "Arteria comunicante"] },
-    { cat: "Telencefalo", q: "Qual è l'area motoria primaria?", a: ["Circonvoluzione precentrale (Lobo frontale)", "Circonvoluzione postcentrale", "Lobo occipitale", "Lobo temporale"] },
-    { cat: "Telencefalo", q: "Qual è l'area sensitiva primaria?", a: ["Circonvoluzione postcentrale (Lobo parietale)", "Circonvoluzione precentrale", "Insula", "Uncus"] },
-    { cat: "Telencefalo", q: "Cos'è l'Homunculus?", a: ["Rappresentazione somatotopica del corpo sulla corteccia (motoria/sensitiva)", "Un piccolo uomo", "Un nucleo del tronco", "Una malformazione"] },
-    { cat: "Telencefalo", q: "Dove si trova la corteccia visiva primaria?", a: ["Lobo occipitale (Scissura calcarina, area 17)", "Lobo temporale", "Lobo frontale", "Lobo parietale"] },
-    { cat: "Telencefalo", q: "Cosa delimita il lobo limbico?", a: ["Scissura del cingolo (limbica)", "Scissura laterale", "Scissura centrale", "Scissura calcarina"] },
-    { cat: "Telencefalo", q: "Quali giri formano il lobo limbico?", a: ["Giro del cingolo e giro paraippocampale", "Giro precentrale e postcentrale", "Giro retto", "Giro temporale superiore"] },
-    { cat: "Telencefalo", q: "Dov'è l'Uncus?", a: ["Estremità anteriore del giro paraippocampale (Lobo temporale)", "Nel lobo frontale", "Nel lobo occipitale", "Nel cervelletto"] },
-
-    // --- 9. TELENCEFALO: Configurazione Interna (Nuclei della base) ---
-    { cat: "Telencefalo", q: "Quali sono i nuclei della base principali?", a: ["Caudato, Putamen, Globo Pallido, Claustro, Amigdala", "Talamo, Ipotalamo", "Rossi, Neri, Vestibolari", "Dentato, Fastigio"] },
-    { cat: "Telencefalo", q: "Qual è la forma del nucleo caudato?", a: ["A forma di C (Testa, Corpo, Coda)", "Sferica", "Piramidale", "Lente biconvessa"] },
-    { cat: "Telencefalo", q: "Cosa forma il nucleo lenticolare?", a: ["Putamen + Globo Pallido", "Caudato + Putamen", "Caudato + Pallido", "Claustro + Amigdala"] },
-    { cat: "Telencefalo", q: "Cosa forma il corpo striato (neostriato)?", a: ["Caudato + Putamen", "Putamen + Pallido", "Pallido + Claustro", "Amigdala + Caudato"] },
-    { cat: "Telencefalo", q: "Dove si trova il claustro (antemuro)?", a: ["Tra putamen e corteccia dell'insula (capsula esterna/estrema)", "Nel diencefalo", "Nel mesencefalo", "Sotto il talamo"] },
-    { cat: "Telencefalo", q: "Dove si trova l'amigdala?", a: ["Nel lobo temporale, davanti alla coda del caudato", "Nel lobo frontale", "Nel cervelletto", "Nel bulbo"] },
-    
-    // --- 9. TELENCEFALO: Capsule ---
-    { cat: "Telencefalo", q: "Cos'è la capsula interna?", a: ["Lamina di sostanza bianca tra talamo/caudato e nucleo lenticolare", "Tra putamen e claustro", "Tra claustro e insula", "Intorno al corpo calloso"] },
-    { cat: "Telencefalo", q: "La capsula esterna si trova tra:", a: ["Putamen e Claustro", "Caudato e Talamo", "Claustro e Insula", "Talamo e Terzo ventricolo"] },
-    { cat: "Telencefalo", q: "La capsula estrema si trova tra:", a: ["Claustro e Corteccia dell'Insula", "Putamen e Pallido", "Caudato e Capsula interna", "Corpo calloso e Fornice"] },
-
-    // --- DETTAGLI EXTRA PER ARRIVARE A 300+ (Granularità) ---
-    // Midollo
-    { cat: "Midollo Spinale", q: "A che livello vertebrale termina il sacco durale?", a: ["S3", "L2", "L5", "Co1"] },
-    { cat: "Midollo Spinale", q: "Quali fasci formano il cordone posteriore?", a: ["Fascicolo Gracile (mediale) e Cuneato (laterale)", "Spino-talamico", "Cortico-spinale", "Rubro-spinale"] },
-    { cat: "Midollo Spinale", q: "Il fascicolo Gracile trasporta informazioni da:", a: ["Arti inferiori e tronco inferiore", "Arti superiori", "Testa", "Visceri"] },
-    { cat: "Midollo Spinale", q: "Il fascicolo Cuneato trasporta informazioni da:", a: ["Arti superiori e tronco superiore", "Arti inferiori", "Gambe", "Bacino"] },
-    { cat: "Midollo Spinale", q: "La sostanza gelatinosa di Rolando si trova nella lamina:", a: ["II", "I", "V", "IX"] },
-    // Tronco
-    { cat: "Tronco Encefalico", q: "Il nervo Oculomotore (III) innerva:", a: ["Retti (sup, med, inf), Obliquo inf, Elevatore palpebra", "Retto laterale", "Obliquo superiore", "Muscoli intrinseci dell'orecchio"] },
-    { cat: "Tronco Encefalico", q: "Il nervo Trocleare (IV) innerva:", a: ["Muscolo Obliquo Superiore", "Retto Laterale", "Retto Mediale", "Obliquo Inferiore"] },
-    { cat: "Tronco Encefalico", q: "Il nervo Abducente (VI) innerva:", a: ["Muscolo Retto Laterale", "Obliquo Superiore", "Retto Mediale", "Elevatore palpebra"] },
-    { cat: "Tronco Encefalico", q: "Quale struttura produce dopamina nel mesencefalo?", a: ["Substantia Nigra", "Nucleo Rosso", "Locus Coeruleus", "Grigio Periacqueduttale"] },
-    { cat: "Tronco Encefalico", q: "Le strie acustiche dorsali si trovano:", a: ["Sul pavimento del IV ventricolo (limite bulbo-ponte)", "Nel mesencefalo", "Sulla corteccia temporale", "Nel midollo"] },
-    // Diencefalo
-    { cat: "Diencefalo", q: "La neuroipofisi origina da:", a: ["Evaginazione del pavimento del diencefalo", "Tasca di Rathke", "Creste neurali", "Mesoderma"] },
-    { cat: "Diencefalo", q: "L'adenoipofisi origina da:", a: ["Tasca di Rathke (ectoderma orale)", "Neuroectoderma", "Pavimento del ventricolo", "Endoderma"] },
-    { cat: "Diencefalo", q: "I nuclei anteriori del talamo si trovano nel:", a: ["Tubercolo anteriore", "Pulvinar", "Corpo genicolato", "Abenula"] },
-    { cat: "Diencefalo", q: "La stria terminale decorre nel:", a: ["Solco opto-striato", "Solco laterale", "Solco calcarino", "Solco centrale"] },
-    // Telencefalo
-    { cat: "Telencefalo", q: "Il giro temporale trasverso di Heschl è sede:", a: ["Della corteccia uditiva primaria", "Della corteccia visiva", "Della corteccia motoria", "Della corteccia olfattiva"] },
-    { cat: "Telencefalo", q: "Il giro angolare si trova:", a: ["Nel lobo parietale (fine scissura laterale)", "Nel lobo frontale", "Nel lobo temporale", "Nel lobo occipitale"] },
-    { cat: "Telencefalo", q: "Il cuneo si trova nel lobo:", a: ["Occipitale", "Parietale", "Frontale", "Temporale"] },
-    { cat: "Telencefalo", q: "Quale ventricolo si forma se i foglietti del setto pellucido non si fondono?", a: ["Quinto ventricolo (ventricolo del setto)", "Terzo ventricolo", "Quarto ventricolo", "Acquedotto"] },
-    { cat: "Telencefalo", q: "Lo psalterium (Lira di David) connette:", a: ["I due pilastri posteriori del fornice", "I due talami", "I due nuclei caudati", "Le due amigdale"] },
-    { cat: "Telencefalo", q: "Quale parte del corpo calloso è più posteriore?", a: ["Splenio", "Ginocchio", "Rostro", "Tronco"] },
-    { cat: "Telencefalo", q: "Quale parte del corpo calloso è più anteriore?", a: ["Ginocchio", "Splenio", "Istmo", "Tapetum"] },
-    // Extra generici per volume
-    { cat: "Generale", q: "Il plesso lombare origina dai segmenti:", a: ["L1-L4", "C5-T1", "S1-S4", "T12-L1"] },
-    { cat: "Generale", q: "Il plesso sacrale origina dai segmenti:", a: ["L4-S4", "L1-L4", "C1-C4", "T1-T12"] },
-    { cat: "Generale", q: "La superficie totale della corteccia è aumentata grazie a:", a: ["Solchi e giri", "Ventricoli", "Meningi", "Nervi"] },
-    { cat: "Generale", q: "Il sistema nervoso centrale è avvolto da:", a: ["Meningi", "Peritoneo", "Pleura", "Pericardio"] },
-    { cat: "Midollo Spinale", q: "La sostanza grigia del midollo ha forma di:", a: ["Farfalla o H", "Cerchio", "Quadrato", "Stella"] },
-    { cat: "Midollo Spinale", q: "Il canale centrale del midollo contiene:", a: ["Liquor", "Sangue", "Linfa", "Grasso"] },
-    { cat: "Midollo Spinale", q: "Il canale centrale è rivestito da:", a: ["Ependima", "Endotelio", "Mesotelio", "Epidermide"] },
-    { cat: "Telencefalo", q: "L'area di Broca (linguaggio) si trova generalmente nel lobo:", a: ["Frontale (sinistro)", "Temporale", "Parietale", "Occipitale"] },
-    { cat: "Telencefalo", q: "L'area di Wernicke (comprensione) si trova nel lobo:", a: ["Temporale (sinistro)", "Frontale", "Occipitale", "Insula"] },
-    { cat: "Tronco Encefalico", q: "Il nucleo ambiguo contribuisce ai nervi:", a: ["IX, X, XI", "III, IV, VI", "V, VII", "XII"] },
-    { cat: "Tronco Encefalico", q: "Il nucleo del tratto solitario riceve afferenze:", a: ["Viscerali e Gustative (VII, IX, X)", "Motorie somatiche", "Uditive", "Visive"] },
-    // --- ESPANSIONE 1: DETTAGLI FINI ---
-            // MIDOLLO SPINALE - APPROFONDIMENTI
-            { q: "Qual è il diametro massimo delle fibre nervose umane?", a: ["20 μm (Gruppo A)", "100 μm", "1 mm", "5 μm"] },
-            { q: "Le fibre Beta e Gamma (Gruppo A) trasportano:", a: ["Tatto e temperatura", "Dolore lento", "Dolore rapido", "Propriocettività pura"] },
-            { q: "Il nucleo postero-mediale del corno anteriore innerva:", a: ["Muscolatura flessoria del tronco", "Muscolatura estensoria", "Mano", "Piede"] },
-            { q: "Il nucleo antero-mediale del corno anteriore innerva:", a: ["Muscolatura estensoria del tronco", "Muscoli intrinseci mano", "Diaframma", "Lingua"] },
-            { q: "Il nucleo retro-postero-laterale innerva:", a: ["Muscoli intrinseci di mano e piede", "Tronco", "Spalla", "Coscia"] },
-            { q: "Dove si trova il nucleo lombo-sacrale (L1-S1)?", a: ["Corno anteriore (centrale)", "Corno laterale", "Corno posteriore", "Sostanza bianca"] },
-            { q: "Cosa innerva il nucleo lombo-sacrale?", a: ["Diaframma pelvico", "Quadricipite", "Gastrocnemio", "Vescica"] },
-            { q: "Le fibre 'a rastrello' nello strato di Lissauer penetrano per:", a: ["5-6 mielomeri adiacenti", "1 mielomero", "Tutto il midollo", "Solo verso l'alto"] },
-            { q: "Qual è il rapporto tra primo e secondo neurone nella sensibilità protopatica?", a: ["Molto alto (bassa specificità, convergenza)", "1:1", "1:2", "Nullo"] },
-            { q: "La via spino-tettale termina:", a: ["Collicoli superiori (Tetto del mesencefalo)", "Talamo", "Cervelletto", "Ponte"] },
-            
-            // TRONCO E RETICOLARE - DETTAGLI CHIMICI E STRUTTURALI
-            { q: "I neuroni Isodendritici della formazione reticolare hanno:", a: ["Dendriti lunghi e rettilinei (connessioni diffuse)", "Dendriti corti", "Un solo dendrite", "Nessun assone"] },
-            { q: "I neuroni Idiodendritici della formazione reticolare hanno:", a: ["Dendriti corti e curvilinei (campo circoscritto)", "Dendriti lunghi", "Assoni giganti", "Funzione solo motoria"] },
-            { q: "Il Gruppo A della classificazione chimica reticolare contiene:", a: ["Neuroni Noradrenergici e Dopaminergici", "Serotoninergici", "Colinergici", "GABAergici"] },
-            { q: "Il Gruppo B della classificazione chimica contiene:", a: ["Neuroni Serotoninergici (Nuclei del Rafe)", "Adrenergici", "Dopaminergici", "Istaminergici"] },
-            { q: "Il Gruppo C della classificazione chimica contiene:", a: ["Neuroni Adrenergici", "Colinergici", "Serotoninergici", "Peptidergici"] },
-            { q: "Il Nucleo Gigantocellulare appartiene alla colonna:", a: ["Mediale della formazione reticolare", "Mediana (Rafe)", "Laterale", "Sensitiva"] },
-            { q: "La colonna Laterale della reticolare (parabrachiali, parvicellulari) controlla:", a: ["Funzioni viscerali e riflessi vitali", "Movimenti fini", "Udito", "Vista"] },
-            { q: "Il centro 'Apneustico' corrisponde funzionalmente a:", a: ["Nucleo di Bötzinger (attivazione inspiratoria continua se non inibito)", "Nucleo ambiguo", "Nucleo del tratto solitario", "Nucleo rosso"] },
-            { q: "Quale nucleo inibisce il centro apneustico?", a: ["Nucleo Parabrachiale Ventrale (Kölliker-Fuse)", "Nucleo del Rafe", "Locus Coeruleus", "Sostanza Nera"] },
-            
-            // SINDROMI E CLINICA
-            { q: "La sindrome alterna mesencefalica inferiore (Claude-Nothnagel) lesiona:", a: ["Nucleo rosso (parte inf), III nervo, peduncolo cerebellare", "Piramidi", "Olive", "Talamo"] },
-            { q: "I sintomi della sindrome di Claude-Nothnagel includono:", a: ["Paralisi oculare (III), atassia opposta, latero-pulsione", "Sordità", "Cecità", "Afasia"] },
-            { q: "Cosa causa il 'Ballismo'?", a: ["Lesione del Nucleo Subtalamico di Luys o del Pallido", "Lesione del Putamen", "Lesione del Caudato", "Lesione Corticale"] },
-            { q: "La degenerazione della Sostanza Nera causa:", a: ["Morbo di Parkinson (rigidità, tremore, acinesia)", "Corea di Huntington", "Sclerosi Laterale Amiotrofica", "Alzheimer"] },
-            { q: "Cosa si intende per 'Paralisi Spastica'?", a: ["Ipertono, iperreflessia, Babinski positivo (Lesione 1° motoneurone)", "Ipotono", "Atrofia", "Fascicolazioni"] },
-            { q: "Cosa si intende per 'Paralisi Flaccida'?", a: ["Ipotono, assenza riflessi, atrofia (Lesione 2° motoneurone)", "Spasticità", "Clono", "Babinski positivo"] },
-            
-            // CERVELLETTO - MICROANATOMIA
-            { q: "Quante cellule di Purkinje contatta una singola fibra parallela?", a: ["Circa 400-500", "Solo 1", "Circa 10", "Nessuna"] },
-            { q: "Quante cellule di Purkinje sono contattate da una fibra rampicante?", a: ["Rapporto 1:1 (sinapsi 'en passant')", "1:500", "1:1000", "1:10"] },
-            { q: "Le cellule stellate e a canestro sono:", a: ["Inibitorie (GABAergiche)", "Eccitatorie", "Sensoriali", "Motoneuroni"] },
-            { q: "Dove si trovano le cellule di Golgi nel cervelletto?", a: ["Parte superficiale dello strato dei granuli", "Strato molecolare", "Sostanza bianca", "Nuclei profondi"] },
-            { q: "L'arborizzazione dendritica della cellula di Golgi si estende:", a: ["Nello strato molecolare (su circa 10 Purkinje)", "Nello strato dei granuli", "Nella sostanza bianca", "Nel nucleo dentato"] },
-            { q: "Le cellule di Golgi inibiscono:", a: ["I dendriti dei granuli (nel glomerulo)", "Le cellule di Purkinje", "Le fibre rampicanti", "I nuclei profondi"] },
-            { q: "Qual è la funzione del glomerulo cerebellare?", a: ["Modulazione della trasmissione tra fibra muscoide e granulo", "Amplificazione del segnale", "Generazione del ritmo", "Nessuna"] },
-            { q: "Cos'è lo strato dei granuli esterni?", a: ["Strato transitorio presente fino al 1° anno di vita (fetale/postnatale)", "Patologia tumorale", "Strato definitivo", "Strato molecolare"] },
-            
-            // DIENCEFALO - SPECIFICHE
-            { q: "Il Campo H1 di Forel corrisponde a:", a: ["Fascicolo Talamico", "Fascicolo Lenticolare", "Zona Incerta", "Capsula interna"] },
-            { q: "Il Campo H2 di Forel corrisponde a:", a: ["Fascicolo Lenticolare", "Fascicolo Talamico", "Ansa lenticolare", "Stria terminale"] },
-            { q: "Quale nucleo si trova tra i campi H1 e H2 di Forel?", a: ["Zona Incerta", "Nucleo di Luys", "Sostanza Nera", "Talamo"] },
-            { q: "Il fascicolo retro-lenticolare della capsula interna contiene:", a: ["Radiazioni Ottiche (da CGL e Pulvinar)", "Radiazioni Acustiche", "Via piramidale", "Via frontale"] },
-            { q: "Il fascicolo sotto-lenticolare della capsula interna contiene:", a: ["Radiazioni Acustiche (da CGM)", "Radiazioni Ottiche", "Fascio cortico-spinale", "Fascio rubro-spinale"] },
-            { q: "L'abenula fa parte di:", a: ["Epitalamo (via olfattiva -> nuclei salivatori)", "Ipotalamo", "Talamo ventrale", "Subtalamo"] },
-            { q: "Qual è la funzione dell'abenula?", a: ["Trasmette info olfattive ai centri motori del tronco (riflessi alimentari)", "Visione", "Udito", "Equilibrio"] },
-            
-            // VARIE ED EVENTUALI
-            { q: "Il Nucleo Intermedio-Mediale (Lamina VII) contiene:", a: ["Neuroni sensitivi viscerali", "Motoneuroni somatici", "Neuroni di Clarke", "Cellule marginali"] },
-            { q: "Il Fascicolo Longitudinale Dorsale ha significato:", a: ["Viscerale (collega ipotalamo a nuclei parasimpatici tronco)", "Motorio somatico", "Visivo", "Uditivo"] },
-            { q: "La Stria Midollare del talamo collega:", a: ["Nuclei del setto/regione preottica all'abenula (via olfattiva)", "Corteccia e midollo", "Cervelletto e talamo", "Ipofisi e ipotalamo"] },
-            { q: "Il nucleo Arcuato del bulbo è considerato:", a: ["Un nucleo precerebellare (estensione dei nuclei pontini)", "Un nucleo motore", "Un nucleo sensitivo puro", "Un ganglio"] },
-            { q: "Le fibre Arcuo-Cerebellari formano:", a: ["Strie acustiche (sul pavimento IV ventricolo) e fibre arciformi esterne", "Lemnisco mediale", "Peduncolo superiore", "Corpo trapezoide"] },
-            // --- ESPANSIONE 2: COMPLETAMENTO FINALE ---
-            // APPROFONDIMENTI VIE NERVOSE
-            { q: "La via centrale della calotta comprende:", a: ["Fasci tegmento/rubro/reticolo/tetto/vestibolo/olivo-spinali", "Solo via piramidale", "Solo lemnischi", "Vie sensitive"] },
-            { q: "Il fascio cortico-rubro-spinale controlla:", a: ["Tono muscolare e movimenti flessori (extrapiramidale)", "Movimenti fini dita", "Sensibilità termica", "Equilibrio"] },
-            { q: "Il fascio Olivo-Spinale termina:", a: ["Primi mielomeri toracici (collo e cingolo scapolare)", "Mielomeri sacrali", "Tutto il midollo", "Non esiste"] },
-            { q: "La via cortico-strio-olivare connette:", a: ["Corteccia -> Striato -> Oliva -> Cervelletto (circuito apprendimento motorio)", "Corteccia -> Midollo", "Talamo -> Corteccia", "Retina -> Tetto"] },
-            { q: "Il nucleo Rosso riceve afferenze dal cervelletto tramite:", a: ["Peduncolo Cerebellare Superiore (brachium conjunctivum)", "Peduncolo Medio", "Peduncolo Inferiore", "Corpo calloso"] },
-            { q: "Le fibre dento-rubro-talamiche proiettano ai nuclei talamici:", a: ["Ventrale Laterale (VL) e Ventrale Anteriore (VA)", "VPL", "VPM", "Genicolati"] },
-            
-            // DETTAGLI TALAMO
-            { q: "Il nucleo Laterale Dorsale (LD) del talamo proietta a:", a: ["Lobo parietale superiore e cingolo", "Lobo frontale", "Insula", "Lobo occipitale"] },
-            { q: "Il nucleo Laterale Posteriore (LP) del talamo proietta a:", a: ["Lobo parietale superiore", "Lobo temporale", "Lobo frontale", "Insula"] },
-            { q: "I nuclei Intralaminari del talamo ricevono da:", a: ["Formazione Reticolare (Sistema Attivatore)", "Lemnisco mediale", "Via ottica", "Cervelletto"] },
-            { q: "Il nucleo Mediale-Dorsale (MD) riceve afferenze da:", a: ["Amigdala, Pallido ventrale, Corteccia piriforme", "Cervelletto", "Midollo", "Retina"] },
-            { q: "Il nucleo Ventrale Postero-Parvicellulare (VPPC) riceve:", a: ["Lemnisco Gustativo", "Lemnisco Mediale", "Via Ottica", "Via Acustica"] },
-            { q: "Dove proietta il nucleo Ventrale Postero-Parvicellulare?", a: ["Corteccia insulare anteriore (Area Gustativa)", "Lobo Occipitale", "Lobo Frontale", "Cervelletto"] },
-            
-            // DETTAGLI IPOTALAMO E IPOFISI
-            { q: "Quali ormoni sono 'Fattori di Rilascio' (Releasing Hormones)?", a: ["GnRH, CRH, TRH, GHRH", "ADH, Ossitocina", "Insulina, Glucagone", "T3, T4"] },
-            { q: "Dove vengono prodotti i fattori di rilascio ipotalamici?", a: ["Eminenza Mediana (neuroni parvicellulari)", "Neuroipofisi", "Epifisi", "Talamo"] },
-            { q: "Come raggiungono l'adenoipofisi i fattori di rilascio?", a: ["Sistema portale ipotalamo-ipofisario", "Assoni diretti", "Liquor", "Circolo sistemico"] },
-            { q: "Il nucleo Sopraottico e Paraventricolare sono:", a: ["Magnicellulari (producono ormoni veri e propri)", "Parvicellulari", "Sensitivi", "Motori"] },
-            { q: "La lesione dell'ipotalamo Laterale causa:", a: ["Afagia (rifiuto cibo) e Abibisia (rifiuto acqua)", "Obesità", "Iperfagia", "Insonnia"] },
-            { q: "La lesione dell'ipotalamo Ventro-Mediale causa:", a: ["Iperfagia e Obesità (mancanza senso sazietà)", "Anoressia", "Sete intensa", "Cecità"] },
-            
-            // DETTAGLI TELENCEFALO
-            { q: "Cos'è la 'lisencefalia fisiologica'?", a: ["Assenza di solchi nel cervello fetale fino alla 20a settimana", "Malformazione grave", "Cervello degli uccelli", "Assenza di corpo calloso"] },
-            { q: "Quando compaiono gli abbozzi delle circonvoluzioni?", a: ["24a settimana di gestazione", "Alla nascita", "10a settimana", "1 anno di vita"] },
-            { q: "Qual è lo spessore massimo della corteccia cerebrale?", a: ["4 mm (Lobo precentrale)", "1 cm", "10 mm", "0.5 mm"] },
-            { q: "Qual è lo spessore minimo della corteccia cerebrale?", a: ["2 mm (Lobo occipitale / calcarina)", "0.1 mm", "5 mm", "10 cm"] },
-            { q: "Quali sono i solchi primari?", a: ["Scissura Laterale, Centrale, Calcarina (costanti)", "Solchi terziari", "Solchi frontali", "Solchi temporali"] },
-            { q: "Il piede della circonvoluzione frontale inferiore forma:", a: ["Opercolo frontale (parte dell'Area di Broca)", "Ginocchio corpo calloso", "Uncus", "Insula"] },
-            { q: "Il giro temporale trasverso di Heschl si trova:", a: ["Profondità della scissura laterale (Lobo Temporale)", "Lobo Occipitale", "Lobo Frontale", "Superficie mediale"] },
-            { q: "La corteccia visiva primaria (Area 17) si trova:", a: ["Labbro superiore e inferiore della Scissura Calcarina", "Giro temporale superiore", "Giro precentrale", "Giro del cingolo"] },
-            { q: "Il Giro del Cingolo appartiene al:", a: ["Lobo Limbico", "Lobo Frontale puro", "Lobo Parietale puro", "Lobo dell'Insula"] },
-            { q: "Il Giro Paraippocampale continua anteriormente con:", a: ["L'Uncus", "Il Cuneo", "Il Giro Retto", "La Lingula"] },
-            
-            // CAPSULE E SOSTANZA BIANCA - DETTAGLI
-            { q: "Quali fibre passano nel 1/5 mediale del piede del peduncolo cerebrale?", a: ["Fascio Fronto-Pontino (Arnold)", "Fascio Piramidale", "Fascio di Türck", "Lemnisco Mediale"] },
-            { q: "Quali fibre passano nei 3/5 medi del piede del peduncolo cerebrale?", a: ["Fascio Piramidale (Cortico-spinale e Cortico-bulbare)", "Fascio di Arnold", "Fascio di Türck", "Sostanza Nera"] },
-            { q: "Quali fibre passano nel 1/5 laterale del piede del peduncolo cerebrale?", a: ["Fascio Temporo-Parieto-Occipito-Pontino (Türck)", "Fascio di Arnold", "Fascio Piramidale", "Lemnisco Spinale"] },
-            { q: "La Capsula Esterna separa:", a: ["Putamen e Claustro", "Caudato e Talamo", "Claustro e Insula", "Globo Pallido e Putamen"] },
-            { q: "La Capsula Estrema separa:", a: ["Claustro e Corteccia dell'Insula", "Putamen e Claustro", "Caudato e Capsula Interna", "Talamo e Terzo Ventricolo"] },
-            { q: "Le fibre commissurali collegano:", a: ["Aree omologhe dei due emisferi (es. Corpo Calloso)", "Aree dello stesso emisfero", "Corteccia e midollo", "Corteccia e talamo"] },
-            { q: "Le fibre associative intra-emisferiche collegano:", a: ["Diverse aree dello stesso emisfero (es. fascicolo arcuato)", "I due emisferi", "Corteccia e tronco", "Midollo e cervelletto"] },
-            { q: "Le fibre proiettive collegano:", a: ["Corteccia con centri sottocorticali (talamo, tronco, midollo)", "I due emisferi", "Giri adiacenti", "Cervelletto e midollo"] },
-            
-            // RIPASSO GENERALE E CURIOSITÀ DAL TESTO
-            { q: "Il 'dolore riferito' all'arto superiore sinistro in infarto è dovuto a:", a: ["Convergenza di fibre viscerali cardiache e somatiche (T1-T5) sullo stesso neurone spinale", "Errore della corteccia", "Compressione nervosa", "Ischemia del braccio"] },
-            { q: "Il concetto di Parasimpatico Spinale (Ken Kuré) ipotizza:", a: ["Neuroni parasimpatici diffusi nel midollo (vasodilatazione antidromica)", "Assenza di ortosimpatico", "Solo parasimpatico sacrale", "Nessuna delle precedenti"] },
-            { q: "Il nucleo motore del nervo faciale innerva:", a: ["Muscoli mimici (faccia), stapedio, stiloioideo, ventre post. digastrico", "Masticatori", "Lingua", "Faringe"] },
-            { q: "Il nucleo masticatore del trigemino innerva:", a: ["Massetere, Temporale, Pterigoidei, ventre ant. digastrico", "Mimici", "Lingua", "Occhio"] },
-            { q: "Il riflesso pupillare alla luce coinvolge:", a: ["Nervo Ottico (II) -> Pretetto -> Edinger-Westphal -> Oculomotore (III)", "Trigemino -> Faciale", "Acustico -> Faciale", "Spinale -> Motore"] },
-            { q: "La via Cortico-Spinale Ventrale (diretta) costituisce il:", a: ["20% delle fibre piramidali", "80% delle fibre", "50% delle fibre", "100% delle fibre"] },
-            { q: "I tubercoli quadrigemini inferiori sono collegati a:", a: ["Corpo Genicolato Mediale (via acustica)", "Corpo Genicolato Laterale", "Cervelletto", "Midollo"] },
-            { q: "I tubercoli quadrigemini superiori sono collegati a:", a: ["Corpo Genicolato Laterale (via ottica)", "Corpo Genicolato Mediale", "Oliva", "Ponte"] },
-            { q: "La commessura posteriore si trova:", a: ["Sopra i collicoli superiori (zona pre-tettale)", "Sotto il corpo calloso", "Nel midollo", "Nel bulbo"] },
-            { q: "Il velo midollare superiore si trova:", a: ["Tra i due peduncoli cerebellari superiori (tetto IV ventricolo)", "Nel midollo spinale", "Nel fornice", "Nel corpo calloso"] },
-            { q: "L'Organo Vascoloso della Lamina Terminale (OVLT) è:", a: ["Un organo circumventricolare (privo di barriera BEE)", "Un nucleo motore", "Una parte del cervelletto", "Un ventricolo"] },
-            { q: "Quale struttura è responsabile della 'memoria motoria' o procedurale?", a: ["Cervelletto e Gangli della Base", "Ippocampo", "Amigdala", "Midollo Spinale"] },
-            { q: "Il Fascicolo Arcuato connette:", a: ["Area di Wernicke e Area di Broca (Linguaggio)", "Talamo e Corteccia", "Ippocampo e Fornice", "Cervelletto e Midollo"] },
-            { q: "Le strie midollari del IV ventricolo (Piccolomini) delimitano:", a: ["Triangolo Pontino e Triangolo Bulbare", "Talamo e Ipotalamo", "Mesencefalo e Ponte", "Midollo e Bulbo"] },
-            { q: "Il nucleo cuneato accessorio proietta al cervelletto tramite:", a: ["Fascio cuneo-cerebellare (Peduncolo inferiore)", "Peduncolo medio", "Peduncolo superiore", "Via piramidale"] },
-            // SOSTANZA BIANCA E CAPSULA INTERNA
-        { q: "Come viene chiamata la sostanza bianca del telencefalo considerata nella sua totalità?", a: ["Centro ovale del Vieussens", "Corpo calloso", "Capsula interna", "Corona radiata"] },
-        { q: "Quali fibre connettono bi-direzionalmente la corteccia ai nuclei grigi e al midollo?", a: ["Fibre proiettive", "Fibre associative", "Fibre commissurali", "Fibre arcuate"] },
-        { q: "Quali fibre connettono aree diverse dello stesso emisfero?", a: ["Fibre associative", "Fibre proiettive", "Fibre commissurali", "Fibre callose"] },
-        { q: "Qual è la forma della capsula interna in sezione orizzontale?", a: ["A forma di V", "A forma di C", "Circolare", "A forma di X"] },
-        { q: "Da cosa è delimitato medialmente il braccio anteriore della capsula interna?", a: ["Dalla testa del nucleo caudato", "Dal talamo", "Dal nucleo lenticolare", "Dal claustro"] },
-        { q: "Cosa passa nel braccio anteriore della capsula interna?", a: ["Fascio fronto-pontino di Arnold e peduncolo talamico anteriore", "Fascio piramidale", "Radiazione ottica", "Fascio di Türck"] },
-        { q: "Quale fascio importante passa nel ginocchio della capsula interna?", a: ["Fascio cortico-bulbare (genicolato)", "Fascio cortico-spinale", "Radiazione acustica", "Fascio fronto-pontino"] },
-        { q: "Quale fascio passa nei 2/3 anteriori del braccio posteriore della capsula interna?", a: ["Fascio cortico-spinale", "Fascio genicolato", "Radiazione ottica", "Fascio di Arnold"] },
-        { q: "Dove passano le fibre della via ottica nella capsula interna?", a: ["Nel segmento retro-lenticolare", "Nel ginocchio", "Nel braccio anteriore", "Nel segmento sotto-lenticolare"] },
-        { q: "Quale patologia è tipica della rottura delle arterie lenticolo-striate nell'anziano iperteso?", a: ["Emorragia capsulare", "Emorragia subaracnoidea", "Infarto cerebellare", "Meningite"] },
-
-        // ANATOMIA CORTECCIA CEREBRALE
-        { q: "Quando compaiono gli abbozzi delle circonvoluzioni cerebrali?", a: ["Alla 24a settimana", "Alla 20a settimana", "Alla nascita", "Al 3° mese"] },
-        { q: "Quale struttura concorre a formare l'opercolo frontale coprendo l'insula?", a: ["Il piede della circonvoluzione frontale inferiore", "La circonvoluzione temporale superiore", "Il giro del cingolo", "Il lobulo paracentrale"] },
-        { q: "Dove si trova l'area di Wernicke nell'emisfero dominante?", a: ["Circonvoluzione temporale superiore e angolare", "Circonvoluzione frontale inferiore", "Lobo occipitale", "Insula"] },
-        { q: "Dove sono localizzate le circonvoluzioni temporali trasverse di Heschl?", a: ["Nella profondità della scissura di Silvio (lobo temporale)", "Sulla superficie mediale del lobo frontale", "Nel lobo limbico", "Nel lobo occipitale"] },
-        { q: "Da cosa è costituito il lobo limbico?", a: ["Giro del cingolo e giro dell'ippocampo", "Insula e opercolo", "Lobo frontale e parietale", "Amigdala e uncus"] },
-
-        // CITOARCHITETTURA
-        { q: "Quanti strati ha l'isocortex (neopallio)?", a: ["6 strati", "3 strati", "4 strati", "10 strati"] },
-        { q: "Quale strato della corteccia contiene le cellule giganti di Betz?", a: ["V strato (piramidale interno)", "III strato (piramidale esterno)", "IV strato (granulare interno)", "I strato (molecolare)"] },
-        { q: "Quale strato riceve le proiezioni sensitive (ed è quindi sviluppato nella corteccia sensitiva)?", a: ["IV strato (granulare interno)", "V strato", "I strato", "VI strato"] },
-        { q: "Come viene definita la corteccia dell'area motoria primaria (Area 4)?", a: ["Agranulare astriata", "Granulare (Koniocortex)", "Polare", "Allocortex"] },
-        { q: "Cos'è la stria di Gennari (o di Vicq d’Azir)?", a: ["La stria esterna di Baillarger nell'area visiva (lobo occipitale)", "Un fascio del ponte", "Una stria del lobo limbico", "Un fascio olfattivo"] },
-        { q: "Quale tipo di corteccia è definita Koniocortex?", a: ["Corteccia granulare (sensitiva)", "Corteccia motoria", "Corteccia limbica", "Paleocortex"] },
-
-        // AREE DI BRODMANN E FUNZIONI
-        { q: "A quale area di Brodmann corrisponde l'area motrice primaria?", a: ["Area 4", "Area 6", "Area 44", "Area 3-1-2"] },
-        { q: "Dove origina il fascio genicolato (cortico-bulbare)?", a: ["Dall'1/3 inferiore dell'area 4", "Dai 2/3 superiori dell'area 4", "Dall'area visiva", "Dall'area 6"] },
-        { q: "Qual è la caratteristica dell'Homunculus motorio?", a: ["Piede in alto, testa in basso, mani e lingua enormi", "Testa in alto, piedi in basso", "Proporzioni anatomiche rispettate", "Mani piccole e tronco enorme"] },
-        { q: "Cosa provoca una lesione dell'Area 44-45 (Centro di Broca)?", a: ["Afasia motoria (non riesce a parlare ma muove i muscoli)", "Paralisi della lingua", "Sordità verbale", "Cecità corticale"] },
-        { q: "A quale area corrisponde la corteccia somestesica primaria?", a: ["Area 3-1-2", "Area 4", "Area 17", "Area 41-42"] },
-        { q: "Qual è la funzione dell'Area 5-7 (Parietale posteriore)?", a: ["Stereognosia e schema corporeo", "Motilità volontaria", "Visione primaria", "Udito primario"] },
-        { q: "Dove si trova l'area visiva primaria (Area 17)?", a: ["Labbri della scissura calcarina (lobo occipitale)", "Giro temporale superiore", "Giro precentrale", "Polo frontale"] },
-        { q: "Quale area riceve le fibre dal corpo genicolato mediale?", a: ["Area 41-42 (Uditiva)", "Area 17 (Visiva)", "Area 3-1-2 (Somestesica)", "Area 4 (Motoria)"] },
-
-        // VIE MOTORIE
-        { q: "Da dove origina principalmente la via piramidale?", a: ["Area 4 (e aree 6, 8, 3-1-2)", "Solo dall'Area 6", "Dal Talamo", "Dal Nucleo Rosso"] },
-        { q: "Dove decussano (incrociano) l'80% delle fibre del fascio piramidale?", a: ["Nelle piramidi bulbari (decussazione delle piramidi)", "Nel ponte", "Nel mesencefalo", "Nel midollo spinale"] },
-        { q: "Cosa innerva il fascio piramidale laterale (crociato)?", a: ["Muscolatura distale degli arti (movimenti fini)", "Muscolatura assiale del tronco", "Muscoli dell'occhio", "Visceri"] },
-        { q: "Qual è la funzione del circuito soppressorio (Area 4S)?", a: ["Porre fine al comando motorio inibendo l'area 4", "Avviare il movimento", "Aumentare il tono muscolare", "Stimolare il cervelletto"] },
-        { q: "Qual è il percorso della via esopiramidale (cortico-ponto-cerebellare)?", a: ["Corteccia -> Ponte -> Neocerebello -> Talamo -> Corteccia", "Corteccia -> Midollo -> Muscolo", "Corteccia -> Striato -> Pallido", "Talamo -> Corteccia -> Ponte"] },
-
-        // SISTEMA LIMBICO
-        { q: "Quali sono le tre componenti della formazione dell'ippocampo?", a: ["Subiculum, Corno di Ammone, Giro Dentato", "Amigdala, Setto, Fornice", "CA1, CA2, CA3", "Alveus, Fimbria, Uncus"] },
-        { q: "Qual è la principale afferenza all'ippocampo?", a: ["Via perforante (dalla corteccia entorinale)", "Fascio mammillo-talamico", "Stria terminale", "Fascio genicolato"] },
-        { q: "Cosa connette il circuito trisinaptico dell'ippocampo?", a: ["Giro Dentato -> CA3 -> CA1", "Subiculum -> Amigdala -> Talamo", "CA1 -> CA3 -> Giro Dentato", "Fornice -> Setto -> Ippocampo"] },
-        { q: "Quale struttura connette l'ippocampo ai corpi mammillari?", a: ["Il fornice", "La stria terminale", "Il corpo calloso", "La capsula interna"] },
-        { q: "Qual è la funzione principale dell'amigdala?", a: ["Elaborazione emozionale (paura, aggressività)", "Memoria spaziale", "Controllo motorio fine", "Visione dei colori"] },
-        { q: "Quali strutture compongono il Circuito di Papez?", a: ["Ipotalamo -> Talamo ant. -> Cingolo -> Ippocampo -> Ipotalamo", "Amigdala -> Striato -> Pallido -> Talamo", "Corteccia -> Ponte -> Cervelletto -> Talamo", "Ippocampo -> Amigdala -> Uncus"] },
-        { q: "Dove si trova il Nucleo Accumbens?", a: ["Nello striato ventrale (vicino alla testa del caudato)", "Nel mesencefalo", "Nel lobo occipitale", "Nel cervelletto"] },
-        { q: "Quale neurotrasmettitore è associato al sistema di ricompensa nel Nucleo Accumbens?", a: ["Dopamina", "Acetilcolina", "GABA", "Serotonina"] }
-        ],
-        
-        "C04": [
-          // --- INTRODUZIONE E NEUROTRASMETTITORI ---
-        { q: "Qual è il mediatore chimico pre-gangliare del sistema ortosimpatico?", a: ["Acetilcolina", "Noradrenalina", "Adrenalina", "Dopamina"] },
-        { q: "Qual è il mediatore chimico pre-gangliare del sistema parasimpatico?", a: ["Acetilcolina", "Noradrenalina", "Serotonina", "Glutammato"] },
-        { q: "Qual è il mediatore chimico post-gangliare del sistema ortosimpatico?", a: ["Noradrenalina", "Acetilcolina", "GABA", "Istamina"] },
-        { q: "Qual è il mediatore chimico post-gangliare del sistema parasimpatico?", a: ["Acetilcolina", "Noradrenalina", "Adrenalina", "Dopamina"] },
-        { q: "Quale struttura nervosa è priva di placca motrice ma presenta varicosità?", a: ["La terminazione post-gangliare viscerale", "La giunzione neuromuscolare somatica", "Il dendrite del motoneurone", "L'assone dei nervi sensitivi"] },
-        { q: "Quale sistema ha fibre pre-gangliari corte e post-gangliari lunghe?", a: ["Sistema Ortosimpatico", "Sistema Parasimpatico", "Sistema Somatico", "Sistema Piramidale"] },
-        { q: "Quale sistema ha fibre pre-gangliari lunghe e post-gangliari corte?", a: ["Sistema Parasimpatico", "Sistema Ortosimpatico", "Sistema Somatico", "Sistema Enterico"] },
-        { q: "Quale sistema ha uno spettro d'azione diffuso (amplificazione del segnale)?", a: ["Sistema Ortosimpatico", "Sistema Parasimpatico", "Sistema Somatico", "Sistema Sensitivo"] },
-        { q: "Quale sistema controlla l'erezione dei peli e la secrezione sudoripara?", a: ["Sistema Ortosimpatico", "Sistema Parasimpatico", "Sistema Somatico", "Sistema Limbico"] },
-        { q: "Quale percentuale di catecolamine produce la midollare del surrene?", a: ["80% Adrenalina, 20% Noradrenalina", "50% Adrenalina, 50% Noradrenalina", "20% Adrenalina, 80% Noradrenalina", "100% Noradrenalina"] },
-
-        // --- LOCALIZZAZIONE NEURONI CENTRALI ---
-        { q: "Dove si trovano i neuroni pregangliari dell'ortosimpatico?", a: ["Corno laterale del midollo (T1-L2)", "Tronco encefalico", "Midollo sacrale (S2-S4)", "Corno anteriore (C1-C8)"] },
-        { q: "Dove si trovano i neuroni pregangliari del parasimpatico cranico?", a: ["Tronco encefalico (nuclei III, VII, IX, X)", "Midollo cervicale", "Midollo toracico", "Gangli della base"] },
-        { q: "Quali segmenti midollari ospitano il parasimpatico sacrale?", a: ["S2-S3-S4", "L1-L2-L3", "T12-L1", "S1-S5"] },
-        { q: "Il nervo oculomotore (III) origina da quale nucleo parasimpatico?", a: ["Nucleo di Edinger-Westphal", "Nucleo salivatorio superiore", "Nucleo salivatorio inferiore", "Nucleo ambiguo"] },
-        { q: "Il nervo faciale (VII) origina da quale nucleo parasimpatico?", a: ["Nucleo salivatorio superiore", "Nucleo salivatorio inferiore", "Nucleo dorsale del vago", "Nucleo del tratto solitario"] },
-        { q: "Il nervo glossofaringeo (IX) origina da quale nucleo parasimpatico?", a: ["Nucleo salivatorio inferiore", "Nucleo salivatorio superiore", "Nucleo ambiguo", "Nucleo motore dorsale"] },
-        { q: "Il nervo vago (X) origina da quale nucleo parasimpatico principale?", a: ["Nucleo motore dorsale del vago", "Nucleo di Edinger-Westphal", "Nucleo rosso", "Nucleo pontino"] },
-        { q: "Quale nucleo 'branchiale' contiene anche neuroni parasimpatici per il cuore?", a: ["Nucleo ambiguo", "Nucleo olivare", "Nucleo gracile", "Nucleo cuneato"] },
-
-        // --- PARASIMPATICO: OCCHIO (III NERVO) ---
-        { q: "Qual è il ganglio parasimpatico annesso al nervo oculomotore?", a: ["Ganglio ciliare", "Ganglio pterigopalatino", "Ganglio otico", "Ganglio sottomandibolare"] },
-        { q: "Dove si trova il ganglio ciliare?", a: ["Nella cavità orbitaria, dietro al bulbo", "Nella fossa pterigopalatina", "Nel canale faciale", "Sotto la mandibola"] },
-        { q: "Quale muscolo è responsabile del riflesso di miosi?", a: ["Muscolo sfintere della pupilla", "Muscolo dilatatore della pupilla", "Muscolo retto laterale", "Muscolo obliquo superiore"] },
-        { q: "Quale muscolo controlla l'accomodazione (messa a fuoco)?", a: ["Muscolo ciliare", "Muscolo tarsale", "Muscolo elevatore della palpebra", "Muscolo stapedio"] },
-        { q: "Il riflesso di miosi è mediato da quale sistema?", a: ["Parasimpatico", "Ortosimpatico", "Somatico", "Sensitivo puro"] },
-
-        // --- PARASIMPATICO: GHIANDOLE (VII NERVO) ---
-        { q: "Quale nervo trasporta le fibre pregangliari al ganglio pterigopalatino?", a: ["Nervo grande petroso superficiale", "Nervo piccolo petroso", "Corda del timpano", "Nervo linguale"] },
-        { q: "Dove si trova il ganglio pterigopalatino?", a: ["Nella fossa pterigopalatina", "Nell'orecchio medio", "Nella cavità orbitaria", "Sulla parotide"] },
-        { q: "Quale nervo si unisce al grande petroso per formare il nervo vidiano?", a: ["Nervo petroso profondo (ortosimpatico)", "Nervo mandibolare", "Nervo vago", "Nervo ottico"] },
-        { q: "Quali ghiandole sono innervate dal ganglio pterigopalatino?", a: ["Lacrimale, nasali, palatine, faringee", "Parotide", "Sottomandibolare e sottolinguale", "Tiroide"] },
-        { q: "Attraverso quale anastomosi il parasimpatico raggiunge la ghiandola lacrimale?", a: ["Tra nervo zigomatico e nervo lacrimale", "Tra nervo faciale e trigemino", "Tra nervo vago e accessorio", "Non esiste anastomosi"] },
-        { q: "Quale ramo del faciale trasporta fibre al ganglio sottomandibolare?", a: ["Corda del timpano", "Nervo grande petroso", "Nervo stapedio", "Nervo auricolare posteriore"] },
-        { q: "A quale nervo si unisce la corda del timpano?", a: ["Nervo linguale (ramo del V3)", "Nervo alveolare inferiore", "Nervo ipoglosso", "Nervo glossofaringeo"] },
-        { q: "Quali ghiandole innerva il ganglio sottomandibolare?", a: ["Sottomandibolare e sottolinguale", "Parotide", "Lacrimale", "Ghiandole sudoripare della faccia"] },
-        { q: "Oltre alle fibre parasimpatiche, cosa trasporta la corda del timpano?", a: ["Sensibilità gustativa 2/3 anteriori lingua", "Sensibilità tattile lingua", "Motilità lingua", "Sensibilità orecchio"] },
-
-        // --- PARASIMPATICO: PAROTIDE (IX NERVO) ---
-        { q: "Quale nervo trasporta fibre pregangliari al ganglio otico?", a: ["Nervo piccolo petroso (dal nervo timpanico di Jacobson)", "Nervo grande petroso", "Nervo vidiano", "Corda del timpano"] },
-        { q: "Dove si trova il ganglio otico?", a: ["Sotto al forame ovale", "Nel meato acustico interno", "Nella fossa pterigopalatina", "Vicino al ganglio ciliare"] },
-        { q: "Quale ghiandola è innervata dal ganglio otico?", a: ["Parotide", "Sottomandibolare", "Lacrimale", "Tiroide"] },
-        { q: "Attraverso quale foro esce il nervo glossofaringeo dal cranio?", a: ["Foro giugulare", "Foro ovale", "Foro rotondo", "Foro spinoso"] },
-
-        // --- PARASIMPATICO: VAGO (X NERVO) ---
-        { q: "Dove sono localizzati i gangli parasimpatici del nervo vago?", a: ["Nella parete dei visceri (intramurali)", "Nella catena paravertebrale", "Davanti all'aorta", "Nel midollo spinale"] },
-        { q: "Fino a quale punto dell'intestino crasso arriva l'innervazione vagale?", a: ["Metà destra del colon trasverso", "Flessura splenica sinistra", "Colon sigmoideo", "Retto"] },
-        { q: "Qual è l'effetto del vago sui bronchi?", a: ["Broncocostrizione", "Broncodilatazione", "Nessun effetto", "Inibizione secrezione"] },
-        { q: "Qual è l'effetto del vago sulla frequenza cardiaca?", a: ["Bradicardia (riduzione frequenza)", "Tachicardia (aumento frequenza)", "Aumento forza contrattile", "Vasocostrizione coronarica"] },
-        { q: "Qual è l'effetto del vago sulla peristalsi intestinale?", a: ["Stimola la peristalsi", "Inibisce la peristalsi", "Chiude gli sfinteri", "Blocca la secrezione"] },
-        { q: "Il plesso celiaco è formato da anastomosi tra vago e...?", a: ["Fibre del ganglio celiaco (ortosimpatico)", "Nervo frenico", "Nervi intercostali", "Nervo sciatico"] },
-
-        // --- PARASIMPATICO SACRALE ---
-        { q: "Quali nervi portano le fibre parasimpatiche sacrali (S2-S4)?", a: ["Nervi splancnici pelvici", "Nervi splancnici lombari", "Nervi ipogastrici", "Nervo pudendo"] },
-        { q: "Qual è il territorio di innervazione del parasimpatico sacrale?", a: ["Visceri pelvici e metà sinistra del colon (dal trasverso distale al retto)", "Tutto l'intestino", "Solo vescica", "Solo genitali"] },
-        { q: "Quale effetto ha il parasimpatico sulla vescica?", a: ["Contrazione detrusore e rilascio sfintere (minzione)", "Rilascio detrusore e contrazione sfintere", "Inibizione minzione", "Dolore vescicale"] },
-        { q: "Quale effetto ha il parasimpatico sui genitali maschili?", a: ["Erezione", "Eiaculazione", "Vasocostrizione", "Flaccidità"] },
-        { q: "Attraverso quale plesso si distribuisce il parasimpatico sacrale?", a: ["Plesso ipogastrico inferiore", "Plesso celiaco", "Plesso brachiale", "Plesso cervicale"] },
-
-        // --- ORTOSIMPATICO: ORGANIZZAZIONE GENERALE ---
-        { q: "Dove si trova la catena dei gangli dell'ortosimpatico?", a: ["Paravertebrale (lateralmente alla colonna)", "Prevertebrale (davanti all'aorta)", "Intramurale", "Dentro il midollo"] },
-        { q: "Quali rami connettono il nervo spinale al ganglio simpatico?", a: ["Rami comunicanti bianchi e grigi", "Solo rami bianchi", "Solo rami grigi", "Nessun ramo"] },
-        { q: "Il ramo comunicante bianco contiene...", a: ["Fibre pregangliari mielinizzate", "Fibre postgangliari amieliniche", "Fibre sensitive pure", "Fibre somatiche"] },
-        { q: "Il ramo comunicante grigio contiene...", a: ["Fibre postgangliari amieliniche", "Fibre pregangliari mielinizzate", "Fibre motorie somatiche", "Assoni giganti"] },
-        { q: "In quali livelli midollari sono presenti i rami comunicanti BIANCHI?", a: ["T1-L2", "C1-C8", "L3-S5", "In tutti i livelli"] },
-        { q: "In quali livelli midollari sono presenti i rami comunicanti GRIGI?", a: ["In tutti i nervi spinali (31 paia)", "Solo T1-L2", "Solo cervicali", "Solo sacrali"] },
-        { q: "Come arrivano le fibre ortosimpatiche ai gangli cervicali e sacrali?", a: ["Attraverso i tronchi intergangliari (salita/discesa)", "Direttamente dal midollo cervicale", "Dal nervo vago", "Non ci arrivano"] },
-
-        // --- ORTOSIMPATICO: TESTA E COLLO ---
-        { q: "Da quali gangli origina l'innervazione ortosimpatica della testa?", a: ["Ganglio cervicale superiore", "Ganglio cervicale medio", "Ganglio stellato", "Gangli toracici"] },
-        { q: "Quale ganglio è formato dalla fusione di C1-C4?", a: ["Ganglio cervicale superiore", "Ganglio cervicale medio", "Ganglio stellato", "Ganglio otico"] },
-        { q: "Quale nervo origina dal ganglio cervicale superiore e segue l'arteria omonima?", a: ["Nervo carotico interno", "Nervo vertebrale", "Nervo vago", "Nervo frenico"] },
-        { q: "Cosa innerva il nervo petroso profondo?", a: ["Ghiandole lacrimali/nasali (componente ortosimpatica)", "Parotide", "Tiroide", "Muscoli dell'occhio"] },
-        { q: "Quale radice del ganglio ciliare proviene dal plesso carotico interno?", a: ["Radice simpatica", "Radice parasimpatica", "Radice sensitiva", "Radice motoria"] },
-        { q: "Quale muscolo dell'occhio è innervato dall'ortosimpatico?", a: ["Muscolo dilatatore della pupilla", "Muscolo sfintere della pupilla", "Muscolo ciliare", "Muscolo retto mediale"] },
-        { q: "Quale altro muscolo oculare è innervato dall'ortosimpatico (rima palpebrale)?", a: ["Muscolo tarsale di Muller", "Elevatore della palpebra (striato)", "Orbicolare dell'occhio", "Frontale"] },
-        { q: "Cosa provoca la sindrome di Bernard-Horner?", a: ["Miosi, ptosi, enoftalmo, anidrosi", "Midriasi, esoftalmo, iperidrosi", "Paralisi facciale", "Sordità"] },
-        { q: "Quale riflesso è mediato dall'ortosimpatico nell'occhio?", a: ["Riflesso di midriasi (adattamento al buio)", "Riflesso di miosi", "Riflesso corneale", "Accomodazione"] },
-        { q: "Da dove origina il centro cilio-spinale (di Budge)?", a: ["Mielomeri T1-T3", "Tronco encefalico", "Mielomeri S2-S4", "Ganglio ciliare"] },
-
-        // --- ORTOSIMPATICO: TORACE ---
-        { q: "Quale ganglio è spesso fuso con il primo toracico (ganglio stellato)?", a: ["Ganglio cervicale inferiore", "Ganglio cervicale superiore", "Ganglio cervicale medio", "Ganglio celiaco"] },
-        { q: "Cosa innerva il plesso vertebrale?", a: ["Vasi cerebrali (seguendo l'arteria vertebrale)", "Midollo spinale", "Vertebre cervicali", "Muscoli del collo"] },
-        { q: "Qual è l'effetto dell'ortosimpatico sui bronchi?", a: ["Broncodilatazione", "Broncocostrizione", "Aumento muco", "Tosse"] },
-        { q: "Qual è l'effetto dell'ortosimpatico sul cuore?", a: ["Tachicardia (aumento frequenza e forza)", "Bradicardia", "Riduzione conduzione", "Arresto cardiaco"] },
-        { q: "Da dove provengono le fibre per i nervi cardiaci toracici?", a: ["Gangli paravertebrali T1-T5", "Gangli cervicali", "Nervo vago", "Gangli lombari"] },
-        { q: "Perché l'asma si tratta con farmaci simpaticomimetici?", a: ["Per indurre broncodilatazione", "Per indurre tosse", "Per ridurre il battito", "Per aumentare la secrezione"] },
-
-        // --- ORTOSIMPATICO: ADDOME (NERVI SPLANCNICI) ---
-        { q: "Cosa sono i gangli prevertebrali?", a: ["Gangli situati davanti all'aorta addominale (Celiaco, Mesenterici)", "Gangli della catena laterale", "Gangli nella parete intestinale", "Gangli spinali"] },
-        { q: "Da quali segmenti origina il Nervo Grande Splancnico?", a: ["T5-T9", "T1-T4", "T10-T11", "L1-L2"] },
-        { q: "Dove termina prevalentemente il Nervo Grande Splancnico?", a: ["Ganglio Celiaco", "Ganglio mesenterico inferiore", "Ganglio cervicale", "Surrene"] },
-        { q: "Da quali segmenti origina il Nervo Piccolo Splancnico?", a: ["T10-T11", "T5-T9", "T12", "L1-L2"] },
-        { q: "Quale ganglio è innervato dal Piccolo Splancnico?", a: ["Ganglio mesenterico superiore e aortico-renale", "Ganglio celiaco", "Ganglio stellato", "Ganglio pelvico"] },
-        { q: "Quale nervo splancnico origina da T12?", a: ["Nervo Splancnico Minimo", "Nervo Grande Splancnico", "Nervo Vago", "Nervo Femorale"] },
-        { q: "Cosa innervano le fibre postgangliari del ganglio celiaco?", a: ["Visceri loggia sovramesocolica (stomaco, fegato, milza)", "Intestino crasso sinistro", "Vescica", "Genitali"] },
-        { q: "Cosa innervano le fibre del ganglio mesenterico superiore?", a: ["Intestino tenue e metà destra del crasso", "Stomaco", "Retto", "Rene"] },
-        { q: "Cosa innervano le fibre del ganglio mesenterico inferiore?", a: ["Metà sinistra del colon (discendente, sigma)", "Intestino tenue", "Fegato", "Cuore"] },
-        { q: "Come viene innervata la midollare del surrene?", a: ["Da fibre pregangliari dirette (senza sinapsi nei gangli)", "Da fibre postgangliari celiache", "Dal nervo vago", "Dal plesso ipogastrico"] },
-        { q: "Qual è l'effetto dell'ortosimpatico sullo sfintere pilorico?", a: ["Contrazione (chiusura)", "Rilassamento (apertura)", "Peristalsi", "Nessun effetto"] },
-
-        // --- ORTOSIMPATICO: PELVI ---
-        { q: "Cos'è il plesso ipogastrico superiore?", a: ["Rete nervosa davanti a L5/promontorio", "Rete nervosa nel torace", "Rete nervosa cervicale", "Ganglio sacrale"] },
-        { q: "Cosa sono i nervi ipogastrici?", a: ["Connessioni tra plesso ipogastrico superiore e inferiore", "Nervi cranici", "Rami del femorale", "Nervi somatici"] },
-        { q: "Dove si trova il plesso ipogastrico inferiore?", a: ["Nella fascia pelvica, ai lati dei visceri", "Davanti all'aorta", "Nel canale vertebrale", "Sotto il diaframma"] },
-        { q: "Qual è l'effetto dell'ortosimpatico sull'eiaculazione?", a: ["Stimola l'eiaculazione", "Stimola l'erezione", "Inibisce l'eiaculazione", "Rilassa la prostata"] },
-        { q: "Da dove arrivano le fibre pregangliari per i visceri pelvici (ortosimpatico)?", a: ["Mielomeri L1-L2 (tramite splancnici lombari)", "Mielomeri S2-S4", "Mielomeri T1-T4", "Tronco encefalico"] },
-
-        // --- SENSIBILITÀ VISCERALE E DOLORE ---
-        { q: "Come viaggiano le fibre del dolore viscerale?", a: ["A ritroso lungo i nervi ortosimpatici (splancnici)", "Lungo i nervi parasimpatici", "Nei cordoni posteriori", "Nel fascio piramidale"] },
-        { q: "Perché esiste il dolore riferito (es. braccio sinistro per infarto)?", a: ["Convergenza afferenze viscerali e somatiche nello stesso segmento midollare", "Errore dei recettori cardiaci", "Danno diretto al braccio", "Compressione nervosa"] },
-        { q: "Dove hanno il corpo cellulare i neuroni sensitivi viscerali?", a: ["Nei gangli delle radici dorsali (spinali)", "Nel corno laterale", "Nel ganglio celiaco", "Nel talamo"] },
-        { q: "Quale manovra può bloccare il dolore dell'angina pectoris?", a: ["Blocco del ganglio stellato (anestetico)", "Blocco del nervo vago", "Taglio del frenico", "Blocco del nervo faciale"] },
-        
-        // --- EXTRA E CURIOSITÀ ---
-        { q: "Cos'è il sistema nervoso metasimpatico?", a: ["Il sistema nervoso enterico (intramurale)", "Il sistema limbico", "Il sistema vestibolare", "Il sistema piramidale"] },
-        { q: "Cosa provoca una lesione della corda del timpano?", a: ["Perdita gusto 2/3 anteriori lingua e ridotta salivazione", "Sordità totale", "Paralisi facciale completa", "Cecità"] },
-        { q: "Cosa innerva il muscolo stapedio?", a: ["Nervo faciale (protezione dai rumori forti)", "Nervo acustico", "Nervo trigemino", "Nervo vago"] },
-        { q: "Quale nervo passa attraverso la fessura orbitaria inferiore?", a: ["Nervo infraorbitario e zigomatico (ramo mascellare)", "Nervo ottico", "Nervo oftalmico", "Nervo oculomotore"] },
-        { q: "Qual è la funzione dei muscoli tarsali di Muller?", a: ["Allargamento rima palpebrale (involontario)", "Chiusura occhio", "Movimento bulbo", "Lacrimazione"] }
-          
-          ],
-          "SISTEMA NERVOSO AUTONOMO": [
-            { q: "Che tipo di nervo è il nervo olfattivo?", a: ["Sensitivo somatico speciale", "Misto", "Motore puro", "Sensitivo viscerale"] },
-        { q: "Il nervo olfattivo possiede un nucleo nel tronco encefalico?", a: ["No, non è un nervo cranico in senso stretto", "Sì, nel mesencefalo", "Sì, nel bulbo", "Sì, nel ponte"] },
-        { q: "Dove si trovano i neuroni olfattivi?", a: ["Nella mucosa olfattiva periferica", "Nel bulbo olfattivo", "Nel tratto olfattivo", "Nel talamo"] },
-        { q: "Come terminano i dendriti delle cellule olfattive?", a: ["In 6-8 ciglia olfattive", "In terminazioni libere", "In corpuscoli di Pacini", "In sinapsi elettriche"] },
-        { q: "Cosa costituiscono i fascetti degli assoni olfattivi (fila olfactoria)?", a: ["Il nervo olfattivo propriamente detto", "Il tratto olfattivo", "Le strie olfattive", "Il bulbo olfattivo"] },
-        { q: "Quale struttura ossea attraversano le fibre olfattive?", a: ["La lamina cribrosa dell'etmoide", "Il forame cieco", "La fessura orbitaria superiore", "Il canale ottico"] },
-        { q: "Dove terminano le fibre del nervo olfattivo?", a: ["Nei glomeruli del bulbo olfattivo", "Nel tratto olfattivo", "Direttamente in corteccia", "Nel nucleo rosso"] },
-        { q: "Quali cellule costituiscono i glomeruli olfattivi?", a: ["Cellule mitrali, a pennacchio e stellate", "Cellule piramidali", "Cellule di Purkinje", "Motoneuroni gamma"] },
-        { q: "Dove proiettano gli assoni delle cellule mitrali?", a: ["Nel tratto olfattivo verso le aree primarie", "Al tronco encefalico", "Al cervelletto", "Al midollo spinale"] },
-        { q: "Dove si trova l'area olfattiva primaria?", a: ["Superficie orbitaria del lobo frontale e ippocampo", "Lobo occipitale", "Giro postcentrale", "Insula"] },
-
-        // --- NERVO OTTICO (II) ---
-        { q: "Da quali assoni è formato il nervo ottico?", a: ["Assoni delle cellule gangliari della retina", "Assoni dei coni", "Assoni dei bastoncelli", "Assoni delle cellule bipolari"] },
-        { q: "Cosa rappresenta la papilla ottica?", a: ["Il punto cieco (convergenza delle fibre)", "La macula lutea", "La fovea centralis", "L'area di massima visione"] },
-        { q: "Quale struttura del bulbo oculare viene perforata dalle fibre ottiche?", a: ["La sclera (area cribrosa)", "La cornea", "L'iride", "Il cristallino"] },
-        { q: "Da quali cellule è formata la guaina mielinica del nervo ottico?", a: ["Oligodendrociti (è sostanza bianca encefalica)", "Cellule di Schwann", "Astrociti", "Microglia"] },
-        { q: "Quale foro attraversa il nervo ottico?", a: ["Forame ottico dello sfenoide", "Fessura orbitaria superiore", "Fessura orbitaria inferiore", "Foro rotondo"] },
-        { q: "Dove avviene la parziale decussazione delle fibre ottiche?", a: ["Nel chiasma ottico", "Nel tratto ottico", "Nel corpo genicolato", "Nella corteccia visiva"] },
-        { q: "Quali fibre ottiche si incrociano nel chiasma?", a: ["Le fibre mediali (provenienti dalla retina nasale)", "Le fibre laterali (retina temporale)", "Tutte le fibre", "Nessuna fibra"] },
-        { q: "Dove si trovano le fibre nel tratto ottico?", a: ["Superfici laterali del diencefalo", "Mesencefalo dorsale", "Ponte ventrale", "Midollo allungato"] },
-        { q: "Dove termina la via ottica centrale (visiva primaria)?", a: ["Corpo genicolato laterale -> Corteccia visiva", "Collicolo superiore", "Ipotalamo", "Nucleo rosso"] },
-        { q: "Dove termina la via ottica riflessa?", a: ["Nucleo pretettale e collicoli superiori", "Corpo genicolato laterale", "Nucleo sovra-chiasmatico", "Corteccia frontale"] },
-        { q: "Dove termina la via retino-ipotalamica?", a: ["Nucleo sovra-chiasmatico (ritmi circadiani)", "Ipofisi", "Nucleo arcuato", "Corpi mammillari"] },
-
-        // --- NERVO OCULOMOTORE (III) ---
-        { q: "Quali componenti funzionali ha il nervo oculomotore?", a: ["Motrice somatica e motrice viscerale", "Solo sensitiva", "Solo motrice somatica", "Mista sensitiva e motoria"] },
-        { q: "Dove sono localizzati i nuclei del III nervo cranico?", a: ["Tegmento del mesencefalo (ventrale all'acquedotto)", "Ponte", "Bulbo", "Diencefalo"] },
-        { q: "A che livello si trovano i nuclei dell'oculomotore?", a: ["Tubercoli quadrigemini superiori", "Tubercoli quadrigemini inferiori", "Olive bulbari", "Collicolo del faciale"] },
-        { q: "Quale muscolo è innervato dal nucleo centrale caudale (impari)?", a: ["Elevatore della palpebra superiore", "Retto superiore", "Retto mediale", "Obliquo inferiore"] },
-        { q: "Qual è il nucleo parasimpatico del nervo oculomotore?", a: ["Nucleo di Edinger-Westphal", "Nucleo salivatorio superiore", "Nucleo dorsale del vago", "Nucleo ambiguo"] },
-        { q: "Dove terminano le fibre pregangliari di Edinger-Westphal?", a: ["Nel ganglio ciliare", "Nel ganglio otico", "Nel ganglio pterigopalatino", "Nel ganglio semilunare"] },
-        { q: "Quali muscoli innervano le fibre postgangliari del ganglio ciliare?", a: ["Costrittore dell'iride e muscolo ciliare", "Dilatatore della pupilla", "Retto laterale", "Obliquo superiore"] },
-        { q: "Da quale nervo il III riceve fibre sensitive propriocettive?", a: ["Branca oftalmica del trigemino", "Nervo ottico", "Nervo faciale", "Nervo trocleare"] },
-        { q: "Dove emerge il nervo oculomotore?", a: ["Dalla fossa interpeduncolare (solco dell'oculomotore)", "Dalla superficie dorsale del tronco", "Dal solco bulbo-pontino", "Dalle piramidi"] },
-        { q: "Tra quali arterie passa il nervo oculomotore?", a: ["Arteria cerebellare superiore e cerebrale posteriore", "Carotide interna e vertebrale", "Basilare e labirintica", "Comunicante anteriore e posteriore"] },
-        { q: "In quale parte del seno cavernoso decorre il III nervo?", a: ["Parte supero-laterale", "Parte mediale", "Pavimento", "Non passa nel seno cavernoso"] },
-        { q: "Attraverso cosa entra nell'orbita l'oculomotore?", a: ["Fessura orbitaria superiore (nell'anello di Zinn)", "Fessura orbitaria inferiore", "Forame ottico", "Foro rotondo"] },
-        { q: "Cosa innerva il ramo superiore del III nervo?", a: ["Retto superiore ed elevatore della palpebra superiore", "Retto mediale e inferiore", "Obliquo inferiore", "Obliquo superiore"] },
-        { q: "Cosa innerva il ramo inferiore del III nervo?", a: ["Retto mediale, retto inferiore, obliquo inferiore", "Retto superiore", "Retto laterale", "Elevatore palpebra"] },
-        { q: "Da quale ramo origina la radice breve del ganglio ciliare?", a: ["Dal ramo per l'obliquo inferiore", "Dal ramo per il retto mediale", "Dal ramo superiore", "Dal nervo nasociliare"] },
-
-        // --- NERVO TROCLEARE (IV) ---
-        { q: "Quale muscolo innerva il nervo trocleare?", a: ["Obliquo superiore", "Obliquo inferiore", "Retto superiore", "Retto laterale"] },
-        { q: "Dove si trova il nucleo del trocleare?", a: ["Mesencefalo (livello tubercoli quadrigemini inferiori)", "Ponte", "Bulbo", "Diencefalo"] },
-        { q: "Qual è la particolarità unica dell'emergenza del IV nervo?", a: ["Emerge dalla superficie dorsale del tronco encefalico", "Emerge dalle piramidi", "Non ha emergenza apparente", "Emerge dal chiasma"] },
-        { q: "Il nervo trocleare decussa?", a: ["Sì, le fibre si incrociano prima di emergere", "No, è omolaterale", "Solo parzialmente", "Decussa nel seno cavernoso"] },
-        { q: "Dove perfora la dura madre il nervo trocleare?", a: ["Sotto il margine libero del tentorio del cervelletto", "All'apice della rocca petrosa", "Nel forame magno", "Nel canale ottico"] },
-        { q: "Dove passa il IV nervo rispetto all'anello di Zinn?", a: ["Esternamente all'anello", "Internamente all'anello", "Attraverso il nervo ottico", "Non passa nella fessura orbitaria"] },
-
-        // --- NERVO TRIGEMINO (V) - GENERALE E NUCLEI ---
-        { q: "Quali radici possiede il trigemino?", a: ["Radice sensitiva (major) e radice motoria (minor)", "Solo radice motoria", "Solo radice sensitiva", "Radice cranica e spinale"] },
-        { q: "Dove è situato il ganglio di Gasser (semilunare)?", a: ["Nel cavo di Meckel (apice piramide temporale)", "Nella fossa pterigopalatina", "Nel forame ovale", "Nel seno cavernoso"] },
-        { q: "Quali fibre attraversano il ganglio di Gasser senza originare lì?", a: ["Le fibre propriocettive (e motorie)", "Le fibre tattili", "Le fibre dolorifiche", "Nessuna fibra"] },
-        { q: "Quale nucleo sensitivo del trigemino riceve la propriocezione?", a: ["Nucleo mesencefalico", "Nucleo principale", "Nucleo spinale", "Nucleo motorio"] },
-        { q: "Cosa caratterizza i neuroni del nucleo mesencefalico?", a: ["Sono gli unici primi neuroni sensitivi nel nevrasse", "Sono motoneuroni", "Sono interneuroni inibitori", "Sono cellule gliali"] },
-        { q: "Cosa trasporta la radice spinale del trigemino?", a: ["Sensibilità termica, dolorifica e tattile protopatica", "Tattile epicritica", "Propriocezione", "Gusto"] },
-        { q: "Come è organizzato topograficamente il nucleo spinale del trigemino?", a: ["Ad anelli concentrici (bulbo di cipolla)", "In colonne verticali", "In strati orizzontali", "Senza ordine"] },
-        { q: "L'anello periorale della faccia proietta a quale parte del nucleo spinale?", a: ["Porzione rostrale", "Porzione intermedia", "Porzione caudale", "Non proietta al nucleo spinale"] },
-        { q: "L'anello periferico della faccia proietta a quale parte del nucleo spinale?", a: ["Porzione caudale", "Porzione rostrale", "Porzione intermedia", "Nucleo principale"] },
-        { q: "Dove si trova il nucleo motore del trigemino?", a: ["Ponte superiore (mediale al sensitivo)", "Mesencefalo", "Bulbo", "Midollo"] },
-
-        // --- NERVO OFTALMICO (V1) ---
-        { q: "Natura del nervo oftalmico:", a: ["Esclusivamente sensitivo", "Misto", "Motore", "Viscerale"] },
-        { q: "Da dove riceve fibre ortosimpatiche l'oftalmico?", a: ["Dal plesso carotico interno", "Dal ganglio ciliare", "Dal nervo ottico", "Dal ganglio otico"] },
-        { q: "Quale ramo meningeo fornisce l'oftalmico?", a: ["Ramo ricorrente per il tentorio del cervelletto", "Ramo per la fossa anteriore", "Ramo per la fossa posteriore", "Nessuno"] },
-        { q: "Quali sono i tre rami terminali dell'oftalmico prima della fessura orbitaria?", a: ["Lacrimale, Frontale, Naso-ciliare", "Zigomatico, Infraorbitario, Alveolare", "Sopratrocleare, Sopraorbitario, Infratrocleare", "Frontale, Temporale, Occipitale"] },
-        { q: "Il nervo lacrimale passa:", a: ["Esternamente all'anello di Zinn", "Internamente all'anello di Zinn", "Nel canale ottico", "Nel forame rotondo"] },
-        { q: "Da chi riceve fibre secretrici il nervo lacrimale?", a: ["Ramo anastomotico dello zigomatico-temporale (V2)", "Nervo frontale", "Ganglio ciliare", "Nervo ottico"] },
-        { q: "Il nervo frontale si divide in:", a: ["Nervo sopratrocleare e nervo sopraorbitario", "Nasale interno e esterno", "Infratrocleare e Lacrimale", "Zigomatico e Temporale"] },
-        { q: "Il nervo naso-ciliare passa:", a: ["Internamente all'anello di Zinn", "Esternamente all'anello di Zinn", "Nel canale ottico", "Fuori dall'orbita"] },
-        { q: "Quali sono i rami terminali del naso-ciliare?", a: ["Etmoidale anteriore e Infratrocleare", "Etmoidale posteriore e Frontale", "Ciliari lunghi e brevi", "Sopraorbitario e Lacrimale"] },
-        { q: "Cosa innerva il nervo nasale esterno (ramo dell'etmoidale ant.)?", a: ["Cute di ala, lobulo e vestibolo del naso", "Radice del naso", "Dorso del naso", "Setto nasale"] },
-        { q: "Cosa contengono i nervi ciliari lunghi?", a: ["Fibre ortosimpatiche (dilatatore pupilla) e sensitive (cornea)", "Fibre parasimpatiche", "Fibre motrici somatiche", "Solo sensitive"] },
-        { q: "Quale radice del ganglio ciliare proviene dal naso-ciliare?", a: ["Radice lunga sensitiva", "Radice breve motoria", "Radice simpatica", "Radice parasimpatica"] },
-        { q: "Cosa innerva il nervo infratrocleare?", a: ["Palpebre, radice del naso, sacco lacrimale, caruncola", "Punta del naso", "Fronte", "Tempia"] },
-
-        // --- NERVO MASCELLARE (V2) ---
-        { q: "Attraverso quale foro esce il nervo mascellare?", a: ["Foro rotondo", "Foro ovale", "Fessura orbitaria superiore", "Foro spinoso"] },
-        { q: "In quale fossa si trova il nervo mascellare dopo il foro rotondo?", a: ["Fossa pterigo-palatina", "Fossa temporale", "Fossa cranica media", "Orbita"] },
-        { q: "Qual è il ramo terminale del nervo mascellare?", a: ["Nervo infraorbitario", "Nervo zigomatico", "Nervo sfenopalatino", "Nervo alveolare"] },
-        { q: "Cosa innerva il nervo infraorbitario?", a: ["Ala del naso, palpebra inferiore, labbro superiore (mucosa/cute)", "Fronte", "Mento", "Orecchio"] },
-        { q: "Il nervo zigomatico si divide in:", a: ["Zigomatico-temporale e Zigomatico-faciale", "Zigomatico-orbitario e Zigomatico-nasale", "Lacrimale e Frontale", "Temporale profondo e superficiale"] },
-        { q: "Quale nervo innerva i denti molari superiori?", a: ["Nervo alveolare superiore-posteriore", "Nervo alveolare superiore-anteriore", "Nervo alveolare inferiore", "Nervo mentale"] },
-        { q: "Dove passa il nervo alveolare superiore-posteriore?", a: ["Perfora la faccia infratemporale della mascella (sotto mucosa seno)", "Nel canale infraorbitario", "Nella parete anteriore del seno", "Nel palato"] },
-        { q: "Il nervo alveolare superiore-anteriore innerva:", a: ["Incisivi e canini superiori", "Molari", "Premolari", "Denti inferiori"] },
-        { q: "Dove si trova il ganglio pterigo-palatino (di Meckel)?", a: ["Nella fossa pterigo-palatina, davanti al canale vidiano", "Nell'orbita", "Sotto il forame ovale", "Nel canale faciale"] },
-        { q: "Da cosa è formata la radice motrice (parasimpatica) del ganglio pterigopalatino?", a: ["Nervo vidiano (dal grande petroso superficiale)", "Nervo mascellare", "Nervo petroso profondo", "Nervo lacrimale"] },
-        { q: "Come arrivano le fibre secretrici alla ghiandola lacrimale?", a: ["Ganglio pterigopalatino -> Zigomatico-temporale -> Anastomosi -> Nervo lacrimale", "Direttamente dal ganglio", "Via nervo oftalmico", "Via nervo frontale"] },
-        { q: "Qual è il nervo nasopalatino di Scarpa?", a: ["Ramo del ganglio pterigopalatino che va al canale incisivo", "Ramo del nasociliare", "Ramo olfattivo", "Ramo del faciale"] },
-        { q: "Cosa innerva il nervo faringeo (dal ganglio pterigopalatino)?", a: ["Mucosa del rinofaringe (dietro la tuba)", "Muscoli faringei", "Tonsilla", "Lingua"] },
-
-        // --- NERVO MANDIBOLARE (V3) ---
-        { q: "Natura del nervo mandibolare:", a: ["Misto (sensitivo e motore)", "Sensitivo puro", "Motore puro", "Viscerale"] },
-        { q: "Attraverso quale foro esce il nervo mandibolare?", a: ["Foro ovale", "Foro rotondo", "Foro spinoso", "Foro lacero"] },
-        { q: "Quale ramo rientra nel cranio attraverso il foro spinoso?", a: ["Nervo meningeo (spinoso)", "Nervo piccolo petroso", "Nervo faciale", "Nervo auricolotemporale"] },
-        { q: "Cosa accompagna il nervo spinoso?", a: ["Arteria meningea media", "Arteria carotide interna", "Vena giugulare", "Arteria mascellare"] },
-        { q: "Cosa innerva il nervo pterigoideo interno?", a: ["Muscolo pterigoideo interno, tensore del velo palato, tensore del timpano", "Muscolo temporale", "Muscolo massetere", "Muscolo buccinatore"] },
-        { q: "Il nervo buccinatore è:", a: ["Sensitivo (cute/mucosa guancia)", "Motore per il muscolo buccinatore", "Misto", "Parasimpatico"] },
-        { q: "Il nervo masseterino è:", a: ["Motore per il massetere", "Sensitivo per la guancia", "Misto", "Viscerale"] },
-        { q: "Il nervo auricolo-temporale origina con due radici che circondano:", a: ["Arteria meningea media", "Arteria carotide interna", "Arteria mascellare", "Vena giugulare"] },
-        { q: "Cosa trasporta il nervo auricolo-temporale alla parotide?", a: ["Fibre parasimpatiche post-gangliari (dal ganglio otico)", "Fibre motrici somatiche", "Fibre gustative", "Fibre olfattive"] },
-        { q: "Il nervo linguale raccoglie la sensibilità:", a: ["Tattile e gustativa (via corda del timpano) dei 2/3 anteriori della lingua", "Del 1/3 posteriore della lingua", "Della faringe", "Della laringe"] },
-        { q: "Con quale ganglio è connesso il nervo linguale?", a: ["Ganglio sottomandibolare", "Ganglio otico", "Ganglio pterigopalatino", "Ganglio ciliare"] },
-        { q: "Il nervo alveolare inferiore percorre:", a: ["Il canale mandibolare", "Il canale infraorbitario", "Il meato acustico", "Il solco miloioideo"] },
-        { q: "Quale ramo motore emette l'alveolare inferiore prima del canale?", a: ["Nervo milo-ioideo", "Nervo mentale", "Nervo incisivo", "Nervo linguale"] },
-        { q: "Cosa innerva il nervo milo-ioideo?", a: ["Muscolo milo-ioideo e ventre anteriore del digastrico", "Muscoli della lingua", "Muscolo massetere", "Cute del mento"] },
-        { q: "Quali sono i rami terminali dell'alveolare inferiore?", a: ["Nervo mentale e nervo incisivo", "Nervo linguale e buccinatore", "Nervo masseterino e temporale", "Nervo auricolare e faciale"] },
-        { q: "Il nervo mentale innerva:", a: ["Cute/mucosa del mento e labbro inferiore", "Denti molari", "Lingua", "Guancia interna"] },
-
-        // --- NERVO ABDUCENTE (VI) ---
-        { q: "Quale muscolo innerva il nervo abducente?", a: ["Retto laterale", "Retto mediale", "Obliquo superiore", "Obliquo inferiore"] },
-        { q: "Dove si trova il nucleo dell'abducente?", a: ["Ponte caudale (pavimento IV ventricolo)", "Mesencefalo", "Bulbo", "Midollo"] },
-        { q: "Cosa forma il nucleo dell'abducente sul pavimento del IV ventricolo?", a: ["Il collicolo del faciale (insieme alle fibre del VII)", "Il trigono dell'ipoglosso", "L'area vestibolare", "Il calamo scrittorio"] },
-        { q: "Dove emerge il nervo abducente?", a: ["Solco bulbo-pontino (sopra la piramide)", "Fossa interpeduncolare", "Superficie dorsale", "Oliva bulbare"] },
-        { q: "Cosa collega il nucleo para-abducente?", a: ["Collega al nucleo oculomotore controlaterale (retto mediale)", "Collega al cervelletto", "Collega al midollo", "Collega alla corteccia"] },
-        { q: "Quale riflesso dipende dalla connessione abducente-oculomotore?", a: ["Riflesso vestibolo-oculare", "Riflesso pupillare", "Riflesso corneale", "Riflesso della tosse"] },
-        { q: "Dove perfora la dura madre il VI nervo?", a: ["Apice della piramide del temporale", "Forame magno", "Tetto dell'orbita", "Lamina cribrosa"] },
-        { q: "Dove passa il nervo abducente nel seno cavernoso?", a: ["All'interno, con la carotide interna", "Nella parete laterale", "Fuori dal seno", "Nel tetto del seno"] },
-        { q: "Attraverso cosa entra nell'orbita il VI nervo?", a: ["Fessura orbitaria superiore (nell'anello di Zinn)", "Fessura orbitaria inferiore", "Foro ottico", "Foro rotondo"] },
-
-        // --- NERVO FACIALE (VII) - GENERALE E DECORSO ---
-        { q: "Composizione del nervo faciale:", a: ["Faciale propriamente detto (motore) e Intermedio di Wrisberg (misto)", "Solo motore", "Solo sensitivo", "Solo parasimpatico"] },
-        { q: "Dove emerge il nervo faciale?", a: ["Fossetta retro-olivare (solco bulbo-pontino laterale)", "Fossa interpeduncolare", "Solco pre-olivare", "Piramide"] },
-        { q: "In quale meato entra il nervo faciale?", a: ["Meato acustico interno", "Meato acustico esterno", "Foro giugulare", "Canale carotideo"] },
-        { q: "Dove si trova il ganglio genicolato?", a: ["Nel ginocchio del canale del faciale (rocca petrosa)", "Fuori dal cranio", "Nel meato acustico", "Nella parotide"] },
-        { q: "Da quale foro esce il nervo faciale dal cranio?", a: ["Forame stilo-mastoideo", "Forame giugulare", "Foro ovale", "Foro rotondo"] },
-        { q: "Dove si trova il plesso parotideo (pes anserinus)?", a: ["Nello spessore della parotide", "Sulla mandibola", "Dietro l'orecchio", "Nel collo"] },
-
-        // --- NERVO FACIALE (VII) - RAMI E COMPONENTI ---
-        { q: "Il nervo grande petroso superficiale origina:", a: ["A livello del ganglio genicolato", "Dopo il foro stilomastoideo", "Nel meato acustico", "Dalla corda del timpano"] },
-        { q: "Cosa forma il nervo grande petroso unendosi al petroso profondo?", a: ["Nervo vidiano (del canale pterigoideo)", "Nervo piccolo petroso", "Nervo linguale", "Nervo timpanico"] },
-        { q: "Cosa innerva il nervo stapedio?", a: ["Il muscolo stapedio (cassa timpanica)", "Il muscolo tensore del timpano", "Il muscolo stilofaringeo", "I muscoli auricolari"] },
-        { q: "Qual è la funzione del muscolo stapedio?", a: ["Riduce l'ampiezza dei movimenti della staffa (protezione rumori)", "Muove il timpano", "Apre la tuba", "Muove l'orecchio esterno"] },
-        { q: "Dove origina la corda del timpano?", a: ["Tratto verticale del faciale (sopra foro stilomastoideo)", "Ganglio genicolato", "Nervo vidiano", "Parotide"] },
-        { q: "Da quale fessura esce la corda del timpano?", a: ["Fessura petro-timpanica (di Glaser)", "Fessura orbitaria", "Foro ovale", "Foro rotondo"] },
-        { q: "A quale nervo si unisce la corda del timpano?", a: ["Nervo linguale", "Nervo alveolare inferiore", "Nervo glossofaringeo", "Nervo ipoglosso"] },
-        { q: "Cosa trasporta la corda del timpano?", a: ["Fibre parasimpatiche pregangliari e gustative (2/3 ant. lingua)", "Solo fibre motorie", "Solo fibre tattili", "Fibre ortosimpatiche"] },
-        { q: "Quali rami extrapetrosi emette il faciale appena uscito dal foro?", a: ["Auricolare posteriore, Digastrico, Stiloioideo", "Linguale", "Temporale", "Zigomatico"] },
-        { q: "Il ramo digastrico del faciale innerva:", a: ["Ventre posteriore del digastrico", "Ventre anteriore", "Tutto il digastrico", "Miloioideo"] },
-        { q: "Quali sono i rami terminali del faciale?", a: ["Temporo-faciale e Cervico-faciale", "Mandibolare e Mascellare", "Linguale e Buccale", "Frontale e Occipitale"] },
-        { q: "Il ramo cervico-faciale si anastomizza con:", a: ["Nervo cutaneo del collo (plesso cervicale)", "Nervo vago", "Nervo accessorio", "Ipoglosso"] },
-        { q: "Quale muscolo innerva il ramo cervicale del faciale?", a: ["Platisma", "Sternocleidomastoideo", "Trapezio", "Omoioideo"] },
-
-        // --- NERVO VESTIBOLO-COCLEARE (VIII) ---
-        { q: "Natura del nervo VIII:", a: ["Esclusivamente sensitivo speciale", "Misto", "Motore", "Viscerale"] },
-        { q: "Emergenza apparente dell'VIII:", a: ["Solco bulbo-pontino (lateralmente al VII)", "Solco pre-olivare", "Fossa interpeduncolare", "Dorsalmente"] },
-        { q: "Dove sono i neuroni del nervo vestibolare?", a: ["Ganglio di Scarpa (meato acustico interno)", "Ganglio di Corti", "Ganglio genicolato", "Ganglio spirale"] },
-        { q: "Dove sono i neuroni del nervo cocleare?", a: ["Ganglio spirale di Corti (nel modiolo)", "Ganglio di Scarpa", "Ganglio ciliare", "Ganglio otico"] },
-        { q: "Dove terminano le fibre del nervo vestibolare?", a: ["Nuclei vestibolari e cervelletto (via peduncolo inf.)", "Nuclei cocleari", "Nucleo ambiguo", "Collicolo superiore"] },
-
-        // --- NERVO GLOSSOFARINGEO (IX) ---
-        { q: "Natura del nervo glossofaringeo:", a: ["Misto (sensitivo, motore, viscerale)", "Sensitivo puro", "Motore puro", "Simpatico puro"] },
-        { q: "Da dove emerge il IX nervo?", a: ["Solco retro-olivare (sopra il vago)", "Solco pre-olivare", "Solco bulbo-pontino", "Ponte"] },
-        { q: "Qual è il nucleo parasimpatico del IX?", a: ["Nucleo salivatorio inferiore", "Nucleo salivatorio superiore", "Nucleo dorsale del vago", "Nucleo ambiguo"] },
-        { q: "Quale muscolo è innervato dal IX (componente motoria somatica)?", a: ["Muscolo stilofaringeo", "Muscolo stiloioideo", "Muscolo stiloglosso", "Costrittore inferiore"] },
-        { q: "Da quale foro esce il IX nervo?", a: ["Forame giugulare", "Foro ovale", "Foro rotondo", "Forame lacero"] },
-        { q: "Quali gangli possiede il IX?", a: ["Superiore e Inferiore (Petroso)", "Giugulare e Nodoso", "Genicolato", "Semilunare"] },
-        { q: "Cosa innerva il nervo timpanico di Jacobson?", a: ["Cassa del timpano (plesso timpanico) e parotide (via piccolo petroso)", "Lingua", "Faringe", "Laringe"] },
-        { q: "Il nervo piccolo petroso superficiale termina in:", a: ["Ganglio otico", "Ganglio pterigopalatino", "Ganglio sottomandibolare", "Ganglio ciliare"] },
-        { q: "Quale ghiandola innerva il IX (post-ganglio otico)?", a: ["Parotide", "Sottomandibolare", "Lacrimale", "Sottolinguale"] },
-        { q: "Come raggiungono la parotide le fibre dal ganglio otico?", a: ["Tramite il nervo auricolo-temporale (V3)", "Direttamente", "Tramite il faciale", "Tramite il vago"] },
-        { q: "Quale sensibilità raccoglie il IX dalla lingua?", a: ["Gustativa e generale del 1/3 posteriore", "2/3 anteriori", "Solo punta", "Nessuna"] },
-        { q: "Quali recettori innerva il ramo carotideo del IX?", a: ["Seno carotideo e glomo carotideo", "Solo glomo aortico", "Seno venoso", "Nessuno"] },
-
-        // --- NERVO VAGO (X) - NUCLEI ---
-        { q: "Quale nervo ha il territorio di innervazione più ampio?", a: ["Nervo vago", "Trigemino", "Faciale", "Ipoglosso"] },
-        { q: "Da dove emerge il vago?", a: ["Solco retro-olivare (sotto il IX)", "Solco pre-olivare", "Solco bulbo-pontino", "Ponte"] },
-        { q: "Qual è il nucleo motore viscerale (parasimpatico) principale del vago?", a: ["Nucleo motore dorsale del vago", "Nucleo ambiguo", "Nucleo solitario", "Nucleo salivatorio"] },
-        { q: "Cosa innerva il nucleo motore dorsale?", a: ["Bronchi, cuore, esofago, stomaco, intestino", "Muscoli laringei", "Faringe", "Lingua"] },
-        { q: "Qual è il nucleo motore somatico del vago?", a: ["Nucleo ambiguo", "Nucleo dorsale", "Nucleo spinale", "Nucleo dell'ipoglosso"] },
-        { q: "Cosa innerva il nucleo ambiguo tramite il vago?", a: ["Muscolatura striata di laringe e faringe", "Cuore", "Stomaco", "Lingua"] },
-        { q: "Quale nucleo riceve la sensibilità gustativa (epiglottide)?", a: ["Nucleo del tratto solitario (parte rostrale)", "Nucleo spinale", "Nucleo principale", "Nucleo ambiguo"] },
-        { q: "Quale nucleo riceve la sensibilità somatica (orecchio)?", a: ["Nucleo della radice spinale del trigemino", "Nucleo solitario", "Nucleo dorsale", "Nucleo ambiguo"] },
-
-        // --- NERVO VAGO (X) - GANGLI E DECORSO ---
-        { q: "Quali sono i gangli del vago?", a: ["Ganglio superiore (Giugulare) e Inferiore (Nodoso)", "Genicolato", "Petroso", "Semilunare"] },
-        { q: "Quale ganglio raccoglie la sensibilità somatica (ramo auricolare)?", a: ["Ganglio superiore", "Ganglio inferiore", "Ganglio otico", "Ganglio ciliare"] },
-        { q: "Quale ganglio raccoglie la sensibilità viscerale?", a: ["Ganglio inferiore (nodoso)", "Ganglio superiore", "Ganglio semilunare", "Ganglio genicolato"] },
-        { q: "Da quale foro esce il vago?", a: ["Forame giugulare", "Foro magno", "Foro ovale", "Canale ipoglosso"] },
-        { q: "Con quali nervi esce il vago dal forame giugulare?", a: ["Glossofaringeo (IX) e Accessorio (XI)", "Faciale e Vestibolare", "Ipoglosso", "Trigemino"] },
-        { q: "Nel collo, dove decorre il vago?", a: ["Nella guaina carotidea (tra giugulare interna e carotide)", "Davanti alla trachea", "Dietro l'esofago", "Superficialmente"] },
-
-        // --- NERVO VAGO (X) - RAMI COLLATERALI ---
-        { q: "Cosa innerva il ramo meningeo del vago?", a: ["Dura madre della fossa cranica posteriore", "Fossa anteriore", "Tentorio", "Non ha ramo meningeo"] },
-        { q: "Cosa innerva il ramo auricolare del vago?", a: ["Cute meato acustico, membrana timpanica, padiglione", "Orecchio medio", "Coclea", "Tuba"] },
-        { q: "Con quale nervo si anastomizza il ramo auricolare?", a: ["Nervo faciale", "Nervo trigemino", "Nervo accessorio", "Nervo ipoglosso"] },
-        { q: "Il nervo laringeo superiore si divide in:", a: ["Ramo interno e ramo esterno", "Ramo anteriore e posteriore", "Ramo ricorrente e diretto", "Ramo motore e sensitivo"] },
-        { q: "Cosa innerva il ramo laringeo interno?", a: ["Mucosa della laringe sopra le corde vocali (sensitivo)", "Muscolo cricotiroideo", "Tutti i muscoli laringei", "Trachea"] },
-        { q: "Cosa innerva il ramo laringeo esterno?", a: ["Muscolo cricotiroideo (motore)", "Mucosa laringea", "Corde vocali", "Muscoli faringei"] },
-        { q: "Cosa innerva il nervo laringeo ricorrente (inferiore)?", a: ["Tutti i muscoli laringei tranne il cricotiroideo; mucosa sotto corde vocali", "Muscolo cricotiroideo", "Faringe", "Lingua"] },
-        { q: "Qual è il decorso del ricorrente destro?", a: ["Circonda l'arteria succlavia destra", "Circonda l'arco aortico", "Non circonda nulla", "Circonda la carotide"] },
-        { q: "Qual è il decorso del ricorrente sinistro?", a: ["Circonda l'arco dell'aorta", "Circonda la succlavia", "Scende fino al diaframma", "Circonda il bronco"] },
-        { q: "Cosa formano i rami cardiaci del vago?", a: ["Plesso cardiaco (con l'ortosimpatico)", "Plesso solare", "Plesso polmonare", "Non vanno al cuore"] },
-        { q: "Che effetto ha il vago sul cuore?", a: ["Bradicardia (inibitorio)", "Tachicardia", "Aumento forza", "Nessuno"] },
-
-        // --- NERVO VAGO (X) - ADDOME ---
-        { q: "Come entra il vago nell'addome?", a: ["Attraverso l'orifizio esofageo del diaframma", "Foro della vena cava", "Orifizio aortico", "Non entra in addome"] },
-        { q: "Cosa forma il tronco vagale anteriore?", a: ["Prevalentemente fibre del vago sinistro", "Vago destro", "Entrambi", "Nervo frenico"] },
-        { q: "Cosa forma il tronco vagale posteriore?", a: ["Prevalentemente fibre del vago destro", "Vago sinistro", "Entrambi", "Accessorio"] },
-        { q: "Cosa innerva il ramo gastrico del tronco posteriore?", a: ["Parete postero-inferiore dello stomaco", "Parete anteriore", "Piloro", "Duodeno"] },
-        { q: "Quale tronco vagale invia rami al plesso celiaco?", a: ["Tronco vagale posteriore", "Anteriore", "Nessuno", "Entrambi"] },
-        { q: "Fino a dove si estende l'innervazione vagale nell'intestino?", a: ["Metà destra del colon trasverso", "Flessura splenica", "Retto", "Ileo terminale"] },
-        { q: "Cosa innervano i rami epatici del vago?", a: ["Fegato, colecisti, piloro, duodeno, pancreas", "Solo fegato", "Milza", "Rene"] },
-
-        // --- NERVO ACCESSORIO (XI) ---
-        { q: "Da quali radici è formato il nervo accessorio?", a: ["Radice spinale (C1-C4) e radice cranica (bulbare)", "Solo spinale", "Solo cranica", "Radice pontina"] },
-        { q: "Da dove origina la radice cranica dell'accessorio?", a: ["Estremità inferiore del nucleo ambiguo", "Nucleo dorsale", "Nucleo solitario", "Nucleo spinale"] },
-        { q: "Dove si uniscono le due radici dell'accessorio?", a: ["Nel forame giugulare (o subito prima)", "Nel canale vertebrale", "Fuori dal cranio", "Nel bulbo"] },
-        { q: "Cosa succede all'accessorio cranico dopo il foro giugulare?", a: ["Si unisce al nervo vago", "Va al trapezio", "Va allo SCM", "Va alla lingua"] },
-        { q: "Cosa innerva la componente cranica dell'accessorio (via vago)?", a: ["Muscoli del palato molle (eccetto tensore), faringe, laringe", "Trapezio", "Lingua", "Faccia"] },
-        { q: "Cosa innerva la componente spinale dell'accessorio?", a: ["Muscolo sternocleidomastoideo e trapezio", "Laringe", "Faringe", "Muscoli sottoioidei"] },
-        { q: "Come entra nel cranio la radice spinale dell'accessorio?", a: ["Attraverso il forame magno", "Forame giugulare", "Canale ipoglosso", "Non entra nel cranio"] },
-
-        // --- NERVO IPOGLOSSO (XII) ---
-        { q: "Che tipo di nervo è l'ipoglosso?", a: ["Motore somatico", "Sensitivo", "Misto", "Viscerale"] },
-        { q: "Dove si trova il nucleo dell'ipoglosso?", a: ["Bulbo (trigono dell'ipoglosso nel IV ventricolo)", "Ponte", "Mesencefalo", "Midollo"] },
-        { q: "Dove emerge il nervo ipoglosso?", a: ["Solco pre-olivare (tra piramide e oliva)", "Solco retro-olivare", "Solco bulbo-pontino", "Dorsalmente"] },
-        { q: "Quale canale attraversa l'ipoglosso?", a: ["Canale dell'ipoglosso (condilo occipitale)", "Forame giugulare", "Foro magno", "Foro rotondo"] },
-        { q: "Cosa innerva l'ipoglosso?", a: ["Tutti i muscoli della lingua (intrinseci/estrinseci) tranne il palatoglosso", "Muscoli masticatori", "Faringe", "Laringe"] },
-        { q: "Cosa è il nervo meningeo ricorrente dell'ipoglosso?", a: ["Ramo sensitivo per la dura madre fossa posteriore", "Ramo motore", "Ramo simpatico", "Non esiste"] },
-        { q: "Con cosa si anastomizza l'ipoglosso nel collo?", a: ["C1, C2, vago, simpatico, linguale", "Faciale", "Trigemino", "Accessorio"] },
-        { q: "Cosa forma il ramo discendente dell'ipoglosso?", a: ["Radice superiore dell'ansa cervicale", "Radice inferiore", "Nervo frenico", "Nervo vago"] },
-        { q: "Da dove provengono le fibre dell'ansa cervicale?", a: ["Da C1, C2, C3 (non dal nucleo dell'ipoglosso)", "Dal nucleo ipoglosso", "Dal vago", "Dal trigemino"] },
-        { q: "Cosa innerva l'ansa cervicale?", a: ["Muscoli sottoioidei (omoioideo, sternoioideo, sternotiroideo)", "Muscoli sopraioidei", "Lingua", "Faringe"] },
-        { q: "Il muscolo tiro-ioideo è innervato da:", a: ["Un ramo diretto dell'ipoglosso (fibre C1)", "Ansa cervicale", "Vago", "Accessorio"] },
-        { q: "Il muscolo genio-ioideo è innervato da:", a: ["Ramo dell'ipoglosso (fibre C1)", "Miloioideo", "Faciale", "Ansa cervicale"] },
-        // --- ULTERIORI DOMANDE: OLFATTIVO E OTTICO ---
-        { q: "Il peduncolo olfattivo si divide posteriormente in:", a: ["Strie olfattive (mediale e laterale)", "Tratto ottico", "Fascicolo longitudinale", "Radice mesencefalica"] },
-        { q: "Quale area corticale è raggiunta dalla stria olfattiva laterale?", a: ["Lobo piriforme e uncus (area prepiriforme)", "Lobo occipitale", "Giro del cingolo", "Insula"] },
-        { q: "Le fibre del nervo ottico sono rivestite da:", a: ["Meningi (Dura, Aracnoide, Pia madre)", "Solo epinevrio", "Solo endonevrio", "Nessuna guaina"] },
-        { q: "Quale arteria accompagna il nervo ottico nel canale ottico?", a: ["Arteria oftalmica", "Arteria centrale della retina", "Arteria lacrimale", "Arteria faciale"] },
-        { q: "Le fibre della via ottica riflessa raggiungono il midollo spinale tramite:", a: ["Il fascio tetto-spinale", "Il fascio piramidale", "Il fascio rubro-spinale", "Il lemnisco mediale"] },
-
-        // --- ULTERIORI DOMANDE: OCULOMOTORE E TROCLEARE ---
-        { q: "Quale rapporto vascolare contrae il nervo oculomotore appena emerso?", a: ["Passa tra arteria cerebellare superiore e cerebrale posteriore", "Passa sopra l'arteria carotide interna", "Passa sotto l'arteria vertebrale", "Passa tra le arterie comunicanti"] },
-        { q: "Dove termina il ramo superiore dell'oculomotore?", a: ["Faccia profonda del retto superiore ed elevatore palpebra", "Sulla sclera", "Nel ganglio ciliare", "Nel sacco lacrimale"] },
-        { q: "Quale nervo cranico ha il decorso intracranico più lungo?", a: ["Nervo trocleare (IV)", "Nervo abducente (VI)", "Nervo faciale (VII)", "Nervo olfattivo (I)"] },
-        { q: "Il nervo trocleare passa sopra o sotto l'anello di Zinn?", a: ["Sopra (esternamente)", "Sotto", "Attraverso", "Non entra nell'orbita"] },
-        { q: "Con quale arteria entra in rapporto il nervo trocleare nel seno cavernoso?", a: ["Arteria carotide interna", "Arteria basilare", "Arteria mascellare", "Arteria oftalmica"] },
-
-        // --- ULTERIORI DOMANDE: TRIGEMINO (DETTAGLI E RIFLESSI) ---
-        { q: "Quale riflesso è mediato dall'afferenza del nervo oftalmico (V1) e dall'efferenza del faciale (VII)?", a: ["Riflesso corneale", "Riflesso pupillare", "Riflesso della tosse", "Riflesso masseterino"] },
-        { q: "Il nervo ricorrente meningeo di Arnold (dell'oftalmico) innerva:", a: ["Il tentorio del cervelletto", "La dura madre della fossa anteriore", "La falce cerebrale", "Il diaframma della sella"] },
-        { q: "Con quale arteria decorre il nervo lacrimale?", a: ["Arteria lacrimale (ramo dell'oftalmica)", "Arteria frontale", "Arteria faciale", "Arteria temporale superficiale"] },
-        { q: "Il nervo etmoidale anteriore, prima di entrare nelle fosse nasali, passa per:", a: ["La lamina cribrosa e la fessura nasale", "Il foro rotondo", "Il canale ottico", "La fessura orbitaria inferiore"] },
-        { q: "Quale ramo del mascellare (V2) passa per il foro zigomatico?", a: ["Nervo zigomatico-faciale", "Nervo infraorbitario", "Nervo sfenopalatino", "Nervo lacrimale"] },
-        { q: "Quale nervo innerva la mucosa del seno mascellare?", a: ["Nervi alveolari superiori", "Nervo infraorbitario", "Nervo palatino maggiore", "Nervo nasale"] },
-        { q: "Il nervo del canale pterigoideo (Vidiano) attraversa la radice di quale osso?", a: ["Processo pterigoideo dello sfenoide", "Osso palatino", "Osso mascellare", "Osso temporale"] },
-        { q: "Quale muscolo del palato è innervato dal trigemino (V3)?", a: ["Tensore del velo palatino", "Elevatore del velo palatino", "Palatoglosso", "Muscolo dell'ugola"] },
-        { q: "Quale muscolo dell'orecchio medio è innervato dal trigemino (V3)?", a: ["Tensore del timpano", "Stapedio", "Auricolare posteriore", "Nessuno"] },
-        { q: "Il nervo linguale passa sopra o sotto il dotto sottomandibolare?", a: ["Passa sotto e poi risale (incrocia)", "Passa sempre sopra", "Corre parallelo senza incrociare", "Passa dentro la ghiandola"] },
-
-        // --- ULTERIORI DOMANDE: FACIALE (VII) ---
-        { q: "Cosa attraversa il nervo faciale nel meato acustico interno?", a: ["Il quadrante antero-superiore", "Il quadrante postero-inferiore", "Il centro", "Non entra nel meato"] },
-        { q: "Qual è il nome dell'orifizio d'uscita del nervo grande petroso superficiale?", a: ["Hiatus del canale del faciale (Hiatus maggiore)", "Forame spinoso", "Fessura petro-timpanica", "Foro stylomastoideo"] },
-        { q: "Il nervo faciale propriamente detto (motore) innerva anche:", a: ["Ventre posteriore del digastrico e stiloioideo", "Ventre anteriore del digastrico", "Miloioideo", "Muscoli masticatori"] },
-        { q: "Dove decorre il nervo faciale rispetto all'orecchio medio?", a: ["Nella parete mediale e posteriore della cassa timpanica", "Nel pavimento", "Nella membrana timpanica", "Nella tuba di Eustachio"] },
-        { q: "Con quale nervo si anastomizza il ramo auricolare posteriore del faciale?", a: ["Plesso cervicale (piccolo occipitale) e ramo auricolare del vago", "Trigemino", "Ipoglosso", "Accessorio"] },
-        { q: "La paralisi di Bell (periferica) coinvolge:", a: ["Tutta la metà faccia (superiore e inferiore)", "Solo la metà inferiore", "Solo la bocca", "Solo l'occhio"] },
-        { q: "Perché nella paralisi centrale la fronte è risparmiata?", a: ["Perché il nucleo superiore riceve innervazione corticale bilaterale", "Perché non è innervata dal faciale", "Perché è innervata dal trigemino", "Perché il nervo si incrocia due volte"] },
-
-        // --- ULTERIORI DOMANDE: GLOSSOFARINGEO (IX) ---
-        { q: "Tra quali muscoli scende il nervo glossofaringeo nel collo?", a: ["Tra stilofaringeo e stiloglosso", "Tra sternocleidomastoideo e trapezio", "Tra i muscoli scaleni", "Davanti allo sternoioideo"] },
-        { q: "Il nervo del seno carotideo (di Hering) è un ramo di:", a: ["Glossofaringeo (IX)", "Vago (X)", "Accessorio (XI)", "Ipoglosso (XII)"] },
-        { q: "Cosa innervano i rami tonsillari del IX?", a: ["Tonsilla palatina e istmo delle fauci", "Tonsilla faringea", "Laringe", "Lingua"] },
-        { q: "Il plesso timpanico si trova:", a: ["Sul promontorio della parete mediale del cavo del timpano", "Sulla membrana timpanica", "Nel meato acustico esterno", "Nella tuba uditiva"] },
-        { q: "Quale foro attraversa il nervo piccolo petroso?", a: ["Canalicolo innominato o fessura sfenopetrosa (verso il ganglio otico)", "Foro rotondo", "Foro stilomastoideo", "Forame magno"] },
-
-        // --- ULTERIORI DOMANDE: VAGO (X) ---
-        { q: "Qual è la funzione del riflesso di Hering-Breuer mediato dal vago?", a: ["Interrompere l'inspirazione quando il polmone è disteso", "Stimolare la tosse", "Aumentare il battito cardiaco", "Chiudere la glottide"] },
-        { q: "Dove si trova il vago rispetto alla vena giugulare interna nel fascio vascolo-nervoso?", a: ["Posteriormente (nell'angolo diedro tra vena e carotide)", "Anteriormente", "Lateralmente", "Medialmente"] },
-        { q: "L'ansa di Galeno è un'anastomosi tra:", a: ["Ramo interno del laringeo superiore e nervo laringeo ricorrente", "Vago e Simpatico", "Laringeo esterno e ricorrente", "Vago e Ipoglosso"] },
-        { q: "Quale struttura incrocia il nervo vago sinistro nel torace?", a: ["Arco dell'aorta (faccia antero-sinistra)", "Vena azygos", "Bronco destro", "Vena cava superiore"] },
-        { q: "Cosa separa il nervo vago dal polmone destro?", a: ["La vena azygos", "L'aorta", "L'esofago", "Il cuore"] },
-        { q: "Il ramo celiaco del vago origina da:", a: ["Tronco vagale posteriore (destro)", "Tronco vagale anteriore", "Nervo frenico", "Ganglio nodoso"] },
-        { q: "I rami renali del vago formano un plesso insieme a:", a: ["Fibre ortosimpatiche del ganglio aortico-renale", "Nervo splancnico pelvico", "Nervo frenico", "Nervo sottocostale"] },
-        { q: "Quale muscolo laringeo è innervato dal ramo esterno del laringeo superiore?", a: ["Muscolo cricotiroideo", "Muscolo vocale", "Muscolo aritenoideo", "Muscolo cricoaritenoideo posteriore"] },
-
-        // --- ULTERIORI DOMANDE: ACCESSORIO E IPOGLOSSO ---
-        { q: "Dove si trova il nucleo spinale dell'accessorio?", a: ["Corno anteriore del midollo (C1-C5)", "Corno posteriore", "Tronco encefalico", "Diencefalo"] },
-        { q: "La radice spinale dell'accessorio entra nel cranio attraverso:", a: ["Forame magno (occipitale)", "Foro giugulare", "Canale condiloideo", "Foro ovale"] },
-        { q: "Dopo essere uscito dal cranio, l'accessorio spinale incrocia:", a: ["La vena giugulare interna", "L'arteria succlavia", "L'esofago", "La trachea"] },
-        { q: "Quale muscolo è innervato dal ramo discendente (C1) unito all'ipoglosso?", a: ["Ventre superiore dell'omoioideo", "Sternocleidomastoideo", "Digastrico", "Stiloioideo"] },
-        { q: "Dove passa il nervo ipoglosso rispetto al muscolo ioglosso?", a: ["Sulla faccia laterale (esterna) del muscolo", "Sulla faccia mediale (profonda)", "Attraverso il muscolo", "Sotto il muscolo"] },
-        { q: "L'ansa cervicale si trova superficialmente a quale struttura vascolare?", a: ["Vena giugulare interna", "Arteria carotide esterna", "Arteria vertebrale", "Arteria succlavia"] },
-        { q: "Quale muscolo intrinseco della lingua è innervato dall'ipoglosso?", a: ["Tutti (longitudinali, trasverso, verticale)", "Solo il trasverso", "Nessuno", "Solo longitudinali"] },
-
-        // --- SINTESI E RAPPORTI (BASE CRANICA) ---
-        { q: "Quali nervi passano attraverso la fessura orbitaria superiore?", a: ["III, IV, VI e V1 (oftalmico)", "II, III, IV", "V2, V3, VII", "IX, X, XI"] },
-        { q: "Quali nervi passano attraverso il forame giugulare?", a: ["IX, X, XI", "VII, VIII", "III, IV, VI", "V1, V2, V3"] },
-        { q: "Cosa passa nel meato acustico interno?", a: ["VII, VIII e arteria labirintica", "V, VI", "IX, X", "XI, XII"] },
-        { q: "Quali nervi passano nel seno cavernoso?", a: ["III, IV, VI, V1 (e talvolta V2)", "II, III, IV", "VII, VIII", "IX, X"] },
-        { q: "Quale nervo cranico è l'unico a non uscire dalla superficie ventrale/laterale del tronco?", a: ["Trocleare (IV)", "Oculomotore (III)", "Abducente (VI)", "Faciale (VII)"] }
-        
-            ],
-             "VASCOLARIZZAZIONE ENCEFALO": [
-               { q: "Cosa vascolarizzano le carotidi interne?", a: ["Il proencefalo (eccetto lobi occipitali)", "Il cervelletto", "Il tronco encefalico", "Il midollo spinale"] },
-        { q: "Cosa vascolarizza il sistema vertebro-basilare?", a: ["Tronco encefalico, cervelletto e lobi occipitali", "Lobo frontale", "Lobo parietale", "Ipotalamo"] },
-        { q: "Dove viene drenato il sangue refluo dell'encefalo?", a: ["Nei seni venosi della dura madre -> Vena giugulare interna", "Vena cava superiore", "Vena azygos", "Vena vertebrale"] },
-
-        // --- SISTEMA CAROTIDEO (CAROTIDE INTERNA) ---
-        { q: "Attraverso quale canale entra nel cranio la carotide interna?", a: ["Canale carotico dell'osso temporale", "Foro giugulare", "Foro ovale", "Foro spinoso"] },
-        { q: "Come si chiama il tipico decorso sigmoideo della carotide interna?", a: ["Sifone carotideo", "Ansa cervicale", "Circolo di Willis", "Tratto ottico"] },
-        { q: "Quali rami originano nella parte petrosa della carotide interna?", a: ["Ramo caroticotimpanico e ramo pterigoideo", "Arteria oftalmica", "Arteria cerebrale media", "Arteria corioidea"] },
-        { q: "Dove decorre la parte intracavernosa della carotide interna?", a: ["All'interno del seno cavernoso", "Sopra il tentorio", "Sotto la dura madre", "Nel meato acustico"] },
-        { q: "Quale nervo accompagna la carotide nel seno cavernoso?", a: ["Nervo abducente (VI)", "Nervo ottico", "Nervo faciale", "Nervo vago"] },
-        { q: "Quali nervi si trovano nella parete laterale del seno cavernoso?", a: ["III, IV, V1, V2", "VI, VII, VIII", "IX, X, XI", "I, II"] },
-        { q: "Cosa vascolarizzano i rami cavernosi della carotide?", a: ["Neuroipofisi (sistema portale)", "Retina", "Orecchio interno", "Cervelletto"] },
-        { q: "Dove perfora la dura madre la carotide interna?", a: ["Medialmente al processo clinoideo anteriore (tetto del seno cavernoso)", "Forame magno", "Forame lacero", "Canale ottico"] },
-        { q: "Quali sono i rami terminali della carotide interna?", a: ["Arteria cerebrale anteriore e media", "Cerebrale posteriore e basilare", "Oftalmica e comunicante posteriore", "Corioidea e vertebrale"] },
-        { q: "Dove entra l'arteria oftalmica?", a: ["Nell'orbita attraverso il forame ottico", "Fessura orbitaria superiore", "Fessura inferiore", "Foro rotondo"] },
-        { q: "Con chi si anastomizza l'arteria comunicante posteriore?", a: ["Con l'arteria cerebrale posteriore", "Con la basilare", "Con la vertebrale", "Con la cerebrale anteriore"] },
-        { q: "Cosa vascolarizza l'arteria corioidea anteriore?", a: ["Plesso corioideo ventricolo laterale, tratto ottico, capsula interna post., globo pallido", "Talamo", "Lobo frontale", "Cervelletto"] },
-
-        // --- ARTERIA CEREBRALE ANTERIORE (ACA) ---
-        { q: "Come sono collegate le due arterie cerebrali anteriori?", a: ["Dall'arteria comunicante anteriore", "Dalla comunicante posteriore", "Non sono collegate", "Dalla basilare"] },
-        { q: "Dove decorre l'arteria cerebrale anteriore?", a: ["Nella scissura interemisferica, sopra il corpo calloso", "Nella scissura di Silvio", "Sulla superficie laterale", "Sotto il lobo temporale"] },
-        { q: "Quali aree corticali vascolarizza l'ACA?", a: ["Superficie mediale (aree motorie/sensitive dell'arto inferiore)", "Superficie laterale", "Area visiva", "Area uditiva"] },
-        { q: "Cosa vascolarizzano i rami centrali dell'ACA?", a: ["Testa del caudato, putamen, capsula interna (braccio anteriore)", "Talamo", "Globo pallido", "Mesencefalo"] },
-        { q: "Qual è il segmento A1 dell'ACA?", a: ["Dall'origine alla comunicante anteriore", "Dalla comunicante all'arteria pericallosa", "Il segmento distale", "Il segmento corticale"] },
-        { q: "Qual è il segmento A2 dell'ACA?", a: ["Dalla comunicante anteriore all'origine della pericallosa/calloso-marginale", "Il segmento prossimale", "Il segmento terminale", "Il segmento insulare"] },
-
-        // --- ARTERIA CEREBRALE MEDIA (MCA/SILVIANA) ---
-        { q: "Dove decorre l'arteria cerebrale media?", a: ["Nella scissura laterale di Silvio (superficie dell'insula)", "Nella scissura interemisferica", "Sopra il corpo calloso", "Sotto il cervelletto"] },
-        { q: "Quali aree corticali vascolarizza la MCA?", a: ["Superficie laterale (aree motorie/sensitive faccia/arto sup., aree linguaggio, uditiva)", "Lobo occipitale", "Superficie mediale", "Lobo limbico"] },
-        { q: "Cosa vascolarizzano i rami centrali (striati) della MCA?", a: ["Capsula interna, esterna, nuclei lenticolare e caudato", "Talamo", "Ipotalamo", "Mesencefalo"] },
-        { q: "Qual è il segmento M1 della MCA?", a: ["Dall'origine alla biforcazione (parte sfenoidale)", "Parte insulare", "Parte opercolare", "Parte corticale"] },
-        { q: "Qual è il segmento M2 della MCA?", a: ["Parte insulare (nella scissura di Silvio)", "Parte sfenoidale", "Parte opercolare", "Parte corticale"] },
-
-        // --- SISTEMA VERTEBRO-BASILARE ---
-        { q: "Da dove origina l'arteria vertebrale?", a: ["Dall'arteria succlavia (prima porzione)", "Dall'arco aortico", "Dalla carotide comune", "Dalla carotide esterna"] },
-        { q: "Attraverso quali fori risale l'arteria vertebrale?", a: ["Fori trasversari delle prime 6 vertebre cervicali", "Fori intervertebrali", "Canale vertebrale", "Foro spinoso"] },
-        { q: "Dove entra nel cranio l'arteria vertebrale?", a: ["Dal forame magno", "Dal foro giugulare", "Dal canale carotico", "Dal foro ovale"] },
-        { q: "Dove si uniscono le due vertebrali?", a: ["Nel solco bulbo-pontino", "Sul ponte", "Nel mesencefalo", "Sotto il bulbo"] },
-        { q: "Qual è il ramo principale dell'arteria vertebrale?", a: ["Arteria cerebellare inferiore posteriore (PICA)", "Arteria basilare", "Arteria oftalmica", "Arteria cerebrale media"] },
-        { q: "Cosa vascolarizza la PICA?", a: ["Emisfero cerebellare inferiore, verme, bulbo laterale", "Ponte", "Mesencefalo", "Lobo temporale"] },
-        { q: "Dove decorre l'arteria basilare?", a: ["Nel solco mediale del ponte (cisterna pontina)", "Dietro il cervelletto", "Sopra il corpo calloso", "Nel seno cavernoso"] },
-        { q: "Quali sono i rami dell'arteria basilare?", a: ["AICA, SCA, arteria labirintica, rami pontini", "PICA, cerebrale anteriore", "Comunicante posteriore", "Oftalmica"] },
-        { q: "Dove termina l'arteria basilare?", a: ["Si divide nelle due arterie cerebrali posteriori", "Si continua come cerebrale anteriore", "Termina nel circolo di Willis", "Si divide in vertebrali"] },
-        { q: "Cosa vascolarizza l'arteria labirintica?", a: ["Orecchio interno (accompagna VII e VIII)", "Cervelletto", "Ponte", "Bulbo"] },
-
-        // --- ARTERIA CEREBRALE POSTERIORE (PCA) ---
-        { q: "Qual è l'origine della PCA?", a: ["Ramo terminale della basilare", "Ramo della carotide interna", "Ramo della vertebrale", "Ramo della comunicante"] },
-        { q: "Con chi si anastomizza la PCA nel poligono di Willis?", a: ["Con la comunicante posteriore", "Con la comunicante anteriore", "Con l'oftalmica", "Con la vertebrale"] },
-        { q: "Cosa vascolarizzano i rami corticali della PCA?", a: ["Lobo occipitale (visiva), temporale inferiore, uncus", "Lobo frontale", "Lobo parietale", "Insula"] },
-        { q: "Cosa vascolarizzano i rami centrali della PCA?", a: ["Talamo, subtalamo, pareti III ventricolo, plessi corioidei", "Nucleo caudato", "Capsula interna anteriore", "Putamen"] },
-        { q: "Qual è il segmento P1 della PCA?", a: ["Dall'origine alla comunicante posteriore", "Segmento distale", "Segmento corticale", "Segmento insulare"] },
-
-        // --- POLIGONO DI WILLIS ---
-        { q: "Dove si trova il poligono di Willis?", a: ["Nella cisterna interpeduncolare (spazio subaracnoideo)", "Sopra il corpo calloso", "Nella fossa posteriore", "Nel seno cavernoso"] },
-        { q: "Quali strutture circonda il poligono?", a: ["Chiasma ottico e infundibolo", "Ponte e bulbo", "Cervelletto", "Corpo calloso"] },
-        { q: "Da cosa è formato il poligono anteriormente?", a: ["Arterie cerebrali anteriori e comunicante anteriore", "Cerebrali medie", "Basilare", "Vertebrali"] },
-        { q: "Da cosa è formato il poligono posteriormente?", a: ["Cerebrali posteriori e comunicanti posteriori", "Cerebrali anteriori", "Oftalmiche", "Carotidi esterne"] },
-        { q: "Qual è la funzione del poligono?", a: ["Compenso di pressione e distribuzione uniforme (shunt)", "Aumentare la pressione", "Raffreddare il sangue", "Produrre liquor"] },
-
-        // --- SINDROMI VASCOLARI (TRONCO ENCEFALICO) ---
-        { q: "Cosa provoca l'occlusione della PICA (Sindrome di Wallenberg)?", a: ["Danno bulbo laterale: vertigini, atassia, disfagia, Horner, ipoestesia facciale omolaterale/corporea controlaterale", "Paralisi oculomotore", "Cecità", "Emiplegia pura"] },
-        { q: "Quale arteria è coinvolta nella Sindrome di Millard-Gubler?", a: ["Rami paramediani della basilare (ponte ventrale caudale)", "PICA", "SCA", "Cerebrale media"] },
-        { q: "Sintomi della Sindrome di Millard-Gubler:", a: ["Paralisi VII e VI omolaterale, emiplegia controlaterale", "Paralisi III nervo", "Atassia", "Afasia"] },
-        { q: "Quale arteria è coinvolta nella Sindrome di Weber?", a: ["Rami della cerebrale posteriore/basilare (mesencefalo ventrale)", "PICA", "AICA", "Corioidea anteriore"] },
-        { q: "Sintomi della Sindrome di Weber:", a: ["Paralisi III nervo omolaterale, emiparesi controlaterale", "Atassia", "Sordità", "Afasia"] },
-        { q: "Sintomi della Sindrome di Claude (tegmento mesencefalico):", a: ["Paralisi III omolaterale, emiatassia controlaterale (nucleo rosso)", "Emiplegia", "Cecità", "Disfagia"] },
-        { q: "Cosa provoca l'occlusione dell'arteria corioidea anteriore?", a: ["Danno capsula interna/subtalamo -> Emicorea/Emiballismo", "Cecità", "Sordità", "Paralisi facciale"] },
-
-        // --- VASCOLARIZZAZIONE TELENCEFALO E NUCLEI BASE ---
-        { q: "Quali arterie formano la rete piale?", a: ["Arteriole corticali e midollari", "Arterie centrali", "Arterie vertebrali", "Vene a ponte"] },
-        { q: "Cosa vascolarizzano le arteriole midollari?", a: ["Attraversano la corteccia per vascolarizzare il centro semiovale", "Solo la corteccia", "Il talamo", "I plessi corioidei"] },
-        { q: "Quali arterie vascolarizzano la testa del caudato?", a: ["Arterie centrali antero-mediali (ACA) e lenticolo-caudate (MCA)", "Corioidea anteriore", "Cerebrale posteriore", "Basilare"] },
-        { q: "Quali arterie vascolarizzano il putamen?", a: ["Arterie striate laterali e mediali (MCA) e corioidea anteriore", "Cerebrale posteriore", "PICA", "Oftalmica"] },
-        { q: "Quali arterie vascolarizzano il talamo?", a: ["Arterie talamiche (PCA) e lenticolo-talamiche (MCA)", "ACA", "Corioidea anteriore", "Basilare"] },
-        { q: "Qual è l'arteria dell'emorragia cerebrale di Charcot?", a: ["Un ramo lenticolo-caudato della cerebrale media (putamen laterale)", "Arteria basilare", "Comunicante anteriore", "Corioidea"] },
-        { q: "Cosa vascolarizza l'arteria corioidea postero-mediale?", a: ["Plessi del III ventricolo e subtalamo", "Ventricolo laterale", "Talamo", "Caudato"] },
-
-        // --- DRENAGGIO VENOSO (VENE) ---
-        { q: "Le vene dell'encefalo hanno valvole?", a: ["No, sono sprovviste di valvole", "Sì, molte", "Solo le superficiali", "Solo le profonde"] },
-        { q: "Dove drenano le vene cerebrali superiori?", a: ["Nel seno sagittale superiore", "Nel seno retto", "Nel seno cavernoso", "Nella vena basale"] },
-        { q: "Cosa drena la vena cerebrale media superficiale?", a: ["Superficie laterale (scissura Silvio) -> Seno cavernoso", "Lobo occipitale", "Superficie mediale", "Cervelletto"] },
-        { q: "Quale vena collega la cerebrale media al seno sagittale superiore?", a: ["Vena anastomotica superiore (Trolard)", "Vena di Labbé", "Vena basale", "Vena di Galeno"] },
-        { q: "Quale vena collega la cerebrale media al seno trasverso?", a: ["Vena anastomotica inferiore (Labbé)", "Vena di Trolard", "Vena cerebrale interna", "Vena retta"] },
-        { q: "Come si forma la vena basale di Rosenthal?", a: ["Unione di cerebrale media profonda e cerebrali anteriori", "Dalle vene giugulari", "Dalle vene cerebellari", "Dalle vene pontine"] },
-        { q: "Dove drena la vena basale?", a: ["Nella grande vena cerebrale (di Galeno)", "Nel seno retto direttamente", "Nel seno sagittale", "Nella giugulare"] },
-        { q: "Cosa drena la vena cerebrale interna?", a: ["Parti profonde, plessi corioidei ventricoli laterali/III", "Corteccia superficiale", "Cervelletto", "Bulbo"] },
-        { q: "Dove drenano le vene cerebellari?", a: ["Grande vena cerebrale, seni petrosi, trasverso", "Seno sagittale superiore", "Seno cavernoso", "Vena oftalmica"] },
-
-        // --- SENI VENOSI DURALI ---
-        { q: "Dove si trovano i seni durali?", a: ["Tra i due foglietti della dura madre (endostale e meningeo)", "Nello spazio subaracnoideo", "Nella pia madre", "Nell'osso"] },
-        { q: "Dove inizia e finisce il seno sagittale superiore?", a: ["Forame cieco -> Confluente dei seni (protuberanza occipitale int.)", "Crista galli -> Seno cavernoso", "Bregma -> Seno retto", "Foro giugulare"] },
-        { q: "Cosa è il confluente dei seni (Torculare di Erofilo)?", a: ["Punto di incontro tra seno sagittale superiore, retto e occipitale", "Punto di unione delle giugulari", "Nel seno cavernoso", "Sulla sella turcica"] },
-        { q: "Dove decorre il seno sagittale inferiore?", a: ["Margine libero della falce cerebrale", "Margine aderente della falce", "Tentorio del cervelletto", "Base cranica"] },
-        { q: "Dove termina il seno sagittale inferiore?", a: ["Nel seno retto (estremità anteriore)", "Nel seno trasverso", "Nel confluente", "Nella vena di Galeno"] },
-        { q: "Dove decorre il seno retto?", a: ["Giunzione tra falce cerebrale e tentorio del cervelletto", "Margine libero falce", "Solco trasverso", "Apice rocca petrosa"] },
-        { q: "Quali vene formano il seno retto?", a: ["Seno sagittale inferiore e grande vena cerebrale (Galeno)", "Seni trasversi", "Vene oftalmiche", "Vene giugulari"] },
-        { q: "Dove decorre il seno trasverso?", a: ["Solco trasverso (occipitale/parietale) lungo il tentorio", "Solco sagittale", "Clivo", "Sella turcica"] },
-        { q: "Come continua il seno trasverso?", a: ["Diventa seno sigmoideo -> Vena giugulare interna", "Diventa seno retto", "Diventa seno petroso", "Diventa seno cavernoso"] },
-        { q: "Dove si trova il seno cavernoso?", a: ["Ai lati del corpo dello sfenoide", "Sulla volta cranica", "Nella fossa posteriore", "Nel forame magno"] },
-        { q: "Quali vene riceve il seno cavernoso anteriormente?", a: ["Vene oftalmiche e seno sfenoparietale", "Seno retto", "Vene cerebellari", "Vene giugulari"] },
-        { q: "Quali strutture attraversano il seno cavernoso?", a: ["Carotide interna, VI nervo (dentro); III, IV, V1, V2 (parete)", "Arteria basilare", "Nervo ottico", "Nervo faciale"] },
-        { q: "Dove drena il seno cavernoso posteriormente?", a: ["Seni petrosi superiore e inferiore", "Seno retto", "Seno sagittale", "Vena vertebrale"] },
-        { q: "Dove decorre il seno petroso superiore?", a: ["Solco petroso superiore (cresta piramide temporale)", "Solco petroso inferiore", "Clivo", "Sella turcica"] },
-        { q: "Dove termina il seno petroso superiore?", a: ["Nel seno trasverso (segmento sigmoideo)", "Nel seno retto", "Nella giugulare interna", "Nel seno cavernoso"] },
-        { q: "Dove termina il seno petroso inferiore?", a: ["Direttamente nella vena giugulare interna (attraverso foro giugulare)", "Nel seno trasverso", "Nel seno retto", "Nel seno sfenoparietale"] },
-        // --- ULTERIORI DOMANDE: DETTAGLI TRIGEMINO ---
-        { q: "Quale ramo del trigemino passa attraverso il forame etmoidale anteriore?", a: ["Nervo etmoidale anteriore (dal nasociliare)", "Nervo frontale", "Nervo lacrimale", "Nervo infraorbitario"] },
-        { q: "Il nervo sfenopalatino collega il ganglio omonimo a quale nervo?", a: ["Nervo mascellare (V2)", "Nervo mandibolare", "Nervo oftalmico", "Nervo faciale"] },
-        { q: "Quale nervo innerva la cute della tempia?", a: ["Nervo auricolo-temporale (V3) e zigomatico-temporale (V2)", "Nervo sopraorbitario", "Nervo grande auricolare", "Nervo occipitale"] },
-        { q: "Il nervo alveolare inferiore scorre medialmente o lateralmente al muscolo pterigoideo interno?", a: ["Lateralmente al muscolo (tra muscolo e ramo mandibola)", "Medialmente al muscolo", "Attraverso il muscolo", "Sopra il muscolo"] },
-        { q: "Quale nervo raccoglie la sensibilità della dura madre della fossa cranica media?", a: ["Nervo meningeo medio (ramo ricorrente di V2)", "Nervo spinoso (ramo di V3)", "Entrambi", "Nessuno"] },
-
-        // --- ULTERIORI DOMANDE: DETTAGLI FACIALE E VAGO ---
-        { q: "A quale livello il nervo faciale emette il ramo per il muscolo stiloioideo?", a: ["Appena uscito dal forame stilomastoideo", "Nel canale faciale", "Dentro la parotide", "Nel meato acustico"] },
-        { q: "Il nervo intermedio di Wrisberg si trova:", a: ["Tra il nervo faciale motore e l'VIII nervo", "Sopra l'VIII nervo", "Sotto il faciale", "Non esiste"] },
-        { q: "Quale nervo innerva la mucosa della vallecula epiglottica?", a: ["Nervo vago (ramo interno laringeo superiore)", "Nervo glossofaringeo", "Nervo ipoglosso", "Nervo accessorio"] },
-        { q: "Il nervo di Galeno (laringeo) è:", a: ["Un'anastomosi sensitiva", "Un nervo motore puro", "Un ramo del simpatico", "Un ramo vascolare"] },
-        { q: "I rami cardiaci superiori del vago originano:", a: ["Dal tratto cervicale del nervo", "Dal tratto toracico", "Dal ganglio nodoso", "Dal nucleo ambiguo"] },
-
-        // --- ULTERIORI DOMANDE: VASCOLARIZZAZIONE (ARTERIE) ---
-        { q: "L'arteria oftalmica entra nell'orbita passando:", a: ["Sotto il nervo ottico e poi lateralmente", "Sopra il nervo ottico", "Medialmente al nervo", "Attraverso il nervo"] },
-        { q: "Quale arteria vascolarizza la testa del nucleo caudato?", a: ["Arteria ricorrente di Heubner (o rami centrali dell'ACA)", "Arteria corioidea anteriore", "Arteria cerebrale posteriore", "Arteria basilare"] },
-        { q: "Quale arteria fornisce la maggior parte del sangue alla capsula interna (braccio posteriore)?", a: ["Arterie lenticolo-striate (dalla cerebrale media)", "Cerebrale anteriore", "Cerebrale posteriore", "Comunicante anteriore"] },
-        { q: "L'arteria spinale anteriore origina:", a: ["Dalla fusione di due rami delle arterie vertebrali", "Dall'arteria basilare", "Dalla PICA", "Dalla carotide"] },
-        { q: "L'arteria cerebellare superiore (SCA) origina:", a: ["Dall'arteria basilare (subito prima della biforcazione)", "Dalla vertebrale", "Dalla cerebrale posteriore", "Dalla carotide"] },
-        { q: "Quale nervo passa tra l'arteria cerebrale posteriore e l'arteria cerebellare superiore?", a: ["Nervo oculomotore (III)", "Nervo trocleare", "Nervo abducente", "Nervo trigemino"] },
-        { q: "Cosa vascolarizzano i rami perforanti della cerebrale posteriore?", a: ["Mesencefalo e talamo", "Ponte", "Bulbo", "Midollo"] },
-
-        // --- ULTERIORI DOMANDE: VASCOLARIZZAZIONE (VENE E SENI) ---
-        { q: "La vena di Trolard è anche detta:", a: ["Vena anastomotica superiore", "Vena anastomotica inferiore", "Vena basale", "Vena cerebrale interna"] },
-        { q: "La vena di Labbé connette:", a: ["La vena cerebrale media superficiale con il seno trasverso", "La vena media con il seno sagittale", "Il seno retto con il seno petroso", "Le vene interne"] },
-        { q: "Dove sbocca la vena cerebrale magna (di Galeno)?", a: ["Nel seno retto", "Nel seno sagittale superiore", "Nel seno cavernoso", "Nella vena giugulare"] },
-        { q: "Le vene a ponte (bridging veins) connettono:", a: ["Le vene cerebrali superficiali al seno sagittale superiore", "Le vene profonde al seno retto", "Le vene del ponte al seno petroso", "Le vene meningee"] },
-        { q: "La rottura delle vene a ponte causa tipicamente:", a: ["Ematoma subdurale", "Ematoma epidurale", "Emorragia subaracnoidea", "Ictus ischemico"] },
-        { q: "Il seno occipitale drena:", a: ["Nel confluente dei seni (Torculare)", "Nel seno cavernoso", "Nel seno petroso", "Nella vena oftalmica"] },
-        { q: "Quale seno circonda l'ipofisi?", a: ["Seno intercavernoso (o circolare)", "Seno retto", "Seno marginale", "Seno petroso"] },
-
-        // --- ULTERIORI DOMANDE: RAPPORTI ANATOMICI DI FINO ---
-        { q: "Il ganglio otico è situato medialmente a quale nervo?", a: ["Nervo mandibolare (V3)", "Nervo mascellare", "Nervo oftalmico", "Nervo faciale"] },
-        { q: "Quale muscolo separa il nervo linguale dal nervo alveolare inferiore?", a: ["Pterigoideo interno", "Pterigoideo esterno", "Massetere", "Temporale"] },
-        { q: "Dove si trova il ganglio cervicale superiore del simpatico?", a: ["Davanti a C2-C3, dietro la carotide interna", "A livello di C6", "Davanti alla prima costa", "Nel torace"] },
-        { q: "L'ansa dell'ipoglosso si trova superficialmente a:", a: ["Vena giugulare interna", "Arteria carotide interna", "Arteria vertebrale", "Esofago"] },
-        { q: "Il nervo laringeo ricorrente sinistro risale nel solco tra:", a: ["Trachea ed esofago", "Carotide e giugulare", "Scaleno anteriore e medio", "Sternocleidomastoideo e trachea"] },
-        { q: "Il nervo frenico passa davanti o dietro allo scaleno anteriore?", a: ["Davanti allo scaleno anteriore", "Dietro allo scaleno anteriore", "Attraverso il muscolo", "Non ha rapporti"] },
-
-        // --- CURIOSITÀ E VARIANTI ---
-        { q: "Se il seno sagittale superiore devia a destra, il seno retto solitamente:", a: ["Devia a sinistra (formando il seno trasverso sinistro)", "Devia a destra", "Si ferma", "Non esiste"] },
-        { q: "Il nervo di Jacobson è un ramo del:", a: ["Glossofaringeo (IX)", "Vago (X)", "Faciale (VII)", "Trigemino (V)"] },
-        { q: "Il nervo di Arnold è un ramo del:", a: ["Vago (X) - ramo auricolare", "Trigemino", "Faciale", "Accessorio"] },
-        { q: "Il nervo vidiano è formato dall'unione di:", a: ["Grande petroso (parasimpatico) e Petroso profondo (ortosimpatico)", "Piccolo petroso e Grande petroso", "Corda del timpano e Linguale", "Faciale e Vago"] },
-        { q: "Quale nervo cranico emerge dalla superficie posteriore del tronco?", a: ["Trocleare (IV)", "Tutti", "Nessuno", "Vago"] }
-               
-               ],
-               "ORGANI DI SENSO ": [
-                 // --- OCCHIO: TONACA FIBROSA (SCLERA E CORNEA) ---
-        { q: "Quali sono le tre tonache del bulbo oculare dall'esterno all'interno?", a: ["Fibrosa, Vascolare, Nervosa", "Vascolare, Fibrosa, Nervosa", "Nervosa, Vascolare, Fibrosa", "Corneale, Sclerale, Retinica"] },
-        { q: "Quale percentuale della superficie del bulbo è costituita dalla sclera?", a: ["Circa il 93%", "Circa il 7%", "Il 50%", "Il 30%"] },
-        { q: "Cosa passa attraverso la lamina cribrosa della sclera?", a: ["I fascicoli del nervo ottico", "L'arteria oftalmica", "La vena vorticosa", "Il muscolo retto mediale"] },
-        { q: "Qual è lo spessore medio della cornea al centro?", a: ["520 μm", "1 mm", "200 μm", "2 mm"] },
-        { q: "Quali sono i 5 strati della cornea dall'esterno all'interno?", a: ["Epitelio, Bowman, Stroma, Descemet, Endotelio", "Endotelio, Stroma, Bowman, Descemet, Epitelio", "Epitelio, Stroma, Endotelio", "Bowman, Descemet, Stroma, Epitelio, Endotelio"] },
-        { q: "Che tipo di epitelio è l'epitelio corneale?", a: ["Pavimentoso composto (5-6 strati)", "Cubico semplice", "Cilindrico pseudostratificato", "Di transizione"] },
-        { q: "Cos'è la membrana di Bowman?", a: ["Lamina acellulare di fibrille collagene sotto l'epitelio", "La membrana basale dell'endotelio", "Lo strato muscolare", "La membrana limitante interna"] },
-        { q: "Cosa costituisce lo stroma corneale?", a: ["Lamelle di collagene I orientate alternativamente e cheratociti", "Tessuto adiposo", "Fibre elastiche disordinate", "Cellule muscolari lisce"] },
-        { q: "Cos'è la membrana di Descemet?", a: ["Lamina elastica acellulare sopra l'endotelio", "La capsula del cristallino", "La membrana basale dell'epitelio", "Una membrana vascolare"] },
-
-        // --- OCCHIO: TONACA VASCOLARE (COROIDE, CILIARE, IRIDE) ---
-        { q: "Quali sono le componenti della tonaca vascolare (uvea)?", a: ["Coroide, Corpo ciliare, Iride", "Sclera e Cornea", "Retina e Cristallino", "Umor acqueo e vitreo"] },
-        { q: "Dove si continua la coroide anteriormente?", a: ["Nel corpo ciliare (a livello dell'ora serrata)", "Nell'iride", "Nella cornea", "Nella sclera"] },
-        { q: "Quali sono gli strati della coroide dall'esterno all'interno?", a: ["Sovracorioidea, Vascolare (Haller/Sattler), Coriocapillare, Membrana di Bruch", "Vascolare, Bruch, Sovracorioidea", "Sclera, Coroide, Retina", "Epitelio, Stroma, Endotelio"] },
-        { q: "Qual è la funzione principale della lamina coriocapillare?", a: ["Nutrire gli strati esterni della retina", "Produrre umor acqueo", "Mettere a fuoco", "Drenare l'umor vitreo"] },
-        { q: "Come si chiama la porzione posteriore piana del corpo ciliare?", a: ["Pars plana (orbicolo ciliare)", "Pars plicata", "Corona ciliare", "Ora serrata"] },
-        { q: "Quali fibre compongono il muscolo ciliare?", a: ["Longitudinali (Brucke), Oblique, Circolari (Muller)", "Solo circolari", "Solo longitudinali", "Striate scheletriche"] },
-        { q: "Cosa succede quando il muscolo ciliare si contrae?", a: ["Il corpo ciliare va avanti, la zonula si rilassa, il cristallino si incurva (visione vicina)", "La zonula si tende, il cristallino si appiattisce", "La pupilla si dilata", "L'occhio ruota"] },
-        { q: "Cosa collega la zonula ciliare di Zinn?", a: ["Il corpo ciliare al cristallino", "L'iride alla cornea", "La retina alla coroide", "Il cristallino alla retina"] },
-        { q: "Quali muscoli si trovano nell'iride?", a: ["Sfintere della pupilla e Dilatatore della pupilla", "Muscolo ciliare", "Retto e obliquo", "Orbicolare"] },
-        { q: "Il muscolo dilatatore della pupilla è formato da:", a: ["Cellule mioepiteliali dello strato anteriore dell'epitelio irideo", "Fibre muscolari lisce dello stroma", "Muscolo striato", "Fibre elastiche"] },
-        { q: "Dove viene prodotto l'umor acqueo?", a: ["Dall'epitelio dei processi ciliari (pars plicata)", "Dalla cornea", "Dall'iride", "Dalla retina"] },
-        { q: "Dove viene riassorbito l'umor acqueo?", a: ["Canale di Schlemm (angolo irido-corneale)", "Canale ialoideo", "Vene vorticose", "Ora serrata"] },
-
-        // --- OCCHIO: CRISTALLINO E VITREO ---
-        { q: "Quali sono gli strati del cristallino?", a: ["Capsula, Epitelio (anteriore), Fibre", "Corteccia e Nucleo", "Sclera e Cornea", "Epitelio e Endotelio"] },
-        { q: "Come si chiamano le proteine specifiche del cristallino?", a: ["Cristalline", "Opsine", "Cheratine", "Collagene"] },
-        { q: "Cos'è il canale ialoideo del Cloquet?", a: ["Residuo dell'arteria ialoidea nel corpo vitreo", "Canale di drenaggio dell'acqueo", "Canale nel nervo ottico", "Canale nella sclera"] },
-        { q: "Quale sostanza conferisce consistenza gelatinosa al corpo vitreo?", a: ["Acido ialuronico e fibre collagene II", "Cristalline", "Lipidi", "Cheratan solfato"] },
-
-        // --- OCCHIO: RETINA (STRATI E CELLULE) ---
-        { q: "Quanti strati ha la retina?", a: ["10", "5", "3", "7"] },
-        { q: "Qual è il primo strato della retina (più esterno)?", a: ["Strato dell'epitelio pigmentato", "Strato dei fotorecettori", "Strato delle cellule gangliari", "Membrana limitante interna"] },
-        { q: "Dove si trovano i corpi cellulari di coni e bastoncelli?", a: ["Strato nucleare esterno", "Strato nucleare interno", "Strato delle cellule gangliari", "Strato pigmentato"] },
-        { q: "Dove avviene la sinapsi tra fotorecettori e cellule bipolari?", a: ["Strato plessiforme esterno", "Strato plessiforme interno", "Strato nucleare interno", "Strato delle fibre nervose"] },
-        { q: "Dove si trovano i corpi delle cellule bipolari, orizzontali e amacrine?", a: ["Strato nucleare interno", "Strato nucleare esterno", "Strato gangliare", "Strato pigmentato"] },
-        { q: "Dove avviene la sinapsi tra cellule bipolari e gangliari?", a: ["Strato plessiforme interno", "Strato plessiforme esterno", "Strato nucleare interno", "Nervo ottico"] },
-        { q: "Cosa formano gli assoni delle cellule gangliari?", a: ["Lo strato delle fibre del nervo ottico", "La membrana limitante esterna", "I fotorecettori", "Il chiasma ottico"] },
-        { q: "Quali sono le principali cellule gliali della retina?", a: ["Cellule di Muller", "Cellule di Schwann", "Oligodendrociti", "Cellule ependimali"] },
-        { q: "Qual è la funzione delle cellule orizzontali e amacrine?", a: ["Interneuroni per l'analisi intraretinica e regolazione sensibilità", "Fotorecezione", "Sostegno meccanico", "Produzione di pigmento"] },
-        { q: "Da cosa è formata la membrana limitante interna?", a: ["Dalle espansioni delle cellule di Muller", "Dalla membrana di Bruch", "Dagli assoni gangliari", "Dall'endotelio"] },
-
-        // --- VIE OTTICHE E RIFLESSI ---
-        { q: "Quali fibre decussano nel chiasma ottico?", a: ["Le fibre delle emiretine nasali (mediali)", "Le fibre delle emiretine temporali", "Tutte le fibre", "Nessuna fibra"] },
-        { q: "Cosa contiene il tratto ottico destro?", a: ["Fibre dell'emiretina temporale destra e nasale sinistra (campo visivo sinistro)", "Solo fibre dell'occhio destro", "Tutto il campo visivo destro", "Fibre maculari pure"] },
-        { q: "Dove proietta la macula lutea nella corteccia visiva?", a: ["Poli occipitali (porzione posteriore)", "Scissura calcarina anteriore", "Lobo temporale", "Lobo parietale"] },
-        { q: "Quale nucleo media il riflesso di midriasi?", a: ["Nucleo cilio-spinale (midollo C8-T2) via ipotalamo", "Nucleo di Edinger-Westphal", "Nucleo pretettale", "Nucleo rosso"] },
-        { q: "Qual è il percorso efferente del riflesso di miosi?", a: ["Nucleo Edinger-Westphal -> Ganglio Ciliare -> Nervi ciliari brevi -> Sfintere iride", "Ganglio cervicale superiore -> Plesso carotideo -> Dilatatore", "Nervo faciale -> Ganglio genicolato", "Nervo trigemino -> Ganglio otico"] },
-        { q: "Cosa stimola il riflesso di accomodazione?", a: ["Visione di oggetti vicini (corteccia visiva -> fascicolo long. sup. -> Edinger-Westphal)", "Luce intensa", "Buio", "Suoni forti"] },
-
-        // --- ORECCHIO: LABIRINTO OSSEO E MEMBRANOSO ---
-        { q: "Cosa contiene lo spazio perilinfatico?", a: ["Perilinfa (tra labirinto osseo e membranoso)", "Endolinfa", "Sangue", "Aria"] },
-        { q: "Cosa contiene il labirinto membranoso?", a: ["Endolinfa", "Perilinfa", "Liquor", "Sostanza gelatinosa"] },
-        { q: "Quali recessi si trovano nella parete mediale del vestibolo?", a: ["Recesso ellittico (utricolo) e recesso sferico (sacculo)", "Finestra ovale e rotonda", "Ampolle", "Elicotrema"] },
-        { q: "Dove si apre l'acquedotto del vestibolo?", a: ["Faccia posteriore della piramide del temporale", "Meato acustico interno", "Cavo del timpano", "Fossa cranica media"] },
-        { q: "Quali sono i tre canali semicircolari ossei?", a: ["Superiore, Posteriore, Laterale", "Anteriore, Medio, Inferiore", "Interno, Esterno, Medio", "Verticale, Orizzontale, Obliquo"] },
-        { q: "Cosa determina il canale semicircolare superiore sulla piramide?", a: ["L'eminenza arcuata", "Il tegmen tympani", "Il solco sigmoideo", "L'apice della rocca"] },
-        { q: "Quali canali condividono il braccio comune?", a: ["Superiore e Posteriore", "Laterale e Superiore", "Laterale e Posteriore", "Tutti e tre"] },
-
-        // --- ORECCHIO: CHIOCCIOLA E COCLEA ---
-        { q: "Come si chiama l'asse centrale osseo della chiocciola?", a: ["Modiolo", "Elicotrema", "Lamina spirale", "Tractus spiralis"] },
-        { q: "Cosa divide la lamina spirale ossea?", a: ["Scala vestibolare e Scala timpanica", "Utricolo e Sacculo", "Canali semicircolari", "Orecchio medio e interno"] },
-        { q: "Dove comunicano la scala vestibolare e timpanica?", a: ["All'elicotrema (apice)", "Alla base", "Nella finestra rotonda", "Non comunicano"] },
-        { q: "Quale finestra chiude la scala vestibolare?", a: ["Finestra ovale (con la staffa)", "Finestra rotonda", "Elicotrema", "Acquedotto"] },
-        { q: "Quale finestra chiude la scala timpanica?", a: ["Finestra rotonda (membrana secondaria)", "Finestra ovale", "Tuba di Eustachio", "Canale cocleare"] },
-        { q: "Dove si trova il ganglio spirale di Corti?", a: ["Nel canale spirale del modiolo (nella lamina ossea)", "Nel meato acustico interno", "Nel vestibolo", "Nell'orecchio medio"] },
-        { q: "Dove si trova l'orifizio dell'acquedotto della chiocciola?", a: ["Parte iniziale scala timpanica -> Fossetta piramidale", "Scala vestibolare", "Vestibolo", "Canale laterale"] },
-
-        // --- ORECCHIO: RECETTORI VESTIBOLARI ---
-        { q: "Qual è l'epitelio sensoriale di utricolo e sacculo?", a: ["Macula acustica", "Cresta ampollare", "Organo del Corti", "Stria vascolare"] },
-        { q: "Quali tipi di cellule sensoriali esistono nelle macule?", a: ["Tipo I (a fiasco, calice nervoso) e Tipo II (cilindriche, bottoni)", "Solo tipo I", "Solo tipo II", "Cellule dei pilastri"] },
-        { q: "Cosa ricopre i peli acustici nelle macule?", a: ["Membrana statolitica (otolitica) con otoliti", "Cupola ampollare", "Membrana tectoria", "Membrana basilare"] },
-        { q: "Qual è lo stimolo adeguato per le macule?", a: ["Accelerazioni lineari e gravità", "Accelerazioni rotatorie", "Suoni", "Vibrazioni"] },
-        { q: "Qual è il recettore nei canali semicircolari?", a: ["Cresta ampollare (nell'ampolla)", "Macula", "Organo del Corti", "Papilla"] },
-        { q: "Cosa ricopre i peli acustici nelle creste ampollari?", a: ["Cupola ampollare (gelatinosa, senza otoliti)", "Membrana otolitica", "Membrana tectoria", "Endolinfa libera"] },
-        { q: "Qual è lo stimolo per le creste ampollari?", a: ["Accelerazioni rotatorie (angolari)", "Accelerazioni lineari", "Gravità", "Suoni"] },
-        { q: "Dove viene riassorbita l'endolinfa?", a: ["Sacco endolinfatico (nella dura madre)", "Stria vascolare", "Canale di Schlemm", "Acquedotto cocleare"] },
-
-        // --- ORECCHIO: ORGANO DEL CORTI ---
-        { q: "Dove si trova il dotto cocleare (scala media)?", a: ["Tra la scala vestibolare e la scala timpanica", "Nel vestibolo", "Nel meato acustico", "Nell'orecchio medio"] },
-        { q: "Da cosa è formata la parete vestibolare del dotto cocleare?", a: ["Membrana vestibolare di Reissner", "Membrana basilare", "Stria vascolare", "Lamina ossea"] },
-        { q: "Da cosa è formata la parete timpanica del dotto cocleare?", a: ["Membrana basilare (su cui poggia l'organo del Corti)", "Membrana di Reissner", "Legamento spirale", "Tectorial membrane"] },
-        { q: "Cosa produce l'endolinfa nella coclea?", a: ["Stria vascolare (parete esterna)", "Organo del Corti", "Ganglio spirale", "Membrana di Reissner"] },
-        { q: "Quali cellule formano la galleria del Corti?", a: ["Pilastri interni ed esterni", "Cellule di Deiters", "Cellule di Hensen", "Cellule acustiche"] },
-        { q: "Cosa sono le cellule di Deiters?", a: ["Cellule di sostegno per le cellule acustiche esterne (con falange)", "Cellule sensoriali", "Cellule secernenti", "Cellule pilastro"] },
-        { q: "Quante file di cellule acustiche interne ci sono?", a: ["Una fila unica", "3-5 file", "2 file", "Nessuna"] },
-        { q: "Quante file di cellule acustiche esterne ci sono?", a: ["3-5 file", "Una fila", "10 file", "Nessuna"] },
-        { q: "Quale struttura sovrasta i peli delle cellule acustiche?", a: ["Membrana tectoria", "Membrana basilare", "Membrana otolitica", "Cupola"] },
-        { q: "Come avviene la trasduzione del suono?", a: ["Vibrazione perilinfa -> Vibrazione membrana basilare -> Deformazione ciglia contro membrana tectoria", "Movimento otoliti", "Flusso endolinfa nei canali", "Vibrazione ossicini diretta"] },
-
-        // --- OLFATTO ---
-        { q: "Dove si trova la mucosa olfattiva?", a: ["Parte alta delle fosse nasali (lamina cribrosa, setto alto, parete laterale alta)", "Pavimento nasale", "Vestibolo nasale", "Cornetto inferiore"] },
-        { q: "Che tipo di neuroni sono le cellule olfattive?", a: ["Neuroni bipolari", "Pseudounipolari", "Multipolari", "Cellule epiteliali modificate"] },
-        { q: "Cosa possiede il dendrite della cellula olfattiva?", a: ["Vescicola con 10-20 lunghe ciglia olfattive", "Microvilli corti", "Stereociglia", "Nessuna specializzazione"] },
-        { q: "Cosa costituiscono gli assoni delle cellule olfattive?", a: ["I fascetti del nervo olfattivo (attraverso la lamina cribrosa)", "Il tratto olfattivo", "Il bulbo olfattivo", "Il nervo trigemino"] },
-        { q: "Quali ghiandole sono tipiche della tonaca propria olfattiva?", a: ["Ghiandole di Bowman (tubulo-acinose)", "Ghiandole di Von Ebner", "Ghiandole caliciformi", "Ghiandole salivari"] },
-        { q: "Cos'è l'organo vomero-nasale (di Jacobson)?", a: ["Diverticolo nel setto anteriore, rudimentale nell'uomo (feromoni)", "Organo del gusto", "Seno paranasale", "Tonsilla"] },
-        { q: "Da cosa deriva embriologicamente l'olfatto?", a: ["Placode olfattivo (ispessimento ectodermico)", "Tubo neurale", "Creste neurali", "Endoderma"] },
-
-        // --- GUSTO ---
-        { q: "Dove si trovano i calici gustativi?", a: ["Papille vallate, foliate, fungiformi (lingua), palato molle, epiglottide", "Solo sulla lingua", "Solo papille filiformi", "Guancia"] },
-        { q: "Quali papille ospitano i calici nelle pareti laterali?", a: ["Papille circumvallate e foliate", "Papille fungiformi", "Papille filiformi", "Papille coniche"] },
-        { q: "Qual è la funzione delle ghiandole di Von Ebner?", a: ["Lavare il vallo delle papille per rinnovare la percezione", "Produrre enzimi digestivi", "Lubrificare", "Produrre muco"] },
-        { q: "Come comunica il calice gustativo con l'esterno?", a: ["Tramite il poro gustativo esterno", "Non comunica", "Tramite il dotto ghiandolare", "Tramite assoni"] },
-        { q: "Quali tipi cellulari formano il calice gustativo?", a: ["Cellule gustative, Cellule di sostegno (pilastro/bastoncello), Cellule basali", "Solo neuroni", "Cellule muscolari", "Cellule caliciformi"] },
-        { q: "Qual è la vita media delle cellule gustative?", a: ["Sono continuamente rimpiazzate dalle basali", "Perenni", "Un anno", "24 ore"] },
-        { q: "Quali nervi innervano i calici gustativi?", a: ["VII (2/3 ant), IX (1/3 post), X (epiglottide/faringe)", "V, VII, IX", "Solo VII", "IX e XII"] },
-        { q: "Quali sono i 5 gusti fondamentali?", a: ["Dolce, Salato, Acido, Amaro, Umami", "Dolce, Salato, Aspro, Piccante", "Dolce, Amaro, Grasso, Metallico", "Solo dolce e salato"] },
-        // --- ULTERIORI DOMANDE: OCCHIO (ANATOMIA FINE) ---
-        { q: "Qual è il raggio di curvatura medio della cornea?", a: ["7,8 mm", "11,5 mm", "24 mm", "5 mm"] },
-        { q: "Come sono disposte le lamelle di collagene nello stroma corneale?", a: ["Parallele tra loro in ogni lamella, ma con direzione alternata tra lamelle diverse", "Disposte a caso", "Verticali", "Circolari"] },
-        { q: "Quali cellule si trovano tra le lamelle dello stroma corneale?", a: ["Cheratociti", "Melanociti", "Cellule di Muller", "Cellule caliciformi"] },
-        { q: "Cosa succede allo spessore della membrana di Descemet con l'età?", a: ["Aumenta (da 4 a 12 μm)", "Diminuisce", "Rimane invariato", "Scompare"] },
-        { q: "Quale spazio separa la sclera dalla coroide?", a: ["Spazio pericoroidale (con lamina sovracorioidea)", "Spazio di Tenon", "Camera anteriore", "Spazio subaracnoideo"] },
-        { q: "Qual è la funzione delle fibre della zonula ciliare quando il muscolo ciliare è a riposo?", a: ["Tengono teso il cristallino (appiattendolo per la visione da lontano)", "Rilassano il cristallino", "Chiudono la pupilla", "Aprono il canale di Schlemm"] },
-        { q: "L'epitelio dell'iride è costituito da:", a: ["Due strati: posteriore pigmentato e anteriore mioepiteliale (dilatatore)", "Uno strato non pigmentato", "Endotelio semplice", "Epitelio pavimentoso stratificato"] },
-        { q: "La superficie anteriore del cristallino è rivestita da:", a: ["Epitelio del cristallino (sotto la capsula)", "Endotelio", "Non ha epitelio", "Membrana di Bowman"] },
-        { q: "Dove si trova la fossa ialoidea?", a: ["Sulla superficie anteriore del corpo vitreo (accoglie il cristallino)", "Sulla retina", "Nella cornea", "Nel nervo ottico"] },
-
-        // --- ULTERIORI DOMANDE: RETINA E VISIONE ---
-        { q: "Cosa sono le cellule interplessiformi?", a: ["Neuroni che trasmettono segnali 'controcorrente' (dallo strato interno all'esterno)", "Fotorecettori", "Cellule gliali", "Cellule gangliari giganti"] },
-        { q: "Qual è la funzione delle cellule orizzontali?", a: ["Interneuroni inibitori (connettono coni e bastoncelli)", "Trasmettono al nervo ottico", "Producono rodopsina", "Nutrono la retina"] },
-        { q: "Dove si trovano le cellule amacrine 'dislocate'?", a: ["Nello strato delle cellule gangliari", "Nello strato nucleare esterno", "Nella coroide", "Nel nervo ottico"] },
-        { q: "Quale strato della retina deriva dal foglietto esterno della vescicola ottica?", a: ["Strato dell'epitelio pigmentato", "Strato dei fotorecettori", "Strato gangliare", "Tutti gli strati"] },
-        { q: "La metà sinistra del campo visivo proietta su:", a: ["Emiretina nasale sinistra e temporale destra", "Emiretina temporale sinistra e nasale destra", "Solo occhio sinistro", "Solo occhio destro"] },
-        { q: "Dove proietta la parte inferiore del campo visivo (retina superiore)?", a: ["Corteccia visiva sopra la scissura calcarina", "Sotto la scissura calcarina", "Polo occipitale", "Lobo parietale"] },
-        { q: "La via retino-ipotalamica termina nel:", a: ["Nucleo sovra-chiasmatico", "Corpo genicolato", "Nucleo rosso", "Nucleo ambiguo"] },
-
-        // --- ULTERIORI DOMANDE: ORECCHIO (LABIRINTO OSSEO) ---
-        { q: "Cosa si trova nel recesso ellittico del vestibolo?", a: ["L'utricolo", "Il sacculo", "La coclea", "Il ganglio spirale"] },
-        { q: "Cosa si trova nel recesso sferico del vestibolo?", a: ["Il sacculo", "L'utricolo", "L'ampolla", "Il condotto endolinfatico"] },
-        { q: "Cosa passa attraverso il Tractus Spiralis Foraminosus?", a: ["I canali longitudinali con le fibre del nervo cocleare", "L'acquedotto del vestibolo", "L'arteria labirintica", "Il nervo faciale"] },
-        { q: "L'acquedotto della chiocciola mette in comunicazione:", a: ["La scala timpanica con lo spazio subaracnoideo", "La scala vestibolare con l'utricolo", "L'endolinfa con la perilinfa", "L'orecchio medio con la faringe"] },
-        { q: "Quale canale semicircolare determina l'eminenza arcuata?", a: ["Canale superiore", "Canale posteriore", "Canale laterale", "Nessuno"] },
-        { q: "Il canale semicircolare laterale è orientato:", a: ["Orizzontalmente", "Verticalmente parallelo alla piramide", "Verticale perpendicolare alla piramide", "Obliquo"] },
-
-        // --- ULTERIORI DOMANDE: ORECCHIO (STRUTTURA FINE) ---
-        { q: "Cosa sono i foramina nervina?", a: ["Piccoli fori nel margine della lamina spirale per le fibre nervose", "Fori nella membrana timpanica", "Fori negli otoliti", "Canali vascolari"] },
-        { q: "La parete esterna del condotto cocleare è formata da:", a: ["Legamento spirale e stria vascolare", "Lamina spirale ossea", "Membrana di Reissner", "Membrana tectoria"] },
-        { q: "Qual è la funzione della stria vascolare?", a: ["Secernere l'endolinfa", "Assorbire l'endolinfa", "Vibrare col suono", "Proteggere le cellule ciliate"] },
-        { q: "Quali cellule delimitano il poro gustativo interno nell'organo del gusto?", a: ["Cellule di sostegno a pilastro (apice tronco con peli)", "Cellule basali", "Cellule gustative", "Cellule di Muller"] },
-        { q: "Le cellule di Hensen si trovano:", a: ["Esternamente alle cellule di Deiters", "Internamente ai pilastri", "Sopra la membrana tectoria", "Nel ganglio spirale"] },
-        { q: "Cosa manca nelle cellule acustiche dell'organo del Corti adulto (rispetto alle vestibolari)?", a: ["Il chinociglio", "Le stereociglia", "Il nucleo", "I mitocondri"] },
-        { q: "La disposizione delle stereociglia nelle cellule acustiche esterne è a:", a: ["V o W", "U o S", "Cerchio", "Linea retta"] },
-        { q: "La disposizione delle stereociglia nelle cellule acustiche interne è a:", a: ["U o S", "V o W", "Cerchio", "Sparsa"] },
-
-        // --- ULTERIORI DOMANDE: FISIOLOGIA UDIITO E EQUILIBRIO ---
-        { q: "La pressione sonora si trasmette dalla staffa a:", a: ["Perilinfa della scala vestibolare", "Endolinfa della scala media", "Perilinfa della scala timpanica", "Membrana rotonda"] },
-        { q: "Come si propaga l'onda di pressione all'apice della coclea?", a: ["Attraverso l'elicotrema passa alla scala timpanica", "Attraverso il modiolo", "Si ferma", "Rompe la membrana"] },
-        { q: "Cosa provoca l'onda sonora alla membrana secondaria del timpano (finestra rotonda)?", a: ["La sposta lateralmente (verso la cassa timpanica)", "La sposta medialmente", "Non si muove", "La rompe"] },
-        { q: "Perché l'endolinfa ha inerzia nelle accelerazioni?", a: ["Perché è viscosa", "Perché è gassosa", "Perché è solida", "Perché è assente"] },
-        { q: "Cosa succede in caso di idrope (blocco sacco endolinfatico)?", a: ["Accumulo di endolinfa e danni uditivi/vestibolari", "Miglioramento udito", "Secchezza orecchio", "Infezione"] },
-
-        // --- ULTERIORI DOMANDE: OLFATTO (DETTAGLI) ---
-        { q: "Le cellule olfattive sono:", a: ["Neuroni bipolari veri", "Cellule epiteliali modificate", "Cellule gliali", "Neuroni multipolari"] },
-        { q: "Cosa secernono le ghiandole di Bowman?", a: ["Un secreto liquido che scioglie le sostanze odorose", "Muco denso protettivo", "Ormoni", "Saliva"] },
-        { q: "Qual è il destino dell'organo di Jacobson nell'uomo?", a: ["Si atrofizza (è rudimentale)", "Diventa l'organo principale", "Diventa la tonsilla", "Forma il setto nasale"] },
-        { q: "Cosa manca tra epitelio olfattivo e tonaca propria?", a: ["Una membrana basale ben definita", "I vasi sanguigni", "Le fibre nervose", "Le cellule basali"] },
-        { q: "Le cellule basali della mucosa olfattiva servono a:", a: ["Rimpiazzare le cellule di sostegno (e olfattive)", "Produrre muco", "Trasmettere segnali", "Filtrare l'aria"] },
-
-        // --- ULTERIORI DOMANDE: GUSTO (DETTAGLI) ---
-        { q: "Le cellule a bastoncello del calice gustativo sono:", a: ["Cellule di sostegno interne", "Cellule gustative", "Cellule basali", "Cellule nervose"] },
-        { q: "Cosa sporge nel canale gustativo?", a: ["I peli gustativi (microvilli)", "Il chinociglio", "L'assone", "I dendriti"] },
-        { q: "Le cellule gustative hanno vita:", a: ["Limitata (rimpiazzate dalle basali)", "Perenne", "Di pochi minuti", "Di 100 anni"] },
-        { q: "Il gusto 'Umami' è scatenato da:", a: ["Glutammato monosodico", "Ioni idrogeno", "Zuccheri", "Alcaloidi"] },
-        { q: "Oltre alla lingua, dove si trovano i calici gustativi?", a: ["Palato molle, archi palatini, epiglottide", "Guance", "Esofago", "Naso"] },
-        { q: "Quale nervo innerva i calici gustativi dell'epiglottide?", a: ["Nervo vago (X)", "Glossofaringeo (IX)", "Faciale (VII)", "Trigemino (V)"] }
-    
-                 ]
-    };
+  "INTRODUZIONE": [
+    {
+      "q": "Durante lo sviluppo, quale derivato è tipico del Telencefalo?",
+      "a": [
+        "Tetto del mesencefalo — nel quadro clinico tipico",
+        "Cervelletto e ponte — secondo una descrizione standard",
+        "Emisferi cerebrali e nuclei della base",
+        "Midollo spinale — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Nel contesto embriologico, il Telencefalo dà origine principalmente a:",
+      "a": [
+        "Cervelletto e ponte — nel quadro clinico tipico",
+        "Midollo spinale",
+        "Tetto del mesencefalo",
+        "Emisferi cerebrali e nuclei della base"
+      ],
+      "correct": 3,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Se una malformazione colpisce il Telencefalo, quale regione è più direttamente coinvolta?",
+      "a": [
+        "Cervelletto e ponte",
+        "Emisferi cerebrali e nuclei della base",
+        "Tetto del mesencefalo — con implicazioni su strutture adiacenti",
+        "Midollo spinale"
+      ],
+      "correct": 1,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Quale coppia struttura-origine è corretta per il Telencefalo?",
+      "a": [
+        "Tetto del mesencefalo — nel quadro clinico tipico",
+        "Midollo spinale — considerando le vie coinvolte",
+        "Emisferi cerebrali e nuclei della base",
+        "Cervelletto e ponte"
+      ],
+      "correct": 2,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Durante lo sviluppo, quale derivato è tipico del Diencefalo?",
+      "a": [
+        "Corteccia motoria primaria",
+        "Talamo, ipotalamo ed epitalamo — tenendo conto dei relè talamici",
+        "Bulbo e ponte",
+        "Cervelletto"
+      ],
+      "correct": 1,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Nel contesto embriologico, il Diencefalo dà origine principalmente a:",
+      "a": [
+        "Corteccia motoria primaria",
+        "Cervelletto",
+        "Talamo, ipotalamo ed epitalamo",
+        "Bulbo e ponte"
+      ],
+      "correct": 2,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Se una malformazione colpisce il Diencefalo, quale regione è più direttamente coinvolta?",
+      "a": [
+        "Bulbo e ponte",
+        "Cervelletto",
+        "Corteccia motoria primaria — in termini anatomo-funzionali",
+        "Talamo, ipotalamo ed epitalamo"
+      ],
+      "correct": 3,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Quale coppia struttura-origine è corretta per il Diencefalo?",
+      "a": [
+        "Cervelletto — tenendo conto dei relè talamici",
+        "Talamo, ipotalamo ed epitalamo",
+        "Corteccia motoria primaria — nel quadro clinico tipico",
+        "Bulbo e ponte — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Durante lo sviluppo, quale derivato è tipico del Mesencefalo?",
+      "a": [
+        "Talamo e ipotalamo — secondo una descrizione standard — in termini anatomo-funzionali",
+        "Midollo spinale — in un contesto neuroanatomico classico",
+        "Tegmento e tetto del tronco encefalico rostrale",
+        "Emisferi cerebrali — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Nel contesto embriologico, il Mesencefalo dà origine principalmente a:",
+      "a": [
+        "Talamo e ipotalamo — con segni associati compatibili",
+        "Emisferi cerebrali — in termini anatomo-funzionali",
+        "Midollo spinale — considerando le vie coinvolte",
+        "Tegmento e tetto del tronco encefalico rostrale"
+      ],
+      "correct": 3,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Se una malformazione colpisce il Mesencefalo, quale regione è più direttamente coinvolta?",
+      "a": [
+        "Emisferi cerebrali — in un contesto neuroanatomico classico",
+        "Tegmento e tetto del tronco encefalico rostrale",
+        "Talamo e ipotalamo — secondo una descrizione standard — tenendo conto dei relè talamici",
+        "Midollo spinale — nel quadro clinico tipico — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Quale coppia struttura-origine è corretta per il Mesencefalo?",
+      "a": [
+        "Emisferi cerebrali — tenendo conto dei relè talamici — con implicazioni su strutture adiacenti",
+        "Talamo e ipotalamo — secondo una descrizione standard",
+        "Midollo spinale — tenendo conto dei relè talamici — secondo una descrizione standard",
+        "Tegmento e tetto del tronco encefalico rostrale"
+      ],
+      "correct": 3,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Durante lo sviluppo, quale derivato è tipico del Metencefalo?",
+      "a": [
+        "Gangli della base",
+        "Talamo e ipotalamo — in un contesto neuroanatomico classico",
+        "Ponte e cervelletto",
+        "Bulbo e midollo spinale"
+      ],
+      "correct": 2,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Nel contesto embriologico, il Metencefalo dà origine principalmente a:",
+      "a": [
+        "Bulbo e midollo spinale — con segni associati compatibili",
+        "Gangli della base — con implicazioni su strutture adiacenti",
+        "Ponte e cervelletto — con implicazioni su strutture adiacenti",
+        "Talamo e ipotalamo"
+      ],
+      "correct": 2,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Se una malformazione colpisce il Metencefalo, quale regione è più direttamente coinvolta?",
+      "a": [
+        "Bulbo e midollo spinale — considerando le vie coinvolte",
+        "Gangli della base",
+        "Talamo e ipotalamo",
+        "Ponte e cervelletto"
+      ],
+      "correct": 3,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Quale coppia struttura-origine è corretta per il Metencefalo?",
+      "a": [
+        "Ponte e cervelletto",
+        "Bulbo e midollo spinale",
+        "Talamo e ipotalamo — con implicazioni su strutture adiacenti",
+        "Gangli della base"
+      ],
+      "correct": 0,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Durante lo sviluppo, quale derivato è tipico del Mielencefalo?",
+      "a": [
+        "Bulbo, porzione caudale del tronco encefalico",
+        "Telencefalo — in un contesto neuroanatomico classico",
+        "Ponte e cervelletto — nel quadro clinico tipico",
+        "Diencefalo — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Nel contesto embriologico, il Mielencefalo dà origine principalmente a:",
+      "a": [
+        "Telencefalo — con segni associati compatibili",
+        "Bulbo, porzione caudale del tronco encefalico — tenendo conto dei relè talamici",
+        "Ponte e cervelletto",
+        "Diencefalo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Se una malformazione colpisce il Mielencefalo, quale regione è più direttamente coinvolta?",
+      "a": [
+        "Telencefalo",
+        "Bulbo, porzione caudale del tronco encefalico — con segni associati compatibili",
+        "Diencefalo — considerando le vie coinvolte — in termini anatomo-funzionali",
+        "Ponte e cervelletto — con segni associati compatibili — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "Quale coppia struttura-origine è corretta per il Mielencefalo?",
+      "a": [
+        "Telencefalo",
+        "Ponte e cervelletto — nel quadro clinico tipico",
+        "Diencefalo — in un contesto neuroanatomico classico",
+        "Bulbo, porzione caudale del tronco encefalico"
+      ],
+      "correct": 3,
+      "cat": "Embriologia"
+    },
+    {
+      "q": "In neuroanatomia, lo Spazio epidurale è definito come:",
+      "a": [
+        "tra osso e dura madre, ricco di grasso e plessi venosi nel canale vertebrale — con segni associati compatibili",
+        "tra aracnoide e pia madre — secondo una descrizione standard",
+        "tra pia madre e midollo spinale — in termini anatomo-funzionali — in termini anatomo-funzionali",
+        "nel ventricolo laterale — in termini anatomo-funzionali — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Quale descrizione localizza correttamente lo Spazio epidurale?",
+      "a": [
+        "tra pia madre e midollo spinale — in un contesto neuroanatomico classico",
+        "tra osso e dura madre, ricco di grasso e plessi venosi nel canale vertebrale — considerando le vie coinvolte",
+        "nel ventricolo laterale — con implicazioni su strutture adiacenti",
+        "tra aracnoide e pia madre — secondo una descrizione standard — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Un ematoma legato allo Spazio epidurale: dove si colloca anatomicamente?",
+      "a": [
+        "nel ventricolo laterale — tenendo conto dei relè talamici",
+        "tra pia madre e midollo spinale — in un contesto neuroanatomico classico",
+        "tra aracnoide e pia madre — secondo una descrizione standard",
+        "tra osso e dura madre, ricco di grasso e plessi venosi nel canale vertebrale"
+      ],
+      "correct": 3,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Quale affermazione sullo Spazio epidurale è corretta?",
+      "a": [
+        "tra aracnoide e pia madre",
+        "tra osso e dura madre, ricco di grasso e plessi venosi nel canale vertebrale",
+        "nel ventricolo laterale — nel quadro clinico tipico",
+        "tra pia madre e midollo spinale"
+      ],
+      "correct": 1,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "In neuroanatomia, lo Spazio subdurale è definito come:",
+      "a": [
+        "spazio pieno di liquor tra aracnoide e pia",
+        "spazio potenziale tra dura madre e aracnoide",
+        "spazio reale tra pia e midollo — tenendo conto dei relè talamici",
+        "canale di Sylvio"
+      ],
+      "correct": 1,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Quale descrizione localizza correttamente lo Spazio subdurale?",
+      "a": [
+        "canale di Sylvio — in un contesto neuroanatomico classico",
+        "spazio reale tra pia e midollo",
+        "spazio pieno di liquor tra aracnoide e pia",
+        "spazio potenziale tra dura madre e aracnoide — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Un ematoma legato allo Spazio subdurale: dove si colloca anatomicamente?",
+      "a": [
+        "spazio potenziale tra dura madre e aracnoide",
+        "spazio reale tra pia e midollo",
+        "canale di Sylvio — in termini anatomo-funzionali",
+        "spazio pieno di liquor tra aracnoide e pia"
+      ],
+      "correct": 0,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Quale affermazione sullo Spazio subdurale è corretta?",
+      "a": [
+        "spazio potenziale tra dura madre e aracnoide",
+        "spazio reale tra pia e midollo",
+        "spazio pieno di liquor tra aracnoide e pia",
+        "canale di Sylvio — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "In neuroanatomia, lo Spazio subaracnoideo è definito come:",
+      "a": [
+        "tra dura e osso nel canale vertebrale",
+        "tra osso e dura madre nel cranio — in termini anatomo-funzionali",
+        "tra dura e aracnoide come spazio reale",
+        "tra aracnoide e pia madre, contiene liquor e vasi"
+      ],
+      "correct": 3,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Quale descrizione localizza correttamente lo Spazio subaracnoideo?",
+      "a": [
+        "tra osso e dura madre nel cranio",
+        "tra aracnoide e pia madre, contiene liquor e vasi",
+        "tra dura e osso nel canale vertebrale",
+        "tra dura e aracnoide come spazio reale"
+      ],
+      "correct": 1,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Un ematoma legato allo Spazio subaracnoideo: dove si colloca anatomicamente?",
+      "a": [
+        "tra dura e aracnoide come spazio reale — in un contesto neuroanatomico classico",
+        "tra osso e dura madre nel cranio — in termini anatomo-funzionali",
+        "tra dura e osso nel canale vertebrale",
+        "tra aracnoide e pia madre, contiene liquor e vasi — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Quale affermazione sullo Spazio subaracnoideo è corretta?",
+      "a": [
+        "tra aracnoide e pia madre, contiene liquor e vasi — secondo una descrizione standard",
+        "tra dura e osso nel canale vertebrale",
+        "tra osso e dura madre nel cranio",
+        "tra dura e aracnoide come spazio reale"
+      ],
+      "correct": 0,
+      "cat": "Meningi e spazi"
+    },
+    {
+      "q": "Quale funzione caratterizza meglio: Oligodendrocita?",
+      "a": [
+        "produce liquor nei ventricoli",
+        "mielinizza un solo assone nel SNP",
+        "mielinizza più assoni nel SNC",
+        "funge da macrofago residente — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Scegli l'associazione corretta per Oligodendrocita:",
+      "a": [
+        "mielinizza un solo assone nel SNP — in un contesto neuroanatomico classico",
+        "produce liquor nei ventricoli",
+        "mielinizza più assoni nel SNC",
+        "funge da macrofago residente — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Nel SNC/SNP, Oligodendrocita è definito da:",
+      "a": [
+        "mielinizza un solo assone nel SNP",
+        "funge da macrofago residente",
+        "mielinizza più assoni nel SNC — nel quadro clinico tipico",
+        "produce liquor nei ventricoli — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Quale descrizione è più accurata riguardo Oligodendrocita?",
+      "a": [
+        "mielinizza un solo assone nel SNP",
+        "produce liquor nei ventricoli",
+        "mielinizza più assoni nel SNC — considerando le vie coinvolte",
+        "funge da macrofago residente"
+      ],
+      "correct": 2,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "In un taglio istologico, Oligodendrocita è la cellula che:",
+      "a": [
+        "mielinizza più assoni nel SNC",
+        "funge da macrofago residente — in termini anatomo-funzionali",
+        "mielinizza un solo assone nel SNP",
+        "produce liquor nei ventricoli"
+      ],
+      "correct": 0,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Quale funzione caratterizza meglio: Cellula di Schwann?",
+      "a": [
+        "regola la permeabilità della BBB",
+        "mielinizza più assoni nel SNC",
+        "costituisce i plessi corioidei — secondo una descrizione standard",
+        "mielinizza un solo segmento assonale nel SNP"
+      ],
+      "correct": 3,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Scegli l'associazione corretta per Cellula di Schwann:",
+      "a": [
+        "mielinizza un solo segmento assonale nel SNP",
+        "mielinizza più assoni nel SNC",
+        "regola la permeabilità della BBB — tenendo conto dei relè talamici",
+        "costituisce i plessi corioidei — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Nel SNC/SNP, Cellula di Schwann è definito da:",
+      "a": [
+        "mielinizza un solo segmento assonale nel SNP",
+        "regola la permeabilità della BBB",
+        "costituisce i plessi corioidei",
+        "mielinizza più assoni nel SNC"
+      ],
+      "correct": 0,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Quale descrizione è più accurata riguardo Cellula di Schwann?",
+      "a": [
+        "mielinizza un solo segmento assonale nel SNP",
+        "regola la permeabilità della BBB",
+        "mielinizza più assoni nel SNC — in termini anatomo-funzionali",
+        "costituisce i plessi corioidei"
+      ],
+      "correct": 0,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "In un taglio istologico, Cellula di Schwann è la cellula che:",
+      "a": [
+        "costituisce i plessi corioidei — in termini anatomo-funzionali",
+        "regola la permeabilità della BBB",
+        "mielinizza un solo segmento assonale nel SNP",
+        "mielinizza più assoni nel SNC"
+      ],
+      "correct": 2,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Quale funzione caratterizza meglio: Microglia?",
+      "a": [
+        "secerne principalmente dopamina — in termini anatomo-funzionali — secondo una descrizione standard",
+        "mielinizza assoni periferici — considerando le vie coinvolte",
+        "deriva dalla linea monocito-macrofagica ed è immunitaria nel SNC",
+        "è un neurone inibitorio locale — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Scegli l'associazione corretta per Microglia:",
+      "a": [
+        "mielinizza assoni periferici — nel quadro clinico tipico",
+        "secerne principalmente dopamina — con segni associati compatibili",
+        "deriva dalla linea monocito-macrofagica ed è immunitaria nel SNC — in termini anatomo-funzionali",
+        "è un neurone inibitorio locale — considerando le vie coinvolte — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Nel SNC/SNP, Microglia è definito da:",
+      "a": [
+        "deriva dalla linea monocito-macrofagica ed è immunitaria nel SNC",
+        "mielinizza assoni periferici",
+        "secerne principalmente dopamina — con segni associati compatibili",
+        "è un neurone inibitorio locale — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Quale descrizione è più accurata riguardo Microglia?",
+      "a": [
+        "mielinizza assoni periferici — secondo una descrizione standard",
+        "è un neurone inibitorio locale — con segni associati compatibili",
+        "secerne principalmente dopamina — con segni associati compatibili",
+        "deriva dalla linea monocito-macrofagica ed è immunitaria nel SNC — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "In un taglio istologico, Microglia è la cellula che:",
+      "a": [
+        "deriva dalla linea monocito-macrofagica ed è immunitaria nel SNC",
+        "è un neurone inibitorio locale — con segni associati compatibili",
+        "secerne principalmente dopamina",
+        "mielinizza assoni periferici — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Quale funzione caratterizza meglio: Astrocita?",
+      "a": [
+        "è un recettore metabotropo — con segni associati compatibili",
+        "sostiene omeostasi ionica, sinapsi e BBB nel SNC",
+        "è una cellula ependimale ciliata",
+        "produce mielina nel SNP — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Scegli l'associazione corretta per Astrocita:",
+      "a": [
+        "sostiene omeostasi ionica, sinapsi e BBB nel SNC",
+        "produce mielina nel SNP — considerando le vie coinvolte",
+        "è una cellula ependimale ciliata — tenendo conto dei relè talamici",
+        "è un recettore metabotropo — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Nel SNC/SNP, Astrocita è definito da:",
+      "a": [
+        "sostiene omeostasi ionica, sinapsi e BBB nel SNC",
+        "è una cellula ependimale ciliata",
+        "produce mielina nel SNP",
+        "è un recettore metabotropo — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Quale descrizione è più accurata riguardo Astrocita?",
+      "a": [
+        "è un recettore metabotropo — secondo una descrizione standard",
+        "è una cellula ependimale ciliata — in termini anatomo-funzionali",
+        "produce mielina nel SNP",
+        "sostiene omeostasi ionica, sinapsi e BBB nel SNC"
+      ],
+      "correct": 3,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "In un taglio istologico, Astrocita è la cellula che:",
+      "a": [
+        "produce mielina nel SNP — considerando le vie coinvolte",
+        "è una cellula ependimale ciliata — secondo una descrizione standard",
+        "è un recettore metabotropo — considerando le vie coinvolte",
+        "sostiene omeostasi ionica, sinapsi e BBB nel SNC — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Cellule gliali"
+    },
+    {
+      "q": "Nel circuito del liquor, la struttura Forame interventricolare di Monro ha il ruolo di:",
+      "a": [
+        "collega quarto ventricolo e canale centrale",
+        "collega ventricolo laterale e terzo ventricolo — con implicazioni su strutture adiacenti",
+        "collega quarto ventricolo e seno sagittale superiore — secondo una descrizione standard",
+        "collega terzo e quarto ventricolo"
+      ],
+      "correct": 1,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Quale funzione è attribuibile a: Forame interventricolare di Monro?",
+      "a": [
+        "collega quarto ventricolo e canale centrale — in termini anatomo-funzionali",
+        "collega quarto ventricolo e seno sagittale superiore",
+        "collega terzo e quarto ventricolo",
+        "collega ventricolo laterale e terzo ventricolo"
+      ],
+      "correct": 3,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Nel flusso ventricolare, Forame interventricolare di Monro è responsabile di:",
+      "a": [
+        "collega terzo e quarto ventricolo",
+        "collega quarto ventricolo e canale centrale — tenendo conto dei relè talamici",
+        "collega quarto ventricolo e seno sagittale superiore",
+        "collega ventricolo laterale e terzo ventricolo — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Una stenosi che coinvolge Forame interventricolare di Monro interferisce con:",
+      "a": [
+        "collega quarto ventricolo e canale centrale",
+        "collega quarto ventricolo e seno sagittale superiore",
+        "collega terzo e quarto ventricolo",
+        "collega ventricolo laterale e terzo ventricolo"
+      ],
+      "correct": 3,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Nel circuito del liquor, la struttura Acquedotto di Silvio ha il ruolo di:",
+      "a": [
+        "collega quarto ventricolo e spazio epidurale",
+        "collega ventricolo laterale e terzo — tenendo conto dei relè talamici",
+        "collega quarto ventricolo e seno cavernoso",
+        "collega terzo e quarto ventricolo"
+      ],
+      "correct": 3,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Quale funzione è attribuibile a: Acquedotto di Silvio?",
+      "a": [
+        "collega terzo e quarto ventricolo — tenendo conto dei relè talamici",
+        "collega quarto ventricolo e seno cavernoso — in termini anatomo-funzionali",
+        "collega quarto ventricolo e spazio epidurale — con segni associati compatibili",
+        "collega ventricolo laterale e terzo"
+      ],
+      "correct": 0,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Nel flusso ventricolare, Acquedotto di Silvio è responsabile di:",
+      "a": [
+        "collega terzo e quarto ventricolo — con segni associati compatibili",
+        "collega ventricolo laterale e terzo",
+        "collega quarto ventricolo e seno cavernoso",
+        "collega quarto ventricolo e spazio epidurale"
+      ],
+      "correct": 0,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Una stenosi che coinvolge Acquedotto di Silvio interferisce con:",
+      "a": [
+        "collega ventricolo laterale e terzo — con implicazioni su strutture adiacenti",
+        "collega quarto ventricolo e spazio epidurale",
+        "collega terzo e quarto ventricolo — con implicazioni su strutture adiacenti",
+        "collega quarto ventricolo e seno cavernoso — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Nel circuito del liquor, la struttura Forame di Magendie ha il ruolo di:",
+      "a": [
+        "sbocco mediano del quarto ventricolo verso cisterna magna",
+        "collega ventricolo laterale e terzo — nel quadro clinico tipico",
+        "sbocco laterale verso cisterna pontocerebellare",
+        "comunica con il canale centrale del midollo — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Quale funzione è attribuibile a: Forame di Magendie?",
+      "a": [
+        "collega ventricolo laterale e terzo",
+        "sbocco mediano del quarto ventricolo verso cisterna magna",
+        "sbocco laterale verso cisterna pontocerebellare",
+        "comunica con il canale centrale del midollo"
+      ],
+      "correct": 1,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Nel flusso ventricolare, Forame di Magendie è responsabile di:",
+      "a": [
+        "collega ventricolo laterale e terzo",
+        "comunica con il canale centrale del midollo — con segni associati compatibili",
+        "sbocco mediano del quarto ventricolo verso cisterna magna",
+        "sbocco laterale verso cisterna pontocerebellare"
+      ],
+      "correct": 2,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Una stenosi che coinvolge Forame di Magendie interferisce con:",
+      "a": [
+        "comunica con il canale centrale del midollo",
+        "sbocco mediano del quarto ventricolo verso cisterna magna",
+        "sbocco laterale verso cisterna pontocerebellare",
+        "collega ventricolo laterale e terzo"
+      ],
+      "correct": 1,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Nel circuito del liquor, la struttura Granulazioni aracnoidee ha il ruolo di:",
+      "a": [
+        "mielinizzano fibre commissurali",
+        "producono liquor nei plessi corioidei",
+        "decussano le vie piramidali — considerando le vie coinvolte",
+        "riassorbono liquor nei seni venosi durali"
+      ],
+      "correct": 3,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Quale funzione è attribuibile a: Granulazioni aracnoidee?",
+      "a": [
+        "decussano le vie piramidali",
+        "riassorbono liquor nei seni venosi durali",
+        "mielinizzano fibre commissurali",
+        "producono liquor nei plessi corioidei"
+      ],
+      "correct": 1,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Nel flusso ventricolare, Granulazioni aracnoidee è responsabile di:",
+      "a": [
+        "producono liquor nei plessi corioidei",
+        "riassorbono liquor nei seni venosi durali",
+        "decussano le vie piramidali — in un contesto neuroanatomico classico",
+        "mielinizzano fibre commissurali"
+      ],
+      "correct": 1,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Una stenosi che coinvolge Granulazioni aracnoidee interferisce con:",
+      "a": [
+        "riassorbono liquor nei seni venosi durali",
+        "producono liquor nei plessi corioidei",
+        "decussano le vie piramidali — considerando le vie coinvolte",
+        "mielinizzano fibre commissurali"
+      ],
+      "correct": 0,
+      "cat": "Liquor e ventricoli"
+    },
+    {
+      "q": "Quale descrizione è più corretta per la Barriera emato-encefalica?",
+      "a": [
+        "membrana pia-aracnoide — tenendo conto dei relè talamici",
+        "endotelio con tight junction, membrana basale e pedicelli astrocitari; limita passaggio di molecole idrofile",
+        "plesso venoso epidurale — secondo una descrizione standard — con segni associati compatibili",
+        "epitelio ciliato ependimale dei ventricoli — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Barriere"
+    },
+    {
+      "q": "La Barriera emato-encefalica è definita principalmente da:",
+      "a": [
+        "epitelio ciliato ependimale dei ventricoli — nel quadro clinico tipico",
+        "endotelio con tight junction, membrana basale e pedicelli astrocitari; limita passaggio di molecole idrofile",
+        "plesso venoso epidurale — in termini anatomo-funzionali",
+        "membrana pia-aracnoide — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Barriere"
+    },
+    {
+      "q": "Quale struttura-tessuto implementa la Barriera emato-encefalica?",
+      "a": [
+        "membrana pia-aracnoide — con implicazioni su strutture adiacenti — in un contesto neuroanatomico classico",
+        "plesso venoso epidurale — considerando le vie coinvolte",
+        "endotelio con tight junction, membrana basale e pedicelli astrocitari; limita passaggio di molecole idrofile",
+        "epitelio ciliato ependimale dei ventricoli"
+      ],
+      "correct": 2,
+      "cat": "Barriere"
+    },
+    {
+      "q": "Quale descrizione è più corretta per la Barriera emato-liquorale?",
+      "a": [
+        "nucleo rosso e subtalamo — in termini anatomo-funzionali — con implicazioni su strutture adiacenti",
+        "guaine mieliniche periferiche — in un contesto neuroanatomico classico",
+        "epitelio dei plessi corioidei con tight junction; regola composizione del liquor",
+        "endotelio fenestrato dei capillari periferici — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Barriere"
+    },
+    {
+      "q": "La Barriera emato-liquorale è definita principalmente da:",
+      "a": [
+        "endotelio fenestrato dei capillari periferici — in un contesto neuroanatomico classico",
+        "epitelio dei plessi corioidei con tight junction; regola composizione del liquor",
+        "guaine mieliniche periferiche — tenendo conto dei relè talamici — in un contesto neuroanatomico classico",
+        "nucleo rosso e subtalamo — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Barriere"
+    },
+    {
+      "q": "Quale struttura-tessuto implementa la Barriera emato-liquorale?",
+      "a": [
+        "guaine mieliniche periferiche — in un contesto neuroanatomico classico — considerando le vie coinvolte",
+        "nucleo rosso e subtalamo — in un contesto neuroanatomico classico — in un contesto neuroanatomico classico",
+        "endotelio fenestrato dei capillari periferici — secondo una descrizione standard",
+        "epitelio dei plessi corioidei con tight junction; regola composizione del liquor — con segni associati compatibili"
+      ],
+      "correct": 3,
+      "cat": "Barriere"
+    },
+    {
+      "q": "In terminologia neuroanatomica, il termine 'Nucleo' indica:",
+      "a": [
+        "sinapsi eccitatoria — in un contesto neuroanatomico classico",
+        "aggregato di corpi neuronali nel SNP",
+        "aggregato di corpi neuronali nel SNC",
+        "fascio di fibre nel SNP"
+      ],
+      "correct": 2,
+      "cat": "Terminologia"
+    },
+    {
+      "q": "Quale definizione è corretta per 'Nucleo'?",
+      "a": [
+        "aggregato di corpi neuronali nel SNC",
+        "aggregato di corpi neuronali nel SNP",
+        "fascio di fibre nel SNP",
+        "sinapsi eccitatoria — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Terminologia"
+    },
+    {
+      "q": "In terminologia neuroanatomica, il termine 'Ganglio' indica:",
+      "a": [
+        "aggregato di corpi neuronali nel SNC",
+        "cellula gliale del SNC",
+        "aggregato di corpi neuronali nel SNP",
+        "fascio di fibre commissurali"
+      ],
+      "correct": 2,
+      "cat": "Terminologia"
+    },
+    {
+      "q": "Quale definizione è corretta per 'Ganglio'?",
+      "a": [
+        "fascio di fibre commissurali",
+        "aggregato di corpi neuronali nel SNC",
+        "cellula gliale del SNC",
+        "aggregato di corpi neuronali nel SNP"
+      ],
+      "correct": 3,
+      "cat": "Terminologia"
+    },
+    {
+      "q": "In terminologia neuroanatomica, il termine 'Tratto' indica:",
+      "a": [
+        "insieme di neuroni gliali — con implicazioni su strutture adiacenti",
+        "fascio di fibre nel SNC — nel quadro clinico tipico",
+        "una cisterna subaracnoidea — con implicazioni su strutture adiacenti",
+        "fascio di fibre nel SNP"
+      ],
+      "correct": 1,
+      "cat": "Terminologia"
+    },
+    {
+      "q": "Quale definizione è corretta per 'Tratto'?",
+      "a": [
+        "fascio di fibre nel SNP — con segni associati compatibili",
+        "fascio di fibre nel SNC — con implicazioni su strutture adiacenti",
+        "insieme di neuroni gliali",
+        "una cisterna subaracnoidea — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Terminologia"
+    },
+    {
+      "q": "In terminologia neuroanatomica, il termine 'Nervo' indica:",
+      "a": [
+        "fascio di fibre nel SNP",
+        "fascio di fibre nel SNC",
+        "lamina del midollo spinale",
+        "seno venoso durale"
+      ],
+      "correct": 0,
+      "cat": "Terminologia"
+    },
+    {
+      "q": "Quale definizione è corretta per 'Nervo'?",
+      "a": [
+        "fascio di fibre nel SNC",
+        "seno venoso durale — considerando le vie coinvolte",
+        "lamina del midollo spinale — considerando le vie coinvolte",
+        "fascio di fibre nel SNP — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Terminologia"
+    },
+    {
+      "q": "Quale proprietà distingue una Sinapsi chimica?",
+      "a": [
+        "è sempre bidirezionale e simmetrica — nel quadro clinico tipico — in termini anatomo-funzionali",
+        "usa neurotrasmettitori e recettori, è più lenta ma modulabile",
+        "usa esclusivamente gap junction",
+        "non presenta plasticità — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Sinapsi"
+    },
+    {
+      "q": "Quale descrizione corrisponde a: Sinapsi chimica?",
+      "a": [
+        "usa esclusivamente gap junction — tenendo conto dei relè talamici",
+        "è sempre bidirezionale e simmetrica — tenendo conto dei relè talamici",
+        "usa neurotrasmettitori e recettori, è più lenta ma modulabile",
+        "non presenta plasticità — con segni associati compatibili — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Sinapsi"
+    },
+    {
+      "q": "Quale proprietà distingue una Sinapsi elettrica?",
+      "a": [
+        "è tipica solo del SNP — in termini anatomo-funzionali",
+        "usa vescicole sinaptiche e Ca2+ presinaptico",
+        "usa gap junction, è molto rapida e spesso bidirezionale — nel quadro clinico tipico",
+        "è sempre unidirezionale — tenendo conto dei relè talamici — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Sinapsi"
+    },
+    {
+      "q": "Quale descrizione corrisponde a: Sinapsi elettrica?",
+      "a": [
+        "è sempre unidirezionale — nel quadro clinico tipico",
+        "usa gap junction, è molto rapida e spesso bidirezionale — secondo una descrizione standard",
+        "usa vescicole sinaptiche e Ca2+ presinaptico",
+        "è tipica solo del SNP"
+      ],
+      "correct": 1,
+      "cat": "Sinapsi"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 87:",
+      "a": [
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — secondo una descrizione standard",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 2,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 88:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — in termini anatomo-funzionali",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 89:",
+      "a": [
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — in termini anatomo-funzionali",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — con segni associati compatibili",
+        "La pia madre delimita direttamente lo spazio epidurale cranico — con implicazioni su strutture adiacenti",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 0,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 90:",
+      "a": [
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni — in termini anatomo-funzionali",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — secondo una descrizione standard",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "La pia madre delimita direttamente lo spazio epidurale cranico — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 91:",
+      "a": [
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni — nel quadro clinico tipico",
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 92:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — tenendo conto dei relè talamici",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 93:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — in un contesto neuroanatomico classico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 94:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — con segni associati compatibili",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — in un contesto neuroanatomico classico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 95:",
+      "a": [
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — con segni associati compatibili",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "La pia madre delimita direttamente lo spazio epidurale cranico — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 96:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — secondo una descrizione standard",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — con implicazioni su strutture adiacenti",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 2,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 97:",
+      "a": [
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico"
+      ],
+      "correct": 0,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 98:",
+      "a": [
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — con segni associati compatibili",
+        "La pia madre delimita direttamente lo spazio epidurale cranico — secondo una descrizione standard",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 99:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — in un contesto neuroanatomico classico",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — secondo una descrizione standard",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 100:",
+      "a": [
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 101:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — tenendo conto dei relè talamici",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 102:",
+      "a": [
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "La pia madre delimita direttamente lo spazio epidurale cranico — tenendo conto dei relè talamici",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 103:",
+      "a": [
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "La pia madre delimita direttamente lo spazio epidurale cranico — tenendo conto dei relè talamici",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 104:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — considerando le vie coinvolte",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — con segni associati compatibili",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 105:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — secondo una descrizione standard",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 106:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — considerando le vie coinvolte",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — con segni associati compatibili",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 107:",
+      "a": [
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — in termini anatomo-funzionali",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — con segni associati compatibili",
+        "La pia madre delimita direttamente lo spazio epidurale cranico"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 108:",
+      "a": [
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "La pia madre delimita direttamente lo spazio epidurale cranico — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 109:",
+      "a": [
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 0,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 110:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — considerando le vie coinvolte",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — con segni associati compatibili",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 111:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 112:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — con implicazioni su strutture adiacenti",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 113:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — in termini anatomo-funzionali",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — secondo una descrizione standard",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 114:",
+      "a": [
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 0,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 115:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — in un contesto neuroanatomico classico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni"
+      ],
+      "correct": 3,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 116:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni — in un contesto neuroanatomico classico",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 117:",
+      "a": [
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "La pia madre delimita direttamente lo spazio epidurale cranico — secondo una descrizione standard",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 118:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — considerando le vie coinvolte",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico"
+      ],
+      "correct": 1,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 119:",
+      "a": [
+        "La pia madre delimita direttamente lo spazio epidurale cranico — con segni associati compatibili",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico",
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni"
+      ],
+      "correct": 2,
+      "cat": "Concetti base"
+    },
+    {
+      "q": "Considerando SNC vs SNP, quale affermazione è corretta? Scenario 120:",
+      "a": [
+        "Nel SNC i tratti sono fasci di assoni, nel SNP i nervi sono fasci di assoni",
+        "La pia madre delimita direttamente lo spazio epidurale cranico",
+        "Nel SNC i gangli sono aggregati di neuroni, nel SNP i nuclei sono aggregati di neuroni",
+        "Le sinapsi elettriche richiedono sempre vescicole e Ca2+ presinaptico"
+      ],
+      "correct": 0,
+      "cat": "Concetti base"
+    }
+  ],
+  "ANATOMIA MACRO": [
+    {
+      "q": "Quale affermazione localizza correttamente l'emergenza del Nervo oculomotore, III?",
+      "a": [
+        "emerge dalla fossa interpeduncolare del mesencefalo — con implicazioni su strutture adiacenti",
+        "emerge dal solco pontobulbare in linea mediana — con segni associati compatibili",
+        "emerge dalla faccia dorsale del mesencefalo sotto il collicolo inferiore",
+        "emerge dal solco preolivare del bulbo — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Nel tronco encefalico, Nervo oculomotore, III:",
+      "a": [
+        "emerge dalla faccia dorsale del mesencefalo sotto il collicolo inferiore — con segni associati compatibili",
+        "emerge dal solco preolivare del bulbo — considerando le vie coinvolte",
+        "emerge dal solco pontobulbare in linea mediana — in un contesto neuroanatomico classico",
+        "emerge dalla fossa interpeduncolare del mesencefalo — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "In un modello anatomico, Nervo oculomotore, III si osserva perché:",
+      "a": [
+        "emerge dalla faccia dorsale del mesencefalo sotto il collicolo inferiore — con implicazioni su strutture adiacenti",
+        "emerge dal solco pontobulbare in linea mediana — in un contesto neuroanatomico classico",
+        "emerge dal solco preolivare del bulbo — in un contesto neuroanatomico classico — tenendo conto dei relè talamici",
+        "emerge dalla fossa interpeduncolare del mesencefalo"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Quale affermazione localizza correttamente l'emergenza del Nervo trocleare, IV?",
+      "a": [
+        "emerge lateralmente dal ponte",
+        "emerge dorsalmente dal mesencefalo caudale e decussa",
+        "emerge dal solco postolivare del bulbo",
+        "emerge dal lobo frontale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Nel tronco encefalico, Nervo trocleare, IV:",
+      "a": [
+        "emerge dorsalmente dal mesencefalo caudale e decussa",
+        "emerge dal solco postolivare del bulbo — nel quadro clinico tipico",
+        "emerge lateralmente dal ponte",
+        "emerge dal lobo frontale — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "In un modello anatomico, Nervo trocleare, IV si osserva perché:",
+      "a": [
+        "emerge lateralmente dal ponte",
+        "emerge dal solco postolivare del bulbo — nel quadro clinico tipico",
+        "emerge dal lobo frontale — in un contesto neuroanatomico classico",
+        "emerge dorsalmente dal mesencefalo caudale e decussa"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Quale affermazione localizza correttamente l'emergenza del Nervo trigemino, V?",
+      "a": [
+        "emerge dal mesencefalo dorsale",
+        "emerge dal solco preolivare del bulbo",
+        "emerge dalla linea mediana del solco pontobulbare — in un contesto neuroanatomico classico",
+        "emerge dalla faccia anterolaterale del ponte — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Nel tronco encefalico, Nervo trigemino, V:",
+      "a": [
+        "emerge dal solco preolivare del bulbo",
+        "emerge dalla linea mediana del solco pontobulbare",
+        "emerge dalla faccia anterolaterale del ponte",
+        "emerge dal mesencefalo dorsale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "In un modello anatomico, Nervo trigemino, V si osserva perché:",
+      "a": [
+        "emerge dalla linea mediana del solco pontobulbare",
+        "emerge dal solco preolivare del bulbo — secondo una descrizione standard",
+        "emerge dalla faccia anterolaterale del ponte — con segni associati compatibili",
+        "emerge dal mesencefalo dorsale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Quale affermazione localizza correttamente l'emergenza del Nervo abducente, VI?",
+      "a": [
+        "emerge dal diencefalo vicino al chiasma",
+        "emerge in sede mediana al solco pontobulbare — in termini anatomo-funzionali",
+        "emerge dalla faccia laterale del ponte rostrale",
+        "emerge dal solco preolivare"
+      ],
+      "correct": 1,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Nel tronco encefalico, Nervo abducente, VI:",
+      "a": [
+        "emerge in sede mediana al solco pontobulbare — in un contesto neuroanatomico classico",
+        "emerge dalla faccia laterale del ponte rostrale — con segni associati compatibili",
+        "emerge dal solco preolivare — con segni associati compatibili",
+        "emerge dal diencefalo vicino al chiasma"
+      ],
+      "correct": 0,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "In un modello anatomico, Nervo abducente, VI si osserva perché:",
+      "a": [
+        "emerge dal solco preolivare",
+        "emerge dal diencefalo vicino al chiasma",
+        "emerge dalla faccia laterale del ponte rostrale",
+        "emerge in sede mediana al solco pontobulbare"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Quale affermazione localizza correttamente l'emergenza del Nervo faciale, VII?",
+      "a": [
+        "emerge dal collicolo superiore",
+        "emerge al solco pontobulbare, lateralmente all'abducente",
+        "emerge dalla lamina quadrigemina dorsale — considerando le vie coinvolte",
+        "emerge dal solco postolivare come IX-X — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Nel tronco encefalico, Nervo faciale, VII:",
+      "a": [
+        "emerge dal solco postolivare come IX-X — con implicazioni su strutture adiacenti",
+        "emerge dalla lamina quadrigemina dorsale",
+        "emerge al solco pontobulbare, lateralmente all'abducente — con segni associati compatibili",
+        "emerge dal collicolo superiore — con segni associati compatibili — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "In un modello anatomico, Nervo faciale, VII si osserva perché:",
+      "a": [
+        "emerge dal solco postolivare come IX-X — in un contesto neuroanatomico classico",
+        "emerge dalla lamina quadrigemina dorsale — in un contesto neuroanatomico classico",
+        "emerge al solco pontobulbare, lateralmente all'abducente",
+        "emerge dal collicolo superiore — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Quale affermazione localizza correttamente l'emergenza del Nervo vestibolococleare, VIII?",
+      "a": [
+        "emerge dal solco preolivare con XII",
+        "emerge dai collicoli inferiori dorsalmente",
+        "emerge dalla fossa interpeduncolare",
+        "emerge al solco pontobulbare, angolo ponto-cerebellare"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Nel tronco encefalico, Nervo vestibolococleare, VIII:",
+      "a": [
+        "emerge dal solco preolivare con XII — secondo una descrizione standard",
+        "emerge dalla fossa interpeduncolare — con implicazioni su strutture adiacenti",
+        "emerge al solco pontobulbare, angolo ponto-cerebellare",
+        "emerge dai collicoli inferiori dorsalmente — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "In un modello anatomico, Nervo vestibolococleare, VIII si osserva perché:",
+      "a": [
+        "emerge dal solco preolivare con XII",
+        "emerge al solco pontobulbare, angolo ponto-cerebellare",
+        "emerge dalla fossa interpeduncolare — considerando le vie coinvolte",
+        "emerge dai collicoli inferiori dorsalmente"
+      ],
+      "correct": 1,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Quale affermazione localizza correttamente l'emergenza del Nervo ipoglosso, XII?",
+      "a": [
+        "emerge dal solco postolivare",
+        "emerge dal tetto del mesencefalo",
+        "emerge dalla faccia laterale del ponte",
+        "emerge dal solco preolivare del bulbo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Nel tronco encefalico, Nervo ipoglosso, XII:",
+      "a": [
+        "emerge dalla faccia laterale del ponte",
+        "emerge dal solco postolivare — nel quadro clinico tipico",
+        "emerge dal tetto del mesencefalo — con implicazioni su strutture adiacenti",
+        "emerge dal solco preolivare del bulbo — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "In un modello anatomico, Nervo ipoglosso, XII si osserva perché:",
+      "a": [
+        "emerge dal solco postolivare",
+        "emerge dalla faccia laterale del ponte — con segni associati compatibili",
+        "emerge dal tetto del mesencefalo",
+        "emerge dal solco preolivare del bulbo"
+      ],
+      "correct": 3,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Quale affermazione localizza correttamente l'emergenza del Nervo glossofaringeo, IX?",
+      "a": [
+        "emerge dal solco postolivare del bulbo",
+        "emerge dal solco preolivare del bulbo — con implicazioni su strutture adiacenti",
+        "emerge dalla faccia dorsale del ponte — in un contesto neuroanatomico classico",
+        "emerge dal mesencefalo rostrale — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Nel tronco encefalico, Nervo glossofaringeo, IX:",
+      "a": [
+        "emerge dal solco postolivare del bulbo",
+        "emerge dal mesencefalo rostrale",
+        "emerge dalla faccia dorsale del ponte",
+        "emerge dal solco preolivare del bulbo"
+      ],
+      "correct": 0,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "In un modello anatomico, Nervo glossofaringeo, IX si osserva perché:",
+      "a": [
+        "emerge dal solco postolivare del bulbo",
+        "emerge dal mesencefalo rostrale",
+        "emerge dalla faccia dorsale del ponte — in termini anatomo-funzionali",
+        "emerge dal solco preolivare del bulbo"
+      ],
+      "correct": 0,
+      "cat": "Nervi cranici"
+    },
+    {
+      "q": "Quale definizione è più accurata per: Cono midollare?",
+      "a": [
+        "dilatazione cervicale a C5-T1 — nel quadro clinico tipico",
+        "fascio di fibre del SNC nel ponte",
+        "terminazione caudale del sacco durale a S2 — con segni associati compatibili",
+        "terminazione caudale del midollo, in genere intorno a L1-L2 nell'adulto"
+      ],
+      "correct": 3,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "In anatomia del midollo, Cono midollare indica:",
+      "a": [
+        "terminazione caudale del sacco durale a S2 — secondo una descrizione standard",
+        "dilatazione cervicale a C5-T1 — considerando le vie coinvolte",
+        "fascio di fibre del SNC nel ponte",
+        "terminazione caudale del midollo, in genere intorno a L1-L2 nell'adulto"
+      ],
+      "correct": 3,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Clinicamente, Cono midollare è rilevante perché:",
+      "a": [
+        "dilatazione cervicale a C5-T1 — secondo una descrizione standard — in un contesto neuroanatomico classico",
+        "terminazione caudale del sacco durale a S2 — considerando le vie coinvolte — secondo una descrizione standard",
+        "terminazione caudale del midollo, in genere intorno a L1-L2 nell'adulto",
+        "fascio di fibre del SNC nel ponte — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Quale descrizione di Cono midollare è corretta?",
+      "a": [
+        "fascio di fibre del SNC nel ponte — in un contesto neuroanatomico classico",
+        "terminazione caudale del sacco durale a S2 — considerando le vie coinvolte — in termini anatomo-funzionali",
+        "dilatazione cervicale a C5-T1 — tenendo conto dei relè talamici",
+        "terminazione caudale del midollo, in genere intorno a L1-L2 nell'adulto — con segni associati compatibili"
+      ],
+      "correct": 3,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Quale definizione è più accurata per: Cauda equina?",
+      "a": [
+        "fascio di radici lombosacrali che discende nel canale vertebrale sotto il cono",
+        "fascio di fibre corticospinali nel bulbo — con segni associati compatibili",
+        "insieme dei nuclei dei nervi cranici nel ponte — con segni associati compatibili",
+        "compartimento ventricolare del telencefalo"
+      ],
+      "correct": 0,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "In anatomia del midollo, Cauda equina indica:",
+      "a": [
+        "fascio di fibre corticospinali nel bulbo — in un contesto neuroanatomico classico",
+        "fascio di radici lombosacrali che discende nel canale vertebrale sotto il cono",
+        "compartimento ventricolare del telencefalo — tenendo conto dei relè talamici",
+        "insieme dei nuclei dei nervi cranici nel ponte — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Clinicamente, Cauda equina è rilevante perché:",
+      "a": [
+        "insieme dei nuclei dei nervi cranici nel ponte",
+        "fascio di radici lombosacrali che discende nel canale vertebrale sotto il cono — con implicazioni su strutture adiacenti",
+        "compartimento ventricolare del telencefalo — nel quadro clinico tipico",
+        "fascio di fibre corticospinali nel bulbo — in un contesto neuroanatomico classico — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Quale descrizione di Cauda equina è corretta?",
+      "a": [
+        "fascio di radici lombosacrali che discende nel canale vertebrale sotto il cono — secondo una descrizione standard",
+        "insieme dei nuclei dei nervi cranici nel ponte — tenendo conto dei relè talamici",
+        "compartimento ventricolare del telencefalo — secondo una descrizione standard",
+        "fascio di fibre corticospinali nel bulbo — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Quale definizione è più accurata per: Intumescenza cervicale?",
+      "a": [
+        "zona di decussazione delle vie ottiche — nel quadro clinico tipico",
+        "porzione del diencefalo con corpi mammillari",
+        "spazio subdurale nel cranio — tenendo conto dei relè talamici",
+        "aumento di volume midollare per innervazione dell'arto superiore — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "In anatomia del midollo, Intumescenza cervicale indica:",
+      "a": [
+        "spazio subdurale nel cranio — tenendo conto dei relè talamici — con implicazioni su strutture adiacenti",
+        "zona di decussazione delle vie ottiche",
+        "porzione del diencefalo con corpi mammillari",
+        "aumento di volume midollare per innervazione dell'arto superiore"
+      ],
+      "correct": 3,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Clinicamente, Intumescenza cervicale è rilevante perché:",
+      "a": [
+        "zona di decussazione delle vie ottiche — con segni associati compatibili — considerando le vie coinvolte",
+        "porzione del diencefalo con corpi mammillari",
+        "aumento di volume midollare per innervazione dell'arto superiore — in un contesto neuroanatomico classico",
+        "spazio subdurale nel cranio — con segni associati compatibili — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Quale descrizione di Intumescenza cervicale è corretta?",
+      "a": [
+        "spazio subdurale nel cranio — in un contesto neuroanatomico classico — in termini anatomo-funzionali",
+        "zona di decussazione delle vie ottiche",
+        "porzione del diencefalo con corpi mammillari — con implicazioni su strutture adiacenti",
+        "aumento di volume midollare per innervazione dell'arto superiore — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Quale definizione è più accurata per: Intumescenza lombosacrale?",
+      "a": [
+        "porzione del mesencefalo con collicoli",
+        "aumento di volume per innervazione dell'arto inferiore",
+        "nucleo del tratto solitario — in termini anatomo-funzionali",
+        "lamina del tetto del quarto ventricolo"
+      ],
+      "correct": 1,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "In anatomia del midollo, Intumescenza lombosacrale indica:",
+      "a": [
+        "nucleo del tratto solitario — con segni associati compatibili",
+        "porzione del mesencefalo con collicoli — tenendo conto dei relè talamici",
+        "aumento di volume per innervazione dell'arto inferiore",
+        "lamina del tetto del quarto ventricolo"
+      ],
+      "correct": 2,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Clinicamente, Intumescenza lombosacrale è rilevante perché:",
+      "a": [
+        "lamina del tetto del quarto ventricolo",
+        "nucleo del tratto solitario — tenendo conto dei relè talamici — secondo una descrizione standard",
+        "aumento di volume per innervazione dell'arto inferiore",
+        "porzione del mesencefalo con collicoli — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Quale descrizione di Intumescenza lombosacrale è corretta?",
+      "a": [
+        "lamina del tetto del quarto ventricolo — con segni associati compatibili",
+        "porzione del mesencefalo con collicoli — in termini anatomo-funzionali",
+        "aumento di volume per innervazione dell'arto inferiore",
+        "nucleo del tratto solitario — con segni associati compatibili — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Midollo spinale"
+    },
+    {
+      "q": "Quale relazione è corretta per Corno anteriore del ventricolo laterale?",
+      "a": [
+        "si estende nel lobo frontale",
+        "sbocca direttamente nel quarto ventricolo",
+        "si estende nel lobo temporale — con implicazioni su strutture adiacenti",
+        "si estende nel lobo occipitale"
+      ],
+      "correct": 0,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "In neuroanatomia, Corno anteriore del ventricolo laterale:",
+      "a": [
+        "si estende nel lobo occipitale — con implicazioni su strutture adiacenti",
+        "sbocca direttamente nel quarto ventricolo",
+        "si estende nel lobo frontale — con implicazioni su strutture adiacenti",
+        "si estende nel lobo temporale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "Quale affermazione descrive Corno anteriore del ventricolo laterale?",
+      "a": [
+        "si estende nel lobo occipitale — con segni associati compatibili",
+        "si estende nel lobo frontale",
+        "sbocca direttamente nel quarto ventricolo",
+        "si estende nel lobo temporale"
+      ],
+      "correct": 1,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "Quale relazione è corretta per Corno inferiore del ventricolo laterale?",
+      "a": [
+        "comunica con il canale centrale — tenendo conto dei relè talamici",
+        "si estende nel lobo parietale",
+        "si estende nel lobo frontale",
+        "si estende nel lobo temporale"
+      ],
+      "correct": 3,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "In neuroanatomia, Corno inferiore del ventricolo laterale:",
+      "a": [
+        "comunica con il canale centrale — tenendo conto dei relè talamici",
+        "si estende nel lobo parietale",
+        "si estende nel lobo frontale",
+        "si estende nel lobo temporale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "Quale affermazione descrive Corno inferiore del ventricolo laterale?",
+      "a": [
+        "comunica con il canale centrale",
+        "si estende nel lobo parietale",
+        "si estende nel lobo temporale",
+        "si estende nel lobo frontale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "Quale relazione è corretta per Acquedotto di Silvio?",
+      "a": [
+        "decorre nel lobo parietale — secondo una descrizione standard",
+        "decorre nello spazio subaracnoideo — secondo una descrizione standard",
+        "decorre nel ponte",
+        "decorre nel mesencefalo — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "In neuroanatomia, Acquedotto di Silvio:",
+      "a": [
+        "decorre nel lobo parietale",
+        "decorre nel mesencefalo — secondo una descrizione standard",
+        "decorre nello spazio subaracnoideo",
+        "decorre nel ponte"
+      ],
+      "correct": 1,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "Quale affermazione descrive Acquedotto di Silvio?",
+      "a": [
+        "decorre nel lobo parietale — nel quadro clinico tipico",
+        "decorre nel ponte",
+        "decorre nel mesencefalo — considerando le vie coinvolte",
+        "decorre nello spazio subaracnoideo"
+      ],
+      "correct": 2,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "Quale relazione è corretta per Quarto ventricolo?",
+      "a": [
+        "è nel diencefalo tra talami — in termini anatomo-funzionali",
+        "è compreso tra ponte-bulbo e cervelletto",
+        "è nel lobo frontale sotto il corpo calloso",
+        "è nei nuclei della base"
+      ],
+      "correct": 1,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "In neuroanatomia, Quarto ventricolo:",
+      "a": [
+        "è nel diencefalo tra talami — secondo una descrizione standard",
+        "è nel lobo frontale sotto il corpo calloso",
+        "è nei nuclei della base",
+        "è compreso tra ponte-bulbo e cervelletto"
+      ],
+      "correct": 3,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "Quale affermazione descrive Quarto ventricolo?",
+      "a": [
+        "è compreso tra ponte-bulbo e cervelletto",
+        "è nei nuclei della base",
+        "è nel diencefalo tra talami",
+        "è nel lobo frontale sotto il corpo calloso"
+      ],
+      "correct": 0,
+      "cat": "Ventricoli"
+    },
+    {
+      "q": "Quale contenuto è più tipico del Genu della capsula interna?",
+      "a": [
+        "contiene esclusivamente fibre commissurali callosali",
+        "contiene soprattutto fibre corticobulbari — in termini anatomo-funzionali",
+        "contiene la decussazione delle piramidi — secondo una descrizione standard",
+        "contiene prevalentemente fibre ottiche del tratto genicolo-calcarino — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Una lesione nel Genu della capsula interna colpisce soprattutto:",
+      "a": [
+        "contiene la decussazione delle piramidi — con segni associati compatibili",
+        "contiene prevalentemente fibre ottiche del tratto genicolo-calcarino",
+        "contiene esclusivamente fibre commissurali callosali — nel quadro clinico tipico",
+        "contiene soprattutto fibre corticobulbari — con implicazioni su strutture adiacenti — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Il Genu della capsula interna è definito da:",
+      "a": [
+        "contiene la decussazione delle piramidi — in un contesto neuroanatomico classico",
+        "contiene soprattutto fibre corticobulbari — in un contesto neuroanatomico classico",
+        "contiene esclusivamente fibre commissurali callosali",
+        "contiene prevalentemente fibre ottiche del tratto genicolo-calcarino"
+      ],
+      "correct": 1,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Quale contenuto è più tipico del Braccio posteriore della capsula interna?",
+      "a": [
+        "contiene le fibre del fornice — in termini anatomo-funzionali",
+        "contiene fibre olfattive primarie",
+        "contiene fibre corticospinali e talamo-corticali sensitive",
+        "contiene fibre pontocerebellari — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Una lesione nel Braccio posteriore della capsula interna colpisce soprattutto:",
+      "a": [
+        "contiene fibre olfattive primarie",
+        "contiene fibre pontocerebellari — con segni associati compatibili",
+        "contiene le fibre del fornice — con implicazioni su strutture adiacenti",
+        "contiene fibre corticospinali e talamo-corticali sensitive"
+      ],
+      "correct": 3,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Il Braccio posteriore della capsula interna è definito da:",
+      "a": [
+        "contiene le fibre del fornice — secondo una descrizione standard",
+        "contiene fibre olfattive primarie",
+        "contiene fibre pontocerebellari — con implicazioni su strutture adiacenti — tenendo conto dei relè talamici",
+        "contiene fibre corticospinali e talamo-corticali sensitive — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Quale contenuto è più tipico del Braccio anteriore della capsula interna?",
+      "a": [
+        "contiene fibre corticospinali per la gamba",
+        "contiene il peduncolo cerebellare superiore",
+        "contiene nuclei dei nervi cranici — con segni associati compatibili",
+        "contiene fibre frontopontine e radiazioni talamiche anteriori"
+      ],
+      "correct": 3,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Una lesione nel Braccio anteriore della capsula interna colpisce soprattutto:",
+      "a": [
+        "contiene fibre frontopontine e radiazioni talamiche anteriori",
+        "contiene nuclei dei nervi cranici — in termini anatomo-funzionali — in termini anatomo-funzionali",
+        "contiene il peduncolo cerebellare superiore — in termini anatomo-funzionali",
+        "contiene fibre corticospinali per la gamba"
+      ],
+      "correct": 0,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Il Braccio anteriore della capsula interna è definito da:",
+      "a": [
+        "contiene nuclei dei nervi cranici — tenendo conto dei relè talamici",
+        "contiene il peduncolo cerebellare superiore — nel quadro clinico tipico",
+        "contiene fibre corticospinali per la gamba — tenendo conto dei relè talamici",
+        "contiene fibre frontopontine e radiazioni talamiche anteriori"
+      ],
+      "correct": 3,
+      "cat": "Sostanza bianca"
+    },
+    {
+      "q": "Quale funzione descrive meglio il Splenio del corpo calloso?",
+      "a": [
+        "connette prevalentemente aree olfattive con ipotalamo",
+        "è un ganglio del SNP — con implicazioni su strutture adiacenti — nel quadro clinico tipico",
+        "contiene nuclei vestibolari — con segni associati compatibili — tenendo conto dei relè talamici",
+        "connette prevalentemente aree parieto-occipitali"
+      ],
+      "correct": 3,
+      "cat": "Commissure"
+    },
+    {
+      "q": "Il Splenio del corpo calloso del corpo calloso:",
+      "a": [
+        "contiene nuclei vestibolari — considerando le vie coinvolte",
+        "connette prevalentemente aree parieto-occipitali",
+        "connette prevalentemente aree olfattive con ipotalamo",
+        "è un ganglio del SNP"
+      ],
+      "correct": 1,
+      "cat": "Commissure"
+    },
+    {
+      "q": "Quale associazione corretta riguarda il Splenio del corpo calloso?",
+      "a": [
+        "connette prevalentemente aree olfattive con ipotalamo — tenendo conto dei relè talamici",
+        "è un ganglio del SNP",
+        "connette prevalentemente aree parieto-occipitali",
+        "contiene nuclei vestibolari — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Commissure"
+    },
+    {
+      "q": "Quale funzione descrive meglio il Genu del corpo calloso?",
+      "a": [
+        "connette prevalentemente aree frontali — nel quadro clinico tipico",
+        "è una cisterna subaracnoidea — con segni associati compatibili",
+        "è una commissura del cervelletto",
+        "connette prevalentemente aree temporali mediali"
+      ],
+      "correct": 0,
+      "cat": "Commissure"
+    },
+    {
+      "q": "Il Genu del corpo calloso del corpo calloso:",
+      "a": [
+        "è una commissura del cervelletto — tenendo conto dei relè talamici",
+        "connette prevalentemente aree frontali",
+        "connette prevalentemente aree temporali mediali",
+        "è una cisterna subaracnoidea"
+      ],
+      "correct": 1,
+      "cat": "Commissure"
+    },
+    {
+      "q": "Quale associazione corretta riguarda il Genu del corpo calloso?",
+      "a": [
+        "connette prevalentemente aree frontali",
+        "connette prevalentemente aree temporali mediali",
+        "è una commissura del cervelletto — nel quadro clinico tipico",
+        "è una cisterna subaracnoidea"
+      ],
+      "correct": 0,
+      "cat": "Commissure"
+    },
+    {
+      "q": "Quale descrizione è corretta per il Peduncolo cerebellare medio?",
+      "a": [
+        "porta soprattutto efferenze cerebello-talamiche",
+        "porta la via ottica primaria",
+        "porta fibre del tratto corticospinale",
+        "porta afferenze cortico-ponto-cerebellari"
+      ],
+      "correct": 3,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Il Peduncolo cerebellare medio trasporta principalmente:",
+      "a": [
+        "porta soprattutto efferenze cerebello-talamiche",
+        "porta la via ottica primaria",
+        "porta fibre del tratto corticospinale — in termini anatomo-funzionali",
+        "porta afferenze cortico-ponto-cerebellari — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "In termini di connettività, il Peduncolo cerebellare medio:",
+      "a": [
+        "porta afferenze cortico-ponto-cerebellari",
+        "porta la via ottica primaria — in termini anatomo-funzionali",
+        "porta soprattutto efferenze cerebello-talamiche",
+        "porta fibre del tratto corticospinale"
+      ],
+      "correct": 0,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale descrizione è corretta per il Peduncolo cerebellare superiore?",
+      "a": [
+        "porta afferenze olfattive alla corteccia — in un contesto neuroanatomico classico",
+        "porta fibre del nervo trigemino — secondo una descrizione standard",
+        "porta soprattutto efferenze cerebellari verso nucleo rosso e talamo — in termini anatomo-funzionali",
+        "porta la via spinotalamica — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Il Peduncolo cerebellare superiore trasporta principalmente:",
+      "a": [
+        "porta fibre del nervo trigemino — in un contesto neuroanatomico classico",
+        "porta afferenze olfattive alla corteccia — con segni associati compatibili",
+        "porta la via spinotalamica",
+        "porta soprattutto efferenze cerebellari verso nucleo rosso e talamo"
+      ],
+      "correct": 3,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "In termini di connettività, il Peduncolo cerebellare superiore:",
+      "a": [
+        "porta la via spinotalamica — nel quadro clinico tipico",
+        "porta fibre del nervo trigemino — secondo una descrizione standard",
+        "porta afferenze olfattive alla corteccia — con segni associati compatibili",
+        "porta soprattutto efferenze cerebellari verso nucleo rosso e talamo"
+      ],
+      "correct": 3,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale descrizione è corretta per il Peduncolo cerebellare inferiore?",
+      "a": [
+        "porta afferenze spinali/vestibolari e connessioni con nuclei bulbari",
+        "porta la decussazione delle vie piramidali — con implicazioni su strutture adiacenti",
+        "porta principalmente fibre pontocerebellari",
+        "porta fibre callosali — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Il Peduncolo cerebellare inferiore trasporta principalmente:",
+      "a": [
+        "porta afferenze spinali/vestibolari e connessioni con nuclei bulbari",
+        "porta la decussazione delle vie piramidali — tenendo conto dei relè talamici — in termini anatomo-funzionali",
+        "porta principalmente fibre pontocerebellari",
+        "porta fibre callosali — con implicazioni su strutture adiacenti — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "In termini di connettività, il Peduncolo cerebellare inferiore:",
+      "a": [
+        "porta principalmente fibre pontocerebellari",
+        "porta fibre callosali",
+        "porta la decussazione delle vie piramidali — con implicazioni su strutture adiacenti",
+        "porta afferenze spinali/vestibolari e connessioni con nuclei bulbari"
+      ],
+      "correct": 3,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale funzione è più compatibile con Lobo parietale?",
+      "a": [
+        "elaborazione visiva primaria — con implicazioni su strutture adiacenti",
+        "programmazione motoria primaria",
+        "integrazione somatosensoriale e orientamento spaziale",
+        "elaborazione uditiva primaria — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "La principale funzione associata a Lobo parietale è:",
+      "a": [
+        "elaborazione visiva primaria — in un contesto neuroanatomico classico",
+        "elaborazione uditiva primaria — tenendo conto dei relè talamici",
+        "programmazione motoria primaria",
+        "integrazione somatosensoriale e orientamento spaziale — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "In un esame neurologico, deficit legati a Lobo parietale suggeriscono alterazioni di:",
+      "a": [
+        "elaborazione visiva primaria",
+        "programmazione motoria primaria",
+        "elaborazione uditiva primaria",
+        "integrazione somatosensoriale e orientamento spaziale — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Dal punto di vista anatomo-funzionale, Lobo parietale è implicato in:",
+      "a": [
+        "elaborazione visiva primaria",
+        "integrazione somatosensoriale e orientamento spaziale — in termini anatomo-funzionali",
+        "programmazione motoria primaria — in termini anatomo-funzionali",
+        "elaborazione uditiva primaria — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Quale funzione è più compatibile con Lobo temporale?",
+      "a": [
+        "controllo vegetativo ipotalamico esclusivo — tenendo conto dei relè talamici",
+        "integrazione propriocettiva spinale",
+        "elaborazione uditiva e memoria dichiarativa mediale — considerando le vie coinvolte",
+        "controllo motorio fine cerebellare"
+      ],
+      "correct": 2,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "La principale funzione associata a Lobo temporale è:",
+      "a": [
+        "elaborazione uditiva e memoria dichiarativa mediale",
+        "controllo vegetativo ipotalamico esclusivo",
+        "integrazione propriocettiva spinale — in termini anatomo-funzionali",
+        "controllo motorio fine cerebellare"
+      ],
+      "correct": 0,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "In un esame neurologico, deficit legati a Lobo temporale suggeriscono alterazioni di:",
+      "a": [
+        "controllo vegetativo ipotalamico esclusivo — in un contesto neuroanatomico classico",
+        "controllo motorio fine cerebellare",
+        "elaborazione uditiva e memoria dichiarativa mediale",
+        "integrazione propriocettiva spinale — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Dal punto di vista anatomo-funzionale, Lobo temporale è implicato in:",
+      "a": [
+        "controllo vegetativo ipotalamico esclusivo — tenendo conto dei relè talamici",
+        "controllo motorio fine cerebellare",
+        "integrazione propriocettiva spinale",
+        "elaborazione uditiva e memoria dichiarativa mediale"
+      ],
+      "correct": 3,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Quale funzione è più compatibile con Lobo occipitale?",
+      "a": [
+        "elaborazione visiva primaria e associativa",
+        "controllo della postura tramite nuclei vestibolari",
+        "regolazione endocrina ipofisaria",
+        "elaborazione gustativa primaria — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "La principale funzione associata a Lobo occipitale è:",
+      "a": [
+        "elaborazione gustativa primaria",
+        "controllo della postura tramite nuclei vestibolari",
+        "elaborazione visiva primaria e associativa",
+        "regolazione endocrina ipofisaria"
+      ],
+      "correct": 2,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "In un esame neurologico, deficit legati a Lobo occipitale suggeriscono alterazioni di:",
+      "a": [
+        "regolazione endocrina ipofisaria — in termini anatomo-funzionali",
+        "controllo della postura tramite nuclei vestibolari",
+        "elaborazione gustativa primaria — in un contesto neuroanatomico classico",
+        "elaborazione visiva primaria e associativa"
+      ],
+      "correct": 3,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Dal punto di vista anatomo-funzionale, Lobo occipitale è implicato in:",
+      "a": [
+        "controllo della postura tramite nuclei vestibolari — nel quadro clinico tipico",
+        "elaborazione visiva primaria e associativa",
+        "elaborazione gustativa primaria — secondo una descrizione standard",
+        "regolazione endocrina ipofisaria"
+      ],
+      "correct": 1,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Quale funzione è più compatibile con Giro precentrale?",
+      "a": [
+        "corteccia motoria primaria con somatotopia",
+        "corteccia uditiva primaria",
+        "corteccia visiva primaria",
+        "corteccia olfattiva primaria"
+      ],
+      "correct": 0,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "La principale funzione associata a Giro precentrale è:",
+      "a": [
+        "corteccia olfattiva primaria — tenendo conto dei relè talamici",
+        "corteccia visiva primaria — in termini anatomo-funzionali",
+        "corteccia motoria primaria con somatotopia",
+        "corteccia uditiva primaria"
+      ],
+      "correct": 2,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "In un esame neurologico, deficit legati a Giro precentrale suggeriscono alterazioni di:",
+      "a": [
+        "corteccia olfattiva primaria",
+        "corteccia uditiva primaria",
+        "corteccia visiva primaria",
+        "corteccia motoria primaria con somatotopia"
+      ],
+      "correct": 3,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Dal punto di vista anatomo-funzionale, Giro precentrale è implicato in:",
+      "a": [
+        "corteccia visiva primaria",
+        "corteccia uditiva primaria",
+        "corteccia motoria primaria con somatotopia",
+        "corteccia olfattiva primaria"
+      ],
+      "correct": 2,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Quale funzione è più compatibile con Giro postcentrale?",
+      "a": [
+        "corteccia visiva primaria — nel quadro clinico tipico",
+        "corteccia motoria primaria — tenendo conto dei relè talamici",
+        "corteccia limbica per memoria",
+        "corteccia somatosensoriale primaria con somatotopia"
+      ],
+      "correct": 3,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "La principale funzione associata a Giro postcentrale è:",
+      "a": [
+        "corteccia visiva primaria — con segni associati compatibili",
+        "corteccia somatosensoriale primaria con somatotopia",
+        "corteccia motoria primaria — considerando le vie coinvolte",
+        "corteccia limbica per memoria"
+      ],
+      "correct": 1,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "In un esame neurologico, deficit legati a Giro postcentrale suggeriscono alterazioni di:",
+      "a": [
+        "corteccia limbica per memoria — considerando le vie coinvolte",
+        "corteccia somatosensoriale primaria con somatotopia — con segni associati compatibili",
+        "corteccia motoria primaria — con implicazioni su strutture adiacenti",
+        "corteccia visiva primaria"
+      ],
+      "correct": 1,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Dal punto di vista anatomo-funzionale, Giro postcentrale è implicato in:",
+      "a": [
+        "corteccia somatosensoriale primaria con somatotopia — in termini anatomo-funzionali",
+        "corteccia visiva primaria — con implicazioni su strutture adiacenti",
+        "corteccia motoria primaria — tenendo conto dei relè talamici",
+        "corteccia limbica per memoria — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Corteccia"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 97?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 98?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — tenendo conto dei relè talamici",
+        "Telencefalo, con corno temporale bilaterale — in un contesto neuroanatomico classico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 99?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in termini anatomo-funzionali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 100?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — considerando le vie coinvolte",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 101?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — considerando le vie coinvolte",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — nel quadro clinico tipico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 102?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — con segni associati compatibili",
+        "Telencefalo, con corno temporale bilaterale — in un contesto neuroanatomico classico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 103?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — secondo una descrizione standard",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 104?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 105?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — considerando le vie coinvolte",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — nel quadro clinico tipico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 106?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in termini anatomo-funzionali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in termini anatomo-funzionali",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 107?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in termini anatomo-funzionali",
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 108?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 109?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — tenendo conto dei relè talamici",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 110?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 111?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in un contesto neuroanatomico classico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 112?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — in termini anatomo-funzionali",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 113?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 114?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 115?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 116?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 117?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 118?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — nel quadro clinico tipico",
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 119?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — tenendo conto dei relè talamici",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 120?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — tenendo conto dei relè talamici",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 121?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — in un contesto neuroanatomico classico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 122?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in termini anatomo-funzionali",
+        "Telencefalo, con corno temporale bilaterale — in un contesto neuroanatomico classico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 123?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — nel quadro clinico tipico",
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 124?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 125?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — nel quadro clinico tipico",
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 126?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — con implicazioni su strutture adiacenti",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Telencefalo, con corno temporale bilaterale — con implicazioni su strutture adiacenti",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 127?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 128?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 129?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con segni associati compatibili",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 130?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 131?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 132?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — considerando le vie coinvolte",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 133?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — tenendo conto dei relè talamici",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 134?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 135?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 136?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 137?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in termini anatomo-funzionali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 138?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — secondo una descrizione standard",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 139?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in termini anatomo-funzionali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 140?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con segni associati compatibili",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — considerando le vie coinvolte",
+        "Telencefalo, con corno temporale bilaterale — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 141?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — secondo una descrizione standard",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 142?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — nel quadro clinico tipico",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 143?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 144?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in termini anatomo-funzionali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 145?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 146?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — considerando le vie coinvolte",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — considerando le vie coinvolte",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 147?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — considerando le vie coinvolte",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 148?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — con segni associati compatibili",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 149?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con segni associati compatibili",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 150?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Telencefalo, con corno temporale bilaterale — considerando le vie coinvolte",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 151?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — nel quadro clinico tipico",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 152?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con segni associati compatibili",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — con implicazioni su strutture adiacenti",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 153?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 154?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — con implicazioni su strutture adiacenti",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 155?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 156?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 157?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — in termini anatomo-funzionali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 158?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 159?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — considerando le vie coinvolte",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — tenendo conto dei relè talamici",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 160?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 161?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — secondo una descrizione standard",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 162?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 163?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 164?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 165?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 166?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con segni associati compatibili",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in termini anatomo-funzionali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 167?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — tenendo conto dei relè talamici",
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 168?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 169?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — considerando le vie coinvolte",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 170?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 171?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 172?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 173?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — nel quadro clinico tipico",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 174?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 175?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in termini anatomo-funzionali",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 176?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 177?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — secondo una descrizione standard",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 178?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in un contesto neuroanatomico classico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 179?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — tenendo conto dei relè talamici",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 180?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 181?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — secondo una descrizione standard",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 182?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 183?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — con implicazioni su strutture adiacenti",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — con implicazioni su strutture adiacenti",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — considerando le vie coinvolte",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 184?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — con segni associati compatibili",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 185?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 186?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 187?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 188?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale — considerando le vie coinvolte",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 189?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 190?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — secondo una descrizione standard",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 191?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — considerando le vie coinvolte",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — nel quadro clinico tipico",
+        "Telencefalo, con corno temporale bilaterale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 192?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — considerando le vie coinvolte",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — con segni associati compatibili",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 193?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 194?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — tenendo conto dei relè talamici",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 195?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 196?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Telencefalo, con corno temporale bilaterale — con implicazioni su strutture adiacenti",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 197?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 198?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 199?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — tenendo conto dei relè talamici",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — nel quadro clinico tipico",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 200?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 201?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con segni associati compatibili",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 202?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — in un contesto neuroanatomico classico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 203?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — tenendo conto dei relè talamici",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 204?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in termini anatomo-funzionali",
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 205?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — secondo una descrizione standard",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 206?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in termini anatomo-funzionali",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — in un contesto neuroanatomico classico",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 207?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 208?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 209?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 210?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — nel quadro clinico tipico",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — in termini anatomo-funzionali",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 211?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 212?",
+      "a": [
+        "Telencefalo, con corno temporale bilaterale — in un contesto neuroanatomico classico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 213?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — considerando le vie coinvolte",
+        "Telencefalo, con corno temporale bilaterale — tenendo conto dei relè talamici",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 214?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale — secondo una descrizione standard",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — nel quadro clinico tipico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 215?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — con implicazioni su strutture adiacenti",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — secondo una descrizione standard",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 216?",
+      "a": [
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — in termini anatomo-funzionali",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 1,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 217?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — nel quadro clinico tipico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Telencefalo, con corno temporale bilaterale",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 218?",
+      "a": [
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico",
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari"
+      ],
+      "correct": 0,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 219?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali",
+        "Telencefalo, con corno temporale bilaterale — nel quadro clinico tipico",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Diencefalo"
+    },
+    {
+      "q": "Nel SNC, quale struttura separa i due talami e contiene il terzo ventricolo, versione 220?",
+      "a": [
+        "Mesencefalo, con acquedotto e peduncoli cerebrali — tenendo conto dei relè talamici",
+        "Metencefalo, con quarto ventricolo e peduncoli cerebellari",
+        "Diencefalo, con pareti talamiche e cavità ventricolare mediana — tenendo conto dei relè talamici",
+        "Telencefalo, con corno temporale bilaterale"
+      ],
+      "correct": 2,
+      "cat": "Diencefalo"
+    }
+  ],
+  "ANATOMIA FUNZIONALE": [
+    {
+      "q": "Paziente 34 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura facciale ipsilaterale con trigemino; ipoacusia o vertigine per nuclei/nerve VIII; segni cerebellari ipsilaterali. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA — secondo una descrizione standard",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 63 anni, esordio acuto. Lesione destra: perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; segni cerebellari ipsilaterali e vertigine. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard — considerando le vie coinvolte",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 73 anni, esordio acuto. Lesione sinistra: perdita dolore e temperatura bilaterale sotto la lesione; perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore — con implicazioni su strutture adiacenti",
+        "Sindrome di Weber — tenendo conto dei relè talamici",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 58 anni, esordio acuto. Lesione sinistra: paresi del III nervo ipsilaterale con ptosi e midriasi; possibile coinvolgimento facciale centrale controlaterale; emiparesi controlaterale per peduncolo cerebrale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 39 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale; disfagia e disfonia per coinvolgimento ambiguo. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Brown-Séquard — considerando le vie coinvolte",
+        "Sindrome bulbare laterale, Wallenberg — nel quadro clinico tipico",
+        "Sindrome di Weber — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 73 anni, esordio acuto. Lesione sinistra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; paresi della lingua ipsilaterale con deviazione verso la lesione; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome di Weber",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 56 anni, esordio acuto. Lesione sinistra: segni cerebellari ipsilaterali; perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome di Weber — tenendo conto dei relè talamici",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 72 anni, esordio acuto. Lesione sinistra: ipoacusia o vertigine per nuclei/nerve VIII; perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard — nel quadro clinico tipico",
+        "Sindrome bulbare laterale, Wallenberg — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 65 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura controlaterale a pochi livelli sotto; paralisi motoria ipsilaterale sotto la lesione; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg — secondo una descrizione standard",
+        "Sindrome di Weber",
+        "Sindrome pontina laterale, territorio AICA — tenendo conto dei relè talamici",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 74 anni, esordio acuto. Lesione sinistra: perdita dolore e temperatura bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione; perdita motoria bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore — secondo una descrizione standard",
+        "Sindrome pontina laterale, territorio AICA — in termini anatomo-funzionali",
+        "Sindrome bulbare mediale, Dejerine — in un contesto neuroanatomico classico",
+        "Sindrome di Weber — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 59 anni, esordio acuto. Lesione destra: conservazione relativa di vibrazione e propriocezione; perdita motoria bilaterale sotto la lesione; perdita dolore e temperatura bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome del cordone anteriore",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 60 anni, esordio acuto. Lesione destra: perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; paresi della lingua ipsilaterale con deviazione verso la lesione; emiparesi controlaterale per coinvolgimento del tratto corticospinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore",
+        "Sindrome pontina laterale, territorio AICA"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 55 anni, esordio acuto. Lesione sinistra: paresi della lingua ipsilaterale con deviazione verso la lesione; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; emiparesi controlaterale per coinvolgimento del tratto corticospinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg — in un contesto neuroanatomico classico",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Brown-Séquard — in un contesto neuroanatomico classico",
+        "Sindrome bulbare mediale, Dejerine — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 35 anni, esordio acuto. Lesione destra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; paresi della lingua ipsilaterale con deviazione verso la lesione; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore — tenendo conto dei relè talamici",
+        "Sindrome di Brown-Séquard",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 75 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; disfagia e disfonia per coinvolgimento ambiguo; perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome pontina laterale, territorio AICA — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 48 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali e vertigine; disfagia e disfonia per coinvolgimento ambiguo; perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 57 anni, esordio acuto. Lesione destra: ipoacusia o vertigine per nuclei/nerve VIII; perdita dolore-temperatura facciale ipsilaterale con trigemino; segni cerebellari ipsilaterali. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber — tenendo conto dei relè talamici",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA — in un contesto neuroanatomico classico",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 60 anni, esordio acuto. Lesione sinistra: paresi della lingua ipsilaterale con deviazione verso la lesione; emiparesi controlaterale per coinvolgimento del tratto corticospinale; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine — tenendo conto dei relè talamici",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg — in un contesto neuroanatomico classico",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 55 anni, esordio acuto. Lesione destra: perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione; perdita dolore e temperatura bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA — nel quadro clinico tipico",
+        "Sindrome di Brown-Séquard — in termini anatomo-funzionali",
+        "Sindrome del cordone anteriore — nel quadro clinico tipico",
+        "Sindrome bulbare laterale, Wallenberg — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 51 anni, esordio acuto. Lesione sinistra: segni cerebellari ipsilaterali e vertigine; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Weber — in termini anatomo-funzionali",
+        "Sindrome del cordone anteriore — nel quadro clinico tipico",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 58 anni, esordio acuto. Lesione sinistra: disfagia e disfonia per coinvolgimento ambiguo; perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale; segni cerebellari ipsilaterali e vertigine. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 32 anni, esordio acuto. Lesione sinistra: paralisi motoria ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome del cordone anteriore",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 69 anni, esordio acuto. Lesione sinistra: perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto; paralisi motoria ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Siringomielia, lesione del canale centrale — con segni associati compatibili",
+        "Sindrome di Brown-Séquard",
+        "Sindrome pontina laterale, territorio AICA — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 60 anni, esordio acuto. Lesione sinistra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; paresi della lingua ipsilaterale con deviazione verso la lesione; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine — considerando le vie coinvolte",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 70 anni, esordio acuto. Lesione sinistra: paresi della lingua ipsilaterale con deviazione verso la lesione; emiparesi controlaterale per coinvolgimento del tratto corticospinale; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome del cordone anteriore — tenendo conto dei relè talamici",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 57 anni, esordio acuto. Lesione sinistra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; paresi della lingua ipsilaterale con deviazione verso la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome del cordone anteriore — secondo una descrizione standard",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 44 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura controlaterale a pochi livelli sotto; paralisi motoria ipsilaterale sotto la lesione; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard — in termini anatomo-funzionali",
+        "Sindrome di Weber — nel quadro clinico tipico",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 78 anni, esordio acuto. Lesione destra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; paresi della lingua ipsilaterale con deviazione verso la lesione; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore",
+        "Sindrome di Brown-Séquard",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 38 anni, esordio acuto. Lesione destra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; paresi della lingua ipsilaterale con deviazione verso la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Weber — in termini anatomo-funzionali",
+        "Sindrome bulbare mediale, Dejerine — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 75 anni, esordio acuto. Lesione sinistra: perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione; perdita dolore e temperatura bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA — in un contesto neuroanatomico classico",
+        "Sindrome del cordone anteriore",
+        "Sindrome di Brown-Séquard — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 42 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali e vertigine; disfagia e disfonia per coinvolgimento ambiguo; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber — nel quadro clinico tipico",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Siringomielia, lesione del canale centrale — nel quadro clinico tipico",
+        "Sindrome pontina laterale, territorio AICA — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 33 anni, esordio acuto. Lesione destra: possibile coinvolgimento facciale centrale controlaterale; paresi del III nervo ipsilaterale con ptosi e midriasi; emiparesi controlaterale per peduncolo cerebrale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg — con implicazioni su strutture adiacenti",
+        "Sindrome di Weber — con segni associati compatibili",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 33 anni, esordio acuto. Lesione sinistra: paralisi motoria ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine — con implicazioni su strutture adiacenti",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome di Brown-Séquard — con implicazioni su strutture adiacenti",
+        "Siringomielia, lesione del canale centrale — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 76 anni, esordio acuto. Lesione sinistra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; paresi della lingua ipsilaterale con deviazione verso la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg — in termini anatomo-funzionali",
+        "Sindrome del cordone anteriore — tenendo conto dei relè talamici",
+        "Sindrome bulbare mediale, Dejerine",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 45 anni, esordio acuto. Lesione destra: risparmio della sensibilità profonda; possibile debolezza dei muscoli intrinseci della mano se livello cervicale; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg — tenendo conto dei relè talamici",
+        "Sindrome di Brown-Séquard — con implicazioni su strutture adiacenti",
+        "Sindrome bulbare mediale, Dejerine — tenendo conto dei relè talamici",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 40 anni, esordio acuto. Lesione destra: possibile debolezza dei muscoli intrinseci della mano se livello cervicale; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria; risparmio della sensibilità profonda. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA — in un contesto neuroanatomico classico",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 35 anni, esordio acuto. Lesione sinistra: paralisi facciale periferica ipsilaterale; segni cerebellari ipsilaterali; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome pontina laterale, territorio AICA",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 65 anni, esordio acuto. Lesione destra: possibile debolezza dei muscoli intrinseci della mano se livello cervicale; risparmio della sensibilità profonda; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine — con segni associati compatibili",
+        "Sindrome di Weber — in termini anatomo-funzionali",
+        "Sindrome pontina laterale, territorio AICA",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 42 anni, esordio acuto. Lesione sinistra: perdita motoria bilaterale sotto la lesione; perdita dolore e temperatura bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber — considerando le vie coinvolte",
+        "Sindrome bulbare laterale, Wallenberg — tenendo conto dei relè talamici",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 63 anni, esordio acuto. Lesione destra: perdita dolore-temperatura facciale ipsilaterale con trigemino; segni cerebellari ipsilaterali; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber — in un contesto neuroanatomico classico",
+        "Sindrome pontina laterale, territorio AICA",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 39 anni, esordio acuto. Lesione sinistra: conservazione relativa di vibrazione e propriocezione; perdita motoria bilaterale sotto la lesione; perdita dolore e temperatura bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 59 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Weber",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 61 anni, esordio acuto. Lesione sinistra: possibile coinvolgimento facciale centrale controlaterale; paresi del III nervo ipsilaterale con ptosi e midriasi; emiparesi controlaterale per peduncolo cerebrale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 42 anni, esordio acuto. Lesione sinistra: perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto; paralisi motoria ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA — secondo una descrizione standard",
+        "Sindrome di Brown-Séquard — considerando le vie coinvolte",
+        "Sindrome di Weber — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 49 anni, esordio acuto. Lesione sinistra: emiparesi controlaterale per peduncolo cerebrale; paresi del III nervo ipsilaterale con ptosi e midriasi; possibile coinvolgimento facciale centrale controlaterale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome di Weber",
+        "Sindrome pontina laterale, territorio AICA"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 52 anni, esordio acuto. Lesione destra: paralisi motoria ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Brown-Séquard",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 78 anni, esordio acuto. Lesione destra: perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; segni cerebellari ipsilaterali e vertigine; disfagia e disfonia per coinvolgimento ambiguo. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Brown-Séquard",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome di Weber — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 32 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 59 anni, esordio acuto. Lesione destra: perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; disfagia e disfonia per coinvolgimento ambiguo. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard — con implicazioni su strutture adiacenti",
+        "Sindrome bulbare laterale, Wallenberg — tenendo conto dei relè talamici",
+        "Sindrome del cordone anteriore",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 61 anni, esordio acuto. Lesione sinistra: perdita dolore e temperatura bilaterale sotto la lesione; perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA — considerando le vie coinvolte",
+        "Sindrome di Brown-Séquard",
+        "Sindrome di Weber — secondo una descrizione standard",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 48 anni, esordio acuto. Lesione destra: risparmio della sensibilità profonda; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria; possibile debolezza dei muscoli intrinseci della mano se livello cervicale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard",
+        "Sindrome di Weber",
+        "Sindrome del cordone anteriore",
+        "Siringomielia, lesione del canale centrale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 32 anni, esordio acuto. Lesione sinistra: perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; paralisi motoria ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale — secondo una descrizione standard",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Weber",
+        "Sindrome di Brown-Séquard — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 66 anni, esordio acuto. Lesione sinistra: segni cerebellari ipsilaterali e vertigine; perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale; disfagia e disfonia per coinvolgimento ambiguo. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Brown-Séquard — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 57 anni, esordio acuto. Lesione destra: emiparesi controlaterale per peduncolo cerebrale; possibile coinvolgimento facciale centrale controlaterale; paresi del III nervo ipsilaterale con ptosi e midriasi. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA — in un contesto neuroanatomico classico",
+        "Sindrome bulbare mediale, Dejerine — secondo una descrizione standard",
+        "Sindrome del cordone anteriore",
+        "Sindrome di Weber"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 36 anni, esordio acuto. Lesione destra: emiparesi controlaterale per peduncolo cerebrale; possibile coinvolgimento facciale centrale controlaterale; paresi del III nervo ipsilaterale con ptosi e midriasi. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard — con implicazioni su strutture adiacenti",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Weber",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 45 anni, esordio acuto. Lesione destra: paralisi facciale periferica ipsilaterale; perdita dolore-temperatura facciale ipsilaterale con trigemino; segni cerebellari ipsilaterali. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 61 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria; possibile debolezza dei muscoli intrinseci della mano se livello cervicale; risparmio della sensibilità profonda. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 62 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali; paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA — con implicazioni su strutture adiacenti",
+        "Sindrome del cordone anteriore — tenendo conto dei relè talamici",
+        "Sindrome di Weber — in termini anatomo-funzionali",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 74 anni, esordio acuto. Lesione destra: perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 72 anni, esordio acuto. Lesione destra: possibile debolezza dei muscoli intrinseci della mano se livello cervicale; risparmio della sensibilità profonda; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore — con implicazioni su strutture adiacenti",
+        "Siringomielia, lesione del canale centrale — tenendo conto dei relè talamici",
+        "Sindrome di Brown-Séquard — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 60 anni, esordio acuto. Lesione sinistra: segni cerebellari ipsilaterali; perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome del cordone anteriore — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 44 anni, esordio acuto. Lesione sinistra: perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; paralisi motoria ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome di Brown-Séquard",
+        "Sindrome bulbare laterale, Wallenberg — considerando le vie coinvolte",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 46 anni, esordio acuto. Lesione sinistra: perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto; paralisi motoria ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome di Weber",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome di Brown-Séquard — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 66 anni, esordio acuto. Lesione destra: perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; disfagia e disfonia per coinvolgimento ambiguo; segni cerebellari ipsilaterali e vertigine. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg — considerando le vie coinvolte",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare mediale, Dejerine — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 59 anni, esordio acuto. Lesione destra: perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione; perdita dolore e temperatura bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg — in un contesto neuroanatomico classico",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 38 anni, esordio acuto. Lesione sinistra: paresi della lingua ipsilaterale con deviazione verso la lesione; emiparesi controlaterale per coinvolgimento del tratto corticospinale; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Brown-Séquard — in termini anatomo-funzionali",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 53 anni, esordio acuto. Lesione destra: perdita dolore e temperatura bilaterale sotto la lesione; perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore — secondo una descrizione standard",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 67 anni, esordio acuto. Lesione destra: paralisi facciale periferica ipsilaterale; segni cerebellari ipsilaterali; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome del cordone anteriore — secondo una descrizione standard",
+        "Sindrome bulbare mediale, Dejerine — considerando le vie coinvolte",
+        "Sindrome di Weber"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 39 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali; ipoacusia o vertigine per nuclei/nerve VIII; paralisi facciale periferica ipsilaterale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber — con implicazioni su strutture adiacenti",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 66 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria; possibile debolezza dei muscoli intrinseci della mano se livello cervicale; risparmio della sensibilità profonda. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard — con implicazioni su strutture adiacenti",
+        "Sindrome di Weber",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 64 anni, esordio acuto. Lesione sinistra: perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; paresi della lingua ipsilaterale con deviazione verso la lesione; emiparesi controlaterale per coinvolgimento del tratto corticospinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard — in termini anatomo-funzionali",
+        "Sindrome bulbare mediale, Dejerine",
+        "Siringomielia, lesione del canale centrale — considerando le vie coinvolte",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 38 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale; disfagia e disfonia per coinvolgimento ambiguo; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 51 anni, esordio acuto. Lesione sinistra: paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII; segni cerebellari ipsilaterali. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine — tenendo conto dei relè talamici",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 39 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura controlaterale a pochi livelli sotto; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; paralisi motoria ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome del cordone anteriore",
+        "Sindrome di Brown-Séquard",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 62 anni, esordio acuto. Lesione destra: perdita dolore e temperatura bilaterale sotto la lesione; perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine — in termini anatomo-funzionali",
+        "Sindrome di Weber — tenendo conto dei relè talamici",
+        "Sindrome di Brown-Séquard",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 32 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; segni cerebellari ipsilaterali e vertigine; perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 60 anni, esordio acuto. Lesione sinistra: possibile coinvolgimento facciale centrale controlaterale; paresi del III nervo ipsilaterale con ptosi e midriasi; emiparesi controlaterale per peduncolo cerebrale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Weber",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 61 anni, esordio acuto. Lesione sinistra: perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione; perdita dolore e temperatura bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine — considerando le vie coinvolte",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 51 anni, esordio acuto. Lesione sinistra: paresi della lingua ipsilaterale con deviazione verso la lesione; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; emiparesi controlaterale per coinvolgimento del tratto corticospinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore",
+        "Sindrome pontina laterale, territorio AICA"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 41 anni, esordio acuto. Lesione destra: perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Weber",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome bulbare laterale, Wallenberg — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 50 anni, esordio acuto. Lesione destra: perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria; possibile debolezza dei muscoli intrinseci della mano se livello cervicale; risparmio della sensibilità profonda. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome del cordone anteriore — in un contesto neuroanatomico classico",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 56 anni, esordio acuto. Lesione destra: perdita di dolore e temperatura controlaterale a pochi livelli sotto; paralisi motoria ipsilaterale sotto la lesione; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome di Brown-Séquard",
+        "Siringomielia, lesione del canale centrale — con segni associati compatibili",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 69 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali; paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Weber",
+        "Sindrome bulbare laterale, Wallenberg — in un contesto neuroanatomico classico",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 78 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare laterale, Wallenberg — tenendo conto dei relè talamici",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 66 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA — in un contesto neuroanatomico classico",
+        "Sindrome di Weber — con implicazioni su strutture adiacenti",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome bulbare laterale, Wallenberg — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 44 anni, esordio acuto. Lesione destra: possibile debolezza dei muscoli intrinseci della mano se livello cervicale; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria; risparmio della sensibilità profonda. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome bulbare mediale, Dejerine — in un contesto neuroanatomico classico",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 47 anni, esordio acuto. Lesione destra: ipoacusia o vertigine per nuclei/nerve VIII; paralisi facciale periferica ipsilaterale; perdita dolore-temperatura facciale ipsilaterale con trigemino. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome di Brown-Séquard — secondo una descrizione standard",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome pontina laterale, territorio AICA — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 70 anni, esordio acuto. Lesione sinistra: possibile debolezza dei muscoli intrinseci della mano se livello cervicale; risparmio della sensibilità profonda; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine — con implicazioni su strutture adiacenti",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 59 anni, esordio acuto. Lesione destra: disfagia e disfonia per coinvolgimento ambiguo; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; segni cerebellari ipsilaterali e vertigine. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 35 anni, esordio acuto. Lesione sinistra: perdita dolore-temperatura facciale ipsilaterale con nucleo trigeminale spinale; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; disfagia e disfonia per coinvolgimento ambiguo. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome bulbare mediale, Dejerine — con segni associati compatibili",
+        "Sindrome di Weber — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 48 anni, esordio acuto. Lesione destra: risparmio della sensibilità profonda; possibile debolezza dei muscoli intrinseci della mano se livello cervicale; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA — con implicazioni su strutture adiacenti",
+        "Sindrome di Brown-Séquard — con segni associati compatibili",
+        "Siringomielia, lesione del canale centrale — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 78 anni, esordio acuto. Lesione destra: perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; disfagia e disfonia per coinvolgimento ambiguo; segni cerebellari ipsilaterali e vertigine. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine — considerando le vie coinvolte",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA — secondo una descrizione standard",
+        "Siringomielia, lesione del canale centrale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 64 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura controlaterale a pochi livelli sotto; paralisi motoria ipsilaterale sotto la lesione; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 69 anni, esordio acuto. Lesione sinistra: possibile debolezza dei muscoli intrinseci della mano se livello cervicale; risparmio della sensibilità profonda; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Weber — in termini anatomo-funzionali",
+        "Sindrome di Brown-Séquard",
+        "Sindrome bulbare mediale, Dejerine — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 56 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali; perdita dolore-temperatura facciale ipsilaterale con trigemino; ipoacusia o vertigine per nuclei/nerve VIII. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard — in termini anatomo-funzionali",
+        "Sindrome bulbare laterale, Wallenberg — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 46 anni, esordio acuto. Lesione sinistra: emiparesi controlaterale per peduncolo cerebrale; possibile coinvolgimento facciale centrale controlaterale; paresi del III nervo ipsilaterale con ptosi e midriasi. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore — tenendo conto dei relè talamici",
+        "Sindrome di Weber — con implicazioni su strutture adiacenti",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 60 anni, esordio acuto. Lesione sinistra: emiparesi controlaterale per peduncolo cerebrale; paresi del III nervo ipsilaterale con ptosi e midriasi; possibile coinvolgimento facciale centrale controlaterale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Weber — tenendo conto dei relè talamici",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 43 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali e vertigine; disfagia e disfonia per coinvolgimento ambiguo; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard",
+        "Siringomielia, lesione del canale centrale — tenendo conto dei relè talamici",
+        "Sindrome bulbare laterale, Wallenberg — nel quadro clinico tipico",
+        "Sindrome pontina laterale, territorio AICA"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 33 anni, esordio acuto. Lesione destra: emiparesi controlaterale per peduncolo cerebrale; possibile coinvolgimento facciale centrale controlaterale; paresi del III nervo ipsilaterale con ptosi e midriasi. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA — nel quadro clinico tipico",
+        "Sindrome di Weber",
+        "Sindrome del cordone anteriore — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 62 anni, esordio acuto. Lesione sinistra: paresi del III nervo ipsilaterale con ptosi e midriasi; possibile coinvolgimento facciale centrale controlaterale; emiparesi controlaterale per peduncolo cerebrale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Siringomielia, lesione del canale centrale — con implicazioni su strutture adiacenti",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 44 anni, esordio acuto. Lesione destra: possibile debolezza dei muscoli intrinseci della mano se livello cervicale; risparmio della sensibilità profonda; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome di Weber — considerando le vie coinvolte",
+        "Siringomielia, lesione del canale centrale — con segni associati compatibili",
+        "Sindrome pontina laterale, territorio AICA"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 35 anni, esordio acuto. Lesione destra: possibile coinvolgimento facciale centrale controlaterale; paresi del III nervo ipsilaterale con ptosi e midriasi; emiparesi controlaterale per peduncolo cerebrale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Weber — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 65 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura controlaterale a pochi livelli sotto; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; paralisi motoria ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard — secondo una descrizione standard",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 65 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali e vertigine; perdita dolore-temperatura corporea controlaterale per tratto spinotalamico; disfagia e disfonia per coinvolgimento ambiguo. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 40 anni, esordio acuto. Lesione destra: risparmio della sensibilità profonda; possibile debolezza dei muscoli intrinseci della mano se livello cervicale; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 65 anni, esordio acuto. Lesione destra: perdita dolore e temperatura bilaterale sotto la lesione; perdita motoria bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome pontina laterale, territorio AICA",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome del cordone anteriore — considerando le vie coinvolte",
+        "Sindrome di Brown-Séquard"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 47 anni, esordio acuto. Lesione destra: possibile coinvolgimento facciale centrale controlaterale; emiparesi controlaterale per peduncolo cerebrale; paresi del III nervo ipsilaterale con ptosi e midriasi. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome pontina laterale, territorio AICA — in termini anatomo-funzionali",
+        "Sindrome di Weber"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 65 anni, esordio acuto. Lesione sinistra: perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; perdita di dolore e temperatura controlaterale a pochi livelli sotto; paralisi motoria ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Brown-Séquard — considerando le vie coinvolte",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA — considerando le vie coinvolte",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 78 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura controlaterale a pochi livelli sotto; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; paralisi motoria ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome di Brown-Séquard — considerando le vie coinvolte",
+        "Sindrome di Weber"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 42 anni, esordio acuto. Lesione sinistra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; paresi della lingua ipsilaterale con deviazione verso la lesione; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare laterale, Wallenberg — considerando le vie coinvolte",
+        "Sindrome di Weber — in un contesto neuroanatomico classico",
+        "Sindrome del cordone anteriore — in termini anatomo-funzionali",
+        "Sindrome bulbare mediale, Dejerine — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 70 anni, esordio acuto. Lesione sinistra: conservazione relativa di vibrazione e propriocezione; perdita motoria bilaterale sotto la lesione; perdita dolore e temperatura bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore — con implicazioni su strutture adiacenti",
+        "Sindrome di Weber",
+        "Sindrome di Brown-Séquard",
+        "Siringomielia, lesione del canale centrale — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 34 anni, esordio acuto. Lesione destra: emiparesi controlaterale per coinvolgimento del tratto corticospinale; perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; paresi della lingua ipsilaterale con deviazione verso la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Weber",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome di Brown-Séquard — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 40 anni, esordio acuto. Lesione sinistra: perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; emiparesi controlaterale per coinvolgimento del tratto corticospinale; paresi della lingua ipsilaterale con deviazione verso la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale — nel quadro clinico tipico",
+        "Sindrome pontina laterale, territorio AICA — con segni associati compatibili",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome del cordone anteriore — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 72 anni, esordio acuto. Lesione destra: perdita dolore e temperatura bilaterale sotto la lesione; conservazione relativa di vibrazione e propriocezione; perdita motoria bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale — con segni associati compatibili",
+        "Sindrome di Weber — secondo una descrizione standard",
+        "Sindrome del cordone anteriore",
+        "Sindrome bulbare mediale, Dejerine"
+      ],
+      "correct": 2,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 68 anni, esordio acuto. Lesione destra: paralisi facciale periferica ipsilaterale; perdita dolore-temperatura facciale ipsilaterale con trigemino; segni cerebellari ipsilaterali. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome di Weber",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Brown-Séquard — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 74 anni, esordio acuto. Lesione destra: conservazione relativa di vibrazione e propriocezione; perdita dolore e temperatura bilaterale sotto la lesione; perdita motoria bilaterale sotto la lesione. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Siringomielia, lesione del canale centrale — considerando le vie coinvolte",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome bulbare mediale, Dejerine — con implicazioni su strutture adiacenti",
+        "Sindrome del cordone anteriore"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 64 anni, esordio acuto. Lesione destra: perdita di vibrazione e propriocezione controlaterale per lemnisco mediale; paresi della lingua ipsilaterale con deviazione verso la lesione; emiparesi controlaterale per coinvolgimento del tratto corticospinale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome bulbare laterale, Wallenberg — in termini anatomo-funzionali",
+        "Sindrome pontina laterale, territorio AICA",
+        "Siringomielia, lesione del canale centrale"
+      ],
+      "correct": 0,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 34 anni, esordio acuto. Lesione destra: risparmio della sensibilità profonda; perdita di dolore e temperatura bilaterale a mantellina per decussazione segmentaria; possibile debolezza dei muscoli intrinseci della mano se livello cervicale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome bulbare mediale, Dejerine",
+        "Siringomielia, lesione del canale centrale",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Brown-Séquard — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 65 anni, esordio acuto. Lesione sinistra: perdita di dolore e temperatura controlaterale a pochi livelli sotto; perdita di propriocezione e vibrazione ipsilaterale sotto la lesione; paralisi motoria ipsilaterale sotto la lesione. Quale sede/sindrome è più probabile?⁣",
+      "a": [
+        "Sindrome di Weber — con implicazioni su strutture adiacenti",
+        "Sindrome bulbare laterale, Wallenberg",
+        "Sindrome bulbare mediale, Dejerine",
+        "Sindrome di Brown-Séquard — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Paziente 70 anni, esordio acuto. Lesione destra: segni cerebellari ipsilaterali; perdita dolore-temperatura facciale ipsilaterale con trigemino; paralisi facciale periferica ipsilaterale. Quale sede/sindrome è più probabile?",
+      "a": [
+        "Sindrome del cordone anteriore",
+        "Sindrome pontina laterale, territorio AICA",
+        "Sindrome di Weber — secondo una descrizione standard",
+        "Sindrome bulbare mediale, Dejerine — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Sindrome da lesione"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente la Via delle colonne dorsali-lemnisco mediale?",
+      "a": [
+        "trasporta dolore e temperatura con decussazione segmentaria nel midollo",
+        "trasporta comandi motori corticospinali con decussazione nel ponte",
+        "trasporta tatto fine, vibrazione e propriocezione con decussazione nel bulbo",
+        "trasporta informazioni olfattive senza sinapsi talamica obbligata — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Riguardo la Via delle colonne dorsali-lemnisco mediale, quale opzione è vera?",
+      "a": [
+        "trasporta tatto fine, vibrazione e propriocezione con decussazione nel bulbo",
+        "trasporta informazioni olfattive senza sinapsi talamica obbligata",
+        "trasporta dolore e temperatura con decussazione segmentaria nel midollo — secondo una descrizione standard",
+        "trasporta comandi motori corticospinali con decussazione nel ponte"
+      ],
+      "correct": 0,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Se una lesione interrompe la Via delle colonne dorsali-lemnisco mediale, quale descrizione è corretta?",
+      "a": [
+        "trasporta dolore e temperatura con decussazione segmentaria nel midollo",
+        "trasporta informazioni olfattive senza sinapsi talamica obbligata",
+        "trasporta tatto fine, vibrazione e propriocezione con decussazione nel bulbo",
+        "trasporta comandi motori corticospinali con decussazione nel ponte"
+      ],
+      "correct": 2,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Nel tracciamento delle vie, la Via delle colonne dorsali-lemnisco mediale:",
+      "a": [
+        "trasporta informazioni olfattive senza sinapsi talamica obbligata",
+        "trasporta tatto fine, vibrazione e propriocezione con decussazione nel bulbo — considerando le vie coinvolte",
+        "trasporta dolore e temperatura con decussazione segmentaria nel midollo",
+        "trasporta comandi motori corticospinali con decussazione nel ponte — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente la Via spinotalamica?",
+      "a": [
+        "trasporta motricità fine eferente dal cervelletto — tenendo conto dei relè talamici",
+        "trasporta propriocezione con decussazione nel bulbo — con segni associati compatibili",
+        "trasporta dolore e temperatura con decussazione nella commessura bianca anteriore a 1-2 livelli",
+        "trasporta visione con sinapsi nel corpo genicolato laterale"
+      ],
+      "correct": 2,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Riguardo la Via spinotalamica, quale opzione è vera?",
+      "a": [
+        "trasporta dolore e temperatura con decussazione nella commessura bianca anteriore a 1-2 livelli — con segni associati compatibili",
+        "trasporta propriocezione con decussazione nel bulbo — in termini anatomo-funzionali — nel quadro clinico tipico",
+        "trasporta motricità fine eferente dal cervelletto — con implicazioni su strutture adiacenti",
+        "trasporta visione con sinapsi nel corpo genicolato laterale — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Se una lesione interrompe la Via spinotalamica, quale descrizione è corretta?",
+      "a": [
+        "trasporta dolore e temperatura con decussazione nella commessura bianca anteriore a 1-2 livelli",
+        "trasporta motricità fine eferente dal cervelletto — in termini anatomo-funzionali — in un contesto neuroanatomico classico",
+        "trasporta propriocezione con decussazione nel bulbo — tenendo conto dei relè talamici",
+        "trasporta visione con sinapsi nel corpo genicolato laterale"
+      ],
+      "correct": 0,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Nel tracciamento delle vie, la Via spinotalamica:",
+      "a": [
+        "trasporta motricità fine eferente dal cervelletto — considerando le vie coinvolte — tenendo conto dei relè talamici",
+        "trasporta propriocezione con decussazione nel bulbo — in termini anatomo-funzionali",
+        "trasporta visione con sinapsi nel corpo genicolato laterale — in termini anatomo-funzionali — secondo una descrizione standard",
+        "trasporta dolore e temperatura con decussazione nella commessura bianca anteriore a 1-2 livelli — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente la Tratto corticospinale laterale?",
+      "a": [
+        "non decussa mai e resta omolaterale",
+        "origina dal talamo e termina nel cervelletto — secondo una descrizione standard",
+        "decussa alle piramidi bulbari e discende nel funicolo laterale",
+        "decussa nel midollo cervicale tramite commessura anteriore"
+      ],
+      "correct": 2,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Riguardo la Tratto corticospinale laterale, quale opzione è vera?",
+      "a": [
+        "non decussa mai e resta omolaterale — considerando le vie coinvolte — nel quadro clinico tipico",
+        "decussa nel midollo cervicale tramite commessura anteriore",
+        "decussa alle piramidi bulbari e discende nel funicolo laterale — con implicazioni su strutture adiacenti",
+        "origina dal talamo e termina nel cervelletto"
+      ],
+      "correct": 2,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Se una lesione interrompe la Tratto corticospinale laterale, quale descrizione è corretta?",
+      "a": [
+        "non decussa mai e resta omolaterale — tenendo conto dei relè talamici",
+        "origina dal talamo e termina nel cervelletto",
+        "decussa alle piramidi bulbari e discende nel funicolo laterale",
+        "decussa nel midollo cervicale tramite commessura anteriore"
+      ],
+      "correct": 2,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Nel tracciamento delle vie, la Tratto corticospinale laterale:",
+      "a": [
+        "decussa alle piramidi bulbari e discende nel funicolo laterale",
+        "origina dal talamo e termina nel cervelletto — considerando le vie coinvolte",
+        "decussa nel midollo cervicale tramite commessura anteriore",
+        "non decussa mai e resta omolaterale — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente la Fascio spinocerebellare dorsale?",
+      "a": [
+        "decussa nel bulbo e torna controlaterale via peduncolo superiore — in termini anatomo-funzionali — in un contesto neuroanatomico classico",
+        "trasporta dolore e temperatura via talamo — con segni associati compatibili — tenendo conto dei relè talamici",
+        "trasporta propriocezione inconscia ipsilaterale e entra nel cervelletto via peduncolo inferiore",
+        "trasporta comandi motori via capsula interna — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Riguardo la Fascio spinocerebellare dorsale, quale opzione è vera?",
+      "a": [
+        "trasporta dolore e temperatura via talamo — con segni associati compatibili",
+        "trasporta comandi motori via capsula interna — secondo una descrizione standard — in un contesto neuroanatomico classico",
+        "decussa nel bulbo e torna controlaterale via peduncolo superiore — in un contesto neuroanatomico classico",
+        "trasporta propriocezione inconscia ipsilaterale e entra nel cervelletto via peduncolo inferiore — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Se una lesione interrompe la Fascio spinocerebellare dorsale, quale descrizione è corretta?",
+      "a": [
+        "decussa nel bulbo e torna controlaterale via peduncolo superiore — secondo una descrizione standard",
+        "trasporta dolore e temperatura via talamo — con implicazioni su strutture adiacenti",
+        "trasporta comandi motori via capsula interna",
+        "trasporta propriocezione inconscia ipsilaterale e entra nel cervelletto via peduncolo inferiore"
+      ],
+      "correct": 3,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Nel tracciamento delle vie, la Fascio spinocerebellare dorsale:",
+      "a": [
+        "trasporta dolore e temperatura via talamo — nel quadro clinico tipico",
+        "trasporta propriocezione inconscia ipsilaterale e entra nel cervelletto via peduncolo inferiore — nel quadro clinico tipico",
+        "trasporta comandi motori via capsula interna — con implicazioni su strutture adiacenti — con segni associati compatibili",
+        "decussa nel bulbo e torna controlaterale via peduncolo superiore"
+      ],
+      "correct": 1,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente la Fascio spinocerebellare ventrale?",
+      "a": [
+        "trasporta segnali da interneuroni spinali e tipicamente attraversa doppia decussazione, entrando via peduncolo superiore",
+        "entra nel cervelletto via peduncolo medio — in un contesto neuroanatomico classico",
+        "trasporta vibrazione e tatto fine — considerando le vie coinvolte — con segni associati compatibili",
+        "termina nel nucleo genicolato laterale"
+      ],
+      "correct": 0,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Riguardo la Fascio spinocerebellare ventrale, quale opzione è vera?",
+      "a": [
+        "trasporta vibrazione e tatto fine — con implicazioni su strutture adiacenti — tenendo conto dei relè talamici",
+        "termina nel nucleo genicolato laterale — in termini anatomo-funzionali",
+        "entra nel cervelletto via peduncolo medio — considerando le vie coinvolte",
+        "trasporta segnali da interneuroni spinali e tipicamente attraversa doppia decussazione, entrando via peduncolo superiore"
+      ],
+      "correct": 3,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Se una lesione interrompe la Fascio spinocerebellare ventrale, quale descrizione è corretta?",
+      "a": [
+        "trasporta segnali da interneuroni spinali e tipicamente attraversa doppia decussazione, entrando via peduncolo superiore",
+        "entra nel cervelletto via peduncolo medio — nel quadro clinico tipico",
+        "termina nel nucleo genicolato laterale — considerando le vie coinvolte",
+        "trasporta vibrazione e tatto fine — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Nel tracciamento delle vie, la Fascio spinocerebellare ventrale:",
+      "a": [
+        "trasporta vibrazione e tatto fine — con implicazioni su strutture adiacenti — tenendo conto dei relè talamici",
+        "termina nel nucleo genicolato laterale — con segni associati compatibili",
+        "trasporta segnali da interneuroni spinali e tipicamente attraversa doppia decussazione, entrando via peduncolo superiore",
+        "entra nel cervelletto via peduncolo medio — considerando le vie coinvolte — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Vie nervose"
+    },
+    {
+      "q": "Quale descrizione è più corretta per Via diretta dei gangli della base?",
+      "a": [
+        "aumenta l'inibizione talamica e sopprime il movimento",
+        "facilita l'inizio del movimento riducendo l'inibizione talamica",
+        "media esclusivamente il riflesso pupillare",
+        "sostituisce la funzione del cervelletto nella postura"
+      ],
+      "correct": 1,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Nel modello funzionale, Via diretta dei gangli della base:",
+      "a": [
+        "sostituisce la funzione del cervelletto nella postura",
+        "facilita l'inizio del movimento riducendo l'inibizione talamica — secondo una descrizione standard",
+        "aumenta l'inibizione talamica e sopprime il movimento",
+        "media esclusivamente il riflesso pupillare"
+      ],
+      "correct": 1,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Una disfunzione di Via diretta dei gangli della base implica che:",
+      "a": [
+        "aumenta l'inibizione talamica e sopprime il movimento — in termini anatomo-funzionali",
+        "sostituisce la funzione del cervelletto nella postura",
+        "facilita l'inizio del movimento riducendo l'inibizione talamica",
+        "media esclusivamente il riflesso pupillare — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Quale affermazione su Via diretta dei gangli della base è corretta?",
+      "a": [
+        "aumenta l'inibizione talamica e sopprime il movimento",
+        "facilita l'inizio del movimento riducendo l'inibizione talamica — considerando le vie coinvolte",
+        "sostituisce la funzione del cervelletto nella postura",
+        "media esclusivamente il riflesso pupillare"
+      ],
+      "correct": 1,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "In termini di circuiti, Via diretta dei gangli della base è definito da:",
+      "a": [
+        "sostituisce la funzione del cervelletto nella postura",
+        "facilita l'inizio del movimento riducendo l'inibizione talamica",
+        "aumenta l'inibizione talamica e sopprime il movimento",
+        "media esclusivamente il riflesso pupillare"
+      ],
+      "correct": 1,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Quale descrizione è più corretta per Via indiretta dei gangli della base?",
+      "a": [
+        "produce potenziali d'azione nelle fibre ottiche — nel quadro clinico tipico",
+        "sopprime movimenti concorrenti aumentando l'inibizione talamica — in un contesto neuroanatomico classico",
+        "facilita il movimento riducendo l'inibizione talamica",
+        "mielinizza gli assoni nel SNC — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Nel modello funzionale, Via indiretta dei gangli della base:",
+      "a": [
+        "sopprime movimenti concorrenti aumentando l'inibizione talamica",
+        "produce potenziali d'azione nelle fibre ottiche — considerando le vie coinvolte",
+        "facilita il movimento riducendo l'inibizione talamica",
+        "mielinizza gli assoni nel SNC"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Una disfunzione di Via indiretta dei gangli della base implica che:",
+      "a": [
+        "sopprime movimenti concorrenti aumentando l'inibizione talamica — secondo una descrizione standard",
+        "facilita il movimento riducendo l'inibizione talamica",
+        "mielinizza gli assoni nel SNC — tenendo conto dei relè talamici — in termini anatomo-funzionali",
+        "produce potenziali d'azione nelle fibre ottiche — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Quale affermazione su Via indiretta dei gangli della base è corretta?",
+      "a": [
+        "sopprime movimenti concorrenti aumentando l'inibizione talamica — in termini anatomo-funzionali",
+        "mielinizza gli assoni nel SNC",
+        "facilita il movimento riducendo l'inibizione talamica",
+        "produce potenziali d'azione nelle fibre ottiche — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "In termini di circuiti, Via indiretta dei gangli della base è definito da:",
+      "a": [
+        "sopprime movimenti concorrenti aumentando l'inibizione talamica — in termini anatomo-funzionali",
+        "facilita il movimento riducendo l'inibizione talamica — tenendo conto dei relè talamici",
+        "produce potenziali d'azione nelle fibre ottiche",
+        "mielinizza gli assoni nel SNC — nel quadro clinico tipico — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Quale descrizione è più corretta per Nucleo subtalamico?",
+      "a": [
+        "è il principale nucleo vestibolare — con implicazioni su strutture adiacenti — con implicazioni su strutture adiacenti",
+        "inibisce direttamente il talamo tramite GABA — con implicazioni su strutture adiacenti",
+        "produce dopamina per lo striato — considerando le vie coinvolte",
+        "eccita il globo pallido interno e contribuisce alla soppressione del movimento"
+      ],
+      "correct": 3,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Nel modello funzionale, Nucleo subtalamico:",
+      "a": [
+        "eccita il globo pallido interno e contribuisce alla soppressione del movimento — con segni associati compatibili",
+        "produce dopamina per lo striato — considerando le vie coinvolte",
+        "inibisce direttamente il talamo tramite GABA",
+        "è il principale nucleo vestibolare — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Una disfunzione di Nucleo subtalamico implica che:",
+      "a": [
+        "eccita il globo pallido interno e contribuisce alla soppressione del movimento",
+        "è il principale nucleo vestibolare — in un contesto neuroanatomico classico",
+        "produce dopamina per lo striato",
+        "inibisce direttamente il talamo tramite GABA — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Quale affermazione su Nucleo subtalamico è corretta?",
+      "a": [
+        "eccita il globo pallido interno e contribuisce alla soppressione del movimento",
+        "produce dopamina per lo striato — secondo una descrizione standard",
+        "è il principale nucleo vestibolare — nel quadro clinico tipico",
+        "inibisce direttamente il talamo tramite GABA — tenendo conto dei relè talamici — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "In termini di circuiti, Nucleo subtalamico è definito da:",
+      "a": [
+        "produce dopamina per lo striato — in un contesto neuroanatomico classico",
+        "è il principale nucleo vestibolare — tenendo conto dei relè talamici",
+        "eccita il globo pallido interno e contribuisce alla soppressione del movimento",
+        "inibisce direttamente il talamo tramite GABA"
+      ],
+      "correct": 2,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Quale descrizione è più corretta per Substantia nigra pars compacta?",
+      "a": [
+        "rilascia serotonina che blocca la via diretta — secondo una descrizione standard",
+        "rilascia dopamina che facilita la via diretta e inibisce la via indiretta",
+        "è un nucleo del tratto solitario — con segni associati compatibili — nel quadro clinico tipico",
+        "rilascia acetilcolina nelle corna anteriori — in un contesto neuroanatomico classico — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Nel modello funzionale, Substantia nigra pars compacta:",
+      "a": [
+        "è un nucleo del tratto solitario — secondo una descrizione standard — considerando le vie coinvolte",
+        "rilascia serotonina che blocca la via diretta",
+        "rilascia dopamina che facilita la via diretta e inibisce la via indiretta",
+        "rilascia acetilcolina nelle corna anteriori — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Una disfunzione di Substantia nigra pars compacta implica che:",
+      "a": [
+        "rilascia serotonina che blocca la via diretta — secondo una descrizione standard",
+        "rilascia acetilcolina nelle corna anteriori — con implicazioni su strutture adiacenti",
+        "è un nucleo del tratto solitario — considerando le vie coinvolte",
+        "rilascia dopamina che facilita la via diretta e inibisce la via indiretta"
+      ],
+      "correct": 3,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Quale affermazione su Substantia nigra pars compacta è corretta?",
+      "a": [
+        "rilascia dopamina che facilita la via diretta e inibisce la via indiretta",
+        "rilascia serotonina che blocca la via diretta — tenendo conto dei relè talamici — nel quadro clinico tipico",
+        "è un nucleo del tratto solitario — tenendo conto dei relè talamici — considerando le vie coinvolte",
+        "rilascia acetilcolina nelle corna anteriori — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "In termini di circuiti, Substantia nigra pars compacta è definito da:",
+      "a": [
+        "rilascia dopamina che facilita la via diretta e inibisce la via indiretta — in un contesto neuroanatomico classico",
+        "rilascia serotonina che blocca la via diretta — considerando le vie coinvolte",
+        "è un nucleo del tratto solitario — in termini anatomo-funzionali",
+        "rilascia acetilcolina nelle corna anteriori"
+      ],
+      "correct": 0,
+      "cat": "Gangli della base"
+    },
+    {
+      "q": "Quale funzione è più associata a Neocerebello, emisferi laterali?",
+      "a": [
+        "pianificazione e coordinazione fine dei movimenti volontari distali",
+        "regolazione del tono autonomico cardiovascolare",
+        "percezione cosciente del dolore — tenendo conto dei relè talamici",
+        "generazione del ritmo respiratorio — secondo una descrizione standard — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Una lesione selettiva di Neocerebello, emisferi laterali compromette soprattutto:",
+      "a": [
+        "pianificazione e coordinazione fine dei movimenti volontari distali",
+        "percezione cosciente del dolore",
+        "regolazione del tono autonomico cardiovascolare — tenendo conto dei relè talamici",
+        "generazione del ritmo respiratorio"
+      ],
+      "correct": 0,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "In neurofisiologia, Neocerebello, emisferi laterali contribuisce a:",
+      "a": [
+        "generazione del ritmo respiratorio",
+        "regolazione del tono autonomico cardiovascolare — considerando le vie coinvolte",
+        "percezione cosciente del dolore — tenendo conto dei relè talamici",
+        "pianificazione e coordinazione fine dei movimenti volontari distali — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale descrizione corrisponde a Neocerebello, emisferi laterali?",
+      "a": [
+        "regolazione del tono autonomico cardiovascolare — con implicazioni su strutture adiacenti",
+        "percezione cosciente del dolore — tenendo conto dei relè talamici",
+        "pianificazione e coordinazione fine dei movimenti volontari distali",
+        "generazione del ritmo respiratorio"
+      ],
+      "correct": 2,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale funzione è più associata a Spinocerebello, verme e zona intermedia?",
+      "a": [
+        "visione stereoscopica — con implicazioni su strutture adiacenti",
+        "produzione di ormoni ipofisari — in un contesto neuroanatomico classico — tenendo conto dei relè talamici",
+        "controllo posturale e aggiustamenti in tempo reale dei movimenti assiali e prossimali",
+        "memoria episodica e contestuale — tenendo conto dei relè talamici — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Una lesione selettiva di Spinocerebello, verme e zona intermedia compromette soprattutto:",
+      "a": [
+        "controllo posturale e aggiustamenti in tempo reale dei movimenti assiali e prossimali",
+        "memoria episodica e contestuale — con implicazioni su strutture adiacenti — con segni associati compatibili",
+        "produzione di ormoni ipofisari — con segni associati compatibili — considerando le vie coinvolte",
+        "visione stereoscopica — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "In neurofisiologia, Spinocerebello, verme e zona intermedia contribuisce a:",
+      "a": [
+        "visione stereoscopica — con implicazioni su strutture adiacenti — nel quadro clinico tipico",
+        "produzione di ormoni ipofisari — tenendo conto dei relè talamici",
+        "controllo posturale e aggiustamenti in tempo reale dei movimenti assiali e prossimali — secondo una descrizione standard",
+        "memoria episodica e contestuale — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale descrizione corrisponde a Spinocerebello, verme e zona intermedia?",
+      "a": [
+        "controllo posturale e aggiustamenti in tempo reale dei movimenti assiali e prossimali — considerando le vie coinvolte",
+        "visione stereoscopica — in termini anatomo-funzionali",
+        "memoria episodica e contestuale — tenendo conto dei relè talamici",
+        "produzione di ormoni ipofisari — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale funzione è più associata a Vestibolocerebello, lobo flocculo-nodulare?",
+      "a": [
+        "elaborazione uditiva primaria — tenendo conto dei relè talamici",
+        "equilibrio e riflessi vestibolo-oculari",
+        "sensibilità epicritica",
+        "inizio del movimento volontario"
+      ],
+      "correct": 1,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Una lesione selettiva di Vestibolocerebello, lobo flocculo-nodulare compromette soprattutto:",
+      "a": [
+        "equilibrio e riflessi vestibolo-oculari",
+        "inizio del movimento volontario",
+        "sensibilità epicritica",
+        "elaborazione uditiva primaria"
+      ],
+      "correct": 0,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "In neurofisiologia, Vestibolocerebello, lobo flocculo-nodulare contribuisce a:",
+      "a": [
+        "sensibilità epicritica",
+        "elaborazione uditiva primaria — considerando le vie coinvolte",
+        "equilibrio e riflessi vestibolo-oculari — in un contesto neuroanatomico classico",
+        "inizio del movimento volontario — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale descrizione corrisponde a Vestibolocerebello, lobo flocculo-nodulare?",
+      "a": [
+        "inizio del movimento volontario",
+        "sensibilità epicritica",
+        "equilibrio e riflessi vestibolo-oculari",
+        "elaborazione uditiva primaria — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Cervelletto"
+    },
+    {
+      "q": "Quale funzione è più corretta per Nucleo ventrale postero-laterale del talamo?",
+      "a": [
+        "relay somatosensoriale del corpo verso corteccia somatosensoriale",
+        "relay motorio primario verso cervelletto",
+        "generazione del ritmo respiratorio — con segni associati compatibili — nel quadro clinico tipico",
+        "integrazione uditiva primaria del tronco"
+      ],
+      "correct": 0,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Nel diencefalo, Nucleo ventrale postero-laterale del talamo agisce principalmente come:",
+      "a": [
+        "relay somatosensoriale del corpo verso corteccia somatosensoriale — in termini anatomo-funzionali",
+        "generazione del ritmo respiratorio — con implicazioni su strutture adiacenti",
+        "integrazione uditiva primaria del tronco",
+        "relay motorio primario verso cervelletto"
+      ],
+      "correct": 0,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Una lesione di Nucleo ventrale postero-laterale del talamo compromette soprattutto:",
+      "a": [
+        "generazione del ritmo respiratorio — in termini anatomo-funzionali — tenendo conto dei relè talamici",
+        "relay somatosensoriale del corpo verso corteccia somatosensoriale",
+        "integrazione uditiva primaria del tronco — in un contesto neuroanatomico classico",
+        "relay motorio primario verso cervelletto — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Quale funzione è più corretta per Nucleo ventrale postero-mediale del talamo?",
+      "a": [
+        "relay visivo verso corteccia occipitale — considerando le vie coinvolte",
+        "relay olfattivo obbligato — con implicazioni su strutture adiacenti",
+        "relay somatosensoriale della faccia e gusto verso corteccia",
+        "controllo diretto del tono simpatico periferico"
+      ],
+      "correct": 2,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Nel diencefalo, Nucleo ventrale postero-mediale del talamo agisce principalmente come:",
+      "a": [
+        "relay olfattivo obbligato — secondo una descrizione standard",
+        "controllo diretto del tono simpatico periferico",
+        "relay visivo verso corteccia occipitale — con segni associati compatibili",
+        "relay somatosensoriale della faccia e gusto verso corteccia"
+      ],
+      "correct": 3,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Una lesione di Nucleo ventrale postero-mediale del talamo compromette soprattutto:",
+      "a": [
+        "relay visivo verso corteccia occipitale",
+        "relay olfattivo obbligato",
+        "relay somatosensoriale della faccia e gusto verso corteccia",
+        "controllo diretto del tono simpatico periferico — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Quale funzione è più corretta per Corpo genicolato laterale?",
+      "a": [
+        "relay uditivo verso corteccia temporale",
+        "relay visivo verso corteccia calcarina attraverso radiazioni ottiche",
+        "nucleo di origine del nervo faciale — con segni associati compatibili",
+        "relay somatosensoriale del dolore — in un contesto neuroanatomico classico — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Nel diencefalo, Corpo genicolato laterale agisce principalmente come:",
+      "a": [
+        "nucleo di origine del nervo faciale",
+        "relay visivo verso corteccia calcarina attraverso radiazioni ottiche",
+        "relay uditivo verso corteccia temporale — in termini anatomo-funzionali",
+        "relay somatosensoriale del dolore — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Una lesione di Corpo genicolato laterale compromette soprattutto:",
+      "a": [
+        "relay uditivo verso corteccia temporale — con implicazioni su strutture adiacenti",
+        "nucleo di origine del nervo faciale — con segni associati compatibili",
+        "relay somatosensoriale del dolore",
+        "relay visivo verso corteccia calcarina attraverso radiazioni ottiche"
+      ],
+      "correct": 3,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Quale funzione è più corretta per Corpo genicolato mediale?",
+      "a": [
+        "relay propriocettivo verso cervelletto",
+        "nucleo che produce dopamina — tenendo conto dei relè talamici — considerando le vie coinvolte",
+        "relay uditivo verso corteccia temporale attraverso radiazioni acustiche",
+        "relay visivo verso lobo occipitale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Nel diencefalo, Corpo genicolato mediale agisce principalmente come:",
+      "a": [
+        "relay visivo verso lobo occipitale — con segni associati compatibili",
+        "relay uditivo verso corteccia temporale attraverso radiazioni acustiche",
+        "nucleo che produce dopamina — in termini anatomo-funzionali",
+        "relay propriocettivo verso cervelletto"
+      ],
+      "correct": 1,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Una lesione di Corpo genicolato mediale compromette soprattutto:",
+      "a": [
+        "relay propriocettivo verso cervelletto — con implicazioni su strutture adiacenti",
+        "relay uditivo verso corteccia temporale attraverso radiazioni acustiche — secondo una descrizione standard",
+        "nucleo che produce dopamina — con implicazioni su strutture adiacenti",
+        "relay visivo verso lobo occipitale — con implicazioni su strutture adiacenti — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Talamo"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 185",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard",
+        "Paralisi facciale periferica isolata senza altri segni — in termini anatomo-funzionali",
+        "Afasia di Broca come unico segno focale — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 186",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — considerando le vie coinvolte",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico",
+        "Deficit visivo omonimo con risparmio maculare — considerando le vie coinvolte",
+        "Afasia di Broca come unico segno focale — secondo una descrizione standard — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 187",
+      "a": [
+        "Afasia di Broca come unico segno focale",
+        "Deficit visivo omonimo con risparmio maculare",
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 188",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — con segni associati compatibili",
+        "Paralisi facciale periferica isolata senza altri segni — in termini anatomo-funzionali",
+        "Afasia di Broca come unico segno focale",
+        "Deficit visivo omonimo con risparmio maculare — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 189",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — in un contesto neuroanatomico classico — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — con implicazioni su strutture adiacenti",
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte",
+        "Paralisi facciale periferica isolata senza altri segni — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 190",
+      "a": [
+        "Afasia di Broca come unico segno focale — in termini anatomo-funzionali — con segni associati compatibili",
+        "Deficit visivo omonimo con risparmio maculare — tenendo conto dei relè talamici — con implicazioni su strutture adiacenti",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 191",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte",
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 192",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici — secondo una descrizione standard",
+        "Afasia di Broca come unico segno focale",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 193",
+      "a": [
+        "Afasia di Broca come unico segno focale — con segni associati compatibili",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — in termini anatomo-funzionali",
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 194",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — tenendo conto dei relè talamici",
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti",
+        "Deficit visivo omonimo con risparmio maculare — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 195",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — con implicazioni su strutture adiacenti",
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici — nel quadro clinico tipico",
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 196",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti — considerando le vie coinvolte",
+        "Paralisi facciale periferica isolata senza altri segni — nel quadro clinico tipico — considerando le vie coinvolte",
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 197",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — secondo una descrizione standard",
+        "Paralisi facciale periferica isolata senza altri segni",
+        "Afasia di Broca come unico segno focale",
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 198",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — in un contesto neuroanatomico classico",
+        "Paralisi facciale periferica isolata senza altri segni — in termini anatomo-funzionali",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 199",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico",
+        "Afasia di Broca come unico segno focale — tenendo conto dei relè talamici",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 200",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — in termini anatomo-funzionali",
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti",
+        "Deficit visivo omonimo con risparmio maculare",
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 201",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili",
+        "Deficit visivo omonimo con risparmio maculare — nel quadro clinico tipico",
+        "Afasia di Broca come unico segno focale — nel quadro clinico tipico — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 202",
+      "a": [
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte — nel quadro clinico tipico",
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili — con implicazioni su strutture adiacenti",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 203",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard",
+        "Deficit visivo omonimo con risparmio maculare — con implicazioni su strutture adiacenti",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 204",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici — con segni associati compatibili",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — in termini anatomo-funzionali",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 205",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili",
+        "Afasia di Broca come unico segno focale — con segni associati compatibili",
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 206",
+      "a": [
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico — con segni associati compatibili",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 207",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — secondo una descrizione standard",
+        "Afasia di Broca come unico segno focale — secondo una descrizione standard",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico",
+        "Deficit visivo omonimo con risparmio maculare — tenendo conto dei relè talamici — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 208",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — considerando le vie coinvolte",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico",
+        "Afasia di Broca come unico segno focale — con segni associati compatibili",
+        "Deficit visivo omonimo con risparmio maculare — considerando le vie coinvolte — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 209",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili — con implicazioni su strutture adiacenti",
+        "Afasia di Broca come unico segno focale — tenendo conto dei relè talamici — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 210",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili",
+        "Afasia di Broca come unico segno focale — in termini anatomo-funzionali",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — in termini anatomo-funzionali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 211",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — in termini anatomo-funzionali",
+        "Deficit visivo omonimo con risparmio maculare — con implicazioni su strutture adiacenti — con segni associati compatibili",
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte",
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 212",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte — in termini anatomo-funzionali",
+        "Deficit visivo omonimo con risparmio maculare — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 213",
+      "a": [
+        "Afasia di Broca come unico segno focale — nel quadro clinico tipico",
+        "Deficit visivo omonimo con risparmio maculare",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 214",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — in termini anatomo-funzionali",
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti",
+        "Paralisi facciale periferica isolata senza altri segni — con implicazioni su strutture adiacenti",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 215",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici",
+        "Afasia di Broca come unico segno focale — tenendo conto dei relè talamici — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 216",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — secondo una descrizione standard — tenendo conto dei relè talamici",
+        "Deficit visivo omonimo con risparmio maculare — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 217",
+      "a": [
+        "Afasia di Broca come unico segno focale — con segni associati compatibili",
+        "Deficit visivo omonimo con risparmio maculare — nel quadro clinico tipico",
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 218",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici",
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — tenendo conto dei relè talamici — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 219",
+      "a": [
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti",
+        "Deficit visivo omonimo con risparmio maculare",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 220",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — nel quadro clinico tipico — con implicazioni su strutture adiacenti",
+        "Afasia di Broca come unico segno focale — con segni associati compatibili — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 221",
+      "a": [
+        "Afasia di Broca come unico segno focale — nel quadro clinico tipico",
+        "Paralisi facciale periferica isolata senza altri segni — nel quadro clinico tipico",
+        "Deficit visivo omonimo con risparmio maculare",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 222",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — in termini anatomo-funzionali",
+        "Deficit visivo omonimo con risparmio maculare — in un contesto neuroanatomico classico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — secondo una descrizione standard",
+        "Afasia di Broca come unico segno focale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 223",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — in termini anatomo-funzionali",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili",
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 224",
+      "a": [
+        "Afasia di Broca come unico segno focale — in termini anatomo-funzionali — con segni associati compatibili",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 225",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard — tenendo conto dei relè talamici",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — con segni associati compatibili",
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico",
+        "Deficit visivo omonimo con risparmio maculare — in un contesto neuroanatomico classico — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 226",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico — considerando le vie coinvolte",
+        "Afasia di Broca come unico segno focale — in termini anatomo-funzionali — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 227",
+      "a": [
+        "Afasia di Broca come unico segno focale — secondo una descrizione standard — in un contesto neuroanatomico classico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — con segni associati compatibili",
+        "Paralisi facciale periferica isolata senza altri segni — nel quadro clinico tipico",
+        "Deficit visivo omonimo con risparmio maculare"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 228",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale",
+        "Deficit visivo omonimo con risparmio maculare — tenendo conto dei relè talamici",
+        "Paralisi facciale periferica isolata senza altri segni — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 229",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare",
+        "Afasia di Broca come unico segno focale — nel quadro clinico tipico — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — considerando le vie coinvolte",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 230",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili — in termini anatomo-funzionali",
+        "Deficit visivo omonimo con risparmio maculare — tenendo conto dei relè talamici",
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 231",
+      "a": [
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti",
+        "Paralisi facciale periferica isolata senza altri segni — in un contesto neuroanatomico classico",
+        "Deficit visivo omonimo con risparmio maculare — considerando le vie coinvolte — in termini anatomo-funzionali",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 232",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte — in termini anatomo-funzionali",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico",
+        "Deficit visivo omonimo con risparmio maculare — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 233",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — nel quadro clinico tipico",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte — in un contesto neuroanatomico classico",
+        "Deficit visivo omonimo con risparmio maculare — in termini anatomo-funzionali — con implicazioni su strutture adiacenti",
+        "Afasia di Broca come unico segno focale — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 234",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — secondo una descrizione standard — tenendo conto dei relè talamici",
+        "Deficit visivo omonimo con risparmio maculare — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 235",
+      "a": [
+        "Afasia di Broca come unico segno focale — secondo una descrizione standard",
+        "Deficit visivo omonimo con risparmio maculare — con implicazioni su strutture adiacenti",
+        "Paralisi facciale periferica isolata senza altri segni — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 236",
+      "a": [
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico — in un contesto neuroanatomico classico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — in termini anatomo-funzionali",
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici — secondo una descrizione standard",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 237",
+      "a": [
+        "Afasia di Broca come unico segno focale",
+        "Paralisi facciale periferica isolata senza altri segni — con implicazioni su strutture adiacenti",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 238",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — in un contesto neuroanatomico classico",
+        "Paralisi facciale periferica isolata senza altri segni",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 239",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — nel quadro clinico tipico — in termini anatomo-funzionali",
+        "Afasia di Broca come unico segno focale — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 240",
+      "a": [
+        "Afasia di Broca come unico segno focale",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili",
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 241",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici — nel quadro clinico tipico",
+        "Deficit visivo omonimo con risparmio maculare — in un contesto neuroanatomico classico — tenendo conto dei relè talamici",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 242",
+      "a": [
+        "Afasia di Broca come unico segno focale — tenendo conto dei relè talamici — in un contesto neuroanatomico classico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard — nel quadro clinico tipico",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 243",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — nel quadro clinico tipico",
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico — considerando le vie coinvolte",
+        "Deficit visivo omonimo con risparmio maculare — con implicazioni su strutture adiacenti — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 244",
+      "a": [
+        "Afasia di Broca come unico segno focale — secondo una descrizione standard",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — con implicazioni su strutture adiacenti — secondo una descrizione standard",
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 245",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — in termini anatomo-funzionali — con implicazioni su strutture adiacenti",
+        "Paralisi facciale periferica isolata senza altri segni",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 246",
+      "a": [
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico — in un contesto neuroanatomico classico",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte",
+        "Deficit visivo omonimo con risparmio maculare — nel quadro clinico tipico — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 247",
+      "a": [
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte — considerando le vie coinvolte",
+        "Deficit visivo omonimo con risparmio maculare — considerando le vie coinvolte — in termini anatomo-funzionali",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 248",
+      "a": [
+        "Afasia di Broca come unico segno focale — tenendo conto dei relè talamici",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard",
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 249",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — in un contesto neuroanatomico classico",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte — con implicazioni su strutture adiacenti",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili",
+        "Afasia di Broca come unico segno focale — tenendo conto dei relè talamici — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 250",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte",
+        "Afasia di Broca come unico segno focale — considerando le vie coinvolte — tenendo conto dei relè talamici",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 251",
+      "a": [
+        "Afasia di Broca come unico segno focale — con implicazioni su strutture adiacenti",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili",
+        "Paralisi facciale periferica isolata senza altri segni — con implicazioni su strutture adiacenti — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 252",
+      "a": [
+        "Afasia di Broca come unico segno focale",
+        "Deficit visivo omonimo con risparmio maculare — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 253",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Afasia di Broca come unico segno focale — nel quadro clinico tipico",
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili",
+        "Deficit visivo omonimo con risparmio maculare — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 254",
+      "a": [
+        "Afasia di Broca come unico segno focale — in un contesto neuroanatomico classico",
+        "Deficit visivo omonimo con risparmio maculare — secondo una descrizione standard",
+        "Paralisi facciale periferica isolata senza altri segni — con implicazioni su strutture adiacenti — secondo una descrizione standard",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello L2: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 255",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili — nel quadro clinico tipico",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — con implicazioni su strutture adiacenti",
+        "Afasia di Broca come unico segno focale — tenendo conto dei relè talamici",
+        "Paralisi facciale periferica isolata senza altri segni — nel quadro clinico tipico — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 256",
+      "a": [
+        "Paralisi facciale periferica isolata senza altri segni — secondo una descrizione standard — in un contesto neuroanatomico classico",
+        "Deficit visivo omonimo con risparmio maculare — tenendo conto dei relè talamici — secondo una descrizione standard",
+        "Afasia di Broca come unico segno focale — secondo una descrizione standard — con segni associati compatibili",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli"
+      ],
+      "correct": 3,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione centrale. Quale pattern sensitivo-motorio è più compatibile? Caso 257",
+      "a": [
+        "Deficit visivo omonimo con risparmio maculare — in termini anatomo-funzionali — considerando le vie coinvolte",
+        "Afasia di Broca come unico segno focale — in termini anatomo-funzionali — con implicazioni su strutture adiacenti",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Paralisi facciale periferica isolata senza altri segni — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello C5: lesione del funicolo posteriore. Quale pattern sensitivo-motorio è più compatibile? Caso 258",
+      "a": [
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili",
+        "Afasia di Broca come unico segno focale",
+        "Paralisi facciale periferica isolata senza altri segni — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 259",
+      "a": [
+        "Afasia di Broca come unico segno focale",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — nel quadro clinico tipico",
+        "Deficit visivo omonimo con risparmio maculare — con segni associati compatibili — in un contesto neuroanatomico classico",
+        "Paralisi facciale periferica isolata senza altri segni — tenendo conto dei relè talamici — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    },
+    {
+      "q": "Midollo spinale a livello T8: emisezionamento. Quale pattern sensitivo-motorio è più compatibile? Caso 260",
+      "a": [
+        "Afasia di Broca come unico segno focale — tenendo conto dei relè talamici — secondo una descrizione standard",
+        "Compromissione della funzione prevista dalle vie attraversate a quel livello, rispettando decussazioni e funicoli — in termini anatomo-funzionali",
+        "Deficit visivo omonimo con risparmio maculare — considerando le vie coinvolte — con implicazioni su strutture adiacenti",
+        "Paralisi facciale periferica isolata senza altri segni — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Localizzazione"
+    }
+  ],
+  "C04": [
+    {
+      "q": "Per il neurotrasmettitore Acetilcolina, quale affermazione su sintesi o funzione è corretta?",
+      "a": [
+        "sintetizzata da tirosina idrossilasi a partire da tirosina",
+        "sintetizzata da triptofano idrossilasi a partire da triptofano",
+        "degradata principalmente da MAO nel vallo sinaptico",
+        "sintetizzata da colina acetiltransferasi a partire da colina e acetil-CoA"
+      ],
+      "correct": 3,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Quale descrizione è più accurata per Acetilcolina?",
+      "a": [
+        "sintetizzata da tirosina idrossilasi a partire da tirosina",
+        "sintetizzata da triptofano idrossilasi a partire da triptofano",
+        "sintetizzata da colina acetiltransferasi a partire da colina e acetil-CoA — in un contesto neuroanatomico classico",
+        "degradata principalmente da MAO nel vallo sinaptico — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Nel metabolismo dei neurotrasmettitori, Acetilcolina:",
+      "a": [
+        "sintetizzata da colina acetiltransferasi a partire da colina e acetil-CoA",
+        "sintetizzata da triptofano idrossilasi a partire da triptofano",
+        "sintetizzata da tirosina idrossilasi a partire da tirosina",
+        "degradata principalmente da MAO nel vallo sinaptico — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Se un deficit enzimatico colpisce la sintesi di Acetilcolina, quale opzione descrive correttamente il pathway?",
+      "a": [
+        "sintetizzata da triptofano idrossilasi a partire da triptofano — tenendo conto dei relè talamici",
+        "sintetizzata da colina acetiltransferasi a partire da colina e acetil-CoA",
+        "degradata principalmente da MAO nel vallo sinaptico — in termini anatomo-funzionali",
+        "sintetizzata da tirosina idrossilasi a partire da tirosina"
+      ],
+      "correct": 1,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Per il neurotrasmettitore Dopamina, quale affermazione su sintesi o funzione è corretta?",
+      "a": [
+        "deriva da glicina tramite decarbossilazione — con segni associati compatibili",
+        "deriva da tirosina tramite L-DOPA, passo limitante tirosina idrossilasi",
+        "deriva da glutammato tramite GAD — tenendo conto dei relè talamici",
+        "deriva da colina tramite acetiltransferasi — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Quale descrizione è più accurata per Dopamina?",
+      "a": [
+        "deriva da glutammato tramite GAD — con segni associati compatibili",
+        "deriva da glicina tramite decarbossilazione — secondo una descrizione standard — tenendo conto dei relè talamici",
+        "deriva da tirosina tramite L-DOPA, passo limitante tirosina idrossilasi",
+        "deriva da colina tramite acetiltransferasi — considerando le vie coinvolte — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Nel metabolismo dei neurotrasmettitori, Dopamina:",
+      "a": [
+        "deriva da colina tramite acetiltransferasi — secondo una descrizione standard",
+        "deriva da glutammato tramite GAD — secondo una descrizione standard",
+        "deriva da tirosina tramite L-DOPA, passo limitante tirosina idrossilasi — con implicazioni su strutture adiacenti",
+        "deriva da glicina tramite decarbossilazione — secondo una descrizione standard — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Se un deficit enzimatico colpisce la sintesi di Dopamina, quale opzione descrive correttamente il pathway?",
+      "a": [
+        "deriva da glutammato tramite GAD — in termini anatomo-funzionali",
+        "deriva da tirosina tramite L-DOPA, passo limitante tirosina idrossilasi — considerando le vie coinvolte",
+        "deriva da colina tramite acetiltransferasi",
+        "deriva da glicina tramite decarbossilazione — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Per il neurotrasmettitore Noradrenalina, quale affermazione su sintesi o funzione è corretta?",
+      "a": [
+        "deriva da dopamina tramite dopamina beta-idrossilasi nelle vescicole",
+        "deriva da GABA tramite transaminasi",
+        "deriva da acetilcolina tramite acetilcolinesterasi — in termini anatomo-funzionali",
+        "deriva da serotonina tramite MAO — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Quale descrizione è più accurata per Noradrenalina?",
+      "a": [
+        "deriva da acetilcolina tramite acetilcolinesterasi — con implicazioni su strutture adiacenti",
+        "deriva da serotonina tramite MAO — con implicazioni su strutture adiacenti",
+        "deriva da GABA tramite transaminasi — nel quadro clinico tipico",
+        "deriva da dopamina tramite dopamina beta-idrossilasi nelle vescicole"
+      ],
+      "correct": 3,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Nel metabolismo dei neurotrasmettitori, Noradrenalina:",
+      "a": [
+        "deriva da acetilcolina tramite acetilcolinesterasi",
+        "deriva da dopamina tramite dopamina beta-idrossilasi nelle vescicole",
+        "deriva da GABA tramite transaminasi — in termini anatomo-funzionali",
+        "deriva da serotonina tramite MAO — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Se un deficit enzimatico colpisce la sintesi di Noradrenalina, quale opzione descrive correttamente il pathway?",
+      "a": [
+        "deriva da GABA tramite transaminasi — in termini anatomo-funzionali",
+        "deriva da serotonina tramite MAO — in termini anatomo-funzionali",
+        "deriva da acetilcolina tramite acetilcolinesterasi",
+        "deriva da dopamina tramite dopamina beta-idrossilasi nelle vescicole"
+      ],
+      "correct": 3,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Per il neurotrasmettitore Serotonina, quale affermazione su sintesi o funzione è corretta?",
+      "a": [
+        "deriva da glutammato tramite GAD — con segni associati compatibili",
+        "deriva da tirosina, passo limitante tirosina idrossilasi — in un contesto neuroanatomico classico",
+        "deriva da triptofano, passo limitante triptofano idrossilasi",
+        "deriva da colina, passo limitante colina acetiltransferasi — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Quale descrizione è più accurata per Serotonina?",
+      "a": [
+        "deriva da tirosina, passo limitante tirosina idrossilasi",
+        "deriva da glutammato tramite GAD — considerando le vie coinvolte",
+        "deriva da colina, passo limitante colina acetiltransferasi — con segni associati compatibili",
+        "deriva da triptofano, passo limitante triptofano idrossilasi — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Nel metabolismo dei neurotrasmettitori, Serotonina:",
+      "a": [
+        "deriva da triptofano, passo limitante triptofano idrossilasi",
+        "deriva da colina, passo limitante colina acetiltransferasi — tenendo conto dei relè talamici",
+        "deriva da glutammato tramite GAD — nel quadro clinico tipico — considerando le vie coinvolte",
+        "deriva da tirosina, passo limitante tirosina idrossilasi"
+      ],
+      "correct": 0,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Se un deficit enzimatico colpisce la sintesi di Serotonina, quale opzione descrive correttamente il pathway?",
+      "a": [
+        "deriva da glutammato tramite GAD",
+        "deriva da colina, passo limitante colina acetiltransferasi",
+        "deriva da tirosina, passo limitante tirosina idrossilasi",
+        "deriva da triptofano, passo limitante triptofano idrossilasi — con segni associati compatibili"
+      ],
+      "correct": 3,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Per il neurotrasmettitore GABA, quale affermazione su sintesi o funzione è corretta?",
+      "a": [
+        "prodotto dal triptofano tramite dopamina beta-idrossilasi",
+        "prodotto dal glutammato tramite glutammato decarbossilasi ed è inibitorio — tenendo conto dei relè talamici",
+        "prodotto dal piruvato tramite tirosina idrossilasi",
+        "prodotto dalla glicina tramite colina acetiltransferasi — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Quale descrizione è più accurata per GABA?",
+      "a": [
+        "prodotto dal glutammato tramite glutammato decarbossilasi ed è inibitorio",
+        "prodotto dalla glicina tramite colina acetiltransferasi",
+        "prodotto dal piruvato tramite tirosina idrossilasi — secondo una descrizione standard",
+        "prodotto dal triptofano tramite dopamina beta-idrossilasi"
+      ],
+      "correct": 0,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Nel metabolismo dei neurotrasmettitori, GABA:",
+      "a": [
+        "prodotto dalla glicina tramite colina acetiltransferasi — nel quadro clinico tipico",
+        "prodotto dal glutammato tramite glutammato decarbossilasi ed è inibitorio — in un contesto neuroanatomico classico",
+        "prodotto dal triptofano tramite dopamina beta-idrossilasi — in termini anatomo-funzionali",
+        "prodotto dal piruvato tramite tirosina idrossilasi"
+      ],
+      "correct": 1,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Se un deficit enzimatico colpisce la sintesi di GABA, quale opzione descrive correttamente il pathway?",
+      "a": [
+        "prodotto dalla glicina tramite colina acetiltransferasi",
+        "prodotto dal glutammato tramite glutammato decarbossilasi ed è inibitorio",
+        "prodotto dal triptofano tramite dopamina beta-idrossilasi — in un contesto neuroanatomico classico",
+        "prodotto dal piruvato tramite tirosina idrossilasi — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Neurochimica"
+    },
+    {
+      "q": "Quale caratteristica è corretta per Recettore nicotinico per acetilcolina?",
+      "a": [
+        "recettore NMDA glutammatergico",
+        "metabotropico, recettore accoppiato a G",
+        "canale del cloro GABAergico",
+        "ionotropico, canale cationico a risposta rapida"
+      ],
+      "correct": 3,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Nel confronto tra recettori, Recettore nicotinico per acetilcolina è:",
+      "a": [
+        "ionotropico, canale cationico a risposta rapida — tenendo conto dei relè talamici",
+        "metabotropico, recettore accoppiato a G",
+        "recettore NMDA glutammatergico",
+        "canale del cloro GABAergico — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Scegli la descrizione corretta di Recettore nicotinico per acetilcolina:",
+      "a": [
+        "recettore NMDA glutammatergico — tenendo conto dei relè talamici",
+        "ionotropico, canale cationico a risposta rapida — con implicazioni su strutture adiacenti",
+        "metabotropico, recettore accoppiato a G",
+        "canale del cloro GABAergico"
+      ],
+      "correct": 1,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale opzione descrive in modo più preciso Recettore nicotinico per acetilcolina?",
+      "a": [
+        "recettore NMDA glutammatergico — con implicazioni su strutture adiacenti",
+        "ionotropico, canale cationico a risposta rapida",
+        "metabotropico, recettore accoppiato a G",
+        "canale del cloro GABAergico — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale caratteristica è corretta per Recettore muscarinico per acetilcolina?",
+      "a": [
+        "canale del cloro a risposta rapida — in un contesto neuroanatomico classico",
+        "recettore del glutammato AMPA",
+        "metabotropico, recettore accoppiato a proteine G — in un contesto neuroanatomico classico",
+        "ionotropico, canale cationico — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Nel confronto tra recettori, Recettore muscarinico per acetilcolina è:",
+      "a": [
+        "canale del cloro a risposta rapida — in termini anatomo-funzionali",
+        "ionotropico, canale cationico — considerando le vie coinvolte",
+        "recettore del glutammato AMPA — secondo una descrizione standard",
+        "metabotropico, recettore accoppiato a proteine G"
+      ],
+      "correct": 3,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Scegli la descrizione corretta di Recettore muscarinico per acetilcolina:",
+      "a": [
+        "canale del cloro a risposta rapida — in termini anatomo-funzionali",
+        "metabotropico, recettore accoppiato a proteine G — nel quadro clinico tipico",
+        "ionotropico, canale cationico — nel quadro clinico tipico",
+        "recettore del glutammato AMPA — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale opzione descrive in modo più preciso Recettore muscarinico per acetilcolina?",
+      "a": [
+        "metabotropico, recettore accoppiato a proteine G — secondo una descrizione standard",
+        "canale del cloro a risposta rapida — con segni associati compatibili",
+        "ionotropico, canale cationico — in un contesto neuroanatomico classico",
+        "recettore del glutammato AMPA — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale caratteristica è corretta per Recettore GABA-A?",
+      "a": [
+        "metabotropico, recettore accoppiato a G e K+",
+        "canale del sodio voltaggio-dipendente",
+        "recettore dopaminergico D2 ionotropico — con segni associati compatibili",
+        "ionotropico, canale del cloro che iperpolarizza"
+      ],
+      "correct": 3,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Nel confronto tra recettori, Recettore GABA-A è:",
+      "a": [
+        "recettore dopaminergico D2 ionotropico",
+        "ionotropico, canale del cloro che iperpolarizza",
+        "canale del sodio voltaggio-dipendente",
+        "metabotropico, recettore accoppiato a G e K+"
+      ],
+      "correct": 1,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Scegli la descrizione corretta di Recettore GABA-A:",
+      "a": [
+        "canale del sodio voltaggio-dipendente",
+        "ionotropico, canale del cloro che iperpolarizza — considerando le vie coinvolte",
+        "recettore dopaminergico D2 ionotropico — considerando le vie coinvolte",
+        "metabotropico, recettore accoppiato a G e K+"
+      ],
+      "correct": 1,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale opzione descrive in modo più preciso Recettore GABA-A?",
+      "a": [
+        "ionotropico, canale del cloro che iperpolarizza",
+        "recettore dopaminergico D2 ionotropico — considerando le vie coinvolte",
+        "canale del sodio voltaggio-dipendente — in un contesto neuroanatomico classico",
+        "metabotropico, recettore accoppiato a G e K+ — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale caratteristica è corretta per Recettore GABA-B?",
+      "a": [
+        "ionotropico, recettore AMPA — in un contesto neuroanatomico classico",
+        "ionotropico, canale del cloro — con segni associati compatibili",
+        "metabotropico, accoppiato a G, aumenta conduttanza al K+",
+        "recettore nicotinico"
+      ],
+      "correct": 2,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Nel confronto tra recettori, Recettore GABA-B è:",
+      "a": [
+        "recettore nicotinico — tenendo conto dei relè talamici",
+        "metabotropico, accoppiato a G, aumenta conduttanza al K+",
+        "ionotropico, recettore AMPA — nel quadro clinico tipico — nel quadro clinico tipico",
+        "ionotropico, canale del cloro — tenendo conto dei relè talamici — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Scegli la descrizione corretta di Recettore GABA-B:",
+      "a": [
+        "ionotropico, recettore AMPA — con segni associati compatibili",
+        "recettore nicotinico — con segni associati compatibili — considerando le vie coinvolte",
+        "ionotropico, canale del cloro — con implicazioni su strutture adiacenti",
+        "metabotropico, accoppiato a G, aumenta conduttanza al K+"
+      ],
+      "correct": 3,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale opzione descrive in modo più preciso Recettore GABA-B?",
+      "a": [
+        "ionotropico, canale del cloro — in termini anatomo-funzionali",
+        "ionotropico, recettore AMPA — con implicazioni su strutture adiacenti",
+        "metabotropico, accoppiato a G, aumenta conduttanza al K+ — secondo una descrizione standard",
+        "recettore nicotinico — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale caratteristica è corretta per Recettore NMDA?",
+      "a": [
+        "recettore GABA-A — tenendo conto dei relè talamici — in un contesto neuroanatomico classico",
+        "recettore nicotinico per ACh — nel quadro clinico tipico",
+        "metabotropico per glutammato, sempre inibitorio — considerando le vie coinvolte",
+        "ionotropico per glutammato, permeabile a Ca2+ e modulato da Mg2+"
+      ],
+      "correct": 3,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Nel confronto tra recettori, Recettore NMDA è:",
+      "a": [
+        "recettore nicotinico per ACh — con segni associati compatibili",
+        "recettore GABA-A — considerando le vie coinvolte",
+        "ionotropico per glutammato, permeabile a Ca2+ e modulato da Mg2+",
+        "metabotropico per glutammato, sempre inibitorio — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Scegli la descrizione corretta di Recettore NMDA:",
+      "a": [
+        "recettore nicotinico per ACh — con implicazioni su strutture adiacenti",
+        "metabotropico per glutammato, sempre inibitorio — in termini anatomo-funzionali",
+        "recettore GABA-A — in un contesto neuroanatomico classico",
+        "ionotropico per glutammato, permeabile a Ca2+ e modulato da Mg2+"
+      ],
+      "correct": 3,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale opzione descrive in modo più preciso Recettore NMDA?",
+      "a": [
+        "recettore nicotinico per ACh — con implicazioni su strutture adiacenti",
+        "recettore GABA-A",
+        "metabotropico per glutammato, sempre inibitorio",
+        "ionotropico per glutammato, permeabile a Ca2+ e modulato da Mg2+"
+      ],
+      "correct": 3,
+      "cat": "Recettori"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo: Rilascio vescicolare?",
+      "a": [
+        "richiede solo pompaggio Na+/K+ post-sinaptico",
+        "avviene esclusivamente tramite gap junction — nel quadro clinico tipico",
+        "avviene senza Ca2+ e senza SNARE — considerando le vie coinvolte — nel quadro clinico tipico",
+        "dipende dall'ingresso di Ca2+ presinaptico e dall'esocitosi"
+      ],
+      "correct": 3,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Nel contesto della sinapsi chimica, Rilascio vescicolare:",
+      "a": [
+        "avviene senza Ca2+ e senza SNARE — con implicazioni su strutture adiacenti — nel quadro clinico tipico",
+        "avviene esclusivamente tramite gap junction — con segni associati compatibili",
+        "richiede solo pompaggio Na+/K+ post-sinaptico — secondo una descrizione standard",
+        "dipende dall'ingresso di Ca2+ presinaptico e dall'esocitosi"
+      ],
+      "correct": 3,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Quale descrizione corrisponde a Rilascio vescicolare?",
+      "a": [
+        "richiede solo pompaggio Na+/K+ post-sinaptico — in un contesto neuroanatomico classico",
+        "dipende dall'ingresso di Ca2+ presinaptico e dall'esocitosi",
+        "avviene senza Ca2+ e senza SNARE — considerando le vie coinvolte — considerando le vie coinvolte",
+        "avviene esclusivamente tramite gap junction — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo: Ricaptazione?",
+      "a": [
+        "è equivalente al riassorbimento del liquor",
+        "è un meccanismo chiave per terminare il segnale di monoamine e GABA",
+        "avviene solo nei recettori ionotropici — in termini anatomo-funzionali — secondo una descrizione standard",
+        "è tipica solo dei peptidi che non hanno enzimi degradativi"
+      ],
+      "correct": 1,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Nel contesto della sinapsi chimica, Ricaptazione:",
+      "a": [
+        "avviene solo nei recettori ionotropici",
+        "è un meccanismo chiave per terminare il segnale di monoamine e GABA",
+        "è equivalente al riassorbimento del liquor — con implicazioni su strutture adiacenti",
+        "è tipica solo dei peptidi che non hanno enzimi degradativi — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Quale descrizione corrisponde a Ricaptazione?",
+      "a": [
+        "avviene solo nei recettori ionotropici",
+        "è tipica solo dei peptidi che non hanno enzimi degradativi — nel quadro clinico tipico",
+        "è un meccanismo chiave per terminare il segnale di monoamine e GABA — in termini anatomo-funzionali",
+        "è equivalente al riassorbimento del liquor"
+      ],
+      "correct": 2,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo: Degradazione enzimatica dell'ACh?",
+      "a": [
+        "avviene soprattutto tramite MAO mitocondriale extracellulare",
+        "avviene soprattutto tramite acetilcolinesterasi nello spazio sinaptico — nel quadro clinico tipico",
+        "avviene nel nucleo del neurone postsinaptico — con implicazioni su strutture adiacenti — con implicazioni su strutture adiacenti",
+        "avviene solo nei plessi corioidei — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Nel contesto della sinapsi chimica, Degradazione enzimatica dell'ACh:",
+      "a": [
+        "avviene soprattutto tramite MAO mitocondriale extracellulare",
+        "avviene nel nucleo del neurone postsinaptico — in un contesto neuroanatomico classico",
+        "avviene soprattutto tramite acetilcolinesterasi nello spazio sinaptico — con implicazioni su strutture adiacenti",
+        "avviene solo nei plessi corioidei — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Quale descrizione corrisponde a Degradazione enzimatica dell'ACh?",
+      "a": [
+        "avviene soprattutto tramite acetilcolinesterasi nello spazio sinaptico",
+        "avviene soprattutto tramite MAO mitocondriale extracellulare",
+        "avviene nel nucleo del neurone postsinaptico — in termini anatomo-funzionali",
+        "avviene solo nei plessi corioidei — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Trasmissione sinaptica"
+    },
+    {
+      "q": "Quale descrizione è corretta per Potenziazione a lungo termine, LTP?",
+      "a": [
+        "dipende esclusivamente da sinapsi elettriche",
+        "associata a chiusura permanente dei canali del sodio",
+        "associata a ingresso di Ca2+ via NMDA e aumento di recettori AMPA — nel quadro clinico tipico",
+        "è un processo limitato ai nervi periferici — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Nel contesto di plasticità e segnalazione, Potenziazione a lungo termine, LTP:",
+      "a": [
+        "è un processo limitato ai nervi periferici — con implicazioni su strutture adiacenti",
+        "dipende esclusivamente da sinapsi elettriche — tenendo conto dei relè talamici",
+        "associata a chiusura permanente dei canali del sodio",
+        "associata a ingresso di Ca2+ via NMDA e aumento di recettori AMPA"
+      ],
+      "correct": 3,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Quale affermazione su Potenziazione a lungo termine, LTP è vera?",
+      "a": [
+        "associata a chiusura permanente dei canali del sodio",
+        "dipende esclusivamente da sinapsi elettriche — con segni associati compatibili",
+        "è un processo limitato ai nervi periferici — con implicazioni su strutture adiacenti",
+        "associata a ingresso di Ca2+ via NMDA e aumento di recettori AMPA"
+      ],
+      "correct": 3,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Quale descrizione è corretta per Depressione a lungo termine, LTD?",
+      "a": [
+        "è causata da riassorbimento del liquor — con implicazioni su strutture adiacenti",
+        "riduce efficacia sinaptica tramite segnali Ca2+ e modulazione recettoriale — con implicazioni su strutture adiacenti",
+        "aumenta sempre la trasmissione eccitatoria — in un contesto neuroanatomico classico",
+        "è identica alla mielinizzazione — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Nel contesto di plasticità e segnalazione, Depressione a lungo termine, LTD:",
+      "a": [
+        "è identica alla mielinizzazione — con segni associati compatibili",
+        "aumenta sempre la trasmissione eccitatoria — con implicazioni su strutture adiacenti",
+        "riduce efficacia sinaptica tramite segnali Ca2+ e modulazione recettoriale — in termini anatomo-funzionali",
+        "è causata da riassorbimento del liquor — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Quale affermazione su Depressione a lungo termine, LTD è vera?",
+      "a": [
+        "è identica alla mielinizzazione — considerando le vie coinvolte — in termini anatomo-funzionali",
+        "aumenta sempre la trasmissione eccitatoria — con implicazioni su strutture adiacenti",
+        "è causata da riassorbimento del liquor — nel quadro clinico tipico",
+        "riduce efficacia sinaptica tramite segnali Ca2+ e modulazione recettoriale"
+      ],
+      "correct": 3,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Quale descrizione è corretta per Secondo messaggero cAMP?",
+      "a": [
+        "neurotrasmettitore eccitatorio primario — nel quadro clinico tipico",
+        "canale ionotropico del cloro — considerando le vie coinvolte — in un contesto neuroanatomico classico",
+        "un componente della mielina — con implicazioni su strutture adiacenti — in termini anatomo-funzionali",
+        "mediatore tipico di molti recettori accoppiati a G e PKA"
+      ],
+      "correct": 3,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Nel contesto di plasticità e segnalazione, Secondo messaggero cAMP:",
+      "a": [
+        "neurotrasmettitore eccitatorio primario",
+        "un componente della mielina",
+        "mediatore tipico di molti recettori accoppiati a G e PKA",
+        "canale ionotropico del cloro — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Quale affermazione su Secondo messaggero cAMP è vera?",
+      "a": [
+        "neurotrasmettitore eccitatorio primario — con segni associati compatibili",
+        "canale ionotropico del cloro — nel quadro clinico tipico",
+        "mediatore tipico di molti recettori accoppiati a G e PKA — considerando le vie coinvolte",
+        "un componente della mielina — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Plasticità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 59",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — con segni associati compatibili",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 60",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — nel quadro clinico tipico",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 61",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — con implicazioni su strutture adiacenti",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 62",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — in termini anatomo-funzionali",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con segni associati compatibili",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 63",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — secondo una descrizione standard",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — secondo una descrizione standard",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 64",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 65",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — tenendo conto dei relè talamici",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — con segni associati compatibili",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 66",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — in un contesto neuroanatomico classico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — tenendo conto dei relè talamici",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 67",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — nel quadro clinico tipico",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 68",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — secondo una descrizione standard",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 69",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — nel quadro clinico tipico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — con segni associati compatibili",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 70",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — tenendo conto dei relè talamici",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 71",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 72",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — secondo una descrizione standard",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 73",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 74",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — in un contesto neuroanatomico classico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 75",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — nel quadro clinico tipico",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — tenendo conto dei relè talamici",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 76",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con segni associati compatibili",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — con segni associati compatibili",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 77",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — considerando le vie coinvolte",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — in un contesto neuroanatomico classico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 78",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — considerando le vie coinvolte",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 79",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 80",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 81",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — considerando le vie coinvolte",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 82",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 83",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — tenendo conto dei relè talamici",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 84",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — secondo una descrizione standard",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — con segni associati compatibili",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 85",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — secondo una descrizione standard",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — considerando le vie coinvolte",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 86",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 87",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con segni associati compatibili",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — nel quadro clinico tipico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 88",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — in un contesto neuroanatomico classico",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 89",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 90",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — con segni associati compatibili",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 91",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — considerando le vie coinvolte",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con segni associati compatibili",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 92",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — in termini anatomo-funzionali",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 93",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — considerando le vie coinvolte",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — tenendo conto dei relè talamici",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 94",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — in termini anatomo-funzionali",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 95",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 96",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 97",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — in un contesto neuroanatomico classico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 98",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — con segni associati compatibili",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in termini anatomo-funzionali",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 99",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — in un contesto neuroanatomico classico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — nel quadro clinico tipico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 100",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 101",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 102",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — nel quadro clinico tipico",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 103",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in un contesto neuroanatomico classico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con segni associati compatibili",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 104",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — considerando le vie coinvolte",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 105",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con implicazioni su strutture adiacenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — con segni associati compatibili",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — in un contesto neuroanatomico classico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 106",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in un contesto neuroanatomico classico",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 107",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — considerando le vie coinvolte",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 108",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in un contesto neuroanatomico classico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 109",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — con segni associati compatibili",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — nel quadro clinico tipico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 110",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — con implicazioni su strutture adiacenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 111",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — secondo una descrizione standard",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 112",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — con segni associati compatibili",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — con segni associati compatibili",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 113",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — considerando le vie coinvolte",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 114",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — in un contesto neuroanatomico classico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 115",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — considerando le vie coinvolte",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — con segni associati compatibili",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 116",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — nel quadro clinico tipico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 117",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — tenendo conto dei relè talamici",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 118",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — tenendo conto dei relè talamici",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — considerando le vie coinvolte",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 119",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — in termini anatomo-funzionali",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 120",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — nel quadro clinico tipico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — secondo una descrizione standard",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 121",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — secondo una descrizione standard",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — nel quadro clinico tipico",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 122",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in un contesto neuroanatomico classico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 123",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in termini anatomo-funzionali",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 124",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 125",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — tenendo conto dei relè talamici",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — in termini anatomo-funzionali",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 126",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — in un contesto neuroanatomico classico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — considerando le vie coinvolte",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 127",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 128",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — nel quadro clinico tipico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 129",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — tenendo conto dei relè talamici",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 130",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — nel quadro clinico tipico",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 131",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — in un contesto neuroanatomico classico",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — con segni associati compatibili",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 132",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — tenendo conto dei relè talamici",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 133",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 134",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 135",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — secondo una descrizione standard",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 1,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 136",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — con implicazioni su strutture adiacenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 137",
+      "a": [
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio — considerando le vie coinvolte",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio"
+      ],
+      "correct": 3,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 138",
+      "a": [
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 139",
+      "a": [
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio"
+      ],
+      "correct": 0,
+      "cat": "Eccitabilità"
+    },
+    {
+      "q": "Nel controllo dell'eccitabilità neuronale, quale evento riduce la probabilità di potenziale d'azione? Item 140",
+      "a": [
+        "Apertura di canali del calcio presinaptici che aumenta l'esocitosi di vescicole",
+        "Riduzione del periodo refrattario assoluto attraverso inattivazione dei canali del sodio",
+        "Iperpolarizzazione postsinaptica mediata da aumento della conduttanza al cloro o al potassio",
+        "Depolarizzazione rapida mediata da ingresso di sodio attraverso canali voltaggio-dipendenti"
+      ],
+      "correct": 2,
+      "cat": "Eccitabilità"
+    }
+  ],
+  "SISTEMA NERVOSO AUTONOMO": [
+    {
+      "q": "Quale affermazione è corretta riguardo Origine ortosimpatica?",
+      "a": [
+        "neuroni postgangliari nel SNC — con segni associati compatibili",
+        "neuroni pregangliari in S2-S4 esclusivamente",
+        "neuroni pregangliari nei nuclei dei nervi cranici III, VII, IX, X",
+        "neuroni pregangliari nel corno laterale T1-L2 — nel quadro clinico tipico"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Nel sistema nervoso autonomo, Origine ortosimpatica è definito da:",
+      "a": [
+        "neuroni pregangliari in S2-S4 esclusivamente — secondo una descrizione standard",
+        "neuroni postgangliari nel SNC — in termini anatomo-funzionali",
+        "neuroni pregangliari nel corno laterale T1-L2",
+        "neuroni pregangliari nei nuclei dei nervi cranici III, VII, IX, X"
+      ],
+      "correct": 2,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Scegli la descrizione corretta per Origine ortosimpatica:",
+      "a": [
+        "neuroni pregangliari nel corno laterale T1-L2",
+        "neuroni pregangliari in S2-S4 esclusivamente — con implicazioni su strutture adiacenti",
+        "neuroni postgangliari nel SNC — nel quadro clinico tipico — con segni associati compatibili",
+        "neuroni pregangliari nei nuclei dei nervi cranici III, VII, IX, X"
+      ],
+      "correct": 0,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "In termini di organizzazione, Origine ortosimpatica:",
+      "a": [
+        "neuroni pregangliari nel corno laterale T1-L2 — con segni associati compatibili",
+        "neuroni postgangliari nel SNC",
+        "neuroni pregangliari nei nuclei dei nervi cranici III, VII, IX, X",
+        "neuroni pregangliari in S2-S4 esclusivamente — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo Origine parasimpatica?",
+      "a": [
+        "neuroni pregangliari nei gangli paravertebrali — con implicazioni su strutture adiacenti",
+        "neuroni pregangliari nei nuclei cranici e in S2-S4",
+        "neuroni postgangliari nel midollo spinale",
+        "neuroni pregangliari nel corno laterale T1-L2"
+      ],
+      "correct": 1,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Nel sistema nervoso autonomo, Origine parasimpatica è definito da:",
+      "a": [
+        "neuroni postgangliari nel midollo spinale",
+        "neuroni pregangliari nei nuclei cranici e in S2-S4",
+        "neuroni pregangliari nel corno laterale T1-L2 — con implicazioni su strutture adiacenti",
+        "neuroni pregangliari nei gangli paravertebrali — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Scegli la descrizione corretta per Origine parasimpatica:",
+      "a": [
+        "neuroni pregangliari nei gangli paravertebrali",
+        "neuroni pregangliari nei nuclei cranici e in S2-S4 — con implicazioni su strutture adiacenti",
+        "neuroni pregangliari nel corno laterale T1-L2 — considerando le vie coinvolte",
+        "neuroni postgangliari nel midollo spinale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "In termini di organizzazione, Origine parasimpatica:",
+      "a": [
+        "neuroni pregangliari nei gangli paravertebrali",
+        "neuroni pregangliari nel corno laterale T1-L2",
+        "neuroni pregangliari nei nuclei cranici e in S2-S4",
+        "neuroni postgangliari nel midollo spinale"
+      ],
+      "correct": 2,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo Rami comunicanti bianchi?",
+      "a": [
+        "portano fibre parasimpatiche ai visceri pelvici — tenendo conto dei relè talamici",
+        "portano fibre motorie somatiche ai muscoli — tenendo conto dei relè talamici",
+        "portano fibre pregangliari mieliniche verso la catena simpatica — con implicazioni su strutture adiacenti",
+        "portano fibre postgangliari amieliniche verso il nervo spinale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Nel sistema nervoso autonomo, Rami comunicanti bianchi è definito da:",
+      "a": [
+        "portano fibre postgangliari amieliniche verso il nervo spinale — tenendo conto dei relè talamici",
+        "portano fibre parasimpatiche ai visceri pelvici — secondo una descrizione standard",
+        "portano fibre pregangliari mieliniche verso la catena simpatica",
+        "portano fibre motorie somatiche ai muscoli — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Scegli la descrizione corretta per Rami comunicanti bianchi:",
+      "a": [
+        "portano fibre pregangliari mieliniche verso la catena simpatica",
+        "portano fibre motorie somatiche ai muscoli",
+        "portano fibre parasimpatiche ai visceri pelvici — nel quadro clinico tipico",
+        "portano fibre postgangliari amieliniche verso il nervo spinale — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "In termini di organizzazione, Rami comunicanti bianchi:",
+      "a": [
+        "portano fibre parasimpatiche ai visceri pelvici — considerando le vie coinvolte",
+        "portano fibre motorie somatiche ai muscoli — con segni associati compatibili",
+        "portano fibre postgangliari amieliniche verso il nervo spinale",
+        "portano fibre pregangliari mieliniche verso la catena simpatica — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo Rami comunicanti grigi?",
+      "a": [
+        "portano fibre afferenti dolorifiche al talamo — nel quadro clinico tipico",
+        "portano fibre pregangliari mieliniche dalla radice posteriore — con segni associati compatibili",
+        "portano fibre postgangliari amieliniche dalla catena al nervo spinale — considerando le vie coinvolte",
+        "portano fibre olfattive al bulbo"
+      ],
+      "correct": 2,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Nel sistema nervoso autonomo, Rami comunicanti grigi è definito da:",
+      "a": [
+        "portano fibre pregangliari mieliniche dalla radice posteriore",
+        "portano fibre afferenti dolorifiche al talamo",
+        "portano fibre olfattive al bulbo — secondo una descrizione standard",
+        "portano fibre postgangliari amieliniche dalla catena al nervo spinale"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Scegli la descrizione corretta per Rami comunicanti grigi:",
+      "a": [
+        "portano fibre afferenti dolorifiche al talamo — in termini anatomo-funzionali",
+        "portano fibre pregangliari mieliniche dalla radice posteriore",
+        "portano fibre olfattive al bulbo — secondo una descrizione standard",
+        "portano fibre postgangliari amieliniche dalla catena al nervo spinale — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "In termini di organizzazione, Rami comunicanti grigi:",
+      "a": [
+        "portano fibre postgangliari amieliniche dalla catena al nervo spinale — considerando le vie coinvolte",
+        "portano fibre olfattive al bulbo — in termini anatomo-funzionali",
+        "portano fibre afferenti dolorifiche al talamo — con segni associati compatibili",
+        "portano fibre pregangliari mieliniche dalla radice posteriore"
+      ],
+      "correct": 0,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo Gangli paravertebrali?",
+      "a": [
+        "nuclei dei nervi cranici nel ponte — con implicazioni su strutture adiacenti",
+        "gangli sensitivi dei nervi cranici",
+        "gangli intramurali solo nel cuore",
+        "catena simpatica bilaterale ai lati della colonna — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Nel sistema nervoso autonomo, Gangli paravertebrali è definito da:",
+      "a": [
+        "nuclei dei nervi cranici nel ponte — con implicazioni su strutture adiacenti",
+        "gangli sensitivi dei nervi cranici",
+        "catena simpatica bilaterale ai lati della colonna — secondo una descrizione standard",
+        "gangli intramurali solo nel cuore — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Scegli la descrizione corretta per Gangli paravertebrali:",
+      "a": [
+        "catena simpatica bilaterale ai lati della colonna",
+        "gangli sensitivi dei nervi cranici — nel quadro clinico tipico",
+        "gangli intramurali solo nel cuore",
+        "nuclei dei nervi cranici nel ponte"
+      ],
+      "correct": 0,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "In termini di organizzazione, Gangli paravertebrali:",
+      "a": [
+        "gangli sensitivi dei nervi cranici — considerando le vie coinvolte",
+        "gangli intramurali solo nel cuore",
+        "catena simpatica bilaterale ai lati della colonna",
+        "nuclei dei nervi cranici nel ponte"
+      ],
+      "correct": 2,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo Gangli intramurali parasimpatici?",
+      "a": [
+        "sempre nel talamo — con implicazioni su strutture adiacenti",
+        "vicini o dentro la parete dell'organo bersaglio — in termini anatomo-funzionali",
+        "sempre nel corno laterale del midollo",
+        "sempre nella catena simpatica cervicale"
+      ],
+      "correct": 1,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Nel sistema nervoso autonomo, Gangli intramurali parasimpatici è definito da:",
+      "a": [
+        "sempre nella catena simpatica cervicale",
+        "sempre nel corno laterale del midollo",
+        "sempre nel talamo",
+        "vicini o dentro la parete dell'organo bersaglio"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Scegli la descrizione corretta per Gangli intramurali parasimpatici:",
+      "a": [
+        "sempre nella catena simpatica cervicale",
+        "vicini o dentro la parete dell'organo bersaglio",
+        "sempre nel corno laterale del midollo",
+        "sempre nel talamo — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "In termini di organizzazione, Gangli intramurali parasimpatici:",
+      "a": [
+        "sempre nel corno laterale del midollo — in un contesto neuroanatomico classico",
+        "sempre nella catena simpatica cervicale",
+        "sempre nel talamo — secondo una descrizione standard",
+        "vicini o dentro la parete dell'organo bersaglio"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Quale affermazione è corretta riguardo Midollare del surrene?",
+      "a": [
+        "riceve fibre postgangliari adrenergiche e rilascia acetilcolina — secondo una descrizione standard",
+        "è un ganglio sensitivo del SNP — con segni associati compatibili",
+        "produce liquor nel quarto ventricolo — tenendo conto dei relè talamici",
+        "riceve fibre pregangliari colinergiche e rilascia catecolamine nel sangue"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Nel sistema nervoso autonomo, Midollare del surrene è definito da:",
+      "a": [
+        "è un ganglio sensitivo del SNP — in termini anatomo-funzionali",
+        "riceve fibre postgangliari adrenergiche e rilascia acetilcolina",
+        "riceve fibre pregangliari colinergiche e rilascia catecolamine nel sangue",
+        "produce liquor nel quarto ventricolo — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Scegli la descrizione corretta per Midollare del surrene:",
+      "a": [
+        "riceve fibre postgangliari adrenergiche e rilascia acetilcolina",
+        "è un ganglio sensitivo del SNP — con segni associati compatibili",
+        "produce liquor nel quarto ventricolo",
+        "riceve fibre pregangliari colinergiche e rilascia catecolamine nel sangue"
+      ],
+      "correct": 3,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "In termini di organizzazione, Midollare del surrene:",
+      "a": [
+        "produce liquor nel quarto ventricolo — in un contesto neuroanatomico classico — considerando le vie coinvolte",
+        "riceve fibre pregangliari colinergiche e rilascia catecolamine nel sangue",
+        "è un ganglio sensitivo del SNP — secondo una descrizione standard — secondo una descrizione standard",
+        "riceve fibre postgangliari adrenergiche e rilascia acetilcolina"
+      ],
+      "correct": 1,
+      "cat": "Anatomia SNA"
+    },
+    {
+      "q": "Quale effetto è più tipico dei Recettori alfa-1 adrenergici?",
+      "a": [
+        "contrazione della muscolatura ciliare per accomodazione",
+        "vasocostrizione e aumento resistenze periferiche in molti distretti — in termini anatomo-funzionali",
+        "broncodilatazione principale",
+        "riduzione frequenza cardiaca via nodo SA"
+      ],
+      "correct": 1,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "In fisiologia autonomica, i Recettori alfa-1 adrenergici mediano:",
+      "a": [
+        "broncodilatazione principale — considerando le vie coinvolte — con segni associati compatibili",
+        "contrazione della muscolatura ciliare per accomodazione",
+        "vasocostrizione e aumento resistenze periferiche in molti distretti",
+        "riduzione frequenza cardiaca via nodo SA"
+      ],
+      "correct": 2,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "Quale descrizione è corretta per i Recettori alfa-1 adrenergici?",
+      "a": [
+        "riduzione frequenza cardiaca via nodo SA — nel quadro clinico tipico",
+        "contrazione della muscolatura ciliare per accomodazione",
+        "broncodilatazione principale — secondo una descrizione standard",
+        "vasocostrizione e aumento resistenze periferiche in molti distretti"
+      ],
+      "correct": 3,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "Quale effetto è più tipico dei Recettori beta-1 adrenergici?",
+      "a": [
+        "riduzione secrezione gastrica diretta — con segni associati compatibili",
+        "miosi pupillare — considerando le vie coinvolte",
+        "vasocostrizione cutanea — nel quadro clinico tipico",
+        "aumento frequenza e contrattilità cardiaca, aumento renina"
+      ],
+      "correct": 3,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "In fisiologia autonomica, i Recettori beta-1 adrenergici mediano:",
+      "a": [
+        "vasocostrizione cutanea — nel quadro clinico tipico — con segni associati compatibili",
+        "miosi pupillare — con segni associati compatibili",
+        "riduzione secrezione gastrica diretta",
+        "aumento frequenza e contrattilità cardiaca, aumento renina"
+      ],
+      "correct": 3,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "Quale descrizione è corretta per i Recettori beta-1 adrenergici?",
+      "a": [
+        "riduzione secrezione gastrica diretta",
+        "miosi pupillare — nel quadro clinico tipico",
+        "vasocostrizione cutanea",
+        "aumento frequenza e contrattilità cardiaca, aumento renina"
+      ],
+      "correct": 3,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "Quale effetto è più tipico dei Recettori beta-2 adrenergici?",
+      "a": [
+        "contrazione dello sfintere interno vescicale — tenendo conto dei relè talamici",
+        "miosi e accomodazione — nel quadro clinico tipico — con segni associati compatibili",
+        "broncodilatazione e rilassamento della muscolatura liscia uterina — con implicazioni su strutture adiacenti",
+        "aumento motilità intestinale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "In fisiologia autonomica, i Recettori beta-2 adrenergici mediano:",
+      "a": [
+        "contrazione dello sfintere interno vescicale — in termini anatomo-funzionali",
+        "miosi e accomodazione — in un contesto neuroanatomico classico — in termini anatomo-funzionali",
+        "aumento motilità intestinale",
+        "broncodilatazione e rilassamento della muscolatura liscia uterina"
+      ],
+      "correct": 3,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "Quale descrizione è corretta per i Recettori beta-2 adrenergici?",
+      "a": [
+        "broncodilatazione e rilassamento della muscolatura liscia uterina",
+        "miosi e accomodazione — nel quadro clinico tipico — nel quadro clinico tipico",
+        "contrazione dello sfintere interno vescicale",
+        "aumento motilità intestinale — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "Quale effetto è più tipico dei Recettore muscarinico M3?",
+      "a": [
+        "contrazione muscolatura liscia e aumento secrezioni esocrine",
+        "broncodilatazione simpatica — nel quadro clinico tipico",
+        "apertura canali del sodio voltaggio-dipendenti",
+        "inibizione del rilascio di ACh al ganglio"
+      ],
+      "correct": 0,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "In fisiologia autonomica, i Recettore muscarinico M3 mediano:",
+      "a": [
+        "contrazione muscolatura liscia e aumento secrezioni esocrine",
+        "apertura canali del sodio voltaggio-dipendenti",
+        "broncodilatazione simpatica — con segni associati compatibili — nel quadro clinico tipico",
+        "inibizione del rilascio di ACh al ganglio — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "Quale descrizione è corretta per i Recettore muscarinico M3?",
+      "a": [
+        "apertura canali del sodio voltaggio-dipendenti — nel quadro clinico tipico",
+        "contrazione muscolatura liscia e aumento secrezioni esocrine — con segni associati compatibili",
+        "broncodilatazione simpatica — tenendo conto dei relè talamici",
+        "inibizione del rilascio di ACh al ganglio — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Recettori autonomici"
+    },
+    {
+      "q": "Quale descrizione è più corretta per Nervo vago?",
+      "a": [
+        "principale via parasimpatica per torace e addome fino al colon prossimale",
+        "via parasimpatica esclusiva per la vescica — secondo una descrizione standard",
+        "principale via simpatica per arto superiore — considerando le vie coinvolte",
+        "via motoria somatica per i muscoli extraoculari — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Nel controllo viscerale, Nervo vago:",
+      "a": [
+        "via motoria somatica per i muscoli extraoculari — tenendo conto dei relè talamici — in un contesto neuroanatomico classico",
+        "principale via parasimpatica per torace e addome fino al colon prossimale",
+        "via parasimpatica esclusiva per la vescica — considerando le vie coinvolte",
+        "principale via simpatica per arto superiore — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Quale affermazione su Nervo vago è vera?",
+      "a": [
+        "principale via parasimpatica per torace e addome fino al colon prossimale — con segni associati compatibili",
+        "via motoria somatica per i muscoli extraoculari — considerando le vie coinvolte",
+        "via parasimpatica esclusiva per la vescica — considerando le vie coinvolte",
+        "principale via simpatica per arto superiore — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Quale descrizione è più corretta per Nervi splancnici pelvici?",
+      "a": [
+        "simpatici toracici per il cuore",
+        "afferenti propriocettive per gli arti — in termini anatomo-funzionali",
+        "parasimpatici S2-S4 per viscere pelvico e colon distale",
+        "fibre olfattive primarie — considerando le vie coinvolte — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Nel controllo viscerale, Nervi splancnici pelvici:",
+      "a": [
+        "simpatici toracici per il cuore — con implicazioni su strutture adiacenti",
+        "afferenti propriocettive per gli arti — con segni associati compatibili",
+        "fibre olfattive primarie — con segni associati compatibili",
+        "parasimpatici S2-S4 per viscere pelvico e colon distale"
+      ],
+      "correct": 3,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Quale affermazione su Nervi splancnici pelvici è vera?",
+      "a": [
+        "fibre olfattive primarie",
+        "afferenti propriocettive per gli arti",
+        "simpatici toracici per il cuore",
+        "parasimpatici S2-S4 per viscere pelvico e colon distale — con segni associati compatibili"
+      ],
+      "correct": 3,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Quale descrizione è più corretta per Nervi splancnici toracici?",
+      "a": [
+        "pregangliari simpatici verso gangli prevertebrali",
+        "postgangliari parasimpatici verso il cuore",
+        "fibre corticospinali verso midollo — secondo una descrizione standard",
+        "fibre spinotalamiche verso talamo — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Nel controllo viscerale, Nervi splancnici toracici:",
+      "a": [
+        "postgangliari parasimpatici verso il cuore",
+        "pregangliari simpatici verso gangli prevertebrali — considerando le vie coinvolte",
+        "fibre corticospinali verso midollo — in un contesto neuroanatomico classico",
+        "fibre spinotalamiche verso talamo — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Quale affermazione su Nervi splancnici toracici è vera?",
+      "a": [
+        "pregangliari simpatici verso gangli prevertebrali",
+        "postgangliari parasimpatici verso il cuore",
+        "fibre corticospinali verso midollo",
+        "fibre spinotalamiche verso talamo"
+      ],
+      "correct": 0,
+      "cat": "Vie autonomiche"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 50",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — secondo una descrizione standard — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 51",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — in termini anatomo-funzionali",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico — in un contesto neuroanatomico classico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 52",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con implicazioni su strutture adiacenti",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 53",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — con implicazioni su strutture adiacenti",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — nel quadro clinico tipico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 54",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — secondo una descrizione standard",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con implicazioni su strutture adiacenti",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — nel quadro clinico tipico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 55",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con segni associati compatibili",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 56",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 57",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in termini anatomo-funzionali",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 58",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 59",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali — con segni associati compatibili",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — considerando le vie coinvolte",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 60",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — tenendo conto dei relè talamici",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 61",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — tenendo conto dei relè talamici",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 62",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — nel quadro clinico tipico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 63",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 64",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — nel quadro clinico tipico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 65",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 66",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — secondo una descrizione standard",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 67",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — nel quadro clinico tipico",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 68",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 69",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — considerando le vie coinvolte",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 70",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — in termini anatomo-funzionali",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — tenendo conto dei relè talamici",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con implicazioni su strutture adiacenti",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 71",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in termini anatomo-funzionali",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 72",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — secondo una descrizione standard",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 73",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — in termini anatomo-funzionali",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 74",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con segni associati compatibili",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — tenendo conto dei relè talamici",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 75",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — secondo una descrizione standard",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — secondo una descrizione standard",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 76",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in termini anatomo-funzionali",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — secondo una descrizione standard",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 77",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — secondo una descrizione standard",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 78",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 79",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in termini anatomo-funzionali",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 80",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — secondo una descrizione standard",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 81",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — tenendo conto dei relè talamici",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 82",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — nel quadro clinico tipico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili — tenendo conto dei relè talamici",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — nel quadro clinico tipico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 83",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — tenendo conto dei relè talamici",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — tenendo conto dei relè talamici — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 84",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 85",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — tenendo conto dei relè talamici",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 86",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — con segni associati compatibili",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 87",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 88",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — secondo una descrizione standard",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 89",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 90",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 91",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali — tenendo conto dei relè talamici",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 92",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — secondo una descrizione standard",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 93",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 94",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 95",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — tenendo conto dei relè talamici",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 96",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — considerando le vie coinvolte",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — tenendo conto dei relè talamici",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 97",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — nel quadro clinico tipico",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 98",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 99",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con segni associati compatibili",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 100",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — in un contesto neuroanatomico classico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — in termini anatomo-funzionali",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in un contesto neuroanatomico classico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 101",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 102",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con implicazioni su strutture adiacenti",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — tenendo conto dei relè talamici",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 103",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — nel quadro clinico tipico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 104",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili — tenendo conto dei relè talamici",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con implicazioni su strutture adiacenti",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 105",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con implicazioni su strutture adiacenti",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 106",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 107",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — con implicazioni su strutture adiacenti",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con implicazioni su strutture adiacenti",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 108",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — secondo una descrizione standard",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 109",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 110",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — in termini anatomo-funzionali",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con implicazioni su strutture adiacenti",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 111",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — nel quadro clinico tipico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — nel quadro clinico tipico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 112",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 113",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con segni associati compatibili",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con implicazioni su strutture adiacenti — tenendo conto dei relè talamici",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 114",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con implicazioni su strutture adiacenti",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili — nel quadro clinico tipico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 115",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — tenendo conto dei relè talamici",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 116",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — tenendo conto dei relè talamici",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 117",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 118",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con implicazioni su strutture adiacenti",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 119",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in un contesto neuroanatomico classico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 120",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 121",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con implicazioni su strutture adiacenti",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in un contesto neuroanatomico classico",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 122",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — nel quadro clinico tipico",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 123",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — tenendo conto dei relè talamici",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 124",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 125",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 126",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — in termini anatomo-funzionali",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 127",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — nel quadro clinico tipico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in un contesto neuroanatomico classico",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 128",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con segni associati compatibili",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 129",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con segni associati compatibili",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 130",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — nel quadro clinico tipico — con segni associati compatibili",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 131",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — con segni associati compatibili",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 132",
+      "a": [
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — nel quadro clinico tipico",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — considerando le vie coinvolte",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — considerando le vie coinvolte",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 133",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — con segni associati compatibili",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — secondo una descrizione standard",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — nel quadro clinico tipico",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata"
+      ],
+      "correct": 1,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 134",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — considerando le vie coinvolte",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 135",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — secondo una descrizione standard",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — considerando le vie coinvolte",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 136",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree — nel quadro clinico tipico",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 137",
+      "a": [
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — secondo una descrizione standard",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata"
+      ],
+      "correct": 0,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 138",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata — in un contesto neuroanatomico classico",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — con implicazioni su strutture adiacenti",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 139",
+      "a": [
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — tenendo conto dei relè talamici",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — nel quadro clinico tipico",
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree"
+      ],
+      "correct": 3,
+      "cat": "Clinica SNA"
+    },
+    {
+      "q": "Dopo somministrazione di un agonista beta-2, quale risposta è più attesa nel contesto broncopolmonare? Scenario 140",
+      "a": [
+        "Blocchi di conduzione corticospinale con paralisi flaccida generalizzata",
+        "Contrazione della muscolatura liscia bronchiale con broncocostrizione marcata — con segni associati compatibili",
+        "Rilassamento della muscolatura liscia bronchiale con riduzione della resistenza delle vie aeree",
+        "Miosi immediata con spasmo dell'accomodazione come effetto principale — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Clinica SNA"
+    }
+  ],
+  "VASCOLARIZZAZIONE ENCEFALO": [
+    {
+      "q": "Quale quadro clinico è più compatibile con un evento ischemico in Arteria cerebrale media, ACM?",
+      "a": [
+        "deficit faccia-braccio prevalente, afasia se emisfero dominante o neglect se non dominante",
+        "cecità corticale con preservazione motoria — in un contesto neuroanatomico classico",
+        "vertigine isolata senza deficit focali corticali — secondo una descrizione standard — secondo una descrizione standard",
+        "deficit gamba prevalente con abulia e incontinenza — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "In un ictus nel territorio di Arteria cerebrale media, ACM, ci si aspetta tipicamente:",
+      "a": [
+        "deficit gamba prevalente con abulia e incontinenza — nel quadro clinico tipico",
+        "deficit faccia-braccio prevalente, afasia se emisfero dominante o neglect se non dominante",
+        "vertigine isolata senza deficit focali corticali — nel quadro clinico tipico — con implicazioni su strutture adiacenti",
+        "cecità corticale con preservazione motoria"
+      ],
+      "correct": 1,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale descrizione clinico-anatomica è corretta per Arteria cerebrale media, ACM?",
+      "a": [
+        "vertigine isolata senza deficit focali corticali — in un contesto neuroanatomico classico",
+        "deficit faccia-braccio prevalente, afasia se emisfero dominante o neglect se non dominante",
+        "cecità corticale con preservazione motoria — con segni associati compatibili — secondo una descrizione standard",
+        "deficit gamba prevalente con abulia e incontinenza"
+      ],
+      "correct": 1,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Un'occlusione di Arteria cerebrale media, ACM si associa più spesso a:",
+      "a": [
+        "cecità corticale con preservazione motoria — nel quadro clinico tipico",
+        "deficit gamba prevalente con abulia e incontinenza — secondo una descrizione standard — in termini anatomo-funzionali",
+        "deficit faccia-braccio prevalente, afasia se emisfero dominante o neglect se non dominante — in termini anatomo-funzionali",
+        "vertigine isolata senza deficit focali corticali"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale quadro clinico è più compatibile con un evento ischemico in Arteria cerebrale anteriore, ACA?",
+      "a": [
+        "sindrome di Wallenberg con disfagia e analgesia incrociata — con implicazioni su strutture adiacenti",
+        "deficit faccia-braccio prevalente con afasia di Broca — considerando le vie coinvolte",
+        "deficit gamba prevalente, disturbi esecutivi e possibile incontinenza — considerando le vie coinvolte",
+        "atassia cerebellare isolata con diplopia da III"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "In un ictus nel territorio di Arteria cerebrale anteriore, ACA, ci si aspetta tipicamente:",
+      "a": [
+        "atassia cerebellare isolata con diplopia da III",
+        "deficit gamba prevalente, disturbi esecutivi e possibile incontinenza — in un contesto neuroanatomico classico",
+        "sindrome di Wallenberg con disfagia e analgesia incrociata — con segni associati compatibili",
+        "deficit faccia-braccio prevalente con afasia di Broca — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale descrizione clinico-anatomica è corretta per Arteria cerebrale anteriore, ACA?",
+      "a": [
+        "sindrome di Wallenberg con disfagia e analgesia incrociata",
+        "deficit gamba prevalente, disturbi esecutivi e possibile incontinenza — con segni associati compatibili",
+        "atassia cerebellare isolata con diplopia da III — con implicazioni su strutture adiacenti",
+        "deficit faccia-braccio prevalente con afasia di Broca"
+      ],
+      "correct": 1,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Un'occlusione di Arteria cerebrale anteriore, ACA si associa più spesso a:",
+      "a": [
+        "deficit gamba prevalente, disturbi esecutivi e possibile incontinenza — con segni associati compatibili",
+        "sindrome di Wallenberg con disfagia e analgesia incrociata — con segni associati compatibili",
+        "atassia cerebellare isolata con diplopia da III",
+        "deficit faccia-braccio prevalente con afasia di Broca"
+      ],
+      "correct": 0,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale quadro clinico è più compatibile con un evento ischemico in Arteria cerebrale posteriore, PCA?",
+      "a": [
+        "paralisi facciale periferica con ipoacusia — secondo una descrizione standard — con implicazioni su strutture adiacenti",
+        "deficit motorio puro da capsula interna senza segni corticali",
+        "deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura",
+        "tetraparesi con compromissione respiratoria da midollo cervicale"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "In un ictus nel territorio di Arteria cerebrale posteriore, PCA, ci si aspetta tipicamente:",
+      "a": [
+        "paralisi facciale periferica con ipoacusia — secondo una descrizione standard",
+        "tetraparesi con compromissione respiratoria da midollo cervicale — in termini anatomo-funzionali",
+        "deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura — con segni associati compatibili",
+        "deficit motorio puro da capsula interna senza segni corticali"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale descrizione clinico-anatomica è corretta per Arteria cerebrale posteriore, PCA?",
+      "a": [
+        "tetraparesi con compromissione respiratoria da midollo cervicale",
+        "deficit motorio puro da capsula interna senza segni corticali — con segni associati compatibili",
+        "paralisi facciale periferica con ipoacusia — nel quadro clinico tipico",
+        "deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Un'occlusione di Arteria cerebrale posteriore, PCA si associa più spesso a:",
+      "a": [
+        "tetraparesi con compromissione respiratoria da midollo cervicale — nel quadro clinico tipico",
+        "paralisi facciale periferica con ipoacusia — con implicazioni su strutture adiacenti — con segni associati compatibili",
+        "deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura",
+        "deficit motorio puro da capsula interna senza segni corticali"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale quadro clinico è più compatibile con un evento ischemico in Arterie lenticolostriate?",
+      "a": [
+        "sindrome cerebellare con nistagmo e vertigine — nel quadro clinico tipico",
+        "emianopsia bitemporale da chiasma ottico — in un contesto neuroanatomico classico",
+        "afasia globale con neglect simultaneo — con implicazioni su strutture adiacenti",
+        "infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "In un ictus nel territorio di Arterie lenticolostriate, ci si aspetta tipicamente:",
+      "a": [
+        "afasia globale con neglect simultaneo — nel quadro clinico tipico",
+        "infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali",
+        "emianopsia bitemporale da chiasma ottico — in un contesto neuroanatomico classico",
+        "sindrome cerebellare con nistagmo e vertigine — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale descrizione clinico-anatomica è corretta per Arterie lenticolostriate?",
+      "a": [
+        "sindrome cerebellare con nistagmo e vertigine — con segni associati compatibili",
+        "afasia globale con neglect simultaneo — in termini anatomo-funzionali",
+        "infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali",
+        "emianopsia bitemporale da chiasma ottico — tenendo conto dei relè talamici — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Un'occlusione di Arterie lenticolostriate si associa più spesso a:",
+      "a": [
+        "afasia globale con neglect simultaneo — con segni associati compatibili — secondo una descrizione standard",
+        "emianopsia bitemporale da chiasma ottico — nel quadro clinico tipico",
+        "infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali — secondo una descrizione standard",
+        "sindrome cerebellare con nistagmo e vertigine — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale quadro clinico è più compatibile con un evento ischemico in Arteria cerebellare posteroinferiore, PICA?",
+      "a": [
+        "sindrome bulbare mediale con paresi della lingua — tenendo conto dei relè talamici",
+        "sindrome del cordone anteriore del midollo — in un contesto neuroanatomico classico",
+        "sindrome di Weber con ptosi e emiparesi — considerando le vie coinvolte",
+        "sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata"
+      ],
+      "correct": 3,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "In un ictus nel territorio di Arteria cerebellare posteroinferiore, PICA, ci si aspetta tipicamente:",
+      "a": [
+        "sindrome di Weber con ptosi e emiparesi",
+        "sindrome del cordone anteriore del midollo — secondo una descrizione standard — in un contesto neuroanatomico classico",
+        "sindrome bulbare mediale con paresi della lingua",
+        "sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata — con segni associati compatibili"
+      ],
+      "correct": 3,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale descrizione clinico-anatomica è corretta per Arteria cerebellare posteroinferiore, PICA?",
+      "a": [
+        "sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata",
+        "sindrome del cordone anteriore del midollo — in un contesto neuroanatomico classico — nel quadro clinico tipico",
+        "sindrome di Weber con ptosi e emiparesi",
+        "sindrome bulbare mediale con paresi della lingua"
+      ],
+      "correct": 0,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Un'occlusione di Arteria cerebellare posteroinferiore, PICA si associa più spesso a:",
+      "a": [
+        "sindrome di Weber con ptosi e emiparesi — nel quadro clinico tipico",
+        "sindrome bulbare mediale con paresi della lingua",
+        "sindrome del cordone anteriore del midollo — in un contesto neuroanatomico classico",
+        "sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale quadro clinico è più compatibile con un evento ischemico in Arteria cerebellare anteroinferiore, AICA?",
+      "a": [
+        "sindrome pontina laterale con paralisi facciale periferica e ipoacusia — secondo una descrizione standard",
+        "sindrome di Brown-Séquard nel midollo — nel quadro clinico tipico — considerando le vie coinvolte",
+        "sindrome bulbare laterale senza coinvolgimento facciale periferico",
+        "sindrome del mesencefalo dorsale con paralisi dello sguardo verticale"
+      ],
+      "correct": 0,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "In un ictus nel territorio di Arteria cerebellare anteroinferiore, AICA, ci si aspetta tipicamente:",
+      "a": [
+        "sindrome pontina laterale con paralisi facciale periferica e ipoacusia — nel quadro clinico tipico",
+        "sindrome del mesencefalo dorsale con paralisi dello sguardo verticale",
+        "sindrome di Brown-Séquard nel midollo — nel quadro clinico tipico",
+        "sindrome bulbare laterale senza coinvolgimento facciale periferico"
+      ],
+      "correct": 0,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale descrizione clinico-anatomica è corretta per Arteria cerebellare anteroinferiore, AICA?",
+      "a": [
+        "sindrome del mesencefalo dorsale con paralisi dello sguardo verticale",
+        "sindrome di Brown-Séquard nel midollo — in termini anatomo-funzionali",
+        "sindrome pontina laterale con paralisi facciale periferica e ipoacusia",
+        "sindrome bulbare laterale senza coinvolgimento facciale periferico"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Un'occlusione di Arteria cerebellare anteroinferiore, AICA si associa più spesso a:",
+      "a": [
+        "sindrome di Brown-Séquard nel midollo — in termini anatomo-funzionali",
+        "sindrome bulbare laterale senza coinvolgimento facciale periferico",
+        "sindrome del mesencefalo dorsale con paralisi dello sguardo verticale",
+        "sindrome pontina laterale con paralisi facciale periferica e ipoacusia"
+      ],
+      "correct": 3,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale quadro clinico è più compatibile con un evento ischemico in Arteria basilare?",
+      "a": [
+        "afasia di Wernicke isolata",
+        "miosi isolata senza altri segni — tenendo conto dei relè talamici",
+        "amnesia episodica isolata da ippocampo bilaterale — con implicazioni su strutture adiacenti — tenendo conto dei relè talamici",
+        "occlusione estesa può dare locked-in con coscienza preservata e tetraplegia"
+      ],
+      "correct": 3,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "In un ictus nel territorio di Arteria basilare, ci si aspetta tipicamente:",
+      "a": [
+        "occlusione estesa può dare locked-in con coscienza preservata e tetraplegia",
+        "miosi isolata senza altri segni — tenendo conto dei relè talamici",
+        "amnesia episodica isolata da ippocampo bilaterale — secondo una descrizione standard — nel quadro clinico tipico",
+        "afasia di Wernicke isolata — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Quale descrizione clinico-anatomica è corretta per Arteria basilare?",
+      "a": [
+        "afasia di Wernicke isolata",
+        "amnesia episodica isolata da ippocampo bilaterale — con implicazioni su strutture adiacenti",
+        "occlusione estesa può dare locked-in con coscienza preservata e tetraplegia",
+        "miosi isolata senza altri segni — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Un'occlusione di Arteria basilare si associa più spesso a:",
+      "a": [
+        "afasia di Wernicke isolata — nel quadro clinico tipico",
+        "miosi isolata senza altri segni — con implicazioni su strutture adiacenti",
+        "amnesia episodica isolata da ippocampo bilaterale — nel quadro clinico tipico",
+        "occlusione estesa può dare locked-in con coscienza preservata e tetraplegia — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Territori corticali"
+    },
+    {
+      "q": "Nel circolo di Willis, la Comunicante anteriore:",
+      "a": [
+        "connette ACM e PCA",
+        "connette le due arterie cerebrali anteriori e completa il circolo anteriore",
+        "è un ramo terminale della basilare",
+        "decorre nel solco laterale di Silvio — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Quale relazione anatomica è corretta per la Comunicante anteriore?",
+      "a": [
+        "connette le due arterie cerebrali anteriori e completa il circolo anteriore",
+        "connette ACM e PCA — in un contesto neuroanatomico classico — considerando le vie coinvolte",
+        "è un ramo terminale della basilare — con segni associati compatibili",
+        "decorre nel solco laterale di Silvio — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "La funzione principale della Comunicante anteriore è:",
+      "a": [
+        "è un ramo terminale della basilare — considerando le vie coinvolte",
+        "decorre nel solco laterale di Silvio — nel quadro clinico tipico",
+        "connette ACM e PCA — in un contesto neuroanatomico classico",
+        "connette le due arterie cerebrali anteriori e completa il circolo anteriore"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel circolo di Willis, la Comunicante posteriore:",
+      "a": [
+        "connette le due vertebrali",
+        "è un ramo perforante talamico obbligato — con segni associati compatibili",
+        "connette carotide interna e arteria cerebrale posteriore",
+        "connette ACA e ACM"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Quale relazione anatomica è corretta per la Comunicante posteriore?",
+      "a": [
+        "è un ramo perforante talamico obbligato",
+        "connette le due vertebrali",
+        "connette carotide interna e arteria cerebrale posteriore",
+        "connette ACA e ACM"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "La funzione principale della Comunicante posteriore è:",
+      "a": [
+        "è un ramo perforante talamico obbligato",
+        "connette le due vertebrali — secondo una descrizione standard",
+        "connette carotide interna e arteria cerebrale posteriore",
+        "connette ACA e ACM — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Quale vascolarizzazione è più compatibile con la regione Bulbo laterale?",
+      "a": [
+        "arteria cerebrale anteriore — secondo una descrizione standard",
+        "arteria corioidea anteriore",
+        "arterie cerebellari superiori",
+        "arteria cerebellare posteroinferiore e rami vertebrali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Per la regione Bulbo laterale, l'arteria tipicamente coinvolta è:",
+      "a": [
+        "arteria corioidea anteriore — considerando le vie coinvolte",
+        "arteria cerebrale anteriore — nel quadro clinico tipico",
+        "arterie cerebellari superiori",
+        "arteria cerebellare posteroinferiore e rami vertebrali"
+      ],
+      "correct": 3,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Un infarto in Bulbo laterale è più verosimilmente legato a:",
+      "a": [
+        "arteria cerebrale anteriore — con segni associati compatibili",
+        "arteria cerebellare posteroinferiore e rami vertebrali",
+        "arterie cerebellari superiori — in un contesto neuroanatomico classico",
+        "arteria corioidea anteriore"
+      ],
+      "correct": 1,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Quale vascolarizzazione è più compatibile con la regione Bulbo mediale?",
+      "a": [
+        "arteria comunicante posteriore — considerando le vie coinvolte",
+        "arteria spinale anteriore e rami paramediani vertebrali",
+        "arteria cerebrale media",
+        "arteria cerebrale posteriore — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Per la regione Bulbo mediale, l'arteria tipicamente coinvolta è:",
+      "a": [
+        "arteria comunicante posteriore — in un contesto neuroanatomico classico",
+        "arteria spinale anteriore e rami paramediani vertebrali",
+        "arteria cerebrale posteriore — secondo una descrizione standard",
+        "arteria cerebrale media — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Un infarto in Bulbo mediale è più verosimilmente legato a:",
+      "a": [
+        "arteria comunicante posteriore",
+        "arteria spinale anteriore e rami paramediani vertebrali",
+        "arteria cerebrale media — secondo una descrizione standard",
+        "arteria cerebrale posteriore — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Quale vascolarizzazione è più compatibile con la regione Ponte laterale caudale?",
+      "a": [
+        "arteria cerebrale posteriore",
+        "arteria cerebellare anteroinferiore e rami basilari",
+        "arteria cerebellare posteroinferiore",
+        "arteria cerebrale anteriore"
+      ],
+      "correct": 1,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Per la regione Ponte laterale caudale, l'arteria tipicamente coinvolta è:",
+      "a": [
+        "arteria cerebrale posteriore — considerando le vie coinvolte",
+        "arteria cerebrale anteriore",
+        "arteria cerebellare anteroinferiore e rami basilari",
+        "arteria cerebellare posteroinferiore"
+      ],
+      "correct": 2,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Un infarto in Ponte laterale caudale è più verosimilmente legato a:",
+      "a": [
+        "arteria cerebellare posteroinferiore",
+        "arteria cerebrale anteriore",
+        "arteria cerebrale posteriore",
+        "arteria cerebellare anteroinferiore e rami basilari"
+      ],
+      "correct": 3,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Quale vascolarizzazione è più compatibile con la regione Mesencefalo ventrale?",
+      "a": [
+        "rami della arteria cerebrale anteriore",
+        "rami esclusivi della spinale posteriore",
+        "rami della comunicante anteriore",
+        "rami paramediani della cerebrale posteriore e basilare rostrale"
+      ],
+      "correct": 3,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Per la regione Mesencefalo ventrale, l'arteria tipicamente coinvolta è:",
+      "a": [
+        "rami esclusivi della spinale posteriore",
+        "rami della arteria cerebrale anteriore",
+        "rami paramediani della cerebrale posteriore e basilare rostrale",
+        "rami della comunicante anteriore — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Un infarto in Mesencefalo ventrale è più verosimilmente legato a:",
+      "a": [
+        "rami della arteria cerebrale anteriore",
+        "rami paramediani della cerebrale posteriore e basilare rostrale",
+        "rami esclusivi della spinale posteriore",
+        "rami della comunicante anteriore — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Vascolarizzazione tronco"
+    },
+    {
+      "q": "Paziente 84 anni, esordio improvviso. Deficit destro: infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebrale media, ACM — secondo una descrizione standard",
+        "Arteria cerebrale posteriore, PCA",
+        "Arterie lenticolostriate — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 83 anni, esordio improvviso. Deficit sinistro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA — secondo una descrizione standard",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebrale media, ACM — con segni associati compatibili",
+        "Arteria cerebrale anteriore, ACA"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 58 anni, esordio improvviso. Deficit sinistro: deficit faccia-braccio prevalente, afasia se emisfero dominante o neglect se non dominante. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate",
+        "Arteria cerebellare anteroinferiore, AICA — secondo una descrizione standard",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebrale posteriore, PCA"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 45 anni, esordio improvviso. Deficit sinistro: sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA — considerando le vie coinvolte",
+        "Arterie lenticolostriate — nel quadro clinico tipico",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebellare posteroinferiore, PICA"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 54 anni, esordio improvviso. Deficit sinistro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA — nel quadro clinico tipico",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebrale anteriore, ACA",
+        "Arterie lenticolostriate — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 45 anni, esordio improvviso. Deficit sinistro: sindrome pontina laterale con paralisi facciale periferica e ipoacusia. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate",
+        "Arteria basilare",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebrale media, ACM"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 68 anni, esordio improvviso. Deficit sinistro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale anteriore, ACA — secondo una descrizione standard",
+        "Arteria cerebrale media, ACM",
+        "Arterie lenticolostriate",
+        "Arteria cerebellare posteroinferiore, PICA"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 64 anni, esordio improvviso. Deficit destro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria cerebellare posteroinferiore, PICA",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebrale posteriore, PCA — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 49 anni, esordio improvviso. Deficit sinistro: sindrome pontina laterale con paralisi facciale periferica e ipoacusia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare anteroinferiore, AICA — in un contesto neuroanatomico classico",
+        "Arteria cerebellare posteroinferiore, PICA — con implicazioni su strutture adiacenti",
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria cerebrale posteriore, PCA — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 76 anni, esordio improvviso. Deficit sinistro: sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare posteroinferiore, PICA — nel quadro clinico tipico",
+        "Arteria cerebellare anteroinferiore, AICA — in termini anatomo-funzionali",
+        "Arteria cerebrale media, ACM",
+        "Arterie lenticolostriate — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 70 anni, esordio improvviso. Deficit destro: occlusione estesa può dare locked-in con coscienza preservata e tetraplegia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria basilare — secondo una descrizione standard",
+        "Arteria cerebrale media, ACM — in termini anatomo-funzionali",
+        "Arteria cerebrale posteriore, PCA"
+      ],
+      "correct": 1,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 83 anni, esordio improvviso. Deficit destro: deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria basilare — tenendo conto dei relè talamici — nel quadro clinico tipico",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebellare posteroinferiore, PICA"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 66 anni, esordio improvviso. Deficit sinistro: infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate — tenendo conto dei relè talamici",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebrale anteriore, ACA — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 63 anni, esordio improvviso. Deficit sinistro: sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare posteroinferiore, PICA",
+        "Arteria basilare — in termini anatomo-funzionali",
+        "Arteria cerebrale media, ACM — secondo una descrizione standard",
+        "Arteria cerebrale posteriore, PCA — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 52 anni, esordio improvviso. Deficit sinistro: infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate",
+        "Arteria cerebrale media, ACM — con implicazioni su strutture adiacenti",
+        "Arteria cerebellare posteroinferiore, PICA",
+        "Arteria cerebrale anteriore, ACA"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 68 anni, esordio improvviso. Deficit sinistro: deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria basilare",
+        "Arteria cerebrale anteriore, ACA",
+        "Arterie lenticolostriate"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 55 anni, esordio improvviso. Deficit sinistro: deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare posteroinferiore, PICA — con segni associati compatibili",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebrale posteriore, PCA"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 81 anni, esordio improvviso. Deficit destro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria basilare — in termini anatomo-funzionali",
+        "Arterie lenticolostriate",
+        "Arteria cerebrale anteriore, ACA — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 71 anni, esordio improvviso. Deficit destro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria cerebellare anteroinferiore, AICA — con segni associati compatibili",
+        "Arteria cerebrale media, ACM — in termini anatomo-funzionali",
+        "Arterie lenticolostriate"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 85 anni, esordio improvviso. Deficit destro: deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebellare posteroinferiore, PICA",
+        "Arteria basilare — secondo una descrizione standard",
+        "Arteria cerebrale media, ACM — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 48 anni, esordio improvviso. Deficit sinistro: sindrome pontina laterale con paralisi facciale periferica e ipoacusia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebellare anteroinferiore, AICA — considerando le vie coinvolte",
+        "Arteria basilare",
+        "Arterie lenticolostriate"
+      ],
+      "correct": 1,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 47 anni, esordio improvviso. Deficit destro: sindrome pontina laterale con paralisi facciale periferica e ipoacusia. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate — nel quadro clinico tipico",
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebellare anteroinferiore, AICA — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 70 anni, esordio improvviso. Deficit sinistro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare anteroinferiore, AICA — tenendo conto dei relè talamici",
+        "Arteria cerebrale anteriore, ACA",
+        "Arterie lenticolostriate",
+        "Arteria cerebrale posteriore, PCA"
+      ],
+      "correct": 1,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 86 anni, esordio improvviso. Deficit destro: infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate",
+        "Arteria cerebrale media, ACM — in un contesto neuroanatomico classico",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebellare posteroinferiore, PICA"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 81 anni, esordio improvviso. Deficit sinistro: deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate — con segni associati compatibili",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebellare posteroinferiore, PICA"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 78 anni, esordio improvviso. Deficit destro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale anteriore, ACA — nel quadro clinico tipico",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebrale posteriore, PCA",
+        "Arterie lenticolostriate — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 62 anni, esordio improvviso. Deficit sinistro: sindrome pontina laterale con paralisi facciale periferica e ipoacusia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare anteroinferiore, AICA — con segni associati compatibili",
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria cerebrale posteriore, PCA",
+        "Arterie lenticolostriate — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 68 anni, esordio improvviso. Deficit destro: deficit faccia-braccio prevalente, afasia se emisfero dominante o neglect se non dominante. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebellare posteroinferiore, PICA — considerando le vie coinvolte",
+        "Arteria basilare — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 77 anni, esordio improvviso. Deficit destro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebellare posteroinferiore, PICA",
+        "Arterie lenticolostriate",
+        "Arteria cerebrale anteriore, ACA"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 80 anni, esordio improvviso. Deficit destro: occlusione estesa può dare locked-in con coscienza preservata e tetraplegia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria basilare",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arterie lenticolostriate"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 78 anni, esordio improvviso. Deficit destro: sindrome pontina laterale con paralisi facciale periferica e ipoacusia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebrale media, ACM — con implicazioni su strutture adiacenti",
+        "Arteria cerebellare anteroinferiore, AICA — considerando le vie coinvolte",
+        "Arteria basilare — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 67 anni, esordio improvviso. Deficit destro: sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata. Quale vaso è più probabile?",
+      "a": [
+        "Arteria basilare",
+        "Arteria cerebrale posteriore, PCA — tenendo conto dei relè talamici",
+        "Arteria cerebellare posteroinferiore, PICA",
+        "Arteria cerebellare anteroinferiore, AICA"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 52 anni, esordio improvviso. Deficit destro: occlusione estesa può dare locked-in con coscienza preservata e tetraplegia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare posteroinferiore, PICA — considerando le vie coinvolte",
+        "Arteria cerebrale anteriore, ACA — in un contesto neuroanatomico classico",
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria basilare"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 70 anni, esordio improvviso. Deficit destro: occlusione estesa può dare locked-in con coscienza preservata e tetraplegia. Quale vaso è più probabile?⁣",
+      "a": [
+        "Arterie lenticolostriate",
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria basilare — in termini anatomo-funzionali",
+        "Arteria cerebellare anteroinferiore, AICA"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 63 anni, esordio improvviso. Deficit destro: sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata. Quale vaso è più probabile?",
+      "a": [
+        "Arteria basilare — secondo una descrizione standard",
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria cerebellare posteroinferiore, PICA"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 81 anni, esordio improvviso. Deficit sinistro: sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria basilare — secondo una descrizione standard",
+        "Arteria cerebellare posteroinferiore, PICA — con segni associati compatibili",
+        "Arterie lenticolostriate"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 54 anni, esordio improvviso. Deficit sinistro: occlusione estesa può dare locked-in con coscienza preservata e tetraplegia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebrale anteriore, ACA — in termini anatomo-funzionali",
+        "Arteria basilare — con implicazioni su strutture adiacenti",
+        "Arteria cerebellare anteroinferiore, AICA"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 86 anni, esordio improvviso. Deficit sinistro: deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura. Quale vaso è più probabile?",
+      "a": [
+        "Arterie lenticolostriate",
+        "Arteria basilare — nel quadro clinico tipico",
+        "Arteria cerebellare posteroinferiore, PICA — tenendo conto dei relè talamici",
+        "Arteria cerebrale posteriore, PCA"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 59 anni, esordio improvviso. Deficit sinistro: sindrome bulbare laterale con disfagia, vertigine e analgesia incrociata. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale media, ACM — con implicazioni su strutture adiacenti",
+        "Arteria basilare — tenendo conto dei relè talamici",
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebellare posteroinferiore, PICA"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 52 anni, esordio improvviso. Deficit sinistro: sindrome pontina laterale con paralisi facciale periferica e ipoacusia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebrale anteriore, ACA",
+        "Arteria cerebrale media, ACM"
+      ],
+      "correct": 1,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 77 anni, esordio improvviso. Deficit destro: infarto lacunare della capsula interna con deficit motorio puro e senza segni corticali. Quale vaso è più probabile?",
+      "a": [
+        "Arteria basilare — con implicazioni su strutture adiacenti — in un contesto neuroanatomico classico",
+        "Arteria cerebrale media, ACM",
+        "Arteria cerebellare posteroinferiore, PICA — con implicazioni su strutture adiacenti",
+        "Arterie lenticolostriate — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 59 anni, esordio improvviso. Deficit destro: deficit faccia-braccio prevalente, afasia se emisfero dominante o neglect se non dominante. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria basilare — in termini anatomo-funzionali",
+        "Arteria cerebrale media, ACM",
+        "Arterie lenticolostriate"
+      ],
+      "correct": 2,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 59 anni, esordio improvviso. Deficit sinistro: deficit visivi occipitali, emianopsia omonima e possibili disturbi della lettura. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebrale media, ACM — tenendo conto dei relè talamici",
+        "Arteria cerebrale posteriore, PCA",
+        "Arteria cerebrale anteriore, ACA — con implicazioni su strutture adiacenti",
+        "Arterie lenticolostriate"
+      ],
+      "correct": 1,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 50 anni, esordio improvviso. Deficit destro: sindrome pontina laterale con paralisi facciale periferica e ipoacusia. Quale vaso è più probabile?",
+      "a": [
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arteria cerebellare posteroinferiore, PICA — con implicazioni su strutture adiacenti",
+        "Arteria cerebrale media, ACM",
+        "Arterie lenticolostriate"
+      ],
+      "correct": 0,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Paziente 68 anni, esordio improvviso. Deficit sinistro: deficit gamba prevalente, disturbi esecutivi e possibile incontinenza. Quale vaso è più probabile?⁣",
+      "a": [
+        "Arteria basilare — considerando le vie coinvolte",
+        "Arteria cerebellare anteroinferiore, AICA",
+        "Arterie lenticolostriate — con segni associati compatibili",
+        "Arteria cerebrale anteriore, ACA"
+      ],
+      "correct": 3,
+      "cat": "Vignette ictus"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 92",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — con segni associati compatibili",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 93",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 94",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo — con segni associati compatibili",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 95",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 96",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — in termini anatomo-funzionali",
+        "Fascicolo gracile, che collega midollo e talamo — tenendo conto dei relè talamici",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 97",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — in un contesto neuroanatomico classico",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — in termini anatomo-funzionali",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 98",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo — considerando le vie coinvolte",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 99",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 100",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo — nel quadro clinico tipico",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 101",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — secondo una descrizione standard",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — considerando le vie coinvolte",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — considerando le vie coinvolte",
+        "Fascicolo gracile, che collega midollo e talamo — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 102",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — con segni associati compatibili",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — tenendo conto dei relè talamici",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 103",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — nel quadro clinico tipico",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 104",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — con implicazioni su strutture adiacenti",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo — in termini anatomo-funzionali",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 105",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo — secondo una descrizione standard",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — in termini anatomo-funzionali",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 106",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — nel quadro clinico tipico",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 107",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — tenendo conto dei relè talamici",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 108",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — considerando le vie coinvolte",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 109",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — con implicazioni su strutture adiacenti",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 110",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 111",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 112",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — nel quadro clinico tipico",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — in termini anatomo-funzionali",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 113",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 114",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — con segni associati compatibili",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — tenendo conto dei relè talamici",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 115",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — secondo una descrizione standard",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 116",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo — secondo una descrizione standard",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — considerando le vie coinvolte",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — nel quadro clinico tipico",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 117",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — in un contesto neuroanatomico classico",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 118",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — considerando le vie coinvolte",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — con implicazioni su strutture adiacenti",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 119",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — tenendo conto dei relè talamici",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 120",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — con segni associati compatibili",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 121",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Fascicolo gracile, che collega midollo e talamo — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 122",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — secondo una descrizione standard",
+        "Fascicolo gracile, che collega midollo e talamo — con segni associati compatibili",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 123",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — in un contesto neuroanatomico classico",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 124",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Fascicolo gracile, che collega midollo e talamo — in un contesto neuroanatomico classico",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 125",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 126",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — considerando le vie coinvolte",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 127",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — con implicazioni su strutture adiacenti",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 128",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo — con segni associati compatibili",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — con implicazioni su strutture adiacenti",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 129",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — in un contesto neuroanatomico classico",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 130",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 131",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — nel quadro clinico tipico",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 132",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo — con implicazioni su strutture adiacenti",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 133",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — in un contesto neuroanatomico classico",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 134",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 135",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — nel quadro clinico tipico",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — nel quadro clinico tipico",
+        "Fascicolo gracile, che collega midollo e talamo — in termini anatomo-funzionali",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 136",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 137",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo — con segni associati compatibili",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — considerando le vie coinvolte",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 138",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — in un contesto neuroanatomico classico",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — in un contesto neuroanatomico classico",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Fascicolo gracile, che collega midollo e talamo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 139",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — nel quadro clinico tipico",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 140",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — tenendo conto dei relè talamici",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — con segni associati compatibili",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 141",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — tenendo conto dei relè talamici",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — nel quadro clinico tipico",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 142",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — con implicazioni su strutture adiacenti",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 143",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Fascicolo gracile, che collega midollo e talamo — in termini anatomo-funzionali",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 144",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — in termini anatomo-funzionali",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 145",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — con implicazioni su strutture adiacenti",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 146",
+      "a": [
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — con implicazioni su strutture adiacenti",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 1,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 147",
+      "a": [
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 148",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — tenendo conto dei relè talamici",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori",
+        "Fascicolo gracile, che collega midollo e talamo"
+      ],
+      "correct": 2,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 149",
+      "a": [
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — secondo una descrizione standard",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — in termini anatomo-funzionali",
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Circolo di Willis"
+    },
+    {
+      "q": "Nel contesto del circolo di Willis, quale struttura permette compenso tra carotidi interne? Domanda 150",
+      "a": [
+        "Acquedotto di Silvio, che collega terzo e quarto ventricolo",
+        "Fascicolo gracile, che collega midollo e talamo",
+        "Peduncolo cerebellare medio, che collega ponte e cervelletto — con implicazioni su strutture adiacenti",
+        "Comunicante anteriore, che collega le due arterie cerebrali anteriori — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Circolo di Willis"
+    }
+  ],
+  "ORGANI DI SENSO ": [
+    {
+      "q": "Una lesione del segmento Nervo ottico determina più probabilmente:",
+      "a": [
+        "emianopsia bitemporale — in termini anatomo-funzionali — tenendo conto dei relè talamici",
+        "cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta",
+        "quadrantanopia omonima superiore controlaterale — in un contesto neuroanatomico classico",
+        "emianopsia omonima controlaterale — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Quale deficit del campo visivo è più compatibile con una lesione del Nervo ottico?",
+      "a": [
+        "emianopsia bitemporale — con segni associati compatibili — con segni associati compatibili",
+        "quadrantanopia omonima superiore controlaterale — tenendo conto dei relè talamici",
+        "emianopsia omonima controlaterale — con implicazioni su strutture adiacenti",
+        "cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "In neuro-oftalmologia, il Nervo ottico è associato a:",
+      "a": [
+        "emianopsia omonima controlaterale — considerando le vie coinvolte",
+        "emianopsia bitemporale — considerando le vie coinvolte — in un contesto neuroanatomico classico",
+        "quadrantanopia omonima superiore controlaterale — in un contesto neuroanatomico classico",
+        "cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Se il Nervo ottico è danneggiato, quale pattern clinico è atteso?",
+      "a": [
+        "cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta",
+        "quadrantanopia omonima superiore controlaterale — con implicazioni su strutture adiacenti — nel quadro clinico tipico",
+        "emianopsia bitemporale — tenendo conto dei relè talamici",
+        "emianopsia omonima controlaterale — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Una lesione del segmento Chiasma ottico determina più probabilmente:",
+      "a": [
+        "emianopsia omonima con risparmio maculare tipico",
+        "cecità monoculare ipsilaterale — con segni associati compatibili",
+        "emianopsia bitemporale per interessamento fibre nasali decussanti — con implicazioni su strutture adiacenti",
+        "quadrantanopia inferiore omonima — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Quale deficit del campo visivo è più compatibile con una lesione del Chiasma ottico?",
+      "a": [
+        "cecità monoculare ipsilaterale — con implicazioni su strutture adiacenti",
+        "emianopsia omonima con risparmio maculare tipico",
+        "emianopsia bitemporale per interessamento fibre nasali decussanti",
+        "quadrantanopia inferiore omonima"
+      ],
+      "correct": 2,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "In neuro-oftalmologia, il Chiasma ottico è associato a:",
+      "a": [
+        "cecità monoculare ipsilaterale — secondo una descrizione standard",
+        "quadrantanopia inferiore omonima — in termini anatomo-funzionali",
+        "emianopsia omonima con risparmio maculare tipico",
+        "emianopsia bitemporale per interessamento fibre nasali decussanti"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Se il Chiasma ottico è danneggiato, quale pattern clinico è atteso?",
+      "a": [
+        "cecità monoculare ipsilaterale — con segni associati compatibili",
+        "emianopsia omonima con risparmio maculare tipico",
+        "quadrantanopia inferiore omonima — con implicazioni su strutture adiacenti",
+        "emianopsia bitemporale per interessamento fibre nasali decussanti"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Una lesione del segmento Tratto ottico determina più probabilmente:",
+      "a": [
+        "emianopsia omonima controlaterale — secondo una descrizione standard",
+        "cecità monoculare ipsilaterale",
+        "emianopsia bitemporale",
+        "diplopia verticale isolata da IV"
+      ],
+      "correct": 0,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Quale deficit del campo visivo è più compatibile con una lesione del Tratto ottico?",
+      "a": [
+        "diplopia verticale isolata da IV — considerando le vie coinvolte",
+        "emianopsia omonima controlaterale",
+        "cecità monoculare ipsilaterale",
+        "emianopsia bitemporale — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "In neuro-oftalmologia, il Tratto ottico è associato a:",
+      "a": [
+        "emianopsia bitemporale",
+        "cecità monoculare ipsilaterale — tenendo conto dei relè talamici",
+        "diplopia verticale isolata da IV",
+        "emianopsia omonima controlaterale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Se il Tratto ottico è danneggiato, quale pattern clinico è atteso?",
+      "a": [
+        "cecità monoculare ipsilaterale — in termini anatomo-funzionali",
+        "emianopsia omonima controlaterale",
+        "diplopia verticale isolata da IV — considerando le vie coinvolte",
+        "emianopsia bitemporale"
+      ],
+      "correct": 1,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Una lesione del segmento Ansa di Meyer, radiazioni ottiche temporali determina più probabilmente:",
+      "a": [
+        "quadrantanopia superiore omonima controlaterale",
+        "cecità monoculare ipsilaterale — in termini anatomo-funzionali",
+        "emianopsia bitemporale — con segni associati compatibili",
+        "quadrantanopia inferiore omonima"
+      ],
+      "correct": 0,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Quale deficit del campo visivo è più compatibile con una lesione del Ansa di Meyer, radiazioni ottiche temporali?",
+      "a": [
+        "emianopsia bitemporale",
+        "quadrantanopia superiore omonima controlaterale",
+        "quadrantanopia inferiore omonima — tenendo conto dei relè talamici",
+        "cecità monoculare ipsilaterale"
+      ],
+      "correct": 1,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "In neuro-oftalmologia, il Ansa di Meyer, radiazioni ottiche temporali è associato a:",
+      "a": [
+        "quadrantanopia superiore omonima controlaterale",
+        "cecità monoculare ipsilaterale",
+        "quadrantanopia inferiore omonima — secondo una descrizione standard",
+        "emianopsia bitemporale — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Se il Ansa di Meyer, radiazioni ottiche temporali è danneggiato, quale pattern clinico è atteso?",
+      "a": [
+        "cecità monoculare ipsilaterale",
+        "emianopsia bitemporale",
+        "quadrantanopia inferiore omonima — in un contesto neuroanatomico classico",
+        "quadrantanopia superiore omonima controlaterale"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Una lesione del segmento Radiazioni ottiche parietali determina più probabilmente:",
+      "a": [
+        "emianopsia bitemporale — nel quadro clinico tipico",
+        "quadrantanopia superiore omonima",
+        "cecità monoculare ipsilaterale",
+        "quadrantanopia inferiore omonima controlaterale — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Quale deficit del campo visivo è più compatibile con una lesione del Radiazioni ottiche parietali?",
+      "a": [
+        "quadrantanopia inferiore omonima controlaterale",
+        "cecità monoculare ipsilaterale",
+        "emianopsia bitemporale",
+        "quadrantanopia superiore omonima"
+      ],
+      "correct": 0,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "In neuro-oftalmologia, il Radiazioni ottiche parietali è associato a:",
+      "a": [
+        "cecità monoculare ipsilaterale — considerando le vie coinvolte",
+        "quadrantanopia inferiore omonima controlaterale",
+        "quadrantanopia superiore omonima — con segni associati compatibili",
+        "emianopsia bitemporale"
+      ],
+      "correct": 1,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Se il Radiazioni ottiche parietali è danneggiato, quale pattern clinico è atteso?",
+      "a": [
+        "emianopsia bitemporale — nel quadro clinico tipico",
+        "cecità monoculare ipsilaterale — nel quadro clinico tipico",
+        "quadrantanopia superiore omonima — secondo una descrizione standard",
+        "quadrantanopia inferiore omonima controlaterale"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Una lesione del segmento Corteccia visiva primaria occipitale determina più probabilmente:",
+      "a": [
+        "paralisi facciale periferica ipsilaterale",
+        "cecità monoculare ipsilaterale — tenendo conto dei relè talamici",
+        "emianopsia omonima controlaterale spesso con risparmio maculare — in termini anatomo-funzionali",
+        "emianopsia bitemporale — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Quale deficit del campo visivo è più compatibile con una lesione del Corteccia visiva primaria occipitale?",
+      "a": [
+        "cecità monoculare ipsilaterale — con implicazioni su strutture adiacenti — nel quadro clinico tipico",
+        "paralisi facciale periferica ipsilaterale — con implicazioni su strutture adiacenti",
+        "emianopsia omonima controlaterale spesso con risparmio maculare — con segni associati compatibili",
+        "emianopsia bitemporale — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "In neuro-oftalmologia, il Corteccia visiva primaria occipitale è associato a:",
+      "a": [
+        "cecità monoculare ipsilaterale — considerando le vie coinvolte",
+        "paralisi facciale periferica ipsilaterale — tenendo conto dei relè talamici",
+        "emianopsia omonima controlaterale spesso con risparmio maculare — con implicazioni su strutture adiacenti",
+        "emianopsia bitemporale — con segni associati compatibili — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Se il Corteccia visiva primaria occipitale è danneggiato, quale pattern clinico è atteso?",
+      "a": [
+        "emianopsia bitemporale — in un contesto neuroanatomico classico — in un contesto neuroanatomico classico",
+        "cecità monoculare ipsilaterale — tenendo conto dei relè talamici",
+        "paralisi facciale periferica ipsilaterale — in termini anatomo-funzionali",
+        "emianopsia omonima controlaterale spesso con risparmio maculare — con segni associati compatibili"
+      ],
+      "correct": 3,
+      "cat": "Via visiva"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente Nucleo cocleare?",
+      "a": [
+        "prima stazione centrale della via uditiva dopo il nervo vestibolococleare",
+        "stazione di relay visivo — tenendo conto dei relè talamici",
+        "nucleo motorio del faciale — nel quadro clinico tipico",
+        "nucleo del tratto solitario — considerando le vie coinvolte — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nella via uditiva, Nucleo cocleare:",
+      "a": [
+        "stazione di relay visivo — considerando le vie coinvolte — nel quadro clinico tipico",
+        "nucleo del tratto solitario — con segni associati compatibili",
+        "prima stazione centrale della via uditiva dopo il nervo vestibolococleare",
+        "nucleo motorio del faciale"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Quale descrizione è più accurata per Nucleo cocleare?",
+      "a": [
+        "stazione di relay visivo — considerando le vie coinvolte",
+        "nucleo motorio del faciale — con implicazioni su strutture adiacenti — tenendo conto dei relè talamici",
+        "prima stazione centrale della via uditiva dopo il nervo vestibolococleare",
+        "nucleo del tratto solitario — considerando le vie coinvolte — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente Collicolo inferiore?",
+      "a": [
+        "integrazione visiva principale",
+        "sede del quarto ventricolo — tenendo conto dei relè talamici",
+        "sede della decussazione delle piramidi — secondo una descrizione standard",
+        "integrazione uditiva nel mesencefalo e relay verso il talamo"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nella via uditiva, Collicolo inferiore:",
+      "a": [
+        "integrazione visiva principale — con implicazioni su strutture adiacenti",
+        "integrazione uditiva nel mesencefalo e relay verso il talamo — secondo una descrizione standard",
+        "sede della decussazione delle piramidi",
+        "sede del quarto ventricolo"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Quale descrizione è più accurata per Collicolo inferiore?",
+      "a": [
+        "sede della decussazione delle piramidi — secondo una descrizione standard",
+        "sede del quarto ventricolo — in un contesto neuroanatomico classico — secondo una descrizione standard",
+        "integrazione uditiva nel mesencefalo e relay verso il talamo",
+        "integrazione visiva principale — nel quadro clinico tipico — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente Corpo genicolato mediale?",
+      "a": [
+        "nucleo del tratto corticospinale — con segni associati compatibili",
+        "relay talamico della via visiva",
+        "nucleo per propriocezione inconscia — considerando le vie coinvolte",
+        "relay talamico della via uditiva verso corteccia temporale — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nella via uditiva, Corpo genicolato mediale:",
+      "a": [
+        "relay talamico della via visiva",
+        "relay talamico della via uditiva verso corteccia temporale",
+        "nucleo per propriocezione inconscia — in un contesto neuroanatomico classico",
+        "nucleo del tratto corticospinale — in un contesto neuroanatomico classico — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Quale descrizione è più accurata per Corpo genicolato mediale?",
+      "a": [
+        "relay talamico della via uditiva verso corteccia temporale",
+        "nucleo del tratto corticospinale — con segni associati compatibili",
+        "nucleo per propriocezione inconscia",
+        "relay talamico della via visiva — considerando le vie coinvolte"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Quale affermazione descrive correttamente Corteccia uditiva primaria?",
+      "a": [
+        "localizzata nel giro di Heschl nel lobo temporale",
+        "localizzata nella calcarina occipitale",
+        "localizzata nel cingolo posteriore",
+        "localizzata nel giro precentrale — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nella via uditiva, Corteccia uditiva primaria:",
+      "a": [
+        "localizzata nel cingolo posteriore",
+        "localizzata nel giro precentrale",
+        "localizzata nel giro di Heschl nel lobo temporale",
+        "localizzata nella calcarina occipitale"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Quale descrizione è più accurata per Corteccia uditiva primaria?",
+      "a": [
+        "localizzata nel giro precentrale",
+        "localizzata nella calcarina occipitale — secondo una descrizione standard",
+        "localizzata nel giro di Heschl nel lobo temporale",
+        "localizzata nel cingolo posteriore — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Quale affermazione è corretta per Via olfattiva primaria?",
+      "a": [
+        "raggiunge corteccia olfattiva senza relay talamico obbligato iniziale",
+        "entra nel cervelletto via peduncolo medio — tenendo conto dei relè talamici",
+        "decussa alle piramidi bulbari — con implicazioni su strutture adiacenti — secondo una descrizione standard",
+        "passa obbligatoriamente per corpo genicolato laterale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Olfatto"
+    },
+    {
+      "q": "Nel sistema olfattivo, Via olfattiva primaria:",
+      "a": [
+        "entra nel cervelletto via peduncolo medio — con segni associati compatibili",
+        "raggiunge corteccia olfattiva senza relay talamico obbligato iniziale",
+        "decussa alle piramidi bulbari — nel quadro clinico tipico",
+        "passa obbligatoriamente per corpo genicolato laterale"
+      ],
+      "correct": 1,
+      "cat": "Olfatto"
+    },
+    {
+      "q": "Quale descrizione corrisponde a Via olfattiva primaria?",
+      "a": [
+        "entra nel cervelletto via peduncolo medio — tenendo conto dei relè talamici",
+        "passa obbligatoriamente per corpo genicolato laterale — nel quadro clinico tipico",
+        "decussa alle piramidi bulbari",
+        "raggiunge corteccia olfattiva senza relay talamico obbligato iniziale"
+      ],
+      "correct": 3,
+      "cat": "Olfatto"
+    },
+    {
+      "q": "Quale affermazione è corretta per Bulbo olfattivo?",
+      "a": [
+        "è un ventricolo encefalico — con implicazioni su strutture adiacenti",
+        "è un nucleo vestibolare — considerando le vie coinvolte",
+        "riceve fibre del nervo olfattivo e proietta tramite tratto olfattivo — nel quadro clinico tipico",
+        "è un ganglio spinale — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Olfatto"
+    },
+    {
+      "q": "Nel sistema olfattivo, Bulbo olfattivo:",
+      "a": [
+        "è un ventricolo encefalico — in un contesto neuroanatomico classico",
+        "è un nucleo vestibolare — in un contesto neuroanatomico classico — considerando le vie coinvolte",
+        "è un ganglio spinale",
+        "riceve fibre del nervo olfattivo e proietta tramite tratto olfattivo — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Olfatto"
+    },
+    {
+      "q": "Quale descrizione corrisponde a Bulbo olfattivo?",
+      "a": [
+        "è un ganglio spinale — in termini anatomo-funzionali",
+        "è un nucleo vestibolare — considerando le vie coinvolte",
+        "è un ventricolo encefalico — con segni associati compatibili",
+        "riceve fibre del nervo olfattivo e proietta tramite tratto olfattivo — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Olfatto"
+    },
+    {
+      "q": "Quale descrizione è corretta per Riflesso vestibolo-oculare?",
+      "a": [
+        "decussa la via corticospinale",
+        "stabilizza lo sguardo durante movimenti del capo — con segni associati compatibili",
+        "controlla secrezione di ADH — con implicazioni su strutture adiacenti",
+        "genera la percezione cosciente del dolore — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Vestibolare"
+    },
+    {
+      "q": "Nel controllo dell'equilibrio, Riflesso vestibolo-oculare:",
+      "a": [
+        "stabilizza lo sguardo durante movimenti del capo — in un contesto neuroanatomico classico",
+        "genera la percezione cosciente del dolore — considerando le vie coinvolte",
+        "controlla secrezione di ADH — in un contesto neuroanatomico classico",
+        "decussa la via corticospinale"
+      ],
+      "correct": 0,
+      "cat": "Vestibolare"
+    },
+    {
+      "q": "Quale affermazione su Riflesso vestibolo-oculare è vera?",
+      "a": [
+        "genera la percezione cosciente del dolore",
+        "controlla secrezione di ADH",
+        "stabilizza lo sguardo durante movimenti del capo",
+        "decussa la via corticospinale"
+      ],
+      "correct": 2,
+      "cat": "Vestibolare"
+    },
+    {
+      "q": "Quale descrizione è corretta per Nuclei vestibolari?",
+      "a": [
+        "integrano segnali dai canali semicircolari e proiettano a cervelletto e vie oculari — con implicazioni su strutture adiacenti",
+        "sono neuroni pregangliari parasimpatici — in un contesto neuroanatomico classico",
+        "sono relè della sensibilità epicritica al talamo",
+        "sono nel lobo occipitale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Vestibolare"
+    },
+    {
+      "q": "Nel controllo dell'equilibrio, Nuclei vestibolari:",
+      "a": [
+        "sono relè della sensibilità epicritica al talamo — in termini anatomo-funzionali",
+        "integrano segnali dai canali semicircolari e proiettano a cervelletto e vie oculari — considerando le vie coinvolte",
+        "sono nel lobo occipitale — in termini anatomo-funzionali",
+        "sono neuroni pregangliari parasimpatici — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Vestibolare"
+    },
+    {
+      "q": "Quale affermazione su Nuclei vestibolari è vera?",
+      "a": [
+        "sono relè della sensibilità epicritica al talamo",
+        "integrano segnali dai canali semicircolari e proiettano a cervelletto e vie oculari",
+        "sono nel lobo occipitale — con segni associati compatibili",
+        "sono neuroni pregangliari parasimpatici — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Vestibolare"
+    },
+    {
+      "q": "Nel gusto, Nucleo del tratto solitario:",
+      "a": [
+        "principale relay per afferenze viscerali e gusto nel bulbo",
+        "nucleo del collicolo superiore per visione — considerando le vie coinvolte",
+        "nucleo motorio del trigemino nel ponte",
+        "nucleo dentato cerebellare per motricità fine"
+      ],
+      "correct": 0,
+      "cat": "Gusto"
+    },
+    {
+      "q": "Quale descrizione è corretta per Nucleo del tratto solitario?",
+      "a": [
+        "nucleo del collicolo superiore per visione — in termini anatomo-funzionali",
+        "nucleo dentato cerebellare per motricità fine — nel quadro clinico tipico",
+        "principale relay per afferenze viscerali e gusto nel bulbo",
+        "nucleo motorio del trigemino nel ponte — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Gusto"
+    },
+    {
+      "q": "Una lesione di Nucleo del tratto solitario compromette soprattutto:",
+      "a": [
+        "nucleo dentato cerebellare per motricità fine",
+        "nucleo del collicolo superiore per visione — in termini anatomo-funzionali",
+        "principale relay per afferenze viscerali e gusto nel bulbo — considerando le vie coinvolte",
+        "nucleo motorio del trigemino nel ponte"
+      ],
+      "correct": 2,
+      "cat": "Gusto"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia omonima controlaterale. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Nervo ottico — in un contesto neuroanatomico classico",
+        "Radiazioni ottiche parietali",
+        "Tratto ottico — nel quadro clinico tipico — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia omonima controlaterale spesso con risparmio maculare. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Chiasma ottico — in un contesto neuroanatomico classico",
+        "Corteccia visiva primaria occipitale",
+        "Nervo ottico — considerando le vie coinvolte",
+        "Tratto ottico"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Corteccia visiva primaria occipitale",
+        "Chiasma ottico — tenendo conto dei relè talamici",
+        "Nervo ottico — in termini anatomo-funzionali",
+        "Ansa di Meyer, radiazioni ottiche temporali"
+      ],
+      "correct": 2,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia omonima controlaterale. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Tratto ottico",
+        "Radiazioni ottiche parietali",
+        "Chiasma ottico — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia bitemporale per interessamento fibre nasali decussanti. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Tratto ottico",
+        "Chiasma ottico — considerando le vie coinvolte — con implicazioni su strutture adiacenti",
+        "Corteccia visiva primaria occipitale — con segni associati compatibili",
+        "Ansa di Meyer, radiazioni ottiche temporali"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia bitemporale per interessamento fibre nasali decussanti. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Nervo ottico — considerando le vie coinvolte — in termini anatomo-funzionali",
+        "Chiasma ottico — con implicazioni su strutture adiacenti",
+        "Radiazioni ottiche parietali — con segni associati compatibili",
+        "Ansa di Meyer, radiazioni ottiche temporali — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia bitemporale per interessamento fibre nasali decussanti. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Tratto ottico — in termini anatomo-funzionali",
+        "Chiasma ottico — secondo una descrizione standard — in un contesto neuroanatomico classico",
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Corteccia visiva primaria occipitale"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Chiasma ottico — con implicazioni su strutture adiacenti",
+        "Radiazioni ottiche parietali",
+        "Nervo ottico — tenendo conto dei relè talamici",
+        "Ansa di Meyer, radiazioni ottiche temporali"
+      ],
+      "correct": 2,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia superiore omonima controlaterale. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Corteccia visiva primaria occipitale",
+        "Nervo ottico — nel quadro clinico tipico",
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Chiasma ottico — secondo una descrizione standard — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Tratto ottico — in termini anatomo-funzionali",
+        "Nervo ottico",
+        "Radiazioni ottiche parietali",
+        "Chiasma ottico — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Nervo ottico — con segni associati compatibili — secondo una descrizione standard",
+        "Chiasma ottico — con segni associati compatibili",
+        "Tratto ottico — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia omonima controlaterale. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Tratto ottico — in termini anatomo-funzionali",
+        "Radiazioni ottiche parietali",
+        "Chiasma ottico",
+        "Nervo ottico"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Nervo ottico — con segni associati compatibili",
+        "Corteccia visiva primaria occipitale",
+        "Chiasma ottico — nel quadro clinico tipico",
+        "Radiazioni ottiche parietali"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia bitemporale per interessamento fibre nasali decussanti. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Radiazioni ottiche parietali",
+        "Chiasma ottico",
+        "Nervo ottico",
+        "Tratto ottico"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Nervo ottico",
+        "Ansa di Meyer, radiazioni ottiche temporali — con segni associati compatibili",
+        "Radiazioni ottiche parietali",
+        "Chiasma ottico — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣⁣",
+      "a": [
+        "Tratto ottico — con segni associati compatibili",
+        "Nervo ottico",
+        "Corteccia visiva primaria occipitale — considerando le vie coinvolte",
+        "Radiazioni ottiche parietali"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia omonima controlaterale spesso con risparmio maculare. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Nervo ottico",
+        "Corteccia visiva primaria occipitale — con segni associati compatibili",
+        "Tratto ottico — in termini anatomo-funzionali — con implicazioni su strutture adiacenti",
+        "Ansa di Meyer, radiazioni ottiche temporali"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia omonima controlaterale spesso con risparmio maculare. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Radiazioni ottiche parietali",
+        "Chiasma ottico",
+        "Corteccia visiva primaria occipitale"
+      ],
+      "correct": 3,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia omonima controlaterale spesso con risparmio maculare. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Tratto ottico — in un contesto neuroanatomico classico — con segni associati compatibili",
+        "Nervo ottico — tenendo conto dei relè talamici",
+        "Corteccia visiva primaria occipitale"
+      ],
+      "correct": 3,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣⁣",
+      "a": [
+        "Nervo ottico — con implicazioni su strutture adiacenti",
+        "Radiazioni ottiche parietali — in termini anatomo-funzionali",
+        "Chiasma ottico",
+        "Tratto ottico"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: quadrantanopia inferiore omonima controlaterale. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali — nel quadro clinico tipico",
+        "Nervo ottico — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: quadrantanopia superiore omonima controlaterale. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Nervo ottico — con implicazioni su strutture adiacenti",
+        "Ansa di Meyer, radiazioni ottiche temporali — secondo una descrizione standard",
+        "Radiazioni ottiche parietali",
+        "Chiasma ottico — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: quadrantanopia inferiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Radiazioni ottiche parietali",
+        "Nervo ottico",
+        "Chiasma ottico",
+        "Ansa di Meyer, radiazioni ottiche temporali"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia bitemporale per interessamento fibre nasali decussanti. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale — in un contesto neuroanatomico classico",
+        "Chiasma ottico",
+        "Nervo ottico — secondo una descrizione standard",
+        "Radiazioni ottiche parietali"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia inferiore omonima controlaterale. Quale struttura è più probabilmente lesa?",
+      "a": [
+        "Radiazioni ottiche parietali",
+        "Nervo ottico — nel quadro clinico tipico",
+        "Corteccia visiva primaria occipitale",
+        "Chiasma ottico"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia inferiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali — con implicazioni su strutture adiacenti",
+        "Nervo ottico — in un contesto neuroanatomico classico — con segni associati compatibili",
+        "Radiazioni ottiche parietali",
+        "Corteccia visiva primaria occipitale"
+      ],
+      "correct": 2,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia omonima controlaterale. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Tratto ottico — in un contesto neuroanatomico classico",
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Corteccia visiva primaria occipitale",
+        "Chiasma ottico"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣",
+      "a": [
+        "Chiasma ottico — in termini anatomo-funzionali",
+        "Tratto ottico",
+        "Radiazioni ottiche parietali",
+        "Nervo ottico — in termini anatomo-funzionali"
+      ],
+      "correct": 3,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia superiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Corteccia visiva primaria occipitale — tenendo conto dei relè talamici",
+        "Nervo ottico — con implicazioni su strutture adiacenti",
+        "Chiasma ottico"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali",
+        "Nervo ottico",
+        "Chiasma ottico"
+      ],
+      "correct": 2,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia bitemporale per interessamento fibre nasali decussanti. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Nervo ottico — tenendo conto dei relè talamici",
+        "Chiasma ottico — in un contesto neuroanatomico classico — considerando le vie coinvolte",
+        "Radiazioni ottiche parietali — con implicazioni su strutture adiacenti",
+        "Ansa di Meyer, radiazioni ottiche temporali — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: quadrantanopia superiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣",
+      "a": [
+        "Tratto ottico — considerando le vie coinvolte",
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia inferiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali",
+        "Nervo ottico — in termini anatomo-funzionali",
+        "Ansa di Meyer, radiazioni ottiche temporali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia superiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali",
+        "Tratto ottico",
+        "Ansa di Meyer, radiazioni ottiche temporali"
+      ],
+      "correct": 3,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia inferiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣⁣",
+      "a": [
+        "Radiazioni ottiche parietali — tenendo conto dei relè talamici",
+        "Tratto ottico — considerando le vie coinvolte",
+        "Chiasma ottico — nel quadro clinico tipico",
+        "Nervo ottico — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia omonima controlaterale spesso con risparmio maculare. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Tratto ottico — in termini anatomo-funzionali",
+        "Corteccia visiva primaria occipitale",
+        "Nervo ottico — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia inferiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣",
+      "a": [
+        "Radiazioni ottiche parietali — nel quadro clinico tipico",
+        "Chiasma ottico — con segni associati compatibili",
+        "Tratto ottico — in termini anatomo-funzionali — nel quadro clinico tipico",
+        "Ansa di Meyer, radiazioni ottiche temporali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia superiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣⁣",
+      "a": [
+        "Chiasma ottico — in termini anatomo-funzionali",
+        "Ansa di Meyer, radiazioni ottiche temporali — in termini anatomo-funzionali",
+        "Nervo ottico — nel quadro clinico tipico — in termini anatomo-funzionali",
+        "Tratto ottico"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣⁣⁣",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali",
+        "Nervo ottico — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Radiazioni ottiche parietali — in un contesto neuroanatomico classico",
+        "Tratto ottico — in termini anatomo-funzionali",
+        "Chiasma ottico",
+        "Ansa di Meyer, radiazioni ottiche temporali"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia omonima controlaterale spesso con risparmio maculare. Quale struttura è più probabilmente lesa?⁣⁣⁣",
+      "a": [
+        "Ansa di Meyer, radiazioni ottiche temporali — in termini anatomo-funzionali",
+        "Corteccia visiva primaria occipitale — in un contesto neuroanatomico classico",
+        "Nervo ottico — nel quadro clinico tipico — secondo una descrizione standard",
+        "Tratto ottico — in un contesto neuroanatomico classico — tenendo conto dei relè talamici"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia omonima controlaterale spesso con risparmio maculare. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali",
+        "Ansa di Meyer, radiazioni ottiche temporali",
+        "Chiasma ottico — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia bitemporale per interessamento fibre nasali decussanti. Quale struttura è più probabilmente lesa?⁣⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali — considerando le vie coinvolte",
+        "Ansa di Meyer, radiazioni ottiche temporali — con implicazioni su strutture adiacenti",
+        "Chiasma ottico — considerando le vie coinvolte"
+      ],
+      "correct": 3,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: quadrantanopia inferiore omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale — con implicazioni su strutture adiacenti",
+        "Tratto ottico — in un contesto neuroanatomico classico",
+        "Nervo ottico — tenendo conto dei relè talamici",
+        "Radiazioni ottiche parietali — in un contesto neuroanatomico classico"
+      ],
+      "correct": 3,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣⁣⁣⁣",
+      "a": [
+        "Tratto ottico",
+        "Nervo ottico",
+        "Corteccia visiva primaria occipitale — in termini anatomo-funzionali",
+        "Chiasma ottico"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣⁣⁣⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali — considerando le vie coinvolte",
+        "Nervo ottico",
+        "Chiasma ottico"
+      ],
+      "correct": 2,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣",
+      "a": [
+        "Tratto ottico",
+        "Chiasma ottico — considerando le vie coinvolte — nel quadro clinico tipico",
+        "Corteccia visiva primaria occipitale — con segni associati compatibili",
+        "Ansa di Meyer, radiazioni ottiche temporali"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo destra: emianopsia omonima controlaterale. Quale struttura è più probabilmente lesa?⁣⁣⁣",
+      "a": [
+        "Corteccia visiva primaria occipitale — con segni associati compatibili",
+        "Tratto ottico — tenendo conto dei relè talamici",
+        "Chiasma ottico — nel quadro clinico tipico",
+        "Nervo ottico — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: cecità monoculare ipsilaterale con abolizione afferenza pupillare diretta. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣⁣⁣⁣⁣⁣",
+      "a": [
+        "Nervo ottico — in un contesto neuroanatomico classico",
+        "Corteccia visiva primaria occipitale",
+        "Ansa di Meyer, radiazioni ottiche temporali — in un contesto neuroanatomico classico",
+        "Tratto ottico — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Paziente riferisce disturbo visivo sinistra: emianopsia bitemporale per interessamento fibre nasali decussanti. Quale struttura è più probabilmente lesa?⁣⁣⁣⁣",
+      "a": [
+        "Chiasma ottico — con segni associati compatibili",
+        "Nervo ottico",
+        "Corteccia visiva primaria occipitale",
+        "Radiazioni ottiche parietali"
+      ],
+      "correct": 0,
+      "cat": "Vignette visive"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 102",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — considerando le vie coinvolte — con segni associati compatibili",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con segni associati compatibili",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 103",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con segni associati compatibili — secondo una descrizione standard",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con segni associati compatibili — con implicazioni su strutture adiacenti",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in termini anatomo-funzionali — nel quadro clinico tipico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — con segni associati compatibili"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 104",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in termini anatomo-funzionali",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 105",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — secondo una descrizione standard",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con segni associati compatibili",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — considerando le vie coinvolte",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 106",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — tenendo conto dei relè talamici — in un contesto neuroanatomico classico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 107",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — considerando le vie coinvolte",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in un contesto neuroanatomico classico",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 108",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con implicazioni su strutture adiacenti",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — in un contesto neuroanatomico classico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 109",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in un contesto neuroanatomico classico",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 110",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali — secondo una descrizione standard",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — nel quadro clinico tipico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 111",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con implicazioni su strutture adiacenti",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con segni associati compatibili",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 112",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — tenendo conto dei relè talamici",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 113",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti — nel quadro clinico tipico",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con segni associati compatibili — con segni associati compatibili",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 114",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in termini anatomo-funzionali",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con implicazioni su strutture adiacenti — in un contesto neuroanatomico classico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 115",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti — in un contesto neuroanatomico classico",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — considerando le vie coinvolte — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 116",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 117",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — in un contesto neuroanatomico classico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in termini anatomo-funzionali — considerando le vie coinvolte"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 118",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — con segni associati compatibili",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in termini anatomo-funzionali",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 119",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — secondo una descrizione standard",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — nel quadro clinico tipico — in termini anatomo-funzionali",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — considerando le vie coinvolte",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con segni associati compatibili — secondo una descrizione standard"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 120",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 121",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 122",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — considerando le vie coinvolte",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 123",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 124",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con segni associati compatibili — con implicazioni su strutture adiacenti",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con segni associati compatibili — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 125",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in termini anatomo-funzionali — nel quadro clinico tipico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con implicazioni su strutture adiacenti — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 126",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con implicazioni su strutture adiacenti",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 127",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — nel quadro clinico tipico",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 128",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 129",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — considerando le vie coinvolte",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti — in un contesto neuroanatomico classico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — con segni associati compatibili"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 130",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico — con segni associati compatibili",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 131",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — secondo una descrizione standard",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con segni associati compatibili",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in termini anatomo-funzionali — con segni associati compatibili"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 132",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — considerando le vie coinvolte",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con segni associati compatibili — con implicazioni su strutture adiacenti",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 133",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — tenendo conto dei relè talamici — con segni associati compatibili",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico — con segni associati compatibili",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — tenendo conto dei relè talamici",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 134",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — tenendo conto dei relè talamici",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 135",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 136",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali — in termini anatomo-funzionali",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 137",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici — con implicazioni su strutture adiacenti",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — nel quadro clinico tipico — in termini anatomo-funzionali",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 138",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — secondo una descrizione standard",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — con segni associati compatibili",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con segni associati compatibili"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 139",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — secondo una descrizione standard — secondo una descrizione standard",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — tenendo conto dei relè talamici",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 140",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con implicazioni su strutture adiacenti — in termini anatomo-funzionali",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 141",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 142",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con segni associati compatibili — secondo una descrizione standard",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — nel quadro clinico tipico — con segni associati compatibili",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in un contesto neuroanatomico classico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 143",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — nel quadro clinico tipico",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — tenendo conto dei relè talamici — con implicazioni su strutture adiacenti",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — con implicazioni su strutture adiacenti",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 144",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — secondo una descrizione standard — nel quadro clinico tipico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 145",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — tenendo conto dei relè talamici",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in termini anatomo-funzionali",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico — secondo una descrizione standard"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 146",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — con implicazioni su strutture adiacenti — in termini anatomo-funzionali",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — secondo una descrizione standard",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con segni associati compatibili",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 147",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — nel quadro clinico tipico",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — secondo una descrizione standard"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 148",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico — tenendo conto dei relè talamici",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in termini anatomo-funzionali"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 149",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — in un contesto neuroanatomico classico",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico — in termini anatomo-funzionali",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 150",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali — considerando le vie coinvolte",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 151",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico — con segni associati compatibili",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in termini anatomo-funzionali",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — nel quadro clinico tipico"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 152",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con implicazioni su strutture adiacenti",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 153",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con implicazioni su strutture adiacenti",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in termini anatomo-funzionali — tenendo conto dei relè talamici",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 154",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — secondo una descrizione standard",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 155",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — secondo una descrizione standard",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — considerando le vie coinvolte — con segni associati compatibili",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in un contesto neuroanatomico classico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 156",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — nel quadro clinico tipico",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 157",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — considerando le vie coinvolte",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con segni associati compatibili",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 158",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — nel quadro clinico tipico",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — nel quadro clinico tipico"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 159",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — secondo una descrizione standard",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard — in termini anatomo-funzionali",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 160",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — tenendo conto dei relè talamici",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — tenendo conto dei relè talamici — con segni associati compatibili",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — nel quadro clinico tipico"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 161",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — secondo una descrizione standard — secondo una descrizione standard",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — secondo una descrizione standard",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — tenendo conto dei relè talamici"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 162",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — con implicazioni su strutture adiacenti",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — nel quadro clinico tipico — tenendo conto dei relè talamici",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 163",
+      "a": [
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — in termini anatomo-funzionali",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — tenendo conto dei relè talamici"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 164",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 165",
+      "a": [
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — considerando le vie coinvolte",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — considerando le vie coinvolte"
+      ],
+      "correct": 1,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 166",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali — nel quadro clinico tipico",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — considerando le vie coinvolte — con implicazioni su strutture adiacenti",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici — secondo una descrizione standard"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 167",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in termini anatomo-funzionali — in termini anatomo-funzionali"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 168",
+      "a": [
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva",
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — secondo una descrizione standard — secondo una descrizione standard",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — tenendo conto dei relè talamici",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — con implicazioni su strutture adiacenti"
+      ],
+      "correct": 0,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 169",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — secondo una descrizione standard — nel quadro clinico tipico",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — secondo una descrizione standard — con segni associati compatibili",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — tenendo conto dei relè talamici",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con segni associati compatibili"
+      ],
+      "correct": 2,
+      "cat": "Via uditiva"
+    },
+    {
+      "q": "Nel sistema uditivo, quale sequenza di relay è più corretta? Domanda 170",
+      "a": [
+        "Nervo V → nucleo spinale → cervelletto → talamo → giro precentrale — in un contesto neuroanatomico classico — secondo una descrizione standard",
+        "Nervo X → nucleo ambiguo → capsula interna → putamen → corteccia occipitale — in un contesto neuroanatomico classico — in termini anatomo-funzionali",
+        "Nervo II → chiasma → corpo genicolato laterale → calcarina → ippocampo — con implicazioni su strutture adiacenti",
+        "Nervo VIII → nuclei cocleari → complesso olivare superiore → collicolo inferiore → corpo genicolato mediale → corteccia uditiva — tenendo conto dei relè talamici"
+      ],
+      "correct": 3,
+      "cat": "Via uditiva"
+    }
+  ]
+};
