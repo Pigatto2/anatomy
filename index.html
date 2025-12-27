@@ -891,13 +891,14 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./neuro_questions.js"></script>
   <script>
     /***********************************************************************
      * SUPABASE CONFIG
      * - Inserisci le tue credenziali
      **********************************************************************/
-    const SUPABASE_URL = "https://haohnwguytakaqqqmflj.supabase.co";
-    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhhb2hud2d1eXRha2FxcXFtZmxqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY4MzU0NDUsImV4cCI6MjA4MjQxMTQ0NX0.bsy2ClUJLoFv7hX5ypnzVAXtUzUTUnkX5sVpSWUTjaw";
+    const SUPABASE_URL = "https://mgoqwlzmsiqfjsixogub.supabase.co";
+    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1nb3F3bHptc2lxZmpzaXhvZ3ViIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY4MzIxMDEsImV4cCI6MjA4MjQwODEwMX0.JkQd1zgK1EAGfdNSJsCDlxFY6zIhyGuME6YMq7QNKAs";
 
     // fetch wrapper con timeout (evita il blocco infinito su "Accesso..." se la richiesta resta appesa)
     function fetchWithTimeout(ms=15000){
@@ -932,22 +933,7 @@
         title: "Neuroanatomia",
         desc: "Tronco encefalico, midollo, vie e concetti base.",
         icon: "🧠",
-        modules: {
-          "Introduzione": [
-            { q: "Qual è la funzione principale del tessuto nervoso?", a: ["Ricevere e trasmettere segnali elettrici", "Produrre ormoni", "Filtrare il sangue", "Contrarsi come muscolo"], cat:"Base" },
-            { q: "Il sistema nervoso centrale comprende:", a: ["Encefalo e midollo spinale", "Nervi cranici e spinali", "Gangli periferici", "Plessi nervosi"], cat:"Base" },
-            { q: "La sostanza bianca è formata soprattutto da:", a: ["Assoni mielinizzati", "Corpi cellulari", "Capillari", "Liquor"], cat:"Istologia" },
-            { q: "Le cellule che producono mielina nel SNC sono:", a: ["Oligodendrociti", "Cellule di Schwann", "Microglia", "Astrociti"], cat:"Glia" },
-            { q: "La microglia deriva da:", a: ["Linee monocito-macrofagiche", "Neuroectoderma", "Ectoderma superficiale", "Endoderma"], cat:"Glia" }
-          ],
-          "Tronco encefalico": [
-            { q: "L'ordine caudo-craniale del tronco encefalico è:", a: ["Bulbo, ponte, mesencefalo", "Ponte, bulbo, mesencefalo", "Mesencefalo, ponte, bulbo", "Bulbo, mesencefalo, ponte"], cat:"Anatomia" },
-            { q: "Nel solco basilare del ponte decorre:", a: ["Arteria basilare", "Arteria cerebrale media", "Acquedotto di Silvio", "Nervo ottico"], cat:"Vasi" },
-            { q: "Le piramidi bulbari contengono:", a: ["Fibre cortico-spinali", "Fibre spino-talamiche", "Fibre commissurali", "Fibre olivo-cerebellari"], cat:"Vie" },
-            { q: "Dal solco anterolaterale del bulbo emerge tipicamente:", a: ["Nervo ipoglosso (XII)", "Nervo trigemino (V)", "Nervo olfattivo (I)", "Nervo abducente (VI)"], cat:"NC" },
-            { q: "La decussazione delle piramidi riguarda circa:", a: ["80% delle fibre", "100% delle fibre", "20% delle fibre", "50% delle fibre"], cat:"Vie" }
-          ]
-        }
+        modules: window.NEURO_MODULES
       },
 
       semeiotica: {
@@ -2646,4 +2632,3 @@ function baseRedirectUrl(){
 
 </body>
 </html>
-
