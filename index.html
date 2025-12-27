@@ -1029,8 +1029,12 @@
       quizAnswered: false,
 
       // settings modal
-      pendingMode: null
-    };
+      pendingMode: null,
+
+      // async save (stats refresh)
+      pendingAttemptSave: null,
+      pendingAttemptCourseId: null
+};
 
     // Q map for stable qids
     const QMAP = {};
@@ -1421,7 +1425,10 @@
       drawProgressChart(__progressPoints);
     }
 
+    let __courseDashSeq = 0;
+
     async function refreshCourseDashboard(){
+      const seq = ++__courseDashSeq;
       // reset UI
       lockedHint.style.display = "none";
       btnWrong.disabled = true;
@@ -1451,6 +1458,8 @@
         .order("created_at", { ascending: true })
         .limit(30);
 
+      if (seq !== __courseDashSeq) return;
+
       if (aErr) console.warn(aErr);
 
       const perc = (attempts || []).map(r => ({ percent: r.percent, created_at: r.created_at }));
@@ -1470,6 +1479,8 @@
         .select("qid, module, correct, wrong, attempts, last_seen, last_wrong")
         .eq("user_id", state.currentUser.id)
         .eq("course_id", courseId);
+
+      if (seq !== __courseDashSeq) return;
 
       if (qErr) console.warn(qErr);
 
@@ -1763,6 +1774,10 @@ function startQuiz(qs, modulesLabel, limit){
       state.quizCorrect = 0;
       state.quizAnswered = false;
 
+      // pending save (avoid late UI refresh after logout)
+      state.pendingAttemptSave = null;
+      state.pendingAttemptCourseId = null;
+
       // UI
       crumbEl.textContent = `Corsi • ${QUIZ_PACKS[state.currentCourseId].title} • Quiz`;
       navTo("quiz");
@@ -1861,25 +1876,57 @@ function startQuiz(qs, modulesLabel, limit){
       progressBar.style.width = "100%";
       navTo("results");
 
-      // save attempt
+      // save attempt (non blocca la UI) + refresh stats automatico
       if (state.isLogged && supa){
         try{
           const modules = [...new Set(state.quizQuestions.map(x => x.module))];
-          await supa.from("quiz_attempts").insert({
-            user_id: state.currentUser.id,
-            course_id: state.currentCourseId,
-            mode: state.mode,
-            modules,
-            total: state.quizQuestions.length,
-            correct: state.quizCorrect,
-            percent: pct
-          });
+          const courseId = state.currentCourseId;
+          const userId = state.currentUser?.id;
+          if (userId){
+            const payload = {
+              user_id: userId,
+              course_id: courseId,
+              mode: state.mode,
+              modules,
+              total: state.quizQuestions.length,
+              correct: state.quizCorrect,
+              percent: pct
+            };
+
+            const p = supa.from("quiz_attempts").insert(payload);
+            state.pendingAttemptSave = p;
+            state.pendingAttemptCourseId = courseId;
+
+            // quando finisce, aggiorna media/grafici senza F5 (se sei già nel corso)
+            p.then(({ error })=>{
+              if (state.pendingAttemptSave !== p) return; // ignora se superato da un altro salvataggio
+              state.pendingAttemptSave = null;
+              state.pendingAttemptCourseId = null;
+
+              if (error) throw error;
+
+              try{
+                if (vCourse && vCourse.classList.contains("active") && state.currentCourseId === courseId){
+                  refreshCourseDashboard();
+                }
+              }catch(e){}
+
+              toast("success","Quiz salvato","Media e grafici aggiornati.");
+            }).catch((e)=>{
+              if (state.pendingAttemptSave === p){
+                state.pendingAttemptSave = null;
+                state.pendingAttemptCourseId = null;
+              }
+              console.warn("quiz_attempts insert error", e);
+              toast("warn","Salvataggio non riuscito","Riprova: la media potrebbe non includere l’ultimo quiz.");
+            });
+          }
         }catch(e){
           console.warn("quiz_attempts insert error", e);
         }
       }
 
-      // update dashboard when returning
+// update dashboard when returning
     }
 
     /***********************************************************************
