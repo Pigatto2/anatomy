@@ -844,6 +844,7 @@
 
           <div style="display:flex; gap:10px; width:100%; flex-wrap:wrap;">
             <button class="btn-primary blue" style="flex:1; min-width:180px;" onclick="backToCourse()">Torna al corso</button>
+            <button class="btn-secondary" style="flex:1; min-width:180px;" onclick="restartLastQuiz()">Rifai quiz</button>
             <button class="btn-secondary" style="flex:1; min-width:180px;" onclick="navTo('dashboard')">Corsi</button>
           </div>
         </div>
@@ -1003,6 +1004,9 @@
       quizIndex: 0,
       quizCorrect: 0,
       quizAnswered: false,
+
+      // repeat / reset
+      lastQuizInput: null,
 
       // settings modal
       pendingMode: null
@@ -1588,6 +1592,8 @@
      * Quiz engine (with limit)
      **********************************************************************/
     function startQuiz(qs, modulesLabel, limit){
+      // salva parametri per poter rifare il quiz dalla schermata risultati
+      state.lastQuizInput = { qs: (qs || []).filter(Boolean), modulesLabel: modulesLabel || [], limit: limit || 0, mode: state.mode, at: Date.now() };
       // dedup
       const seen = new Set();
       let qList = qs.filter(Boolean).filter(x => {
@@ -1632,6 +1638,16 @@
       renderQuestion();
     }
 
+    function restartLastQuiz(){
+      const p = state.lastQuizInput;
+      if (!p || !Array.isArray(p.qs) || p.qs.length === 0){
+        toast("error","Nessun quiz da ripetere","Avvia prima un quiz e poi potrai rifarlo.");
+        return;
+      }
+      // riparte con stessi parametri (domande possono essere rimescolate)
+      startQuiz(p.qs, p.modulesLabel, p.limit);
+    }
+
     function renderQuestion(){
       if (state.quizIndex >= state.quizQuestions.length){
         finishQuiz();
@@ -1659,7 +1675,7 @@
       quizActions.classList.remove("visible");
     }
 
-    async function handleAnswer(idx, btn){
+    function handleAnswer(idx, btn){
       if (state.quizAnswered) return;
       state.quizAnswered = true;
 
@@ -1676,22 +1692,26 @@
         buttons[q.correctIndex].classList.add("correct");
       }
 
-      // save progress per question (only if logged)
+      // Mostra subito il bottone "Prossima" (NON bloccare l'UI in attesa di Supabase)
+      quizActions.classList.add("visible");
+
+      // Salva progressi per domanda (best effort, non bloccante)
       if (state.isLogged && supa){
         try{
-          await supa.rpc("record_question_attempt", {
-            p_course_id: q.course_id,
-            p_qid: q.qid,
-            p_module: q.module,
-            p_cat: q.cat,
-            p_is_correct: isCorrect
-          });
+          supa
+            .rpc("record_question_attempt", {
+              p_course_id: q.course_id,
+              p_qid: q.qid,
+              p_module: q.module,
+              p_cat: q.cat,
+              p_is_correct: isCorrect
+            })
+            .then(({ error }) => { if (error) throw error; })
+            .catch(e => console.warn("record_question_attempt error", e));
         }catch(e){
           console.warn("record_question_attempt error", e);
         }
       }
-
-      quizActions.classList.add("visible");
     }
 
     function nextQuestion(){
