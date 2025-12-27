@@ -562,7 +562,12 @@
     .notice-title{ margin:0; font-size: 15px; font-weight: 850; }
     .notice-sub{ margin:6px 0 0; color: var(--text-sec); font-size: 13px; line-height: 1.35; }
 
-  </style>
+  
+    .search-card.selected{
+      outline: 2px solid rgba(0,113,227,0.55);
+      box-shadow: 0 0 0 4px rgba(0,113,227,0.12);
+    }
+</style>
 </head>
 
 <body>
@@ -882,6 +887,23 @@
 
       <div class="divider"></div>
 
+      <div id="settings-old-wrap" class="hidden">
+        <div class="input-group">
+          <label class="input-label">Ripasso: domande non viste da almeno (giorni)</label>
+          <div class="inline-row">
+            <input class="input-field" id="settings-old-days" type="number" min="0" value="14" />
+            <button class="btn-secondary" style="max-width:160px;" onclick="setOldDays(3)">3</button>
+            <button class="btn-secondary" style="max-width:160px;" onclick="setOldDays(7)">7</button>
+            <button class="btn-secondary" style="max-width:160px;" onclick="setOldDays(14)">14</button>
+          </div>
+          <label style="display:flex; gap:10px; align-items:center; margin-top:10px; font-weight:750; color:var(--text-sec);">
+            <input type="checkbox" id="settings-old-unseen" checked />
+            Include anche le domande mai viste
+          </label>
+        </div>
+        <div class="divider"></div>
+      </div>
+
       <div style="display:flex; gap:10px; flex-wrap:wrap;">
         <button class="btn-secondary" style="flex:1; min-width:180px;" onclick="closeSettings()">Annulla</button>
         <button class="btn-primary blue" style="flex:1; min-width:180px;" id="settings-start" onclick="startFromSettings()">Avvia</button>
@@ -996,6 +1018,8 @@
 
       // search
       searchHits: [],
+      searchLastQuery: "",
+      searchLastResultIds: [],
 
       // quiz
       mode: null, // modules | course_exam | wrong | old | search
@@ -1213,9 +1237,12 @@
       state.currentCourseId = courseId;
       state.selectedModules.clear();
       state.searchHits = [];
+      state.searchLastQuery = "";
+      state.searchLastResultIds = [];
       searchEl.value = "";
       searchResultsEl.innerHTML = "";
       btnSearchStart.disabled = true;
+      btnSearchStart.textContent = "Quiz dalla ricerca";
 
       const c = QUIZ_PACKS[courseId];
       crumbEl.textContent = `Corsi • ${c.title}`;
@@ -1293,34 +1320,47 @@
      **********************************************************************/
     function onSearch(){
       const q = (searchEl.value || "").trim().toLowerCase();
-      searchResultsEl.innerHTML = "";
-      state.searchHits = [];
-      btnSearchStart.disabled = true;
-
-      if (!q || q.length < 2) return;
-
       const map = QMAP[state.currentCourseId] || {};
+
+      // reset when query cleared
+      if (!q || q.length < 2){
+        state.searchLastQuery = "";
+        state.searchLastResultIds = [];
+        state.searchHits = [];
+        searchResultsEl.innerHTML = "";
+        btnSearchStart.disabled = true;
+        btnSearchStart.textContent = "Quiz dalla ricerca";
+        return;
+      }
+
+      // if query changed, reset manual selection
+      if (q !== state.searchLastQuery){
+        state.searchHits = [];
+        state.searchLastQuery = q;
+      }
+
       const hits = Object.entries(map)
         .map(([qid, obj]) => ({ qid, ...obj }))
-        .filter(x => x.q.toLowerCase().includes(q) || (x.cat||"").toLowerCase().includes(q) || x.module.toLowerCase().includes(q))
-        .slice(0, 40);
+        .filter(x =>
+          (x.q || "").toLowerCase().includes(q) ||
+          (x.cat || "").toLowerCase().includes(q) ||
+          (x.module || "").toLowerCase().includes(q)
+        )
+        .slice(0, 60);
+
+      state.searchLastResultIds = hits.map(h => h.qid);
+
+      searchResultsEl.innerHTML = "";
 
       hits.forEach(h => {
         const card = document.createElement("div");
-        card.className = "glass-panel";
+        card.className = "glass-panel search-card";
         card.style.borderRadius = "20px";
         card.style.padding = "14px";
         card.style.cursor = "pointer";
 
         const selected = state.searchHits.includes(h.qid);
-        card.onclick = () => {
-          if (state.searchHits.includes(h.qid)){
-            state.searchHits = state.searchHits.filter(x => x !== h.qid);
-          } else {
-            state.searchHits.push(h.qid);
-          }
-          onSearch();
-        };
+        if (selected) card.classList.add("selected");
 
         card.innerHTML = `
           <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
@@ -1328,14 +1368,41 @@
             <span class="badge" style="white-space:nowrap;">${escapeHtml(h.module)}</span>
           </div>
           <div style="margin-top:8px;color:var(--text-sec);font-weight:750;">${escapeHtml(h.cat || "")}</div>
-          <div style="margin-top:10px;color:${selected ? "var(--primary)" : "var(--text-sec)"};font-weight:850;">
+          <div data-cta style="margin-top:10px;color:${selected ? "var(--primary)" : "var(--text-sec)"};font-weight:850;">
             ${selected ? "✓ Aggiunta al quiz" : "Clicca per aggiungere"}
           </div>
         `;
+
+        card.onclick = () => {
+          if (state.searchHits.includes(h.qid)){
+            state.searchHits = state.searchHits.filter(x => x !== h.qid);
+            card.classList.remove("selected");
+          } else {
+            state.searchHits.push(h.qid);
+            card.classList.add("selected");
+          }
+
+          const cta = card.querySelector("[data-cta]");
+          if (cta){
+            const nowSel = state.searchHits.includes(h.qid);
+            cta.textContent = nowSel ? "✓ Aggiunta al quiz" : "Clicca per aggiungere";
+            cta.style.color = nowSel ? "var(--primary)" : "var(--text-sec)";
+          }
+
+          updateSearchStartButton();
+        };
+
         searchResultsEl.appendChild(card);
       });
 
-      btnSearchStart.disabled = state.searchHits.length === 0;
+      updateSearchStartButton();
+
+      function updateSearchStartButton(){
+        const total = state.searchLastResultIds.length;
+        const sel = state.searchHits.length;
+        btnSearchStart.disabled = total === 0;
+        btnSearchStart.textContent = sel > 0 ? `Quiz dalla ricerca (${sel})` : `Quiz con tutti i risultati (${total})`;
+      }
     }
 
     /***********************************************************************
@@ -1467,15 +1534,24 @@
       settingsLimit.value = String(n);
     }
 
+    function setOldDays(n){
+      const el = document.getElementById("settings-old-days");
+      if (el) el.value = String(n);
+    }
+
     function openQuizSettings(mode){
       // login gate for modes that require data
       if ((mode === "wrong" || mode === "old") && !state.isLogged){
         openAuth("login");
         return;
       }
-      if (mode === "search" && state.searchHits.length === 0) return;
+      if (mode === "search" && state.searchHits.length === 0 && (state.searchLastResultIds||[]).length === 0) return;
 
       state.pendingMode = mode;
+
+      // extra settings per modalità
+      const oldWrap = document.getElementById("settings-old-wrap");
+      if (oldWrap) oldWrap.classList.toggle("hidden", mode !== "old");
 
       // describe
       const course = QUIZ_PACKS[state.currentCourseId];
@@ -1487,7 +1563,11 @@
       else if (mode === "course_exam") base = `Simulazione corso (tutti i moduli, ${totalCourse} domande).`;
       else if (mode === "wrong") base = `Quiz dagli errori recenti (solo questo corso).`;
       else if (mode === "old") base = `Ripasso delle domande più vecchie (solo questo corso).`;
-      else if (mode === "search") base = `Quiz dalle domande selezionate in ricerca (${state.searchHits.length}).`;
+      else if (mode === "search"){
+        const sel = state.searchHits.length;
+        const total = (state.searchLastResultIds||[]).length;
+        base = sel ? `Quiz dalle domande selezionate in ricerca (${sel}).` : `Quiz da tutti i risultati ricerca (${total}).`;
+      }
 
       settingsDesc.textContent = base + " Scegli quante domande vuoi fare.";
 
@@ -1536,7 +1616,8 @@
 
       if (mode === "search"){
         modulesLabel = ["Ricerca"];
-        qs = state.searchHits.map(qid => QMAP[state.currentCourseId][qid]).filter(Boolean);
+        const ids = state.searchHits.length ? state.searchHits : (state.searchLastResultIds || []);
+        qs = ids.map(qid => QMAP[state.currentCourseId][qid]).filter(Boolean);
       }
 
       if (mode === "wrong"){
@@ -1561,21 +1642,50 @@
 
       if (mode === "old"){
         if (!supa || !state.isLogged) return;
+
+        const daysEl = document.getElementById("settings-old-days");
+        const includeEl = document.getElementById("settings-old-unseen");
+        const daysRaw = parseInt(daysEl?.value || "14", 10);
+        const days = isNaN(daysRaw) ? 14 : Math.max(0, daysRaw);
+        const includeUnseen = includeEl ? !!includeEl.checked : true;
+
         const { data, error } = await supa
           .from("question_progress")
           .select("qid, last_seen")
           .eq("user_id", state.currentUser.id)
           .eq("course_id", state.currentCourseId)
-          .order("last_seen", { ascending: true, nullsFirst: true })
-          .limit(250);
+          .limit(5000);
 
         if (error){
           settingsError.textContent = "Errore nel caricare il ripasso.";
           settingsError.style.display = "block";
           return;
         }
+
+        const lastSeenByQid = new Map((data || []).map(r => [r.qid, r.last_seen]));
+        const cutoffMs = Date.now() - (days * 86400000);
+
+        const map = QMAP[state.currentCourseId] || {};
+        const eligible = Object.keys(map).filter((qid) => {
+          const last = lastSeenByQid.get(qid);
+          if (!last) return includeUnseen;
+          const t = new Date(last).getTime();
+          if (!t) return includeUnseen;
+          return days === 0 ? true : (t <= cutoffMs);
+        });
+
+        // unseen first, then oldest seen
+        eligible.sort((a,b) => {
+          const la = lastSeenByQid.get(a);
+          const lb = lastSeenByQid.get(b);
+          if (!la && !lb) return 0;
+          if (!la) return -1;
+          if (!lb) return 1;
+          return new Date(la).getTime() - new Date(lb).getTime();
+        });
+
         modulesLabel = ["Ripasso"];
-        qs = (data || []).map(r => QMAP[state.currentCourseId][r.qid]).filter(Boolean);
+        qs = eligible.map(qid => map[qid]).filter(Boolean);
       }
 
       // start quiz
@@ -1590,7 +1700,11 @@
     function startQuiz(qs, modulesLabel, limit){
       // dedup
       const seen = new Set();
-      let qList = qs.filter(Boolean).filter(x => {
+      let qList = qs
+        .filter(Boolean)
+        .filter(x => typeof x.q === "string" && x.q.trim().length)
+        .filter(x => Array.isArray(x.a) && x.a.length >= 2)
+        .filter(x => {
         if (seen.has(x.q)) return false;
         seen.add(x.q);
         return true;
@@ -1611,7 +1725,8 @@
         const baseCorrectIndex = (typeof x.correct === "number" && x.correct >= 0 && x.correct < x.a.length) ? x.correct : 0;
         const correctText = x.a[baseCorrectIndex];
         const opts = shuffle([...x.a]);
-        const correctIndex = opts.indexOf(correctText);
+        let correctIndex = opts.indexOf(correctText);
+        if (correctIndex < 0) correctIndex = 0;
         return {
           course_id: state.currentCourseId,
           qid: makeQid(state.currentCourseId, x.module, x.q),
@@ -1668,13 +1783,15 @@
       const buttons = Array.from(document.querySelectorAll(".opt-btn"));
       buttons.forEach(b => b.disabled = true);
 
-      const isCorrect = idx === q.correctIndex;
+      const safeCorrectIndex = (Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex < buttons.length) ? q.correctIndex : 0;
+
+      const isCorrect = idx === safeCorrectIndex;
       if (isCorrect){
         btn.classList.add("correct");
         state.quizCorrect++;
       } else {
         btn.classList.add("wrong");
-        buttons[q.correctIndex].classList.add("correct");
+        if (buttons[safeCorrectIndex]) buttons[safeCorrectIndex].classList.add("correct");
       }
 
       // save progress per question (only if logged)
@@ -1696,7 +1813,6 @@
     }
 
     function nextQuestion(){
-      if (!vQuiz.classList.contains("active")) return;
       if (!state.quizAnswered){
         if(!confirm("Vuoi saltare questa domanda?")) return;
       }
@@ -2633,3 +2749,4 @@ function baseRedirectUrl(){
 
 </body>
 </html>
+
