@@ -914,6 +914,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="./neuro_questions.js"></script>
+  <script src="./splanco.js"></script>
   <script>
     /***********************************************************************
      * SUPABASE CONFIG
@@ -957,6 +958,15 @@
         icon: "🧠",
         modules: window.NEURO_MODULES
       },
+
+      splanco: {
+        id: "splanco",
+        title: "Splancologia",
+        desc: "Apparati viscerali: respiratorio, digerente, urinario, genitale, endocrino.",
+        icon: "🫁",
+        modules: window.SPLANCO_MODULES || {}
+      },
+
 
       semeiotica: {
         id: "semeiotica",
