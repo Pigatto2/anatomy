@@ -218,12 +218,25 @@
     .course-icon{font-size:3rem; margin-bottom:10px;}
     .course-info h3{margin:0; font-size:1.45rem; font-weight:850; letter-spacing:-0.02em;}
     .course-info p{margin:8px 0 0 0; color: var(--text-sec); font-size:.95rem; line-height:1.4;}
-    .course-stats{display:flex; gap:10px; margin-top:auto; flex-wrap:wrap;}
-    .badge{
-      font-size:0.78rem; font-weight:850; padding:7px 12px; border-radius:999px;
+    .course-stats{display:flex; gap:10px; margin-top:auto; flex-wrap:wrap;      min-width:0;
+    }
+        .badge{
+      display:inline-flex;
+      align-items:center;
+      font-size:0.78rem;
+      font-weight:850;
+      padding:7px 12px;
+      border-radius:999px;
       background: rgba(255,255,255,0.55);
       border: 1px solid rgba(0,0,0,0.06);
       color: var(--text-sec);
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.15;
+      flex: 0 1 auto;
+      min-width: 0;
     }
 
     /* Course view */
@@ -1148,7 +1161,9 @@
     refreshSelectionBar();
     wireAuthEnterKeys();
 
-    // Prevent layout/scroll glitches after refresh
+    
+    initChartObservers();
+// Prevent layout/scroll glitches after refresh
     try{ if ("scrollRestoration" in history) history.scrollRestoration = "manual"; }catch(e){}
     try{ window.scrollTo(0,0); }catch(e){}
     try{ document.querySelectorAll(".view").forEach(v=> v.scrollTop = 0); }catch(e){}
@@ -1198,7 +1213,8 @@
 
       if (viewId === "course"){
         courseActions.classList.add("visible");
-      }
+        queueChartRedraw();
+}
     }
 
     function goHome(){
@@ -1427,6 +1443,36 @@
     let __progressPoints = [];
     let __moduleLabels = [];
     let __moduleValues = [];
+
+    // --- Chart robustness: redraw when layout becomes stable (prevents "blank canvas" without F5)
+    let __chartRedrawToken = 0;
+    function queueChartRedraw(){
+      const token = ++__chartRedrawToken;
+      // double rAF: wait for layout + paint after view transition
+      requestAnimationFrame(()=> requestAnimationFrame(()=>{
+        if (token !== __chartRedrawToken) return;
+        try{ drawProgressChart(__progressPoints); }catch(e){}
+        try{
+          if (!panelModules.classList.contains("hidden")){
+            drawModuleChart(__moduleLabels, __moduleValues);
+          }
+        }catch(e){}
+      }));
+    }
+
+    function initChartObservers(){
+      // ResizeObserver catches cases where canvas width is 0 during transitions
+      if (!("ResizeObserver" in window)) return;
+      try{
+        const ro = new ResizeObserver(()=> queueChartRedraw());
+        const w1 = document.querySelector("#panel-progress .chart-wrap");
+        const w2 = document.querySelector("#panel-modules .chart-wrap");
+        if (w1) ro.observe(w1);
+        if (w2) ro.observe(w2);
+        window.__chartRO = ro;
+      }catch(e){}
+    }
+
 
     function setProgressType(type){
       progressType = type;
@@ -1975,7 +2021,18 @@ function startQuiz(qs, modulesLabel, limit){
       const canvas = document.getElementById("progressChart");
       if (!canvas) return;
 
-      // normalize: allow [number] or [{v,t}] or [{percent,created_at}]
+      
+      // If the view just became visible, the canvas can briefly measure 0px wide.
+      // Retry a few frames instead of drawing a 1px chart (looks like it "disappeared").
+      const _rect = canvas.getBoundingClientRect();
+      canvas.__retry = canvas.__retry || 0;
+      if (_rect.width < 30 && canvas.__retry < 12){
+        canvas.__retry++;
+        requestAnimationFrame(()=> { try{ drawProgressChart(points); }catch(e){} });
+        return;
+      }
+      canvas.__retry = 0;
+// normalize: allow [number] or [{v,t}] or [{percent,created_at}]
       const arr = (points || []).map(p => {
         if (typeof p === "number") return { v: p, t: null };
         return {
@@ -2095,7 +2152,18 @@ function startQuiz(qs, modulesLabel, limit){
 function drawModuleChart(labels, vals){
       const canvas = document.getElementById("moduleChart");
       if (!canvas) return;
-      const { ctx, w, h } = setupCanvas(canvas, 180);
+      
+      // If the view just became visible, the canvas can briefly measure 0px wide.
+      // Retry a few frames instead of drawing a 1px chart (looks like it "disappeared").
+      const _rect = canvas.getBoundingClientRect();
+      canvas.__retry = canvas.__retry || 0;
+      if (_rect.width < 30 && canvas.__retry < 12){
+        canvas.__retry++;
+        requestAnimationFrame(()=> { try{ drawModuleChart(labels, vals); }catch(e){} });
+        return;
+      }
+      canvas.__retry = 0;
+const { ctx, w, h } = setupCanvas(canvas, 180);
       drawGrid(ctx,w,h);
 
       const primary = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim() || "#0071e3";
