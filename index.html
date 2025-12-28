@@ -200,7 +200,8 @@
       transition: all .3s var(--ease);
       display:flex;
       flex-direction:column;
-      height:220px;
+      min-height:220px;
+      height:auto;
       justify-content:space-between;
       overflow:hidden;
       position:relative;
@@ -2090,35 +2091,42 @@ function startQuiz(qs, modulesLabel, limit){
           ctx.fill();
         }
       } else {
-        // area
+        // area (polyline so markers stay exactly on the line)
+
         ctx.fillStyle = grad;
+
         ctx.beginPath();
+
         ctx.moveTo(xs[0], padY + innerH);
-        ctx.lineTo(xs[0], ys[0]);
 
-        for (let i=1;i<n;i++){
-          const xc = (xs[i-1] + xs[i]) / 2;
-          const yc = (ys[i-1] + ys[i]) / 2;
-          ctx.quadraticCurveTo(xs[i-1], ys[i-1], xc, yc);
+        for (let i=0;i<n;i++){
+
+          ctx.lineTo(xs[i], ys[i]);
+
         }
-        ctx.lineTo(xs[n-1], ys[n-1]);
+
         ctx.lineTo(xs[n-1], padY + innerH);
+
         ctx.closePath();
+
         ctx.fill();
-
         // stroke
-        ctx.strokeStyle = primary;
-        ctx.lineWidth = 2;
-        ctx.beginPath();
-        ctx.moveTo(xs[0], ys[0]);
-        for (let i=1;i<n;i++){
-          const xc = (xs[i-1] + xs[i]) / 2;
-          const yc = (ys[i-1] + ys[i]) / 2;
-          ctx.quadraticCurveTo(xs[i-1], ys[i-1], xc, yc);
-        }
-        ctx.lineTo(xs[n-1], ys[n-1]);
-        ctx.stroke();
 
+        ctx.strokeStyle = primary;
+
+        ctx.lineWidth = 2;
+
+        ctx.beginPath();
+
+        ctx.moveTo(xs[0], ys[0]);
+
+        for (let i=1;i<n;i++){
+
+          ctx.lineTo(xs[i], ys[i]);
+
+        }
+
+        ctx.stroke();
         // points
         for (let i=0;i<n;i++){
           ctx.fillStyle = "white";
