@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="it" data-theme="light">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <title>MED Test UNPID • Quiz Hub</title>
-
-  <style>
-    /* RESET & VARS */
-    :root{
-      /* Light Theme Defaults */
+  <script>
+  (function(){
+    try{
+      const k = 'med_theme';
+      const saved = localStorage.getItem(k);
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.dataset.theme = saved;
+      } else {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
+      }
+    } catch (e) {}
+  })();
+  </script>
+<style>
+    /* RESET & VARS (Apple-glass style) */
+:root{
       --bg-body:#fbfbfd;
       --glass: rgba(255,255,255,0.68);
       --glass-border: rgba(255,255,255,0.50);
@@ -20,15 +32,9 @@
 
       --text-main:#1d1d1f;
       --text-sec:#86868b;
-      --text-inv: #ffffff;
 
       --danger:#ff3b30;
       --success:#34c759;
-      
-      --card-bg: rgba(255,255,255,0.55);
-      --input-bg: #f2f2f7;
-      --input-bg-focus: #ffffff;
-
       --radius-l: 28px;
       --radius-m: 18px;
       --radius-s: 12px;
@@ -37,41 +43,54 @@
       --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
-    /* DARK THEME OVERRIDES */
-    [data-theme="dark"] {
-      --bg-body: #000000;
-      --glass: rgba(28, 28, 30, 0.75);
-      --glass-border: rgba(255,255,255,0.12);
-      --glass-shadow: 0 14px 40px rgba(0,0,0,0.3);
+    /* Theme (light = default) */
+    [data-theme="dark"]{
+      --bg-body:#0b0c10;
+      --glass: rgba(18,18,22,0.64);
+      --glass-border: rgba(255,255,255,0.10);
+      --glass-shadow: 0 18px 50px rgba(0,0,0,0.55);
 
-      --primary: #0a84ff;
-      --primary-2: #5ac8fa;
-      
-      --text-main: #f5f5f7;
-      --text-sec: #98989d;
-      --text-inv: #000000;
-
-      --card-bg: rgba(255,255,255,0.08);
-      --input-bg: #1c1c1e;
-      --input-bg-focus: #2c2c2e;
+      --text-main:#f5f5f7;
+      --text-sec:#a1a1a6;
     }
 
+    [data-theme="dark"] .ambient-bg{filter:saturate(120%) brightness(0.85);}
+
+    [data-theme="dark"] .btn-icon{background:rgba(255,255,255,0.10); color:var(--text-main);}
+    [data-theme="dark"] .btn-icon:hover{background:rgba(255,255,255,0.16);}
+
+    [data-theme="dark"] .btn-secondary{border-color: rgba(255,255,255,0.12); background: rgba(255,255,255,0.08);}
+    [data-theme="dark"] .btn-secondary:hover{background: rgba(255,255,255,0.12);}
+    [data-theme="dark"] .btn-primary:hover{box-shadow: 0 14px 28px rgba(0,0,0,0.55);}
+
+    [data-theme="dark"] .input-field{background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.10); color: var(--text-main);}
+    [data-theme="dark"] .input-field:focus{background: rgba(255,255,255,0.10); border-color: rgba(79,172,254,0.55); box-shadow: 0 0 0 5px rgba(0,113,227,0.18);}
+
+    [data-theme="dark"] .divider{background: rgba(255,255,255,0.10);}
+    [data-theme="dark"] .chip{background: rgba(255,255,255,0.10); border-color: rgba(255,255,255,0.12);}
+
+    [data-theme="dark"] .opt-btn{background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12);}
+    [data-theme="dark"] .opt-btn:hover{background: rgba(255,255,255,0.10);}
+
+    [data-theme="dark"] .modal .x{background: rgba(255,255,255,0.10);}
+    [data-theme="dark"] .notice{background: rgba(52,199,89,0.10); border-color: rgba(52,199,89,0.25);}
+    [data-theme="dark"] .error{color: #ffd5d5; background: rgba(255,59,48,0.12); border-color: rgba(255,59,48,0.25);}
+
     *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;outline:none}
-    html,body{height:100%;min-height:100dvh;width:100%;margin:0;padding:0;font-family:var(--font);color:var(--text-main);overflow:hidden;background:var(--bg-body);overscroll-behavior:none; transition: background 0.3s ease, color 0.3s ease;}
+    html,body{height:100%;min-height:100dvh;width:100%;margin:0;padding:0;font-family:var(--font);color:var(--text-main);overflow:hidden;background:var(--bg-body);overscroll-behavior:none;}
 
     /* Ambient background */
     .ambient-bg{
       position:absolute; inset:-50%; width:200%; height:200%;
       background:
-        radial-gradient(circle at 50% 50%, rgba(0,113,227,0.15), transparent 40%),
-        radial-gradient(circle at 20% 80%, rgba(52,199,89,0.12), transparent 40%),
-        radial-gradient(circle at 80% 20%, rgba(175,82,222,0.12), transparent 40%);
+        radial-gradient(circle at 50% 50%, rgba(0,113,227,0.08), transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(52,199,89,0.07), transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(175,82,222,0.07), transparent 40%);
       animation: moveBg 20s infinite alternate ease-in-out;
       z-index:-1;
       pointer-events:none;
+      filter:saturate(115%);
     }
-    [data-theme="dark"] .ambient-bg { opacity: 0.6; }
-
     @keyframes moveBg{
       0%{transform:translate(0,0) scale(1)}
       100%{transform:translate(-5%,-5%) scale(1.05)}
@@ -94,7 +113,6 @@
       -webkit-backdrop-filter:saturate(180%) blur(24px);
       border:1px solid var(--glass-border);
       box-shadow: var(--glass-shadow);
-      color: var(--text-main);
     }
 
     header{
@@ -116,8 +134,8 @@
       display:inline-flex; align-items:center; gap:8px;
       padding:8px 12px;
       border-radius:999px;
-      background: var(--card-bg);
-      border:1px solid var(--glass-border);
+      background: rgba(255,255,255,0.55);
+      border:1px solid rgba(0,0,0,0.06);
       color: var(--text-sec);
       font-weight:800;
       font-size:0.82rem;
@@ -126,7 +144,7 @@
     .btn-icon{
       width:40px;height:40px;border-radius:50%;
       border:none;
-      background:rgba(128,128,128,0.1);
+      background:rgba(0,0,0,0.04);
       color:var(--text-main);
       cursor:pointer;
       display:flex;align-items:center;justify-content:center;
@@ -134,7 +152,7 @@
       user-select:none;
       font-size:1.05rem;
     }
-    .btn-icon:hover{background:rgba(128,128,128,0.2);transform:scale(1.05)}
+    .btn-icon:hover{background:rgba(0,0,0,0.08);transform:scale(1.05)}
     .btn-icon:active{transform:scale(0.97)}
 
     /* Views */
@@ -156,7 +174,7 @@
 
     /* Titles */
     .section-header{margin-bottom:2px;}
-    .h2-title{font-size:2rem;font-weight:800;margin:0;letter-spacing:-0.02em; color: var(--text-main);}
+    .h2-title{font-size:2rem;font-weight:800;margin:0;letter-spacing:-0.02em;}
     .h-sub{color:var(--text-sec);font-size:1rem;margin-top:6px;line-height:1.45;}
 
     /* Buttons */
@@ -166,33 +184,39 @@
       border-radius:999px;
       border:none;
       background: var(--text-main);
-      color: var(--bg-body); 
+      color:white;
       font-size:1rem;
       font-weight:800;
       cursor:pointer;
       transition:transform .2s var(--ease), box-shadow .2s var(--ease), opacity .2s var(--ease);
       user-select:none;
     }
-    [data-theme="dark"] .btn-primary { color: #000; background: #fff; } /* Invertito per contrasto */
-    
-    .btn-primary.blue{background: var(--primary); color: white;}
-    
+    .btn-primary.blue{background: var(--primary);}
     .btn-primary:hover{transform: translateY(-2px); box-shadow: 0 12px 24px rgba(0,0,0,0.14);}
     .btn-primary:active{transform: scale(0.985);}
     .btn-primary:disabled{opacity:.45; cursor:not-allowed; transform:none; box-shadow:none;}
-    
     .btn-secondary{
       width:100%;
       padding:14px 16px;
       border-radius:999px;
-      border:1px solid var(--glass-border);
-      background: var(--card-bg);
+      border:1px solid rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.55);
       color: var(--text-main);
       font-weight:800;
       cursor:pointer;
       transition:transform .2s var(--ease), background .2s var(--ease);
     }
-    .btn-secondary:hover{transform: translateY(-1px); background: rgba(128,128,128,0.15);}
+    .btn-secondary:hover{transform: translateY(-1px); background: rgba(255,255,255,0.75);}
+
+    .btn-link{
+      border:none; background:transparent;
+      padding:0; margin:0;
+      color: var(--primary);
+      font-weight:900;
+      cursor:pointer;
+    }
+    .btn-link:hover{text-decoration:underline;}
+
 
     /* Inputs */
     .input-group{margin-bottom:14px;}
@@ -205,15 +229,14 @@
       padding:16px;
       border-radius: var(--radius-m);
       border:1px solid transparent;
-      background: var(--input-bg);
-      color: var(--text-main);
+      background:#f2f2f7;
       font-size:1rem;
       font-weight:650;
       font-family:inherit;
       transition:all .2s var(--ease);
     }
     .input-field:focus{
-      background: var(--input-bg-focus);
+      background:white;
       border-color: var(--primary);
       box-shadow: 0 0 0 4px rgba(0,113,227,0.14);
     }
@@ -252,16 +275,17 @@
     .course-icon{font-size:3rem; margin-bottom:10px;}
     .course-info h3{margin:0; font-size:1.45rem; font-weight:850; letter-spacing:-0.02em;}
     .course-info p{margin:8px 0 0 0; color: var(--text-sec); font-size:.95rem; line-height:1.4;}
-    .course-stats{display:flex; gap:10px; margin-top:auto; flex-wrap:wrap; min-width:0;}
-    .badge{
+    .course-stats{display:flex; gap:10px; margin-top:auto; flex-wrap:wrap;      min-width:0;
+    }
+        .badge{
       display:inline-flex;
       align-items:center;
       font-size:0.78rem;
       font-weight:850;
       padding:7px 12px;
       border-radius:999px;
-      background: var(--card-bg);
-      border: 1px solid var(--glass-border);
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(0,0,0,0.06);
       color: var(--text-sec);
       white-space: nowrap;
       max-width: 100%;
@@ -286,7 +310,14 @@
       display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
       position:relative; overflow:hidden;
     }
-    .stat-val{font-size:2rem; font-weight:900; color: var(--text-main);}
+    .stat-card::before{
+      content:"";
+      position:absolute; inset:-1px;
+      background: radial-gradient(circle at 30% 0%, rgba(0,113,227,0.10), transparent 55%);
+      pointer-events:none;
+    }
+    .stat-card > *{position:relative;}
+    .stat-val{font-size:2rem; font-weight:900;}
     .stat-label{font-size:.78rem; font-weight:900; color: var(--text-sec); text-transform:uppercase; letter-spacing:.06em;}
     .stat-mini{margin-top:10px; color: var(--text-sec); font-weight:750; font-size:.92rem; line-height:1.35;}
 
@@ -306,17 +337,16 @@
       padding:16px;
       border-radius: var(--radius-m);
       border:2px solid transparent;
-      background: var(--card-bg);
+      background: rgba(255,255,255,0.75);
       cursor:pointer;
       transition: all .2s var(--ease);
       box-shadow: 0 2px 10px rgba(0,0,0,0.03);
       user-select:none;
-      color: var(--text-main);
     }
     .module-item:hover{transform: translateY(-2px);}
     .module-item.selected{
       border-color: var(--primary);
-      background: rgba(0,113,227,0.12);
+      background: rgba(0,113,227,0.06);
     }
     .m-title{font-weight:850;font-size:.98rem;margin-bottom:6px;}
     .m-sub{font-size:.82rem;color: var(--text-sec);}
@@ -329,16 +359,16 @@
       border:none;
       border-radius:999px;
       padding:10px 14px;
-      background: rgba(128,128,128,0.1);
+      background: rgba(0,0,0,0.05);
       color: var(--text-sec);
       font-weight:850;
       cursor:pointer;
       transition: all .2s var(--ease);
       user-select:none;
     }
-    .seg button:hover{background: rgba(128,128,128,0.2);}
+    .seg button:hover{background: rgba(0,0,0,0.08);}
     .seg button.active{
-      background: rgba(0,113,227,0.15);
+      background: rgba(0,113,227,0.12);
       color: var(--primary);
     }
 
@@ -347,8 +377,8 @@
       margin-top:14px;
       border-radius: var(--radius-l);
       padding:14px;
-      background: var(--card-bg);
-      border:1px solid var(--glass-border);
+      background: rgba(255,255,255,0.55);
+      border:1px solid rgba(0,0,0,0.06);
     }
     canvas{width:100%; display:block;}
     .module-list{
@@ -367,7 +397,7 @@
       display:flex; align-items:center; justify-content:space-between; gap:10px;
       padding:12px 12px;
       border-radius: var(--radius-m);
-      background: var(--card-bg);
+      background: rgba(255,255,255,0.70);
       border:1px solid rgba(0,0,0,0.06);
       font-weight:850;
       color: var(--text-main);
@@ -375,7 +405,7 @@
     .module-row .val{color: var(--primary);}
 
     /* Quiz view */
-    .quiz-progress{height:6px;background: rgba(128,128,128,0.15); border-radius:999px; overflow:hidden; margin:8px 0 18px 0;}
+    .quiz-progress{height:6px;background: rgba(0,0,0,0.06); border-radius:999px; overflow:hidden; margin:8px 0 18px 0;}
     .quiz-bar{height:100%; background: var(--primary); width:0%; transition: width .35s ease;}
 
     .question-card{
@@ -388,7 +418,7 @@
       justify-content:center;
       margin-bottom:18px;
     }
-    .q-text{font-size:1.35rem;font-weight:850;line-height:1.4; color: var(--text-main);}
+    .q-text{font-size:1.35rem;font-weight:850;line-height:1.4;}
     .q-chip{
       display:inline-flex; align-items:center; gap:10px;
       padding:8px 12px;
@@ -406,9 +436,8 @@
       padding:20px 24px;
       text-align:left;
       border-radius: var(--radius-m);
-      border:1px solid var(--glass-border);
-      background: var(--card-bg);
-      color: var(--text-main);
+      border:1px solid rgba(0,0,0,0.06);
+      background: rgba(255,255,255,0.85);
       font-size:1rem;
       font-weight:750;
       cursor:pointer;
@@ -419,8 +448,8 @@
       user-select:none;
     }
     .opt-btn:active{transform: scale(0.985);}
-    .opt-btn.correct{background: rgba(52,199,89,0.15); border-color: rgba(52,199,89,0.55); color: var(--success);}
-    .opt-btn.wrong{background: rgba(255,59,48,0.15); border-color: rgba(255,59,48,0.55); color: var(--danger);}
+    .opt-btn.correct{background: #e8fce8; border-color: rgba(52,199,89,0.55); color:#0b5a22;}
+    .opt-btn.wrong{background:#ffebeb; border-color: rgba(255,59,48,0.55); color:#8a1111;}
     .opt-btn:disabled{cursor:default; opacity:1;}
 
     /* Floating bars */
@@ -444,7 +473,7 @@
       padding:12px 14px;
       border-radius:999px;
       border:1px solid rgba(0,0,0,0.06);
-      background: var(--card-bg);
+      background: rgba(255,255,255,0.65);
       color: var(--text-sec);
       font-weight:850;
       display:flex;
@@ -468,7 +497,7 @@
     .float-btn:active{transform: scale(0.985);}
     .float-btn:disabled{opacity:.45; cursor:not-allowed; transform:none;}
     .float-btn.secondary{
-      background: rgba(128,128,128,0.15);
+      background: rgba(0,0,0,0.06);
       color: var(--text-main);
       box-shadow:none;
     }
@@ -492,18 +521,14 @@
       border-radius: 28px;
       padding: 22px;
       position:relative;
-      background: var(--glass);
-      color: var(--text-main);
-      box-shadow: var(--glass-shadow);
-      border: 1px solid var(--glass-border);
     }
     .modal h3{margin:0 0 6px 0; font-weight:900;}
     .modal p{margin:0 0 14px 0; color: var(--text-sec); line-height:1.45;}
     .modal .x{
       position:absolute; top:14px; right:14px;
       width:40px;height:40px;border-radius:50%;
-      border:none;background: rgba(128,128,128,0.1);
-      cursor:pointer; color: var(--text-main);
+      border:none;background: rgba(0,0,0,0.05);
+      cursor:pointer;
     }
     .error{
       margin-top:10px;
@@ -511,19 +536,12 @@
       border-radius: var(--radius-m);
       background: rgba(255,59,48,0.10);
       border: 1px solid rgba(255,59,48,0.20);
-      color: #ea3a31;
+      color: #8a1111;
       font-weight:800;
       display:none;
     }
-    [data-theme="dark"] .error { color: #ff5e55; }
 
-    /* Search */
-    .search-card.selected{
-      outline: 2px solid rgba(0,113,227,0.55);
-      box-shadow: 0 0 0 4px rgba(0,113,227,0.12);
-    }
-
-    /* Helpers */
+    /* Small helpers */
     .hidden{display:none !important;}
     .pill-link{
       border:none;
@@ -532,9 +550,8 @@
       font-weight:850;
       cursor:pointer;
       padding:0;
-      font-size: 0.9rem;
     }
-    .divider{height:1px; background: rgba(128,128,128,0.15); margin:16px 0;}
+    .divider{height:1px; background: rgba(0,0,0,0.06); margin:16px 0;}
     .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
   
     /* Toasts */
@@ -557,25 +574,24 @@
       align-items:flex-start;
       padding: 12px 14px;
       border-radius: 18px;
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
+      background: rgba(255,255,255,0.68);
+      border: 1px solid rgba(255,255,255,0.70);
       box-shadow: 0 16px 46px rgba(0,0,0,0.12);
       -webkit-backdrop-filter: blur(18px);
       backdrop-filter: blur(18px);
       overflow: hidden;
       position: relative;
-      color: var(--text-main);
     }
     .toast::before{
       content:"";
       position:absolute;
       left:0; top:0; bottom:0;
       width: 3px;
-      background: var(--primary);
+      background: rgba(0,113,227,0.95);
     }
-    .toast.success::before{ background: var(--success); }
-    .toast.warn::before{ background: #ff9f0a; }
-    .toast.danger::before{ background: var(--danger); }
+    .toast.success::before{ background: rgba(52,199,89,0.95); }
+    .toast.warn::before{ background: rgba(255,159,10,0.95); }
+    .toast.danger::before{ background: rgba(255,59,48,0.95); }
     .toast h4{ margin:0; font-size: 13px; letter-spacing: .2px; }
     .toast p{ margin:3px 0 0; color: var(--text-sec); font-size: 12.5px; line-height: 1.35; }
     .toast .t-actions{ display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; }
@@ -584,15 +600,14 @@
       padding: 8px 12px;
       font-weight: 750;
       font-size: 12px;
-      border: 1px solid var(--glass-border);
-      background: var(--card-bg);
+      border: 1px solid rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.65);
       cursor: pointer;
-      color: var(--text-main);
     }
     .toast .t-btn.primary{
-      background: var(--primary);
-      border-color: transparent;
-      color: white;
+      background: rgba(0,113,227,0.92);
+      border-color: rgba(0,113,227,0.55);
+      color: #fff;
     }
     .toast .t-x{
       margin-left:auto;
@@ -603,21 +618,26 @@
       font-size: 16px;
       line-height: 1;
       padding: 2px 6px;
-      color: var(--text-main);
     }
     .toast .t-x:hover{ opacity: 1; }
 
-    /* Auth Success Notice */
+    /* Auth success panel */
     .notice{
       padding: 14px;
       border-radius: 18px;
-      background: var(--card-bg);
-      border: 1px solid var(--glass-border);
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(255,255,255,0.65);
       box-shadow: 0 16px 46px rgba(0,0,0,0.06);
     }
     .notice-title{ margin:0; font-size: 15px; font-weight: 850; }
     .notice-sub{ margin:6px 0 0; color: var(--text-sec); font-size: 13px; line-height: 1.35; }
-  </style>
+
+  
+    .search-card.selected{
+      outline: 2px solid rgba(0,113,227,0.55);
+      box-shadow: 0 0 0 4px rgba(0,113,227,0.12);
+    }
+</style>
 </head>
 
 <body>
@@ -634,12 +654,13 @@
       </div>
 
       <div class="nav-actions">
-        <button class="btn-icon" id="theme-toggle" title="Cambia tema" onclick="toggleTheme()">☀︎</button>
+        <button class="btn-icon" id="btn-theme" title="Tema" aria-label="Tema" onclick="toggleTheme()">🌙</button>
         <button class="btn-icon" title="Home" aria-label="Home" onclick="goHome()">⌂</button>
       </div>
     </header>
 
     <div class="view-container">
+      <!-- DASHBOARD -->
       <section id="view-dashboard" class="view active">
         <div class="section-header">
           <h2 class="h2-title">Corsi disponibili</h2>
@@ -649,7 +670,7 @@
         <div class="glass-panel panel" style="margin-bottom:18px;">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:14px; flex-wrap:wrap;">
             <div>
-              <h3 style="margin:0; font-weight:900; color:var(--text-main);">Account</h3>
+              <h3 style="margin:0; font-weight:900;">Account</h3>
               <p class="h-sub" style="margin-top:6px;" id="user-display-dash">Ospite (login opzionale)</p>
             </div>
             <span class="chip" id="chip-auth">🔒 Ospite</span>
@@ -677,6 +698,7 @@
       </section>
 
 
+      <!-- AUTH -->
       <section id="view-auth" class="view">
         <div class="top-bar">
           <div class="back-btn" onclick="navBackFromAuth()">← Indietro</div>
@@ -688,18 +710,19 @@
         </div>
 
         <div class="glass-panel panel">
-          <h3 id="auth-title" style="margin:0; color:var(--text-main);">Accedi</h3>
+          <h3 id="auth-title" style="margin:0;">Accedi</h3>
           <p id="auth-sub" class="h-sub" style="margin-top:8px;">Email + password. Statistiche separate per corso.</p>
 
           <div class="divider"></div>
 
-          <p id="user-display" style="margin:0; font-weight:850; color:var(--text-main);">Ospite</p>
+          <p id="user-display" style="margin:0; font-weight:850;">Ospite</p>
           <div style="height:10px"></div>
 
           <div class="error" id="auth-error"></div>
 
+          <!-- In-app feedback (no browser alert) -->
           <div id="auth-success" class="notice hidden" style="margin-top:12px;">
-            <p class="notice-title" id="auth-success-title" style="color:var(--text-main);">Operazione completata</p>
+            <p class="notice-title" id="auth-success-title">Operazione completata</p>
             <p class="notice-sub" id="auth-success-sub">—</p>
             <div class="divider" style="margin:12px 0;"></div>
             <div class="inline-row" style="flex-wrap:wrap;">
@@ -709,6 +732,7 @@
           </div>
 
 
+          <!-- When logged out -->
           <div id="profile-loggedout">
             <div id="auth-login">
               <div class="input-group">
@@ -718,11 +742,10 @@
               <div class="input-group">
                 <label class="input-label">Password</label>
                 <input class="input-field" id="loginPass" type="password" autocomplete="current-password" placeholder="••••••••" />
-                <div style="text-align:right; margin-top:6px;">
-                  <button class="pill-link" style="font-size:0.8rem;" onclick="openAuth('reset')">Password dimenticata?</button>
-                </div>
               </div>
               <button type="button" class="btn-primary blue" id="btn-login" onclick="login()">Accedi</button>
+              <div style="height:10px"></div>
+              <button type="button" class="btn-link" onclick="openPasswordReset()">Password dimenticata?</button>
               <div style="height:10px"></div>
               <button type="button" class="btn-secondary hidden" id="btn-resend" onclick="resendSignupEmail()">Reinvia email di conferma</button>
               <div style="height:10px"></div>
@@ -749,27 +772,12 @@
               <button type="button" class="btn-secondary" onclick="openAuth('login')">Hai già un account? Accedi</button>
             </div>
 
-            <div id="auth-reset" class="hidden">
-              <p class="h-sub" style="margin-bottom:12px;">Inserisci la tua email. Ti invieremo un link per reimpostare la password.</p>
-              <div class="input-group">
-                <label class="input-label">Email</label>
-                <input class="input-field" id="resetEmail" type="email" autocomplete="email" placeholder="nome@scuola.it" />
-              </div>
-              <button type="button" class="btn-primary blue" id="btn-reset-req" onclick="requestPasswordReset()">Invia link di recupero</button>
-              <div style="height:10px"></div>
-              <button type="button" class="btn-secondary" onclick="openAuth('login')">Annulla</button>
-            </div>
-
-            <div id="auth-update" class="hidden">
-              <p class="h-sub" style="margin-bottom:12px;">Inserisci la tua nuova password per completare il recupero.</p>
-              <div class="input-group">
-                <label class="input-label">Nuova Password</label>
-                <input class="input-field" id="updatePass" type="password" autocomplete="new-password" placeholder="Min 8 caratteri" />
-              </div>
-              <button type="button" class="btn-primary blue" id="btn-update-pass" onclick="updateUserPassword()">Salva nuova password</button>
-            </div>
+            <p class="h-sub" style="margin-top:14px;">
+              Tip: in sviluppo puoi disattivare “Confirm email” su Supabase Auth.
+            </p>
           </div>
 
+          <!-- When logged in -->
           <div id="profile-loggedin" class="hidden">
             <p class="h-sub">Sei loggato. Le statistiche vengono salvate automaticamente.</p>
             <div style="height:12px"></div>
@@ -782,6 +790,7 @@
         </div>
       </section>
 
+      <!-- COURSE -->
       <section id="view-course" class="view">
         <div class="top-bar">
           <div class="back-btn" onclick="navTo('dashboard')">← Corsi</div>
@@ -805,9 +814,10 @@
           </div>
         </div>
 
+        <!-- Progress chart -->
         <div class="glass-panel panel" id="panel-progress">
           <div style="display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;">
-            <h3 style="margin:0; font-weight:900; color:var(--text-main);">Andamento</h3>
+            <h3 style="margin:0; font-weight:900;">Andamento</h3>
             <div class="seg">
               <button id="btn-line" class="active" onclick="setProgressType('line')">Linea</button>
               <button id="btn-bar" onclick="setProgressType('bar')">Istogramma</button>
@@ -822,7 +832,7 @@
             <button class="btn-secondary" style="max-width:220px;" id="btn-wrong" onclick="openQuizSettings('wrong')">⚠️ Quiz errori</button>
             <button class="btn-secondary" style="max-width:240px;" id="btn-old" onclick="openQuizSettings('old')">🕰️ Ripasso vecchie</button>
             <div style="color:var(--text-sec);font-weight:800;">
-              Errori: <strong id="wrong-count" style="color:var(--text-main)">—</strong> • Vecchia: <strong id="oldest-label" style="color:var(--text-main)">—</strong>
+              Errori: <strong id="wrong-count">—</strong> • Vecchia: <strong id="oldest-label">—</strong>
             </div>
           </div>
           <div class="error" id="locked-hint">
@@ -832,9 +842,10 @@
           </div>
         </div>
 
+        <!-- Module accuracy -->
         <div class="glass-panel panel hidden" id="panel-modules">
           <div style="display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;">
-            <h3 style="margin:0; font-weight:900; color:var(--text-main);">Accuratezza per modulo</h3>
+            <h3 style="margin:0; font-weight:900;">Accuratezza per modulo</h3>
             <span class="chip">calcolata da <span class="mono">question_progress</span></span>
           </div>
           <div class="chart-wrap">
@@ -843,10 +854,11 @@
           <div class="module-list" id="moduleList"></div>
         </div>
 
+        <!-- Search -->
         <div class="glass-panel panel">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap;">
             <div>
-              <h3 style="margin:0; font-weight:900; color:var(--text-main);">Ricerca nel corso</h3>
+              <h3 style="margin:0; font-weight:900;">Ricerca nel corso</h3>
               <p class="h-sub">Cerca parole chiave e costruisci un quiz dai risultati.</p>
             </div>
             <button class="btn-secondary" style="max-width:160px;" id="btn-search-start" onclick="openQuizSettings('search')" disabled>Avvia</button>
@@ -856,10 +868,11 @@
           <div style="margin-top:14px; display:flex; flex-direction:column; gap:12px; max-height:260px; overflow:auto;" id="searchResults"></div>
         </div>
 
+        <!-- Modules selection -->
         <div class="glass-panel panel">
           <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
             <div>
-              <h3 style="margin:0; font-weight:900; color:var(--text-main);">Moduli</h3>
+              <h3 style="margin:0; font-weight:900;">Moduli</h3>
               <p class="h-sub">Seleziona i moduli, poi scegli quante domande quando avvii il quiz.</p>
             </div>
             <button class="pill-link" onclick="selectAllModules()">Seleziona tutti</button>
@@ -877,6 +890,7 @@
         <div style="height:80px;"></div>
       </section>
 
+      <!-- QUIZ -->
       <section id="view-quiz" class="view">
         <div class="top-bar" style="justify-content:space-between;">
           <div class="back-btn" onclick="quitQuiz()">✕ Esci</div>
@@ -897,9 +911,10 @@
         <div class="options-stack" id="options-container"></div>
       </section>
 
+      <!-- RESULTS -->
       <section id="view-results" class="view" style="text-align:center; justify-content:center;">
         <div class="glass-panel" style="padding:40px; border-radius:32px; display:inline-flex; flex-direction:column; align-items:center; max-width:420px; margin:0 auto;">
-          <div style="width:120px; height:120px; border-radius:50%; background:var(--input-bg); display:flex; align-items:center; justify-content:center; margin-bottom:20px; box-shadow:inset 0 4px 12px rgba(0,0,0,0.05);">
+          <div style="width:120px; height:120px; border-radius:50%; background:#f5f5f7; display:flex; align-items:center; justify-content:center; margin-bottom:20px; box-shadow:inset 0 4px 12px rgba(0,0,0,0.05);">
             <div style="font-size:2.5rem; font-weight:900; color:var(--primary);" id="final-score">80%</div>
           </div>
           <h2 class="h2-title" style="margin:0;">Sessione completata</h2>
@@ -913,17 +928,20 @@
       </section>
     </div>
 
+    <!-- Floating: Start button in course -->
     <div class="glass-panel float-bar" id="course-actions">
       <div class="float-mini">Selezionati: <strong id="sel-count">0</strong></div>
       <button class="float-btn" id="btn-start" disabled onclick="openQuizSettings('modules')">Avvia Quiz</button>
       <button class="float-btn secondary" onclick="navTo('dashboard')">Chiudi</button>
     </div>
 
+    <!-- Floating: next in quiz -->
     <div class="glass-panel float-bar" id="quiz-actions" style="width:min(92%, 260px);">
       <button class="float-btn" id="btn-next" onclick="nextQuestion()">Salta →</button>
     </div>
   </div>
 
+  <!-- Quiz settings modal -->
   <div class="modal-overlay" id="settings-modal" onclick="if(event.target===this) closeSettings()">
     <div class="glass-panel modal" role="dialog" aria-modal="true">
       <button class="x" aria-label="Chiudi" onclick="closeSettings()">✕</button>
@@ -967,16 +985,58 @@
     </div>
   </div>
 
+  <!-- PASSWORD RESET MODAL -->
+  <div class="modal-overlay" id="pw-modal" onclick="if(event.target===this) closePasswordReset()">
+    <div class="glass-panel modal">
+      <button class="x" aria-label="Chiudi" onclick="closePasswordReset()">✕</button>
+      <h3 id="pw-title">Reimposta password</h3>
+      <p id="pw-sub">Ti inviamo un link via email per scegliere una nuova password.</p>
+
+      <div class="divider"></div>
+
+      <div id="pw-step-request">
+        <div class="input-group">
+          <label class="input-label">Email</label>
+          <input class="input-field" id="pw-email" type="email" autocomplete="email" placeholder="nome@scuola.it" />
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn-secondary" style="flex:1; min-width:160px;" onclick="closePasswordReset()">Annulla</button>
+          <button class="btn-primary blue" style="flex:1; min-width:160px;" id="pw-send" onclick="sendPasswordResetEmail()">Invia link</button>
+        </div>
+      </div>
+
+      <div id="pw-step-update" class="hidden">
+        <div class="input-group">
+          <label class="input-label">Nuova password (min 8)</label>
+          <input class="input-field" id="pw-new" type="password" autocomplete="new-password" placeholder="Min 8 caratteri" />
+        </div>
+        <div class="input-group">
+          <label class="input-label">Ripeti nuova password</label>
+          <input class="input-field" id="pw-new2" type="password" autocomplete="new-password" placeholder="Ripeti" />
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn-secondary" style="flex:1; min-width:160px;" onclick="closePasswordReset()">Annulla</button>
+          <button class="btn-primary blue" style="flex:1; min-width:160px;" id="pw-update" onclick="updatePasswordFromRecovery()">Aggiorna password</button>
+        </div>
+      </div>
+
+      <div class="error" id="pw-error"></div>
+    </div>
+  </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="./neuro_questions.js"></script>
   <script src="./splanco.js"></script>
   <script>
     /***********************************************************************
-     * CONFIGURAZIONE
+     * SUPABASE CONFIG
+     * - Inserisci le tue credenziali
      **********************************************************************/
-    const SUPABASE_URL = "https://haohnwguytakaqqqmflj.supabase.co"; 
+    const SUPABASE_URL = "https://haohnwguytakaqqqmflj.supabase.co";
     const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhhb2hud2d1eXRha2FxcXFtZmxqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY4MzU0NDUsImV4cCI6MjA4MjQxMTQ0NX0.bsy2ClUJLoFv7hX5ypnzVAXtUzUTUnkX5sVpSWUTjaw";
 
+    // fetch wrapper con timeout (evita il blocco infinito su "Accesso..." se la richiesta resta appesa)
     function fetchWithTimeout(ms=15000){
       return (url, options={}) => {
         const controller = new AbortController();
@@ -986,7 +1046,7 @@
       };
     }
 
-    const supa = (SUPABASE_URL.includes("YOUR_PROJECT"))
+    const supa = (SUPABASE_URL.includes("YOUR_PROJECT") || SUPABASE_ANON_KEY.includes("YOUR_ANON"))
       ? null
       : supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
         global: { fetch: fetchWithTimeout(15000) },
@@ -999,7 +1059,9 @@
       });
 
     /***********************************************************************
-     * DATI QUIZ
+     * QUIZ PACKS (MODULARI)
+     * - Aggiungi corsi qui.
+     * - Formato domanda: { q:"...", a:["corretta","errata","errata","errata"], cat?:"..." }
      **********************************************************************/
     const QUIZ_PACKS = {
       neuro: {
@@ -1007,15 +1069,18 @@
         title: "Neuroanatomia",
         desc: "Tronco encefalico, midollo, vie e concetti base.",
         icon: "🧠",
-        modules: window.NEURO_MODULES || {}
+        modules: window.NEURO_MODULES
       },
+
       splanco: {
         id: "splanco",
         title: "Splancologia",
-        desc: "Apparati viscerali: respiratorio, digerente, urinario...",
+        desc: "Apparati viscerali: respiratorio, digerente, urinario, genitale, endocrino.",
         icon: "🫁",
         modules: window.SPLANCO_MODULES || {}
       },
+
+
       semeiotica: {
         id: "semeiotica",
         title: "Semeiotica",
@@ -1023,38 +1088,78 @@
         icon: "🩺",
         modules: {
           "Addome": [
-            { q: "Il segno di Murphy è positivo quando:", a: ["Dolore e arresto inspiratorio palpazione ipocondrio dx", "Dolore fossa iliaca dx", "Ittero", "Vomito"], cat:"Addome" },
-            { q: "La peritonite dà tipicamente:", a: ["Addome 'a tavola' e dolorabilità", "Murmullo ridotto", "Edema", "Cianosi"], cat:"Addome" }
+            { q: "Il segno di Murphy è positivo quando:", a: ["Dolore e arresto inspiratorio alla palpazione ipocondrio dx", "Dolore alla fossa iliaca dx", "Ittero improvviso", "Vomito incoercibile"], cat:"Addome" },
+            { q: "La peritonite dà tipicamente:", a: ["Addome 'a tavola' e dolorabilità diffusa", "Murmullo vescicolare ridotto", "Edema declive", "Cianosi"], cat:"Addome" },
+            { q: "La manovra di Blumberg valuta:", a: ["Dolore da rimbalzo per irritazione peritoneale", "Fremito vocale tattile", "Riflesso corneale", "Polso paradosso"], cat:"Addome" },
+            { q: "La splenomegalia si ricerca meglio:", a: ["Con palpazione bimanuale in inspirazione profonda", "Con percussione toracica", "Con test di Romberg", "Con manovra di Lasègue"], cat:"Addome" },
+            { q: "L'ascite si conferma con:", a: ["Segno dell'onda e ottusità mobile", "Segno di Babinski", "Segno di Kernig", "Segno di Homan"], cat:"Addome" }
           ],
           "Torace": [
-             { q: "Il fremito vocale tattile diminuisce in:", a: ["Versamento pleurico", "Consolidamento", "Fibrosi", "Asma"], cat:"Torace" }
+            { q: "Il fremito vocale tattile diminuisce in:", a: ["Versamento pleurico", "Consolidamento polmonare", "Fibrosi iniziale", "Asma lieve"], cat:"Torace" },
+            { q: "La crepitazione fine bibasale può indicare:", a: ["Edema polmonare", "Appendicite", "Otite", "Emicrania"], cat:"Torace" },
+            { q: "In pneumotorace iperteso tipicamente trovi:", a: ["Ipotensione + trachea deviata controlateralmente", "Bradicardia e polso pieno", "Ittero", "Rigor nucale"], cat:"Torace" },
+            { q: "La percussione iperfonica suggerisce:", a: ["Pneumotorace o enfisema", "Consolidamento", "Versamento", "Atelettasia completa"], cat:"Torace" },
+            { q: "Il murmurio vescicolare è:", a: ["Rumore respiratorio fisiologico", "Soffio cardiaco", "Rumore intestinale", "Tono muscolare"], cat:"Torace" }
+          ]
+        }
+      },
+
+      dermato: {
+        id: "dermato",
+        title: "Dermatologia",
+        desc: "Lesioni elementari e diagnosi rapide.",
+        icon: "🧴",
+        modules: {
+          "Lesioni elementari": [
+            { q: "Una macula è:", a: ["Lesione piana con variazione di colore", "Lesione rilevata con pus", "Nodulo profondo", "Ulcerazione"], cat:"Base" },
+            { q: "Una papula è:", a: ["Lesione rilevata solida < 1 cm", "Lesione piana pigmentata", "Vescicola piena di liquido", "Placca estesa > 10 cm"], cat:"Base" },
+            { q: "Una vescicola contiene:", a: ["Liquido chiaro", "Pus", "Sangue sempre", "Cheratina dura"], cat:"Base" },
+            { q: "Una pustola è:", a: ["Lesione contenente pus", "Lesione piana", "Cicatrice", "Ulcera profonda"], cat:"Base" },
+            { q: "La placca è spesso:", a: ["Confluenza di papule (rilevata e ampia)", "Solo una macula", "Solo un nodulo", "Un'ulcera"], cat:"Base" }
+          ],
+          "Diagnosi rapide": [
+            { q: "Orticaria tipicamente presenta:", a: ["Pomfi pruriginosi migranti", "Comedoni", "Vescicole dolorose lungo un dermatomero", "Placche argentate croniche"], cat:"Clinica" },
+            { q: "Psoriasi tipica:", a: ["Placche eritemato-desquamative", "Bolle flaccide diffuse", "Macchie ipopigmentate isolate", "Lesioni purulente in piega"], cat:"Clinica" },
+            { q: "Herpes zoster:", a: ["Vescicole dolorose a distribuzione metamerica", "Papule acneiche", "Macule diffuse non dolorose", "Orticaria migrante"], cat:"Clinica" },
+            { q: "Tinea corporis spesso dà:", a: ["Lesione anulare con bordo attivo desquamante", "Pomfi migranti", "Bolle emorragiche", "Ulcere necrotiche"], cat:"Infettive" },
+            { q: "La scabbia causa:", a: ["Prurito notturno + cunicoli", "Alopecia a chiazze", "Iperidrosi isolata", "Teleangectasie diffuse"], cat:"Infettive" }
           ]
         }
       }
     };
 
     /***********************************************************************
-     * STATO
+     * STATE
      **********************************************************************/
     const state = {
       isLogged: false,
       currentUser: null,
       profile: null,
+
       currentCourseId: null,
       selectedModules: new Set(),
+
+      // search
       searchHits: [],
       searchLastQuery: "",
       searchLastResultIds: [],
-      mode: null,
+
+      // quiz
+      mode: null, // modules | course_exam | wrong | old | search
       quizQuestions: [],
       quizIndex: 0,
       quizCorrect: 0,
       quizAnswered: false,
+
+      // settings modal
       pendingMode: null,
+
+      // async save (stats refresh)
       pendingAttemptSave: null,
       pendingAttemptCourseId: null
-    };
+};
 
+    // Q map for stable qids
     const QMAP = {};
     buildQuestionMaps();
 
@@ -1065,133 +1170,162 @@
         for (const mod of Object.keys(pack.modules)){
           pack.modules[mod].forEach((qq) => {
             const qid = makeQid(cId, mod, qq.q);
-            QMAP[cId][qid] = { module: mod, cat: qq.cat || mod, q: qq.q, a: qq.a, correct: qq.correct };
+            QMAP[cId][qid] = { qid, module: mod, cat: qq.cat || mod, q: qq.q, a: qq.a, correct: (typeof qq.correct === "number" ? qq.correct : null) };
           });
         }
       }
     }
 
     /***********************************************************************
-     * UI References
+     * DOM refs
      **********************************************************************/
     const crumbEl = document.getElementById("crumb");
     const chipAuth = document.getElementById("chip-auth");
-    const themeBtn = document.getElementById("theme-toggle");
 
     // views
     const vDashboard = document.getElementById("view-dashboard");
     const vCourse = document.getElementById("view-course");
     const vQuiz = document.getElementById("view-quiz");
     const vResults = document.getElementById("view-results");
-    const vAuth = document.getElementById("view-auth");
 
-    // elements
+    // dashboard
     const coursesGrid = document.getElementById("courses-grid");
+
+    // course
     const courseTitle = document.getElementById("course-title");
     const courseDesc = document.getElementById("course-desc");
     const modulesList = document.getElementById("modules-list");
+
     const statAvg = document.getElementById("stat-avg");
     const statDone = document.getElementById("stat-done");
+    const statAvgSub = document.getElementById("stat-avg-sub");
+    const statDoneSub = document.getElementById("stat-done-sub");
+
     const lockedHint = document.getElementById("locked-hint");
     const btnWrong = document.getElementById("btn-wrong");
     const btnOld = document.getElementById("btn-old");
     const wrongCountEl = document.getElementById("wrong-count");
     const oldestLabelEl = document.getElementById("oldest-label");
+
+    const panelModules = document.getElementById("panel-modules");
+    const moduleListEl = document.getElementById("moduleList");
+
     const searchEl = document.getElementById("search");
     const searchResultsEl = document.getElementById("searchResults");
     const btnSearchStart = document.getElementById("btn-search-start");
+
+    // float bar
     const courseActions = document.getElementById("course-actions");
     const selCountEl = document.getElementById("sel-count");
     const btnStart = document.getElementById("btn-start");
     const quizActions = document.getElementById("quiz-actions");
     const btnNext = document.getElementById("btn-next");
+
+    // quiz
     const qChip = document.getElementById("q-chip");
     const qCounter = document.getElementById("q-counter");
     const progressBar = document.getElementById("progress-bar");
     const qText = document.getElementById("q-text");
     const optionsContainer = document.getElementById("options-container");
+
+    // results
     const finalScore = document.getElementById("final-score");
     const finalMsg = document.getElementById("final-msg");
 
-    // Auth UI
+    // auth / account UI
+    const vAuth = document.getElementById("view-auth");
+    const userDisplay = document.getElementById("user-display");
+    const userDisplayDash = document.getElementById("user-display-dash");
+    const profileLoggedOut = document.getElementById("profile-loggedout");
+    const profileLoggedIn = document.getElementById("profile-loggedin");
+    const dashLoggedOut = document.getElementById("dash-loggedout");
+    const dashLoggedIn = document.getElementById("dash-loggedin");
+
+    // auth
     const authTitle = document.getElementById("auth-title");
     const authSub = document.getElementById("auth-sub");
     const authError = document.getElementById("auth-error");
     const authLogin = document.getElementById("auth-login");
     const authSignup = document.getElementById("auth-signup");
-    const authReset = document.getElementById("auth-reset");
-    const authUpdate = document.getElementById("auth-update");
-    const userDisplay = document.getElementById("user-display");
-    const profileLoggedOut = document.getElementById("profile-loggedout");
-    const profileLoggedIn = document.getElementById("profile-loggedin");
 
-    // Settings
+    // settings
     const settingsModal = document.getElementById("settings-modal");
+    const settingsDesc = document.getElementById("settings-desc");
     const settingsLimit = document.getElementById("settings-limit");
     const settingsError = document.getElementById("settings-error");
-    const settingsDesc = document.getElementById("settings-desc");
 
     /***********************************************************************
-     * INIT
+     * Init
      **********************************************************************/
-    // Load theme preference
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) {
-      document.documentElement.setAttribute("data-theme", storedTheme);
-      if(storedTheme === 'dark') themeBtn.textContent = "☾";
-    }
-
     renderCourses();
     refreshSelectionBar();
     wireAuthEnterKeys();
+
+    // theme
+    try{ applyTheme(getPreferredTheme()); }catch(e){}
+
     initChartObservers();
+// Prevent layout/scroll glitches after refresh
+    try{ if ("scrollRestoration" in history) history.scrollRestoration = "manual"; }catch(e){}
+    try{ window.scrollTo(0,0); }catch(e){}
+    try{ document.querySelectorAll(".view").forEach(v=> v.scrollTop = 0); }catch(e){}
 
     if (!supa){
-      console.warn("Supabase non configurato.");
+      console.warn("Supabase non configurato: inserisci SUPABASE_URL e SUPABASE_ANON_KEY.");
       setAuthUI(null);
     } else {
       initAuth();
     }
 
     window.addEventListener("resize", () => {
-      try{ queueChartRedraw(); }catch(e){}
+      try{ drawProgressChart(__progressPoints); }catch(e){}
+      try{ drawModuleChart(__moduleLabels, __moduleValues); }catch(e){}
     });
 
-    function toggleTheme(){
-      const current = document.documentElement.getAttribute("data-theme");
-      const target = current === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", target);
-      localStorage.setItem("theme", target);
-      themeBtn.textContent = target === "dark" ? "☾" : "☀︎";
-      queueChartRedraw();
-    }
-
     /***********************************************************************
-     * NAVIGAZIONE
+     * Navigation
      **********************************************************************/
     function navTo(viewId){
-      document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+      const views = Array.from(document.querySelectorAll(".view"));
+      views.forEach(el => el.classList.remove("active"));
       const target = document.getElementById("view-" + viewId);
-      if(target) {
-        target.classList.add("active");
-        if(viewId==="dashboard" || viewId==="auth") window.scrollTo(0,0);
+      if (!target){
+        console.warn("View non trovata:", viewId);
+        return;
       }
-      
+      target.classList.add("active");
+
+      // hard safety: in caso di glitch/duplicati, garantisci UNA sola view attiva
+      views.forEach(v => { if (v !== target) v.classList.remove("active"); });
+
+      // keep layout stable (avoid cropped header / "storto" after refresh)
+      if (viewId === "auth" || viewId === "dashboard"){
+        try{ target.scrollTop = 0; }catch(e){}
+        try{ window.scrollTo(0,0); }catch(e){}
+      }
+
+      // se stai uscendo dall'area account, nascondi eventuali pannelli di successo
+      if (viewId !== "auth"){
+        try{ hideAuthSuccess(); }catch(e){}
+      }
+
+      // floating bars
       courseActions.classList.remove("visible");
-      try{ quizActions.classList.remove("visible"); }catch(e){}
+      syncNextButton();
 
       if (viewId === "course"){
         courseActions.classList.add("visible");
         queueChartRedraw();
-      }
-      if (viewId === "quiz") {
-        try{ quizActions.classList.add("visible"); }catch(e){}
-      }
+}
     }
 
     function goHome(){
-      if (vQuiz.classList.contains("active") && !confirm("Vuoi uscire dal quiz?")) return;
+      if (vQuiz.classList.contains("active")){
+        if(!confirm("Vuoi uscire dal quiz? Perderai i progressi di questa sessione.")) return;
+      }
       state.currentCourseId = null;
+      state.selectedModules.clear();
+      crumbEl.textContent = "Corsi";
       navTo("dashboard");
     }
 
@@ -1202,20 +1336,31 @@
     }
 
     /***********************************************************************
-     * LOGICA CORSI E SELEZIONE
+     * Dashboard: courses
      **********************************************************************/
     function renderCourses(){
       coursesGrid.innerHTML = "";
       Object.values(QUIZ_PACKS).forEach(c => {
         const qCount = Object.values(c.modules).reduce((acc, a)=> acc + a.length, 0);
         const mCount = Object.keys(c.modules).length;
+
         const card = document.createElement("div");
         card.className = "glass-panel course-card";
         card.onclick = () => openCourse(c.id);
+
         card.innerHTML = `
-          <div><div class="course-icon">${c.icon}</div>
-          <div class="course-info"><h3>${escapeHtml(c.title)}</h3><p>${escapeHtml(c.desc)}</p></div></div>
-          <div class="course-stats"><span class="badge">${mCount} Moduli</span><span class="badge">${qCount} Domande</span></div>
+          <div>
+            <div class="course-icon">${c.icon || "📚"}</div>
+            <div class="course-info">
+              <h3>${escapeHtml(c.title)}</h3>
+              <p>${escapeHtml(c.desc || "")}</p>
+            </div>
+          </div>
+          <div class="course-stats">
+            <span class="badge">${mCount} Moduli</span>
+            <span class="badge">${qCount} Domande</span>
+            <span class="badge">${state.isLogged ? "Progressi attivi" : "Login opzionale"}</span>
+          </div>
         `;
         coursesGrid.appendChild(card);
       });
@@ -1225,573 +1370,1844 @@
       state.currentCourseId = courseId;
       state.selectedModules.clear();
       state.searchHits = [];
-      
+      state.searchLastQuery = "";
+      state.searchLastResultIds = [];
+      searchEl.value = "";
+      searchResultsEl.innerHTML = "";
+      btnSearchStart.disabled = true;
+      btnSearchStart.textContent = "Quiz dalla ricerca";
+
       const c = QUIZ_PACKS[courseId];
       crumbEl.textContent = `Corsi • ${c.title}`;
       courseTitle.textContent = c.title;
-      courseDesc.textContent = c.desc;
-      
+      courseDesc.textContent = c.desc || "";
+
       renderModulesSelection();
       refreshSelectionBar();
       navTo("course");
       refreshCourseDashboard();
     }
 
+    /***********************************************************************
+     * Modules selection
+     **********************************************************************/
     function renderModulesSelection(){
       modulesList.innerHTML = "";
       const course = QUIZ_PACKS[state.currentCourseId];
-      Object.keys(course.modules).forEach(m => {
+      const mods = Object.keys(course.modules);
+
+      mods.forEach(m => {
         const item = document.createElement("div");
         item.className = "module-item";
-        item.onclick = () => {
-          if(state.selectedModules.has(m)) { state.selectedModules.delete(m); item.classList.remove("selected"); }
-          else { state.selectedModules.add(m); item.classList.add("selected"); }
-          refreshSelectionBar();
-        };
-        item.innerHTML = `<div class="m-title">${escapeHtml(m)}</div><div class="m-sub">${course.modules[m].length} domande</div>`;
+        item.onclick = () => toggleModule(m, item);
+        item.innerHTML = `
+          <div class="m-title">${escapeHtml(m)}</div>
+          <div class="m-sub">${course.modules[m].length} domande</div>
+        `;
         modulesList.appendChild(item);
       });
     }
 
-    function refreshSelectionBar(){
-      let count = 0;
-      if(state.currentCourseId) {
-        state.selectedModules.forEach(m => count += QUIZ_PACKS[state.currentCourseId].modules[m].length);
+    function toggleModule(m, el){
+      if (state.selectedModules.has(m)){
+        state.selectedModules.delete(m);
+        el.classList.remove("selected");
+      } else {
+        state.selectedModules.add(m);
+        el.classList.add("selected");
       }
-      selCountEl.textContent = count;
-      btnStart.disabled = state.selectedModules.size === 0;
+      refreshSelectionBar();
     }
 
     function selectAllModules(){
       const course = QUIZ_PACKS[state.currentCourseId];
       state.selectedModules = new Set(Object.keys(course.modules));
       renderModulesSelection();
-      document.querySelectorAll(".module-item").forEach(e=>e.classList.add("selected"));
-      refreshSelectionBar();
-    }
-    function clearModules(){
-      state.selectedModules.clear();
-      renderModulesSelection();
+      // mark all selected
+      document.querySelectorAll(".module-item").forEach(el => el.classList.add("selected"));
       refreshSelectionBar();
     }
 
+    function clearModules(){
+      state.selectedModules.clear();
+      document.querySelectorAll(".module-item").forEach(el => el.classList.remove("selected"));
+      refreshSelectionBar();
+    }
+
+    function refreshSelectionBar(){
+      const count = countSelectedQuestions();
+      selCountEl.textContent = String(count);
+      btnStart.disabled = state.selectedModules.size === 0;
+    }
+
+    function countSelectedQuestions(){
+      if (!state.currentCourseId) return 0;
+      const course = QUIZ_PACKS[state.currentCourseId];
+      let count = 0;
+      state.selectedModules.forEach(m => count += (course.modules[m]?.length || 0));
+      return count;
+    }
+
     /***********************************************************************
-     * RICERCA
+     * Search (within course)
      **********************************************************************/
     function onSearch(){
       const q = (searchEl.value || "").trim().toLowerCase();
-      if (!q || q.length < 2) {
+      const map = QMAP[state.currentCourseId] || {};
+
+      // reset when query cleared
+      if (!q || q.length < 2){
+        state.searchLastQuery = "";
+        state.searchLastResultIds = [];
+        state.searchHits = [];
         searchResultsEl.innerHTML = "";
         btnSearchStart.disabled = true;
-        state.searchHits = [];
+        btnSearchStart.textContent = "Quiz dalla ricerca";
         return;
       }
-      const map = QMAP[state.currentCourseId] || {};
-      const hits = Object.entries(map)
-        .filter(([_, obj]) => 
-          obj.q.toLowerCase().includes(q) || obj.cat.toLowerCase().includes(q)
-        ).slice(0, 50);
 
-      state.searchLastResultIds = hits.map(h => h[0]);
+      // if query changed, reset manual selection
+      if (q !== state.searchLastQuery){
+        state.searchHits = [];
+        state.searchLastQuery = q;
+      }
+
+      const hits = Object.entries(map)
+        .map(([qid, obj]) => ({ qid, ...obj }))
+        .filter(x =>
+          (x.q || "").toLowerCase().includes(q) ||
+          (x.cat || "").toLowerCase().includes(q) ||
+          (x.module || "").toLowerCase().includes(q)
+        )
+        .slice(0, 60);
+
+      state.searchLastResultIds = hits.map(h => h.qid);
+
       searchResultsEl.innerHTML = "";
-      
-      hits.forEach(([qid, h]) => {
-        const d = document.createElement("div");
-        d.className = "glass-panel search-card";
-        d.style.cssText = "border-radius:20px; padding:14px; cursor:pointer;";
-        d.innerHTML = `<div style="font-weight:850; color:var(--text-main);">${escapeHtml(trim(h.q,80))}</div><div style="font-size:0.8rem; color:var(--text-sec); margin-top:4px;">${h.module}</div>`;
-        d.onclick = () => {
-          if(state.searchHits.includes(qid)){ state.searchHits = state.searchHits.filter(x=>x!==qid); d.classList.remove("selected"); }
-          else { state.searchHits.push(qid); d.classList.add("selected"); }
-          btnSearchStart.disabled = state.searchHits.length === 0;
-          btnSearchStart.textContent = `Avvia (${state.searchHits.length})`;
+
+      hits.forEach(h => {
+        const card = document.createElement("div");
+        card.className = "glass-panel search-card";
+        card.style.borderRadius = "20px";
+        card.style.padding = "14px";
+        card.style.cursor = "pointer";
+
+        const selected = state.searchHits.includes(h.qid);
+        if (selected) card.classList.add("selected");
+
+        card.innerHTML = `
+          <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+            <div style="font-weight:850;">${escapeHtml(trim(h.q, 120))}</div>
+            <span class="badge" style="white-space:nowrap;">${escapeHtml(h.module)}</span>
+          </div>
+          <div style="margin-top:8px;color:var(--text-sec);font-weight:750;">${escapeHtml(h.cat || "")}</div>
+          <div data-cta style="margin-top:10px;color:${selected ? "var(--primary)" : "var(--text-sec)"};font-weight:850;">
+            ${selected ? "✓ Aggiunta al quiz" : "Clicca per aggiungere"}
+          </div>
+        `;
+
+        card.onclick = () => {
+          if (state.searchHits.includes(h.qid)){
+            state.searchHits = state.searchHits.filter(x => x !== h.qid);
+            card.classList.remove("selected");
+          } else {
+            state.searchHits.push(h.qid);
+            card.classList.add("selected");
+          }
+
+          const cta = card.querySelector("[data-cta]");
+          if (cta){
+            const nowSel = state.searchHits.includes(h.qid);
+            cta.textContent = nowSel ? "✓ Aggiunta al quiz" : "Clicca per aggiungere";
+            cta.style.color = nowSel ? "var(--primary)" : "var(--text-sec)";
+          }
+
+          updateSearchStartButton();
         };
-        searchResultsEl.appendChild(d);
+
+        searchResultsEl.appendChild(card);
       });
+
+      updateSearchStartButton();
+
+      function updateSearchStartButton(){
+        const total = state.searchLastResultIds.length;
+        const sel = state.searchHits.length;
+        btnSearchStart.disabled = total === 0;
+        btnSearchStart.textContent = sel > 0 ? `Quiz dalla ricerca (${sel})` : `Quiz con tutti i risultati (${total})`;
+      }
     }
 
     /***********************************************************************
-     * DASHBOARD CORSO (Statistiche)
+     * Course dashboard (Supabase data)
      **********************************************************************/
+    let progressType = "line";
     let __progressPoints = [];
+    let __moduleLabels = [];
+    let __moduleValues = [];
+
+    // --- Chart robustness: redraw when layout becomes stable (prevents "blank canvas" without F5)
+    let __chartRedrawToken = 0;
+    function queueChartRedraw(){
+      const token = ++__chartRedrawToken;
+      // double rAF: wait for layout + paint after view transition
+      requestAnimationFrame(()=> requestAnimationFrame(()=>{
+        if (token !== __chartRedrawToken) return;
+        try{ drawProgressChart(__progressPoints); }catch(e){}
+        try{
+          if (!panelModules.classList.contains("hidden")){
+            drawModuleChart(__moduleLabels, __moduleValues);
+          }
+        }catch(e){}
+      }));
+    }
+
+    function initChartObservers(){
+      // ResizeObserver catches cases where canvas width is 0 during transitions
+      if (!("ResizeObserver" in window)) return;
+      try{
+        const ro = new ResizeObserver(()=> queueChartRedraw());
+        const w1 = document.querySelector("#panel-progress .chart-wrap");
+        const w2 = document.querySelector("#panel-modules .chart-wrap");
+        if (w1) ro.observe(w1);
+        if (w2) ro.observe(w2);
+        window.__chartRO = ro;
+      }catch(e){}
+    }
+
+
+    function setProgressType(type){
+      progressType = type;
+      document.getElementById("btn-line").classList.toggle("active", type==="line");
+      document.getElementById("btn-bar").classList.toggle("active", type==="bar");
+      drawProgressChart(__progressPoints);
+    }
+
+    let __courseDashSeq = 0;
+
     async function refreshCourseDashboard(){
+      const seq = ++__courseDashSeq;
+      // reset UI
       lockedHint.style.display = "none";
-      btnWrong.disabled = true; btnOld.disabled = true;
-      wrongCountEl.textContent = "—"; oldestLabelEl.textContent = "—";
-      
+      btnWrong.disabled = true;
+      btnOld.disabled = true;
+      wrongCountEl.textContent = "—";
+      oldestLabelEl.textContent = "—";
+      panelModules.classList.add("hidden");
+      drawProgressChart([]);
+
       if (!state.isLogged || !supa){
+        statAvg.textContent = "—%";
+        statDone.textContent = "—";
+        statAvgSub.textContent = "Accedi per vedere la tua media in questo corso.";
+        statDoneSub.textContent = "Accedi per vedere la cronologia dei quiz.";
         lockedHint.style.display = "block";
         return;
       }
 
-      // 1. Fetch Attempts
-      const { data: att } = await supa.from("quiz_attempts")
+      const courseId = state.currentCourseId;
+
+      // attempts
+      const { data: attempts, error: aErr } = await supa
+        .from("quiz_attempts")
         .select("percent, created_at")
-        .eq("user_id", state.currentUser.id).eq("course_id", state.currentCourseId)
-        .order("created_at", {ascending:true}).limit(30);
-      
-      __progressPoints = att || [];
-      drawProgressChart(__progressPoints);
-      
-      const avg = __progressPoints.length ? Math.round(__progressPoints.reduce((a,b)=>a+b.percent,0)/__progressPoints.length) : 0;
-      statAvg.textContent = __progressPoints.length ? avg + "%" : "—";
-      statDone.textContent = __progressPoints.length;
+        .eq("user_id", state.currentUser.id)
+        .eq("course_id", courseId)
+        .order("created_at", { ascending: true })
+        .limit(30);
 
-      // 2. Fetch Questions (Errori e Vecchie)
-      const { data: qp } = await supa.from("question_progress")
-        .select("qid, wrong, last_seen, attempts, correct, module")
-        .eq("user_id", state.currentUser.id).eq("course_id", state.currentCourseId);
-      
+      if (seq !== __courseDashSeq) return;
+
+      if (aErr) console.warn(aErr);
+
+      const perc = (attempts || []).map(r => ({ percent: r.percent, created_at: r.created_at }));
+      __progressPoints = perc;
+      drawProgressChart(perc);
+
+      const avg = perc.length ? Math.round(perc.reduce((s,o)=>s+(o.percent||0),0)/perc.length) : 0;
+      statAvg.textContent = perc.length ? `${avg}%` : "—%";
+      statAvgSub.textContent = perc.length ? `Basata su ${perc.length} quiz.` : "Non hai ancora quiz salvati in questo corso.";
+
+      statDone.textContent = String((attempts || []).length);
+      statDoneSub.textContent = "Quiz registrati (ultimi 30).";
+
+      // question progress
+      const { data: qp, error: qErr } = await supa
+        .from("question_progress")
+        .select("qid, module, correct, wrong, attempts, last_seen, last_wrong")
+        .eq("user_id", state.currentUser.id)
+        .eq("course_id", courseId);
+
+      if (seq !== __courseDashSeq) return;
+
+      if (qErr) console.warn(qErr);
+
       const rows = qp || [];
-      const errs = rows.filter(r => r.wrong > 0);
-      wrongCountEl.textContent = errs.length;
-      btnWrong.disabled = errs.length === 0;
+      const wrongRows = rows.filter(r => (r.wrong || 0) > 0);
+      wrongCountEl.textContent = String(wrongRows.length);
+      btnWrong.disabled = wrongRows.length === 0;
 
-      // Trova la più vecchia
+      // oldest (e abilita sempre il ripasso: può includere anche domande mai viste)
+      const totalQ = Object.keys(QMAP[courseId] || {}).length;
+      btnOld.disabled = totalQ === 0;
+
       let oldest = null;
-      rows.forEach(r => {
-         if(r.last_seen){
-           const t = new Date(r.last_seen).getTime();
-           if(!oldest || t < oldest.t) oldest = { t, qid: r.qid };
-         }
-      });
-      if(oldest && QMAP[state.currentCourseId][oldest.qid]){
-        oldestLabelEl.textContent = trim(QMAP[state.currentCourseId][oldest.qid].q, 40);
-        btnOld.disabled = false;
-      } else {
-        oldestLabelEl.textContent = "—";
-        btnOld.disabled = true; 
+      for (const r of rows){
+        const t = r.last_seen ? new Date(r.last_seen).getTime() : 0;
+        if (!oldest || t < oldest.t){
+          oldest = { t, qid: r.qid };
+        }
       }
 
-      // Chart Moduli
-      const modAgg = {};
-      rows.forEach(r => {
-        if(!modAgg[r.module]) modAgg[r.module] = {c:0, a:0};
-        modAgg[r.module].c += r.correct;
-        modAgg[r.module].a += r.attempts;
-      });
-      const labels = Object.keys(modAgg).sort();
-      const vals = labels.map(l => Math.round((modAgg[l].c/modAgg[l].a)*100));
-      if(labels.length) {
-        document.getElementById("panel-modules").classList.remove("hidden");
-        drawModuleChart(labels, vals);
+      if (oldest){
+        const qObj = QMAP[courseId]?.[oldest.qid];
+        oldestLabelEl.textContent = qObj ? `${qObj.module} • ${trim(qObj.q, 44)}` : "—";
+      } else {
+        oldestLabelEl.textContent = totalQ ? "Mai viste (puoi includerle nel ripasso)" : "—";
       }
+
+      // module aggregation
+      const modAgg = {};
+      for (const r of rows){
+        const m = r.module || "Senza modulo";
+        if (!modAgg[m]) modAgg[m] = { c:0, a:0 };
+        modAgg[m].c += (r.correct || 0);
+        modAgg[m].a += (r.attempts || 0);
+      }
+      const labels = Object.keys(modAgg).sort((a,b)=>a.localeCompare(b));
+      if (labels.length){
+        const vals = labels.map(l => {
+          const a = modAgg[l].a || 0;
+          const c = modAgg[l].c || 0;
+          return a ? Math.round((c/a)*100) : 0;
+        });
+        __moduleLabels = labels;
+        __moduleValues = vals;
+        panelModules.classList.remove("hidden");
+        drawModuleChart(labels, vals);
+        renderModuleList(labels, vals);
+      }
+    }
+
+    function renderModuleList(labels, vals){
+      moduleListEl.innerHTML = "";
+      labels.forEach((l,i)=>{
+        const row = document.createElement("div");
+        row.className = "module-row";
+        row.innerHTML = `<div>${escapeHtml(l)}</div><div class="val">${vals[i]}%</div>`;
+        moduleListEl.appendChild(row);
+      });
     }
 
     /***********************************************************************
-     * IMPOSTAZIONI E AVVIO QUIZ (Fix Logic)
+     * Quiz settings flow (choose question count INSIDE start)
      **********************************************************************/
-    function openQuizSettings(mode){
-      if ((mode==="wrong" || mode==="old") && !state.isLogged) { openAuth('login'); return; }
-      state.pendingMode = mode;
-      
-      document.getElementById("settings-old-wrap").classList.toggle("hidden", mode!=="old");
-      settingsError.style.display = "none";
-      settingsModal.classList.add("active");
+    function setQuickLimit(n){
+      settingsLimit.value = String(n);
     }
-    function closeSettings(){ settingsModal.classList.remove("active"); }
-    function setQuickLimit(n){ settingsLimit.value = n; }
-    function setOldDays(n){ document.getElementById("settings-old-days").value = n; }
+
+    function setOldDays(n){
+      const el = document.getElementById("settings-old-days");
+      if (el) el.value = String(n);
+    }
+
+    function openQuizSettings(mode){
+      // login gate for modes that require data
+      if ((mode === "wrong" || mode === "old") && !state.isLogged){
+        openAuth("login");
+        return;
+      }
+      if (mode === "search" && state.searchHits.length === 0 && (state.searchLastResultIds||[]).length === 0) return;
+
+      state.pendingMode = mode;
+
+      // extra settings per modalità
+      const oldWrap = document.getElementById("settings-old-wrap");
+      if (oldWrap) oldWrap.classList.toggle("hidden", mode !== "old");
+
+      // describe
+      const course = QUIZ_PACKS[state.currentCourseId];
+      const selCount = countSelectedQuestions();
+      const totalCourse = Object.values(course.modules).reduce((s,a)=>s+a.length,0);
+
+      let base = "";
+      if (mode === "modules") base = `Quiz dai moduli selezionati (${selCount} disponibili).`;
+      else if (mode === "course_exam") base = `Simulazione corso (tutti i moduli, ${totalCourse} domande).`;
+      else if (mode === "wrong") base = `Quiz dagli errori recenti (solo questo corso).`;
+      else if (mode === "old") base = `Ripasso delle domande più vecchie (solo questo corso).`;
+      else if (mode === "search"){
+        const sel = state.searchHits.length;
+        const total = (state.searchLastResultIds||[]).length;
+        base = sel ? `Quiz dalle domande selezionate in ricerca (${sel}).` : `Quiz da tutti i risultati ricerca (${total}).`;
+      }
+
+      settingsDesc.textContent = base + " Scegli quante domande vuoi fare.";
+
+      settingsError.style.display = "none";
+      settingsError.textContent = "";
+
+      settingsModal.classList.add("active");
+      // focus
+      setTimeout(()=> settingsLimit.focus(), 50);
+    }
+
+    function closeSettings(){
+      settingsModal.classList.remove("active");
+      state.pendingMode = null;
+    }
 
     async function startFromSettings(){
       const mode = state.pendingMode;
-      const limit = parseInt(settingsLimit.value) || 20;
+      if (!mode){ closeSettings(); return; }
+
+      const raw = parseInt(settingsLimit.value || "20", 10);
+      const limit = isNaN(raw) ? 20 : Math.max(0, raw);
+
+      // gather questions
       let qs = [];
-      const courseId = state.currentCourseId;
-      const map = QMAP[courseId];
+      let modulesLabel = [];
+
+      const course = QUIZ_PACKS[state.currentCourseId];
 
       if (mode === "modules"){
-         state.selectedModules.forEach(m => {
-           if(QUIZ_PACKS[courseId].modules[m]) {
-             QUIZ_PACKS[courseId].modules[m].forEach(q => qs.push(map[makeQid(courseId, m, q.q)]));
-           }
-         });
+        if (state.selectedModules.size === 0){
+          settingsError.textContent = "Seleziona almeno un modulo.";
+          settingsError.style.display = "block";
+          return;
+        }
+        const mods = Array.from(state.selectedModules);
+        modulesLabel = mods;
+        qs = mods.flatMap(m => course.modules[m].map(qq => QMAP[state.currentCourseId][makeQid(state.currentCourseId, m, qq.q)]));
       }
-      else if (mode === "course_exam"){
-         qs = Object.values(map);
-      }
-      else if (mode === "search"){
-         state.searchHits.forEach(qid => { if(map[qid]) qs.push(map[qid]); });
-      }
-      else if (mode === "wrong"){
-        // FIX: Recupera ID errori dal DB e mappa su locale
-        const { data } = await supa.from("question_progress")
-          .select("qid").eq("user_id", state.currentUser.id).eq("course_id", courseId)
-          .gt("wrong", 0).order("wrong", {ascending:false}).limit(300);
-        
-        if(data) data.forEach(r => { if(map[r.qid]) qs.push(map[r.qid]); });
-      }
-      else if (mode === "old"){
-        // FIX: Calcolo giorni e gestione null
-        const days = parseInt(document.getElementById("settings-old-days").value) || 14;
-        const includeUnseen = document.getElementById("settings-old-unseen").checked;
-        const cutoff = Date.now() - (days * 86400000);
-        
-        // Recupera tutte le domande viste
-        const { data } = await supa.from("question_progress")
-           .select("qid, last_seen").eq("user_id", state.currentUser.id).eq("course_id", courseId);
-        
-        const seenMap = new Map();
-        if(data) data.forEach(r => seenMap.set(r.qid, r.last_seen ? new Date(r.last_seen).getTime() : 0));
 
-        // Filtra
-        Object.keys(map).forEach(qid => {
-           const lastTime = seenMap.get(qid);
-           // Se non è mai stata vista: includi se includeUnseen è true
-           if (lastTime === undefined) {
-             if(includeUnseen) qs.push(map[qid]);
-           } else {
-             // Se vista, controlla quanto tempo fa
-             if (lastTime < cutoff) qs.push(map[qid]);
-           }
+      if (mode === "course_exam"){
+        const mods = Object.keys(course.modules);
+        modulesLabel = mods;
+        qs = mods.flatMap(m => course.modules[m].map(qq => QMAP[state.currentCourseId][makeQid(state.currentCourseId, m, qq.q)]));
+      }
+
+      if (mode === "search"){
+        modulesLabel = ["Ricerca"];
+        const ids = state.searchHits.length ? state.searchHits : (state.searchLastResultIds || []);
+        qs = ids.map(qid => QMAP[state.currentCourseId][qid]).filter(Boolean);
+      }
+
+      if (mode === "wrong"){
+        if (!supa || !state.isLogged) return;
+        const { data, error } = await supa
+          .from("question_progress")
+          .select("qid, last_wrong, wrong")
+          .eq("user_id", state.currentUser.id)
+          .eq("course_id", state.currentCourseId)
+          .gt("wrong", 0)
+          .order("last_wrong", { ascending: false })
+          .limit(250);
+
+        if (error){
+          settingsError.textContent = "Errore nel caricare gli errori.";
+          settingsError.style.display = "block";
+          return;
+        }
+        modulesLabel = ["Errori"];
+        qs = (data || []).map(r => QMAP[state.currentCourseId][r.qid]).filter(Boolean);
+      }
+
+      if (mode === "old"){
+        if (!supa || !state.isLogged) return;
+
+        const daysEl = document.getElementById("settings-old-days");
+        const includeEl = document.getElementById("settings-old-unseen");
+        const daysRaw = parseInt(daysEl?.value || "14", 10);
+        const days = isNaN(daysRaw) ? 14 : Math.max(0, daysRaw);
+        const includeUnseen = includeEl ? !!includeEl.checked : true;
+
+        const { data, error } = await supa
+          .from("question_progress")
+          .select("qid, last_seen")
+          .eq("user_id", state.currentUser.id)
+          .eq("course_id", state.currentCourseId)
+          .limit(5000);
+
+        if (error){
+          settingsError.textContent = "Errore nel caricare il ripasso.";
+          settingsError.style.display = "block";
+          return;
+        }
+
+        const lastSeenByQid = new Map((data || []).map(r => [r.qid, r.last_seen]));
+        const cutoffMs = Date.now() - (days * 86400000);
+
+        const map = QMAP[state.currentCourseId] || {};
+        const eligible = Object.keys(map).filter((qid) => {
+          const last = lastSeenByQid.get(qid);
+          if (!last) return includeUnseen;
+          const t = new Date(last).getTime();
+          if (!t) return includeUnseen;
+          return days === 0 ? true : (t <= cutoffMs);
         });
-        // Ordina per più vecchia
-        qs.sort((a,b) => {
-           const ta = seenMap.get(makeQid(courseId, a.module, a.q)) || 0;
-           const tb = seenMap.get(makeQid(courseId, b.module, b.q)) || 0;
-           return ta - tb;
+
+        // unseen first, then oldest seen
+        eligible.sort((a,b) => {
+          const la = lastSeenByQid.get(a);
+          const lb = lastSeenByQid.get(b);
+          if (!la && !lb) return 0;
+          if (!la) return -1;
+          if (!lb) return 1;
+          return new Date(la).getTime() - new Date(lb).getTime();
         });
+
+        modulesLabel = ["Ripasso"];
+        qs = eligible.map(qid => map[qid]).filter(Boolean);
       }
 
-      if (qs.length === 0) {
-        settingsError.textContent = "Nessuna domanda trovata per i criteri selezionati.";
-        settingsError.style.display = "block";
-        return;
-      }
-
+      // start quiz
       closeSettings();
-      startQuiz(qs, limit);
+      state.mode = mode;
+      startQuiz(qs, modulesLabel, limit);
     }
 
     /***********************************************************************
-     * ENGINE QUIZ
+     * Quiz engine (with limit)
      **********************************************************************/
-    function startQuiz(qs, limit){
-      let list = shuffle(qs);
-      if(limit > 0) list = list.slice(0, limit);
-      
-      state.quizQuestions = list.map(x => ({
-        ...x,
-        qid: makeQid(state.currentCourseId, x.module, x.q),
-        options: shuffle([...x.a]),
-        correctIndex: 0 // placeholder, calcolato sotto
-      }));
+    function syncNextButton(){
+      // Barra "Prossima": deve essere SEMPRE gestita dal client
+      // (non dipendere da Supabase/await, così non sparisce mai)
+      try{
+        if (vQuiz && vQuiz.classList.contains("active")) quizActions.classList.add("visible");
+        else quizActions.classList.remove("visible");
+      }catch(e){}
 
-      // Ricalcola indici corretti dopo shuffle opzioni
-      state.quizQuestions.forEach(q => {
-         const correctTxt = q.a[0]; // La prima in array originale è sempre corretta nel JSON
-         q.correctIndex = q.options.indexOf(correctTxt);
+      if (!btnNext) return;
+      const isLast = state.quizIndex >= (state.quizQuestions.length - 1);
+      if (state.quizAnswered){
+        btnNext.disabled = false;
+        btnNext.textContent = isLast ? "Risultati →" : "Prossima →";
+      } else {
+        // consenti lo skip (con confirm dentro nextQuestion)
+        btnNext.disabled = false;
+        btnNext.textContent = "Salta →";
+      }
+    }
+
+function startQuiz(qs, modulesLabel, limit){
+      // dedup (by qid, not by text) — evita bug quando la stessa domanda compare in moduli diversi
+      const seen = new Set();
+      let qList = (qs || [])
+        .filter(Boolean)
+        .filter(x => typeof x.q === "string" && x.q.trim().length)
+        .filter(x => Array.isArray(x.a) && x.a.length >= 2)
+        .filter(x => {
+          const qid = x.qid || makeQid(state.currentCourseId, x.module, x.q);
+          if (seen.has(qid)) return false;
+          seen.add(qid);
+          return true;
+        });
+
+      // shuffle questions
+      qList = shuffle(qList);
+
+      if (limit > 0) qList = qList.slice(0, limit);
+
+      if (!qList.length){
+        alert("Non ci sono domande disponibili per questa modalità.");
+        return;
+      }
+
+      // build session questions with shuffled options
+      state.quizQuestions = qList.map(x => {
+        const baseCorrectIndex = (typeof x.correct === "number" && x.correct >= 0 && x.correct < x.a.length) ? x.correct : 0;
+        const correctText = x.a[baseCorrectIndex];
+        const opts = shuffle([...x.a]);
+        let correctIndex = opts.indexOf(correctText);
+        if (correctIndex < 0) correctIndex = 0;
+
+        const qid = x.qid || makeQid(state.currentCourseId, x.module, x.q);
+
+        return {
+          course_id: state.currentCourseId,
+          qid,
+          module: x.module,
+          cat: x.cat || x.module,
+          q: x.q,
+          options: opts,
+          correctIndex
+        };
       });
 
-      state.quizIndex = 0; state.quizCorrect = 0; state.quizAnswered = false;
-      
-      crumbEl.textContent = `Quiz in corso`;
+      state.quizIndex = 0;
+      state.quizCorrect = 0;
+      state.quizAnswered = false;
+
+      // pending save (avoid late UI refresh after logout)
+      state.pendingAttemptSave = null;
+      state.pendingAttemptCourseId = null;
+
+      // UI
+      crumbEl.textContent = `Corsi • ${QUIZ_PACKS[state.currentCourseId].title} • Quiz`;
       navTo("quiz");
+      // safety: mostra subito la barra (anche prima della risposta)
+      try{ syncNextButton(); }catch(e){}
       renderQuestion();
     }
 
     function renderQuestion(){
-      if(state.quizIndex >= state.quizQuestions.length) { finishQuiz(); return; }
+      if (state.quizIndex >= state.quizQuestions.length){
+        finishQuiz();
+        return;
+      }
+
       state.quizAnswered = false;
+
       const q = state.quizQuestions[state.quizIndex];
-      
-      qChip.textContent = q.module;
-      qCounter.textContent = `${state.quizIndex+1} / ${state.quizQuestions.length}`;
-      progressBar.style.width = ((state.quizIndex)/state.quizQuestions.length*100)+"%";
+      qChip.textContent = `${QUIZ_PACKS[state.currentCourseId].icon} ${q.module}`;
+      qCounter.textContent = `${state.quizIndex + 1} / ${state.quizQuestions.length}`;
+      progressBar.style.width = `${(state.quizIndex / state.quizQuestions.length) * 100}%`;
+
       qText.textContent = q.q;
-      
       optionsContainer.innerHTML = "";
-      q.options.forEach((txt, i) => {
+
+      q.options.forEach((opt, idx) => {
         const btn = document.createElement("button");
         btn.className = "opt-btn";
-        btn.textContent = txt;
-        btn.onclick = () => handleAnswer(i, btn);
+        btn.textContent = opt;
+        btn.onclick = () => handleAnswer(idx, btn);
         optionsContainer.appendChild(btn);
       });
-      
-      btnNext.textContent = "Salta →";
-      btnNext.disabled = false;
+
+      syncNextButton();
     }
 
-    function handleAnswer(idx, btn){
-      if(state.quizAnswered) return;
+    async function handleAnswer(idx, btn){
+      if (state.quizAnswered) return;
       state.quizAnswered = true;
+
       const q = state.quizQuestions[state.quizIndex];
-      const all = document.querySelectorAll(".opt-btn");
-      
-      const isCorrect = (idx === q.correctIndex);
-      if(isCorrect) { btn.classList.add("correct"); state.quizCorrect++; }
-      else { 
-        btn.classList.add("wrong"); 
-        if(all[q.correctIndex]) all[q.correctIndex].classList.add("correct"); 
+      const buttons = Array.from(document.querySelectorAll(".opt-btn"));
+      buttons.forEach(b => b.disabled = true);
+
+      const safeCorrectIndex = (Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex < buttons.length) ? q.correctIndex : 0;
+
+      const isCorrect = idx === safeCorrectIndex;
+      if (isCorrect){
+        btn.classList.add("correct");
+        state.quizCorrect++;
+      } else {
+        btn.classList.add("wrong");
+        if (buttons[safeCorrectIndex]) buttons[safeCorrectIndex].classList.add("correct");
       }
-      
-      btnNext.textContent = (state.quizIndex === state.quizQuestions.length-1) ? "Risultati" : "Prossima →";
-      
-      // Save single attempt
-      if(state.isLogged && supa){
+
+      // UI FIRST: la barra non deve mai dipendere da chiamate async
+      syncNextButton();
+
+      // save progress per question (only if logged) — NON bloccare la UI
+      if (state.isLogged && supa){
         supa.rpc("record_question_attempt", {
-          p_course_id: state.currentCourseId, p_qid: q.qid, p_module: q.module, p_cat: q.cat, p_is_correct: isCorrect
-        }).catch(console.warn);
+          p_course_id: q.course_id,
+          p_qid: q.qid,
+          p_module: q.module,
+          p_cat: q.cat,
+          p_is_correct: isCorrect
+        }).catch((e)=>{
+          console.warn("record_question_attempt error", e);
+          try{
+            if (!window.__qpWarned){
+              window.__qpWarned = true;
+              toast("error","Progressi non salvati","Permessi/RLS Supabase: verifica GRANT su question_progress e quiz_attempts.");
+            }
+          }catch(_){}
+        });
       }
     }
 
     function nextQuestion(){
-      if(!state.quizAnswered && !confirm("Saltare la domanda?")) return;
+      if (!state.quizAnswered){
+        if(!confirm("Vuoi saltare questa domanda?")) return;
+      }
       state.quizIndex++;
       renderQuestion();
     }
 
     function quitQuiz(){
-      if(confirm("Uscire? Perderai i progressi attuali.")) backToCourse();
+      if(confirm("Vuoi uscire? Perderai i progressi di questa sessione.")){
+        backToCourse();
+      }
     }
 
     async function finishQuiz(){
-      const pct = Math.round((state.quizCorrect/state.quizQuestions.length)*100);
+      const pct = Math.round((state.quizCorrect / state.quizQuestions.length) * 100);
       finalScore.textContent = pct + "%";
-      finalMsg.textContent = pct > 60 ? "Ben fatto!" : "Ripassa ancora.";
+
+      let msg = "Puoi fare di meglio.";
+      if (pct >= 60) msg = "Buon risultato.";
+      if (pct >= 80) msg = "Ottimo lavoro.";
+      if (pct >= 90) msg = "Eccellente!";
+      finalMsg.textContent = msg;
+
+      progressBar.style.width = "100%";
       navTo("results");
+
+      // save attempt (non blocca la UI) + refresh stats automatico
+      if (state.isLogged && supa){
+        try{
+          const modules = [...new Set(state.quizQuestions.map(x => x.module))];
+          const courseId = state.currentCourseId;
+          const userId = state.currentUser?.id;
+          if (userId){
+            const payload = {
+              user_id: userId,
+              course_id: courseId,
+              mode: state.mode,
+              modules,
+              total: state.quizQuestions.length,
+              correct: state.quizCorrect,
+              percent: pct
+            };
+
+            const p = supa.from("quiz_attempts").insert(payload);
+            state.pendingAttemptSave = p;
+            state.pendingAttemptCourseId = courseId;
+
+            // quando finisce, aggiorna media/grafici senza F5 (se sei già nel corso)
+            p.then(({ error })=>{
+              if (state.pendingAttemptSave !== p) return; // ignora se superato da un altro salvataggio
+              state.pendingAttemptSave = null;
+              state.pendingAttemptCourseId = null;
+
+              if (error) throw error;
+
+              try{
+                if (vCourse && vCourse.classList.contains("active") && state.currentCourseId === courseId){
+                  refreshCourseDashboard();
+                }
+              }catch(e){}
+
+              toast("success","Quiz salvato","Media e grafici aggiornati.");
+            }).catch((e)=>{
+              if (state.pendingAttemptSave === p){
+                state.pendingAttemptSave = null;
+                state.pendingAttemptCourseId = null;
+              }
+              console.warn("quiz_attempts insert error", e);
+              toast("warn","Salvataggio non riuscito","Riprova: la media potrebbe non includere l’ultimo quiz.");
+            });
+          }
+        }catch(e){
+          console.warn("quiz_attempts insert error", e);
+        }
+      }
+
+// update dashboard when returning
+    }
+
+    /***********************************************************************
+     * Charts (HiDPI, Apple colors)
+     **********************************************************************/
+    function setupCanvas(canvas, cssHeight){
+      const ctx = canvas.getContext("2d");
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      const w = Math.max(1, Math.floor(rect.width));
+      const h = Math.max(1, Math.floor(cssHeight));
+
+      canvas.style.height = h + "px";
+      canvas.width = Math.floor(w * dpr);
+      canvas.height = Math.floor(h * dpr);
+      ctx.setTransform(1,0,0,1,0,0);
+      ctx.scale(dpr, dpr);
+
+      return { ctx, w, h };
+    }
+
+    function drawGrid(ctx,w,h){
+      ctx.clearRect(0,0,w,h);
+      ctx.strokeStyle = "rgba(0,0,0,0.08)";
+      ctx.lineWidth = 1;
+      for (let i=0;i<=4;i++){
+        const y = (h/4)*i;
+        ctx.beginPath();
+        ctx.moveTo(0,y);
+        ctx.lineTo(w,y);
+        ctx.stroke();
+      }
+    }
+
+    function drawProgressChart(points){
+      const canvas = document.getElementById("progressChart");
+      if (!canvas) return;
+
       
-      if(state.isLogged && supa){
-         await supa.from("quiz_attempts").insert({
-           user_id: state.currentUser.id,
-           course_id: state.currentCourseId,
-           total: state.quizQuestions.length,
-           correct: state.quizCorrect,
-           percent: pct,
-           modules: [...state.selectedModules]
-         });
-         toast("success", "Salvato", "Statistiche aggiornate.");
+      // If the view just became visible, the canvas can briefly measure 0px wide.
+      // Retry a few frames instead of drawing a 1px chart (looks like it "disappeared").
+      const _rect = canvas.getBoundingClientRect();
+      canvas.__retry = canvas.__retry || 0;
+      if (_rect.width < 30 && canvas.__retry < 12){
+        canvas.__retry++;
+        requestAnimationFrame(()=> { try{ drawProgressChart(points); }catch(e){} });
+        return;
+      }
+      canvas.__retry = 0;
+// normalize: allow [number] or [{v,t}] or [{percent,created_at}]
+      const arr = (points || []).map(p => {
+        if (typeof p === "number") return { v: p, t: null };
+        return {
+          v: (p && (p.v ?? p.percent ?? 0)) | 0,
+          t: p?.t ?? p?.created_at ?? null
+        };
+      });
+
+      const { ctx, w, h } = setupCanvas(canvas, 140);
+      drawGrid(ctx,w,h);
+
+      const primary = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim() || "#0071e3";
+      const sec = getComputedStyle(document.documentElement).getPropertyValue("--text-sec").trim() || "#86868b";
+      const font = getComputedStyle(document.body).fontFamily;
+
+      if (!arr.length){
+        ctx.fillStyle = sec;
+        ctx.font = "800 12px " + font;
+        ctx.fillText("Fai un quiz (loggato) per riempire il grafico.", 10, h/2);
+        return;
+      }
+
+      const padX=10, padY=14;
+      const innerW = w - padX*2;
+      const innerH = h - padY*2;
+
+      const n = Math.min(arr.length, 30);
+      const data = arr.slice(-n);
+      const xs = data.map((_,i) => padX + (innerW * (n===1 ? 0 : i/(n-1))));
+      const ys = data.map(d => padY + innerH * (1 - (Math.max(0, Math.min(100, d.v)) / 100)));
+
+      // subtle fill
+      const grad = ctx.createLinearGradient(0, padY, 0, padY + innerH);
+      grad.addColorStop(0, "rgba(0,113,227,0.18)");
+      grad.addColorStop(1, "rgba(0,113,227,0.02)");
+
+      if (progressType === "bar"){
+        const barW = innerW / n;
+        for (let i=0;i<n;i++){
+          const x = padX + i*barW + 3;
+          const y = ys[i];
+          const bw = Math.max(2, barW - 6);
+          const bh = (padY + innerH) - y;
+
+          ctx.fillStyle = "rgba(0,113,227,0.35)";
+          ctx.beginPath();
+          const r = 6;
+          ctx.moveTo(x, y + r);
+          ctx.arcTo(x, y, x + r, y, r);
+          ctx.lineTo(x + bw - r, y);
+          ctx.arcTo(x + bw, y, x + bw, y + r, r);
+          ctx.lineTo(x + bw, y + bh);
+          ctx.lineTo(x, y + bh);
+          ctx.closePath();
+          ctx.fill();
+        }
+      } else {
+        // area (polyline so markers stay exactly on the line)
+
+        ctx.fillStyle = grad;
+
+        ctx.beginPath();
+
+        ctx.moveTo(xs[0], padY + innerH);
+
+        for (let i=0;i<n;i++){
+
+          ctx.lineTo(xs[i], ys[i]);
+
+        }
+
+        ctx.lineTo(xs[n-1], padY + innerH);
+
+        ctx.closePath();
+
+        ctx.fill();
+        // stroke
+
+        ctx.strokeStyle = primary;
+
+        ctx.lineWidth = 2;
+
+        ctx.beginPath();
+
+        ctx.moveTo(xs[0], ys[0]);
+
+        for (let i=1;i<n;i++){
+
+          ctx.lineTo(xs[i], ys[i]);
+
+        }
+
+        ctx.stroke();
+        // points
+        for (let i=0;i<n;i++){
+          ctx.fillStyle = "white";
+          ctx.strokeStyle = primary;
+          ctx.lineWidth = 2;
+          ctx.beginPath();
+          ctx.arc(xs[i], ys[i], 3.2, 0, Math.PI*2);
+          ctx.fill();
+          ctx.stroke();
+        }
+      }
+
+      // labels (first/last date if available)
+      const t0 = data[0].t ? new Date(data[0].t) : null;
+      const t1 = data[n-1].t ? new Date(data[n-1].t) : null;
+
+      ctx.fillStyle = sec;
+      ctx.font = "800 11px " + font;
+      const lastVal = data[n-1].v;
+      ctx.fillText(`${lastVal}%`, Math.max(8, xs[n-1]-18), Math.max(14, ys[n-1]-10));
+
+      if (t0 && t1){
+        const fmt = (d)=> String(d.getDate()).padStart(2,"0") + "/" + String(d.getMonth()+1).padStart(2,"0");
+        ctx.fillText(fmt(t0), padX, h-6);
+        const s = fmt(t1);
+        const tw = ctx.measureText(s).width;
+        ctx.fillText(s, w - padX - tw, h-6);
+      }
+    }
+
+function drawModuleChart(labels, vals){
+      const canvas = document.getElementById("moduleChart");
+      if (!canvas) return;
+      
+      // If the view just became visible, the canvas can briefly measure 0px wide.
+      // Retry a few frames instead of drawing a 1px chart (looks like it "disappeared").
+      const _rect = canvas.getBoundingClientRect();
+      canvas.__retry = canvas.__retry || 0;
+      if (_rect.width < 30 && canvas.__retry < 12){
+        canvas.__retry++;
+        requestAnimationFrame(()=> { try{ drawModuleChart(labels, vals); }catch(e){} });
+        return;
+      }
+      canvas.__retry = 0;
+const { ctx, w, h } = setupCanvas(canvas, 180);
+      drawGrid(ctx,w,h);
+
+      const primary = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim() || "#0071e3";
+      if (!labels || labels.length === 0) return;
+
+      const padX=12, padY=16;
+      const innerW = w - padX*2;
+      const innerH = h - padY*2;
+
+      const n = labels.length;
+      const barW = innerW / n;
+
+      ctx.fillStyle = "rgba(0,113,227,0.70)";
+      ctx.strokeStyle = primary;
+      for (let i=0;i<n;i++){
+        const v = vals[i] || 0;
+        const barH = (v/100)*innerH;
+        const x = padX + i*barW;
+        const y = (h-padY) - barH;
+        ctx.globalAlpha = 0.78;
+        ctx.fillRect(x+2, y, Math.max(2, barW-4), barH);
+        ctx.globalAlpha = 1;
       }
     }
 
     /***********************************************************************
-     * AUTENTICAZIONE & RECUPERO PASSWORD
+     * Auth (Supabase) — refactor v5 (session-driven, no "F5" after logout)
      **********************************************************************/
-    function openAuth(mode){
-      authError.style.display = "none";
-      authLogin.classList.add("hidden");
-      authSignup.classList.add("hidden");
-      authReset.classList.add("hidden");
-      authUpdate.classList.add("hidden");
-      
-      if(mode === 'login'){
-        authTitle.textContent = "Accedi";
-        authLogin.classList.remove("hidden");
-      } else if(mode === 'signup'){
-        authTitle.textContent = "Registrati";
-        authSignup.classList.remove("hidden");
-      } else if(mode === 'reset'){
-        authTitle.textContent = "Recupero Password";
-        authSub.textContent = "Ti invieremo un link via email.";
-        authReset.classList.remove("hidden");
-      } else if(mode === 'update'){
-        authTitle.textContent = "Nuova Password";
-        authSub.textContent = "Scegli una nuova password sicura.";
-        authUpdate.classList.remove("hidden");
+    function toggleProfile(){
+      // legacy: usato in vecchie versioni. Ora la login è una pagina dedicata.
+      openAuth("login");
+    }
+
+    function openAuth(tab){
+      if (!supa){
+        alert("Configura SUPABASE_URL e SUPABASE_ANON_KEY dentro l'HTML.");
+        return;
       }
+
+      // memorizza dove tornare dopo login
+      const active = document.querySelector(".view.active")?.id || "view-dashboard";
+      const from = active.replace("view-","");
+      state.afterAuth = (from === "auth") ? "dashboard" : from;
+
+      authError.style.display = "none";
+      try{ document.getElementById("btn-resend")?.classList.add("hidden"); }catch(e){}
+      try{ document.getElementById("btn-resend-signup")?.classList.add("hidden"); }catch(e){}
+
+      // reset any success panel
+      try{ hideAuthSuccess(); }catch(e){}
+      authError.textContent = "";
+
+      // mostra pagina account
       navTo("auth");
+
+      if (tab === "signup"){
+        authTitle.textContent = "Registrati";
+        authSub.textContent = "Crea un account per salvare statistiche e progressi.";
+        authSignup.classList.remove("hidden");
+        authLogin.classList.add("hidden");
+        try{ document.getElementById("signupUser")?.focus(); }catch(e){}
+      } else {
+        authTitle.textContent = "Accedi";
+        authSub.textContent = "Email + password. Statistiche separate per corso.";
+        authLogin.classList.remove("hidden");
+        authSignup.classList.add("hidden");
+        try{ document.getElementById("loginEmail")?.focus(); }catch(e){}
+      }
+
+      // mostra pannello corretto
+      if (state.isLogged){
+        if (profileLoggedOut) profileLoggedOut.classList.add("hidden");
+        if (profileLoggedIn) profileLoggedIn.classList.remove("hidden");
+      } else {
+        if (profileLoggedOut) profileLoggedOut.classList.remove("hidden");
+        if (profileLoggedIn) profileLoggedIn.classList.add("hidden");
+      }
+
+      // reset bottoni/lock (se una richiesta precedente era rimasta in pending)
+      try{
+        ["login","signup","resend"].forEach(k=>authUnlock(k));
+        const bl = document.getElementById("btn-login");
+        if (bl){ bl.disabled = false; bl.textContent = "Accedi"; }
+        const bs = document.getElementById("btn-signup");
+        if (bs){ bs.disabled = false; bs.textContent = "Crea account"; }
+      }catch(e){}
+
+      vAuth.scrollTop = 0;
     }
 
     function navBackFromAuth(){
-      // Se era in fase di recupero, torna al login, altrimenti dashboard
-      if(!authUpdate.classList.contains("hidden")) openAuth('login');
-      else navTo("dashboard");
+      // torna dove eri prima
+      navTo(state.afterAuth || "dashboard");
     }
 
-    // 1. Login
-    async function login(){
-      const email = document.getElementById("loginEmail").value;
-      const pass = document.getElementById("loginPass").value;
-      const { error } = await supa.auth.signInWithPassword({ email, password: pass });
-      if(error) showAuthError(error.message);
-      else navTo("dashboard");
+    function closeAuth(){
+      navTo(state.afterAuth || "dashboard");
     }
-
-    // 2. Signup
-    async function signup(){
-      const email = document.getElementById("signupEmail").value;
-      const pass = document.getElementById("signupPass").value;
-      const user = document.getElementById("signupUser").value;
-      const { data, error } = await supa.auth.signUp({ 
-        email, password: pass, 
-        options: { data: { username: user } } 
-      });
-      if(error) showAuthError(error.message);
-      else {
-        alert("Controlla la tua email per confermare l'account!");
-        openAuth('login');
-      }
-    }
-
-    // 3. Request Password Reset
-    async function requestPasswordReset(){
-      const email = document.getElementById("resetEmail").value;
-      const btn = document.getElementById("btn-reset-req");
-      if(!email) { showAuthError("Inserisci email"); return; }
-      
-      btn.disabled = true; btn.textContent = "Invio...";
-      
-      const { error } = await supa.auth.resetPasswordForEmail(email, {
-        redirectTo: window.location.href // Torna qui
-      });
-      
-      btn.disabled = false; btn.textContent = "Invia link";
-      
-      if(error) showAuthError(error.message);
-      else {
-        toast("success", "Email Inviata", "Controlla la posta per il link di reset.");
-        openAuth('login');
-      }
-    }
-
-    // 4. Update Password (dopo click sul link email)
-    async function updateUserPassword(){
-      const pass = document.getElementById("updatePass").value;
-      if(!pass || pass.length < 6) { showAuthError("Password troppo corta"); return; }
-      
-      const { error } = await supa.auth.updateUser({ password: pass });
-      if(error) showAuthError(error.message);
-      else {
-        toast("success", "Password Aggiornata", "Ora puoi accedere.");
-        navTo("dashboard");
-      }
-    }
-
-    async function logout(){
-      await supa.auth.signOut();
-      window.location.reload();
-    }
-    
-    function switchAccount(){ logout(); }
 
     function showAuthError(msg){
-      authError.textContent = msg;
+      authError.textContent = safeText(msg, "Errore.");
       authError.style.display = "block";
     }
 
-    function setAuthUI(user){
-      state.isLogged = !!user;
-      state.currentUser = user;
-      if(user){
-        chipAuth.textContent = "Utente";
-        userDisplay.textContent = user.email;
-        profileLoggedOut.classList.add("hidden");
-        profileLoggedIn.classList.remove("hidden");
-        document.getElementById("dash-loggedout").classList.add("hidden");
-        document.getElementById("dash-loggedin").classList.remove("hidden");
-      } else {
-        chipAuth.textContent = "Ospite";
-        profileLoggedOut.classList.remove("hidden");
-        profileLoggedIn.classList.add("hidden");
-        document.getElementById("dash-loggedout").classList.remove("hidden");
-        document.getElementById("dash-loggedin").classList.add("hidden");
-      }
+    function prettyAuthError(err){
+      const raw = (err?.message || err?.error_description || "").toLowerCase();
+
+
+      // Timeout / rete: evita che l’utente resti bloccato su "Accesso..."
+      if (err?.name === "AbortError" || raw.includes("aborted") || raw.includes("abort")) return "Richiesta in timeout: controlla la connessione e riprova.";
+      if (raw.includes("failed to fetch") || raw.includes("network") || raw.includes("fetch")) return "Connessione non disponibile: controlla internet e riprova.";
+      // Supabase spesso ritorna messaggi "generici" per sicurezza.
+      if (raw.includes("invalid login credentials")) return "Email o password non corretti (oppure email non confermata).";
+      if (raw.includes("email not confirmed")) return "Email non confermata. Apri la mail di conferma oppure reinviala.";
+      if (raw.includes("user already registered")) return "Questa email è già registrata. Prova ad accedere.";
+      if (raw.includes("password") && raw.includes("characters")) return "Password troppo corta.";
+      if (raw.includes("rate limit")) return "Troppi tentativi: aspetta un attimo e riprova.";
+      return err?.message || "Errore di autenticazione.";
     }
 
-    async function initAuth(){
-      // Check if this is a password recovery redirect
-      // Supabase appende #access_token=...&type=recovery
-      const hash = window.location.hash;
-      if(hash && hash.includes("type=recovery")){
-         // L'utente è tecnicamente loggato ora.
-         // Dobbiamo mostrare il form di cambio password.
-         openAuth('update');
-      }
-
-      const { data } = await supa.auth.getSession();
-      setAuthUI(data.session?.user);
-
-      supa.auth.onAuthStateChange((event, session) => {
-        if(event === 'PASSWORD_RECOVERY') {
-           openAuth('update');
-        } else {
-           setAuthUI(session?.user);
-        }
-      });
+    // Blocchi anti-doppio-submit (evita bug random tipo “password errata” per doppio click/Enter)
+    const __authLocks = { login:false, signup:false, resend:false };
+    function authLock(key){
+      if (__authLocks[key]) return false;
+      __authLocks[key] = true;
+      return true;
     }
+    function authUnlock(key){ __authLocks[key] = false; }
 
     function wireAuthEnterKeys(){
-       document.getElementById("loginPass").addEventListener("keyup", e=>e.key==="Enter"&&login());
+      // Enter = submit (ma senza doppio trigger / key-repeat)
+      const bind = (ids, fn) => {
+        ids.forEach(id=>{
+          const el = document.getElementById(id);
+          if (!el) return;
+          el.addEventListener("keydown", (e)=>{
+            if (e.key !== "Enter") return;
+            if (e.repeat) return;          // niente spam
+            e.preventDefault();            // evita doppio submit (form / browser)
+            fn();
+          });
+        });
+      };
+
+      try{ bind(["loginEmail","loginPass"], login); }catch(e){}
+      try{ bind(["signupUser","signupEmail","signupPass"], signup); }catch(e){}
+      try{ bind(["pw-email"], sendPasswordResetEmail); }catch(e){}
+      try{ bind(["pw-new","pw-new2"], updatePasswordFromRecovery); }catch(e){}
+    }
+
+    function hardClearSupabaseStorage(){
+      // Rimuove token/cache Supabase dal browser (utile solo quando si "forza" lo switch account)
+      try{
+        const ref = (SUPABASE_URL || "").replace(/^https?:\/\//,"").split(".")[0];
+        if (!ref) return;
+        const prefixes = [
+          `sb-${ref}-`, // supabase-js v2
+          `supabase.auth.token`, // legacy
+        ];
+
+        [localStorage, sessionStorage].forEach(store=>{
+          try{
+            const keys = [];
+            for (let i=0;i<store.length;i++){
+              const k = store.key(i);
+              if (!k) continue;
+              if (prefixes.some(p => k.startsWith(p) || k.includes(p))) keys.push(k);
+            }
+            keys.forEach(k => store.removeItem(k));
+          }catch(e){}
+        });
+      }catch(e){}
+    }
+
+    async function switchAccount(){
+      // Chiude la sessione e porta subito al login (pulendo storage solo in questo caso)
+      await logout({ silent:true, clearStorage:true, openLogin:true });
+    }
+
+    function showLoginSuccess(){
+      const user = state.currentUser;
+      if (!user) return;
+      const uname = state.profile?.username || defaultUsernameFromUser(user);
+
+      showAuthSuccess(
+        "Accesso riuscito",
+        `Bentornato ${uname}. Le statistiche sono collegate al tuo account.`,
+        "Vai ai corsi",
+        ()=>{ hideAuthSuccess(); navTo(state.afterAuth || "dashboard"); },
+        "Chiudi",
+        ()=>{ hideAuthSuccess(); }
+      );
+    }
+
+    
+    async function handleAuthRedirect(){
+      // Gestione redirect (email confirmation / OAuth PKCE).
+      // - PKCE: ?code=...
+      // - Implicit: #access_token=...
+      try{
+        const url = new URL(window.location.href);
+        const code = url.searchParams.get("code");
+        if (code){
+          const type = (url.searchParams.get("type") || "").toLowerCase();
+          if (type === "recovery"){
+            try{ sessionStorage.setItem("pw_recovery","1"); }catch(e){}
+          }
+
+          const { error } = await supa.auth.exchangeCodeForSession(code);
+          if (error) console.warn("exchangeCodeForSession error:", error);
+
+          // Non è una "conferma email" se stai facendo recovery
+          if (!error && type !== "recovery"){
+            try{ sessionStorage.setItem("auth_just_confirmed","1"); }catch(e){}
+          }
+
+          // pulisci l'URL (togli code e parametri auth)
+          url.searchParams.delete("code");
+          url.searchParams.delete("type");
+          url.searchParams.delete("token_hash");
+          window.history.replaceState({}, document.title, url.toString());
+          return;
+        }
+
+        // implicit hash tokens: lascia che supabase li legga, poi pulisci hash
+        if (window.location.hash && window.location.hash.includes("access_token=")){
+          // aspetta un tick: il client leggerà l'hash se detectSessionInUrl = true
+          setTimeout(()=>{
+            try{
+              const clean = new URL(window.location.href);
+              clean.hash = "";
+              window.history.replaceState({}, document.title, clean.toString());
+            }catch(e){}
+          }, 50);
+        }
+      }catch(e){}
+    }
+
+    async function resendSignupEmail(fromSignup=false){
+      if (!supa) return;
+      if (!authLock("resend")) return;
+      const email = (
+        (fromSignup ? document.getElementById("signupEmail")?.value : document.getElementById("loginEmail")?.value) ||
+        document.getElementById("loginEmail")?.value ||
+        document.getElementById("signupEmail")?.value ||
+        ""
+      ).trim().toLowerCase();
+
+      if (!email){
+        showAuthError("Inserisci la tua email e poi premi “Reinvia email di conferma”.");
+        authUnlock("resend");
+        return;
+      }
+
+      const btn = fromSignup ? document.getElementById("btn-resend-signup") : document.getElementById("btn-resend");
+      if (btn){ btn.disabled = true; btn.textContent = "Invio..."; }
+
+      try{
+        const { error } = await supa.auth.resend({
+          type: "signup",
+          email,
+          options: { emailRedirectTo: baseRedirectUrl() }
+        });
+        if (error) throw error;
+        toast("success","Email reinviata","Controlla la posta (anche Spam).");
+      }catch(err){
+        toast("error","Invio non riuscito", prettyAuthError(err));
+      }finally{
+        if (btn){ btn.disabled = false; btn.textContent = "Reinvia email di conferma"; }
+        authUnlock("resend");
+      }
+    }
+
+
+
+    /***********************************************************************
+     * Theme (dark / light)
+     **********************************************************************/
+    const THEME_KEY = "med_theme";
+
+    function getPreferredTheme(){
+      try{
+        const saved = localStorage.getItem(THEME_KEY);
+        if (saved === "light" || saved === "dark") return saved;
+      }catch(e){}
+      try{
+        const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        return prefersDark ? "dark" : "light";
+      }catch(e){}
+      return "light";
+    }
+
+    function applyTheme(theme, persist=true){
+      const t = (theme === "dark") ? "dark" : "light";
+      try{ document.documentElement.dataset.theme = t; }catch(e){}
+      if (persist){ try{ localStorage.setItem(THEME_KEY, t); }catch(e){} }
+      const b = document.getElementById("btn-theme");
+      if (b){
+        b.textContent = (t === "dark") ? "☀️" : "🌙";
+        b.title = (t === "dark") ? "Tema chiaro" : "Tema scuro";
+        b.setAttribute("aria-label", b.title);
+      }
+    }
+
+    function toggleTheme(){
+      const current = document.documentElement.dataset.theme || "light";
+      applyTheme(current === "dark" ? "light" : "dark");
     }
 
     /***********************************************************************
-     * UTILS / CHARTS
+     * Password reset (forgot password)
      **********************************************************************/
-    function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a;}
-    function trim(s,n){return s.length>n?s.slice(0,n)+"…":s;}
-    function escapeHtml(s){return String(s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
-    
-    // Hash consistente per ID domande
-    function makeQid(c,m,q){
-      let h=0x811c9dc5; const s = (c+"||"+m+"||"+q).toLowerCase();
-      for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193);}
-      return c+":"+(h>>>0).toString(16);
+    const pwModal = document.getElementById("pw-modal");
+    const pwStepRequest = document.getElementById("pw-step-request");
+    const pwStepUpdate = document.getElementById("pw-step-update");
+    const pwEmail = document.getElementById("pw-email");
+    const pwNew = document.getElementById("pw-new");
+    const pwNew2 = document.getElementById("pw-new2");
+    const pwError = document.getElementById("pw-error");
+
+    function clearPwError(){
+      if (!pwError) return;
+      pwError.textContent = "";
+      pwError.style.display = "none";
     }
 
-    let progressType = "line";
-    function setProgressType(t){
-       progressType=t; 
-       document.getElementById("btn-line").classList.toggle("active",t==="line");
-       document.getElementById("btn-bar").classList.toggle("active",t==="bar");
-       drawProgressChart(__progressPoints);
+    function showPwError(msg){
+      if (!pwError) return;
+      pwError.textContent = msg || "Errore";
+      pwError.style.display = "block";
     }
 
-    // Charting code semplificato per brevità
-    function setupCanvas(id, hCSS){
-      const c = document.getElementById(id);
-      if(!c)return null;
-      const dpr=window.devicePixelRatio||1;
-      const rect=c.getBoundingClientRect();
-      c.width=rect.width*dpr; c.height=hCSS*dpr;
-      const ctx=c.getContext("2d");
-      ctx.scale(dpr,dpr);
-      return {ctx, w:rect.width, h:hCSS};
-    }
+    function openPasswordReset(step="request"){
+      if (!pwModal) return;
+      clearPwError();
+      if (pwStepRequest) pwStepRequest.classList.toggle("hidden", step !== "request");
+      if (pwStepUpdate) pwStepUpdate.classList.toggle("hidden", step !== "update");
 
-    function drawProgressChart(data){
-      const obj = setupCanvas("progressChart", 130);
-      if(!obj) return;
-      const {ctx, w, h} = obj;
-      ctx.clearRect(0,0,w,h);
-      
-      if(!data.length) { 
-        ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--text-sec');
-        ctx.fillText("Nessun dato.", w/2-30, h/2); return; 
+      // prefill email
+      if (step === "request" && pwEmail){
+        const email = (document.getElementById("loginEmail")?.value || "").trim().toLowerCase();
+        if (email) pwEmail.value = email;
       }
-      
-      const pts = data.map(d=>d.percent);
-      const step = w / (Math.max(pts.length, 2)-1);
-      
-      ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--primary');
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      pts.forEach((p,i) => {
-         const y = h - (p/100 * (h-20)) - 10;
-         if(i===0) ctx.moveTo(0, y); else ctx.lineTo(i*step, y);
+
+      pwModal.classList.add("active");
+      setTimeout(()=>{
+        try{ (step === "update" ? pwNew : pwEmail)?.focus(); }catch(e){}
+      }, 80);
+    }
+
+    function closePasswordReset(){
+      if (!pwModal) return;
+      pwModal.classList.remove("active");
+      clearPwError();
+    }
+
+    async function sendPasswordResetEmail(){
+      if (!supa) return;
+      clearPwError();
+
+      const email = (pwEmail?.value || "").trim().toLowerCase();
+      if (!email){
+        showPwError("Inserisci la tua email.");
+        return;
+      }
+
+      const btn = document.getElementById("pw-send");
+      if (btn){ btn.disabled = true; btn.textContent = "Invio..."; }
+
+      try{
+        const redirectTo = baseRedirectUrl() + "?pw=recovery";
+        const { error } = await supa.auth.resetPasswordForEmail(email, { redirectTo });
+        if (error) throw error;
+
+        toast("success", "Email inviata", "Apri il link ricevuto per impostare una nuova password.");
+        closePasswordReset();
+
+        showAuthSuccess(
+          "Email inviata",
+          "Controlla la posta (anche Spam). Apri il link e poi imposta la nuova password.",
+          "Ok",
+          ()=>{ hideAuthSuccess(); },
+          "Vai al login",
+          ()=>{ hideAuthSuccess(); openAuth("login"); }
+        );
+      }catch(err){
+        showPwError(prettyAuthError(err));
+      }finally{
+        if (btn){ btn.disabled = false; btn.textContent = "Invia link"; }
+      }
+    }
+
+    async function updatePasswordFromRecovery(){
+      if (!supa) return;
+      clearPwError();
+
+      const p1 = (pwNew?.value || "").trim();
+      const p2 = (pwNew2?.value || "").trim();
+
+      if (p1.length < 8){
+        showPwError("La password deve avere almeno 8 caratteri.");
+        return;
+      }
+      if (p1 !== p2){
+        showPwError("Le password non coincidono.");
+        return;
+      }
+
+      const btn = document.getElementById("pw-update");
+      if (btn){ btn.disabled = true; btn.textContent = "Salvataggio..."; }
+
+      try{
+        const { error } = await supa.auth.updateUser({ password: p1 });
+        if (error) throw error;
+
+        try{ sessionStorage.removeItem("pw_recovery"); }catch(e){}
+        try{
+          const u = new URL(window.location.href);
+          u.searchParams.delete("pw");
+          window.history.replaceState({}, document.title, u.toString());
+        }catch(e){}
+
+        closePasswordReset();
+        toast("success", "Password aggiornata", "Fatto. La tua nuova password è attiva.");
+
+        showAuthSuccess(
+          "Password aggiornata",
+          "Ora puoi continuare. Se eri in modalità ospite, fai login con la nuova password.",
+          "Vai ai corsi",
+          ()=>{ hideAuthSuccess(); navTo("dashboard"); },
+          "Chiudi",
+          ()=>{ hideAuthSuccess(); }
+        );
+      }catch(err){
+        showPwError(prettyAuthError(err));
+      }finally{
+        if (btn){ btn.disabled = false; btn.textContent = "Aggiorna password"; }
+      }
+    }
+
+function baseRedirectUrl(){
+      // URL "base" della pagina (GitHub Pages compatibile)
+      try{
+        const u = new URL(window.location.href);
+        // es: https://user.github.io/Med/index.html -> https://user.github.io/Med/
+        u.hash = "";
+        u.search = "";
+        const path = u.pathname;
+        u.pathname = path.endsWith("/") ? path : path.replace(/\/[^\/]*$/, "/");
+        return u.toString();
+      }catch(e){
+        return window.location.origin + "/";
+      }
+    }
+
+    function defaultUsernameFromUser(user){
+      const meta = user?.user_metadata || {};
+      if (meta.username && String(meta.username).trim()) return String(meta.username).trim();
+      if (user?.email) return user.email.split("@")[0];
+      return "Utente";
+    }
+
+    async function ensureProfile(user){
+      // Facoltativo: mantiene una tabella profiles per mostrare username e poterlo cambiare in futuro.
+      // Se la tabella o le policies non esistono, non blocchiamo l'app.
+      try{
+        const username = defaultUsernameFromUser(user).slice(0, 40);
+        await supa.from("profiles").upsert({ id: user.id, username }, { onConflict: "id" });
+      }catch(e){}
+    }
+
+    async function signup(){
+      if (!authLock("signup")) return;
+      authError.style.display = "none";
+      try{ document.getElementById("btn-resend-signup")?.classList.add("hidden"); }catch(e){}
+      const u = (document.getElementById("signupUser")?.value || "").trim();
+      const email = (document.getElementById("signupEmail")?.value || "").trim().toLowerCase();
+      const pass = (document.getElementById("signupPass")?.value || "").trim();
+
+      if (!email || !pass){
+        showAuthError("Inserisci email e password.");
+        authUnlock("signup");
+        return;
+      }
+
+      const btn = document.getElementById("btn-signup");
+      if (btn){ btn.disabled = true; btn.textContent = "Creazione account..."; }
+
+      try{
+        const { data, error } = await supa.auth.signUp({
+          email,
+          password: pass,
+          options: {
+            data: { username: u || email.split("@")[0] },
+            emailRedirectTo: baseRedirectUrl()
+          }
+        });
+        if (error) throw error;
+
+        // Se Email confirmations è ON, session è null e bisogna confermare.
+        if (data?.session){
+          // Profilo (best effort)
+          await ensureProfile(data.session.user);
+          await applySession(data.session);
+          showSignupSuccess();
+        } else {
+          // non loggato -> serve conferma
+          try{ document.getElementById("btn-resend-signup")?.classList.remove("hidden"); }catch(e){}
+          showAuthSuccess(
+            "Controlla la tua email",
+            "Ti abbiamo inviato un link di conferma. Apri il link, poi torna qui e fai login. Se non trovi la mail, puoi reinviarla.",
+            "Vai al login",
+            ()=>{ hideAuthSuccess(); openAuth("login"); },
+            "Reinvia email",
+            ()=>{ resendSignupEmail(true); }
+          );
+          toast("success","Email di conferma inviata","Controlla la posta (anche Spam).");
+          }
+      }catch(err){
+        showAuthError(prettyAuthError(err));
+      }finally{
+        if (btn){ btn.disabled = false; btn.textContent = "Crea account"; }
+        authUnlock("signup");
+      }
+    }
+
+    async function login(){
+      if (!authLock("login")) return;
+      authError.style.display = "none";
+      try{ document.getElementById("btn-resend")?.classList.add("hidden"); }catch(e){}
+      const email = (document.getElementById("loginEmail")?.value || "").trim().toLowerCase();
+      const pass = (document.getElementById("loginPass")?.value || "").trim();
+
+      if (!email || !pass){
+        showAuthError("Inserisci email e password.");
+        authUnlock("login");
+        return;
+      }
+
+      // Guard: se sei già loggato con un altro account, chiedi switch
+      if (state.isLogged && state.currentUser?.email && state.currentUser.email !== email){
+        showAuthError("Sei già loggato con un altro account. Premi “Cambia account” per entrare con questa email.");
+        authUnlock("login");
+        return;
+      }
+
+      const btn = document.getElementById("btn-login");
+      if (btn){ btn.disabled = true; btn.textContent = "Accesso..."; }
+
+      try{
+        const { data, error } = await supa.auth.signInWithPassword({ email, password: pass });
+        if (error) {
+          // UX: Supabase a volte risponde "Invalid login credentials" anche per email non confermata.
+          const msg = (error.message || "").toLowerCase();
+          if (msg.includes("email") && (msg.includes("confirm") || msg.includes("confirmed"))){
+            showAuthError("Email non confermata. Apri la mail di conferma oppure reinviala.");
+            try{ document.getElementById("btn-resend")?.classList.remove("hidden"); }catch(e){}
+          } else if (msg.includes("invalid login credentials")){
+            showAuthError("Email o password non corretti (oppure email non confermata). Se hai appena creato l’account, reinvia l’email di conferma.");
+            try{ document.getElementById("btn-resend")?.classList.remove("hidden"); }catch(e){}
+          } else {
+            showAuthError(prettyAuthError(error));
+          }
+          return;
+        }
+
+        // Profilo (best effort)
+        if (data?.user) await ensureProfile(data.user);
+
+        // Aggiorna UI subito (onAuthStateChange farà comunque il suo lavoro)
+        await applySession(data?.session || null);
+        showLoginSuccess();
+      }catch(err){
+        showAuthError(prettyAuthError(err));
+      }finally{
+        if (btn){ btn.disabled = false; btn.textContent = "Accedi"; }
+        authUnlock("login");
+      }
+    }
+
+    async function logout(opts={}){
+      const { silent=false, clearStorage=false, openLogin=false } = opts;
+
+      // UI immediata (evita il "devo fare F5")
+      state.isLogged = false;
+      state.currentUser = null;
+      state.profile = null;
+      setAuthUI(null);
+      try{ forceResetSessionUI(); }catch(e){}
+
+      try{
+        // scope locale: sufficiente per un sito client-side
+        await supa.auth.signOut();
+      }catch(e){
+        // se fallisce, proseguiamo comunque in modalità ospite
+        console.warn("signOut error:", e);
+      }
+
+      if (clearStorage) hardClearSupabaseStorage();
+
+      // riallinea stato sessione (best effort)
+      try{ await refreshAuthState(); }catch(e){}
+
+      renderCourses();
+      if (vCourse.classList.contains("active")) refreshCourseDashboard();
+
+      // Se user è su Account, mostra login
+      if (vAuth && vAuth.classList.contains("active")){
+        try{
+          authTitle.textContent = "Accedi";
+          authSub.textContent = "Email + password. Statistiche separate per corso.";
+          authLogin.classList.remove("hidden");
+          authSignup.classList.add("hidden");
+          if (profileLoggedOut) profileLoggedOut.classList.remove("hidden");
+          if (profileLoggedIn) profileLoggedIn.classList.add("hidden");
+          vAuth.scrollTop = 0;
+        }catch(e){}
+      }
+
+      if (!silent){
+        toast("success", "Sei uscito", "Sessione chiusa correttamente. Ora sei in modalità ospite.");
+      }
+
+      if (openLogin) openAuth("login");
+    }
+
+    async function applySession(session){
+      const user = session?.user || null;
+
+      state.currentUser = user;
+      state.isLogged = !!user;
+
+      if (user){
+        // Prova a mantenere un profilo (non bloccare se mancano tabelle/policies)
+        await ensureProfile(user);
+
+        try{
+          const { data: prof } = await supa
+            .from("profiles")
+            .select("username")
+            .eq("id", user.id)
+            .maybeSingle();
+
+          state.profile = prof || { username: defaultUsernameFromUser(user) };
+        }catch(e){
+          state.profile = { username: defaultUsernameFromUser(user) };
+        }
+      } else {
+        state.profile = null;
+      }
+
+      setAuthUI(user);
+      renderCourses();
+      if (vCourse.classList.contains("active")) refreshCourseDashboard();
+    }
+
+    async function refreshAuthState(){
+      const { data } = await supa.auth.getSession();
+      await applySession(data.session || null);
+    }
+
+    let __authSubscription = null;
+    async function initAuth(){
+      await handleAuthRedirect();
+      await refreshAuthState();
+      // Se arrivi da conferma email, mostra un feedback chiaro
+      try{
+        if (sessionStorage.getItem("auth_just_confirmed")==="1"){
+          sessionStorage.removeItem("auth_just_confirmed");
+          if (state.isLogged){
+            toast("success","Email confermata","Ora sei loggato. Puoi tornare ai corsi.", [
+              { label:"Vai ai corsi", primary:true, onClick:()=> navTo("dashboard") }
+            ]);
+          } else {
+            toast("success","Email confermata","Ora puoi fare login con email e password.", [
+              { label:"Vai al login", primary:true, onClick:()=> openAuth("login") }
+            ]);
+          }
+        }
+      }catch(e){}
+      // Se arrivi da recovery, mostra il pannello per scegliere una nuova password
+      try{
+        const pwFlag = sessionStorage.getItem("pw_recovery");
+        const pwParam = (()=>{ try{ return new URL(window.location.href).searchParams.get("pw"); }catch(e){ return null; } })();
+        if ((pwFlag === "1" || pwParam === "recovery") && state.isLogged){
+          // non rimuovere il flag qui: lo togliamo dopo update password
+          setTimeout(()=>{ try{ openPasswordReset("update"); }catch(e){} }, 120);
+        }
+      }catch(e){}
+
+      try{
+        const { data } = supa.auth.onAuthStateChange(async (event, session) => {
+          await applySession(session || null);
+          if (event === "PASSWORD_RECOVERY"){
+            try{ sessionStorage.setItem("pw_recovery","1"); }catch(e){}
+            setTimeout(()=>{ try{ openPasswordReset("update"); }catch(e){} }, 120);
+          }
+        });
+        __authSubscription = data?.subscription || null;
+      }catch(e){
+        // fallback
+        console.warn("onAuthStateChange error:", e);
+      }
+    }
+
+    function setAuthUI(user){
+      if (user){
+        const uname = state.profile?.username || defaultUsernameFromUser(user);
+
+        if (chipAuth) chipAuth.textContent = "🔓 Loggato";
+        if (userDisplay) userDisplay.textContent = `${uname} • ${user.email || ""}`;
+        if (userDisplayDash) userDisplayDash.textContent = `${uname} • ${user.email || ""}`;
+
+        if (profileLoggedOut) profileLoggedOut.classList.add("hidden");
+        if (profileLoggedIn) profileLoggedIn.classList.remove("hidden");
+
+        if (dashLoggedOut) dashLoggedOut.classList.add("hidden");
+        if (dashLoggedIn) dashLoggedIn.classList.remove("hidden");
+      } else {
+        if (chipAuth) chipAuth.textContent = "🔒 Ospite";
+        if (userDisplay) userDisplay.textContent = "Ospite (login opzionale)";
+        if (userDisplayDash) userDisplayDash.textContent = "Ospite (login opzionale)";
+
+        if (profileLoggedOut) profileLoggedOut.classList.remove("hidden");
+        if (profileLoggedIn) profileLoggedIn.classList.add("hidden");
+
+        if (dashLoggedOut) dashLoggedOut.classList.remove("hidden");
+        if (dashLoggedIn) dashLoggedIn.classList.add("hidden");
+      }
+    }
+/***********************************************************************
+     * In-app feedback (toasts + auth success)
+     **********************************************************************/
+    const toastStack = document.getElementById("toast-stack");
+    const authSuccessBox = document.getElementById("auth-success");
+    const authSuccessTitle = document.getElementById("auth-success-title");
+    const authSuccessSub = document.getElementById("auth-success-sub");
+    const authSuccessPrimaryBtn = document.getElementById("auth-success-primary");
+    const authSuccessSecondaryBtn = document.getElementById("auth-success-secondary");
+
+    let __authSuccessPrimaryAction = null;
+    let __authSuccessSecondaryAction = null;
+
+    // Evita i classici "[object Object]" in UI (label/notice)
+    function safeText(v, fallback=""){
+      if (typeof v === "string") return v;
+      if (typeof v === "number" || typeof v === "boolean") return String(v);
+      return fallback;
+    }
+
+    function toast(kind, title, message, actions=[]){
+      if (!toastStack) return;
+      const el = document.createElement("div");
+      el.className = `toast ${kind||""}`.trim();
+      el.innerHTML = `
+        <div style="padding-left:6px;">
+          <h4>${escapeHtml(title||"Info")}</h4>
+          <p>${escapeHtml(message||"")}</p>
+          <div class="t-actions"></div>
+        </div>
+        <button class="t-x" aria-label="Chiudi">✕</button>
+      `;
+      const actionsWrap = el.querySelector(".t-actions");
+      (actions||[]).slice(0,3).forEach(a=>{
+        const b = document.createElement("button");
+        b.className = "t-btn" + (a.primary ? " primary" : "");
+        b.textContent = safeText(a?.label, "Ok");
+        b.onclick = () => { try{ a.onClick && a.onClick(); }catch(e){}; remove(); };
+        actionsWrap.appendChild(b);
       });
-      ctx.stroke();
+
+      const remove = () => {
+        el.style.transition = "opacity .18s ease, transform .18s ease";
+        el.style.opacity = "0";
+        el.style.transform = "translateY(-6px)";
+        setTimeout(()=> el.remove(), 180);
+      };
+
+      el.querySelector(".t-x").onclick = remove;
+      toastStack.appendChild(el);
+
+      // auto-dismiss
+      setTimeout(remove, 3800);
     }
 
-    function drawModuleChart(labels, vals){
-       const obj = setupCanvas("moduleChart", 180);
-       if(!obj)return;
-       const {ctx, w, h} = obj;
-       const barW = (w / labels.length) - 10;
-       ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--primary');
-       
-       vals.forEach((v,i)=>{
-          const bh = (v/100)*(h-20);
-          ctx.fillRect(i*(barW+10)+5, h-bh, barW, bh);
-       });
+    function showAuthSuccess(title, sub, primaryLabel, primaryAction, secondaryLabel, secondaryAction){
+      if (!authSuccessBox) return;
+      authSuccessTitle.textContent = safeText(title, "Operazione completata");
+      authSuccessSub.textContent = safeText(sub, "");
+      authSuccessBox.classList.remove("hidden");
+
+      __authSuccessPrimaryAction = primaryAction || null;
+      __authSuccessSecondaryAction = secondaryAction || null;
+
+      authSuccessPrimaryBtn.textContent = safeText(primaryLabel, "Vai ai corsi");
+      authSuccessSecondaryBtn.textContent = safeText(secondaryLabel, "Accedi");
+
+      // Hide error if visible
+      authError.style.display = "none";
+      authError.textContent = "";
+
+      // scroll into view
+      authSuccessBox.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
-    function queueChartRedraw(){
-      drawProgressChart(__progressPoints);
+    function hideAuthSuccess(){
+      if (!authSuccessBox) return;
+      authSuccessBox.classList.add("hidden");
+      __authSuccessPrimaryAction = null;
+      __authSuccessSecondaryAction = null;
     }
-    function initChartObservers(){} // Placeholder
-    function toast(type, title, msg){ alert(`${title}: ${msg}`); } // Semplificato
 
+    function authSuccessPrimary(){
+      if (__authSuccessPrimaryAction) return __authSuccessPrimaryAction();
+      navTo("dashboard");
+    }
+    function authSuccessSecondary(){
+      if (__authSuccessSecondaryAction) return __authSuccessSecondaryAction();
+      openAuth("login");
+    }
+
+    function showSignupSuccess(){
+      // If email confirmation is enabled, session might be null.
+      // We'll detect session via current state after refresh.
+      (async ()=>{
+        await refreshAuthState();
+        if (state.isLogged){
+          const uname = state.profile?.username || (state.currentUser ? defaultUsernameFromUser(state.currentUser) : "utente");
+          showAuthSuccess(
+            `Benvenuto, ${uname}`,
+            "Account creato con successo. I progressi verranno salvati automaticamente.",
+            "Vai ai corsi",
+            ()=>{ hideAuthSuccess(); navTo("dashboard"); },
+            "Cambia account",
+            ()=>{ hideAuthSuccess(); switchAccount(); }
+          );
+          toast("success","Registrazione completata","Sei già loggato: puoi iniziare subito.");
+        } else {
+          showAuthSuccess(
+            "Controlla la tua email",
+            "Ti abbiamo inviato un link di conferma. Apri il link, poi torna qui e fai login. Dopo l'accesso puoi tornare ai corsi.",
+            "Vai al login",
+            ()=>{ hideAuthSuccess(); openAuth("login"); },
+            "Reinvia email",
+            ()=>{ resendSignupEmail(true); }
+          );
+          toast("success","Email di conferma inviata","Controlla la posta (anche Spam).");
+        }
+      })();
+    }
+
+    function forceResetSessionUI(){
+      // Reset quiz state (prevents UI inconsistencies after logout)
+      state.mode = null;
+      state.quizQuestions = [];
+      state.quizIndex = 0;
+      state.quizCorrect = 0;
+      state.quizAnswered = false;
+
+      // reset current course selection (optional but safer)
+      state.selectedModules.clear();
+
+      // UI: hide floating quiz bar, ensure we are not stuck in quiz view
+      try{ quizActions.classList.remove("visible"); }catch(e){}
+      try{ courseActions.classList.remove("visible"); }catch(e){}
+
+      // If currently in quiz view, jump out without confirm
+      try{
+        if (vQuiz && vQuiz.classList.contains("active")){
+          navTo("dashboard");
+          state.currentCourseId = null;
+          crumbEl.textContent = "Corsi";
+        }
+      }catch(e){}
+
+      // also, clear any transient DOM that could hide buttons
+      try{ optionsContainer.innerHTML = ""; }catch(e){}
+      try{ qText.textContent = ""; }catch(e){}
+      try{ qCounter.textContent = ""; }catch(e){}
+      try{ progressBar.style.width = "0%"; }catch(e){}
+    }
+
+
+/***********************************************************************
+     * Utils
+     **********************************************************************/
+    function shuffle(arr){
+      const a = [...arr];
+      for (let i=a.length-1;i>0;i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [a[i],a[j]] = [a[j],a[i]];
+      }
+      return a;
+    }
+
+    function trim(s, n){
+      if (!s) return "";
+      return s.length > n ? s.slice(0,n-1) + "…" : s;
+    }
+
+    function escapeHtml(str){
+      return String(str).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[s]));
+    }
+
+    function makeQid(courseId, moduleName, qText){
+      const base = `${courseId}||${moduleName}||${qText}`.toLowerCase();
+      const h = fnv1a(base);
+      return `${courseId}:${h}`;
+    }
+
+    function fnv1a(str){
+      let hash = 0x811c9dc5;
+      for (let i=0;i<str.length;i++){
+        hash ^= str.charCodeAt(i);
+        hash = (hash + ((hash<<1) + (hash<<4) + (hash<<7) + (hash<<8) + (hash<<24))) >>> 0;
+      }
+      return hash.toString(16).padStart(8,"0");
+    }
   </script>
+
+  <!-- Toasts (premium, in-app feedback) -->
+  <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="true"></div>
+
 </body>
 </html>
+
