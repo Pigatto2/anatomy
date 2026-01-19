@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+
+<!-- RLM_INJECT_THEME_INIT -->
+<script>
+(function() {
+  try {
+    // Use existing key used by the app; fall back to legacy 'theme' if present.
+    var key = 'med_theme';
+    var stored = localStorage.getItem(key);
+    if (!stored) {
+      var legacy = localStorage.getItem('theme');
+      if (legacy === 'dark' || legacy === 'light') stored = legacy;
+    }
+    // If another script already set dataset.theme, do not override.
+    var current = document.documentElement.getAttribute('data-theme') || document.documentElement.dataset.theme;
+    if (!current) {
+      var preferred = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', preferred === 'dark' ? 'dark' : 'light');
+    }
+  } catch (e) {
+    if (!document.documentElement.getAttribute('data-theme')) {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  }
+})();
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <title>MED Test UNPID • Quiz Hub</title>
@@ -638,6 +664,84 @@
       box-shadow: 0 0 0 4px rgba(0,113,227,0.12);
     }
 </style>
+<style>
+/* RLM_INJECT_BANNER_CSS */
+.banner-quiz {
+  background: var(--glass, rgba(255,255,255,0.65));
+  color: var(--text-main, #1d1d1f);
+  border-bottom: 1px solid var(--glass-border, rgba(0,0,0,0.06));
+}
+.banner-quiz__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+.banner-quiz__title {
+  margin: 0 0 4px 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 900;
+}
+.banner-quiz__subtitle {
+  margin: 0;
+  color: var(--text-sec, #86868b);
+  font-size: 0.95rem;
+}
+@media (max-width: 600px) {
+  .banner-quiz__inner { padding: 12px 14px; }
+  .banner-quiz__title { font-size: 1.25rem; }
+  .banner-quiz__subtitle { font-size: 0.9rem; }
+}
+</style>
+
+
+<style>
+/* RLM_DARK_TWEAKS */
+[data-theme="dark"] .module-item{
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.12);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+[data-theme="dark"] .module-item.selected{
+  background: rgba(79,172,254,0.10);
+  border-color: rgba(79,172,254,0.45);
+}
+[data-theme="dark"] .module-row{
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.12);
+  color: var(--text-main);
+}
+[data-theme="dark"] .chart-wrap{
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.12);
+}
+[data-theme="dark"] .float-mini{
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.12);
+  color: var(--text-sec);
+}
+[data-theme="dark"] .badge{
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.12);
+  color: var(--text-sec);
+}
+[data-theme="dark"] .seg button{
+  background: rgba(255,255,255,0.08);
+  color: var(--text-sec);
+}
+[data-theme="dark"] .seg button.active{
+  background: rgba(79,172,254,0.12);
+  color: #88c2ff;
+}
+[data-theme="dark"] .course-card{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+[data-theme="dark"] .quiz-progress{
+  background: rgba(255,255,255,0.12);
+}
+</style>
+
 </head>
 
 <body>
@@ -658,6 +762,15 @@
         <button class="btn-icon" title="Home" aria-label="Home" onclick="goHome()">⌂</button>
       </div>
     </header>
+<!-- RLM_INJECT_BANNER_HTML_START -->
+<section class="banner-quiz" aria-label="Introduzione">
+  <div class="banner-quiz__inner">
+    <h1 class="banner-quiz__title">Quizzario di Medicina</h1>
+    <p class="banner-quiz__subtitle">Esercitati con quiz mirati: nuove domande, domande errate e domande vecchie.</p>
+  </div>
+</section>
+<!-- RLM_INJECT_BANNER_HTML_END -->
+
 
     <div class="view-container">
       <!-- DASHBOARD -->
@@ -3207,6 +3320,151 @@ function baseRedirectUrl(){
 
   <!-- Toasts (premium, in-app feedback) -->
   <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="true"></div>
+
+
+<!-- RLM_INJECT_THEME_TOGGLE -->
+<script>
+(function() {
+  function applyTheme(t) {
+    var theme = (t === 'dark') ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.dataset.theme = theme;
+    try { localStorage.setItem('med_theme', theme); } catch(e) {}
+  }
+  var btn = document.getElementById('theme-toggle') || document.querySelector('[data-action="toggle-theme"]');
+  if (btn && !btn._themeBound) {
+    btn.addEventListener('click', function() {
+      var curr = document.documentElement.getAttribute('data-theme') || 'light';
+      applyTheme(curr === 'dark' ? 'light' : 'dark');
+    });
+    btn._themeBound = true;
+  }
+  // expose
+  window.applyTheme = applyTheme;
+})();
+</script>
+
+
+<!-- RLM_INJECT_QUIZ_FIX -->
+<script>
+(function() {
+  function $(sel){ return document.querySelector(sel); }
+  function logErr(msg, detail){
+    try { console.error('[QuizFix]', msg, detail || ''); } catch(e){}
+  }
+  function showInfo(msg) {
+    var area = $('#quiz-messages') || $('#messages') || $('#notice') || null;
+    if (area) {
+      area.textContent = msg;
+      area.style.display = 'block';
+      area.setAttribute('role','status');
+    } else {
+      alert(msg);
+    }
+  }
+
+  var data = window.questions || window.items || window.quizzes || null;
+  var getWrong = window.getWrongQuestions || window.getWrong || null;
+  var getOld = window.getOldQuestions || window.getOld || null;
+
+  function filterWrong(arr){
+    return (arr || []).filter(function(q){
+      return q && (q.wrong === true || q.incorrect === true ||
+                   (q.tags && (q.tags.indexOf('wrong')>-1 || q.tags.indexOf('errata')>-1)));
+    });
+  }
+  function filterOld(arr){
+    return (arr || []).filter(function(q){
+      return q && (q.old === true || q.isOld === true ||
+                   (q.tags && (q.tags.indexOf('old')>-1 || q.tags.indexOf('vecchie')>-1)));
+    });
+  }
+
+  function getWrongSafe(){
+    if (typeof getWrong === 'function') { try { return getWrong(); } catch(e){ logErr('getWrongQuestions failed', e); } }
+    if (data) return filterWrong(data);
+    return [];
+  }
+  function getOldSafe(){
+    if (typeof getOld === 'function') { try { return getOld(); } catch(e){ logErr('getOldQuestions failed', e); } }
+    if (data) return filterOld(data);
+    return [];
+  }
+
+  var oldBtn = document.getElementById('old-quiz') ||
+               document.getElementById('quiz-old') ||
+               document.getElementById('btn-old') ||
+               document.querySelector('[data-filter="old"]') ||
+               document.querySelector('[data-quiz="old"]') ||
+               document.getElementById('quiz-vecchi') ||
+               document.getElementById('fai-quiz-vecchio');
+
+  var wrongBtn = document.getElementById('wrong-quiz') ||
+                 document.getElementById('quiz-wrong') ||
+                 document.getElementById('btn-wrong') ||
+                 document.querySelector('[data-filter="wrong"]') ||
+                 document.querySelector('[data-quiz="wrong"]') ||
+                 document.getElementById('quiz-errati') ||
+                 document.getElementById('fai-quiz-errato');
+
+  var startQuiz = window.startQuiz || window.beginQuiz || window.runQuiz || null;
+
+  function callStartQuiz(items, mode) {
+    // Try several signatures without changing UX
+    if (typeof startQuiz === 'function') {
+      try { startQuiz(items); return true; } catch(e){ /* try next */ }
+      try { startQuiz(mode); return true; } catch(e){ /* try next */ }
+      try { startQuiz({ mode: mode, items: items }); return true; } catch(e){ /* fall through */ }
+    }
+    return false;
+  }
+
+  function startQuizWith(items, modeLabel){
+    if (!items || items.length === 0) {
+      showInfo(modeLabel === 'old' ? 'Nessuna domanda vecchia disponibile.' : 'Nessuna domanda errata disponibile.');
+      return;
+    }
+    if (callStartQuiz(items, modeLabel)) return;
+    try {
+      var evt = new CustomEvent('quiz:start', { detail: { items: items, mode: modeLabel }});
+      window.dispatchEvent(evt);
+    } catch(e) {
+      logErr('CustomEvent dispatch failed', e);
+      showInfo('Impossibile avviare il quiz. Controlla la console.');
+    }
+  }
+
+  if (oldBtn && !oldBtn._boundOld) {
+    oldBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var list = getOldSafe();
+      if (!list || list.length === 0) {
+        showInfo('Nessuna domanda vecchia disponibile.');
+        return;
+      }
+      startQuizWith(list, 'old');
+    });
+    oldBtn._boundOld = true;
+  } else if (!oldBtn) {
+    logErr('Bottone "quiz vecchi" non trovato');
+  }
+
+  if (wrongBtn && !wrongBtn._boundWrong) {
+    wrongBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var list = getWrongSafe();
+      if (!list || list.length === 0) {
+        showInfo('Nessuna domanda errata disponibile.');
+        return;
+      }
+      startQuizWith(list, 'wrong');
+    });
+    wrongBtn._boundWrong = true;
+  } else if (!wrongBtn) {
+    logErr('Bottone "quiz errati" non trovato');
+  }
+})();
+</script>
 
 </body>
 </html>
